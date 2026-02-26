@@ -1,0 +1,2545 @@
+{
+  "config": {
+    "tasks": "svamp",
+    "methods": "baseline,checklist,conditional_critique,verifier",
+    "n": 50,
+    "model": "gpt-4.1-mini",
+    "out": "first_extension_run_svamp"
+  },
+  "results": {
+    "svamp": {
+      "baseline": {
+        "summary": {
+          "accuracy": 1.0,
+          "avg_total_tokens": 169.34
+        },
+        "rows": [
+          {
+            "id": "svamp-57",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 71,
+              "completion_tokens": 90,
+              "total_tokens": 161
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-12",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 59,
+              "completion_tokens": 96,
+              "total_tokens": 155
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-140",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 56,
+              "completion_tokens": 79,
+              "total_tokens": 135
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-125",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 74,
+              "completion_tokens": 86,
+              "total_tokens": 160
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-114",
+            "pred": "84",
+            "usage": {
+              "prompt_tokens": 82,
+              "completion_tokens": 91,
+              "total_tokens": 173
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-71",
+            "pred": "91",
+            "usage": {
+              "prompt_tokens": 85,
+              "completion_tokens": 81,
+              "total_tokens": 166
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-52",
+            "pred": "17",
+            "usage": {
+              "prompt_tokens": 66,
+              "completion_tokens": 67,
+              "total_tokens": 133
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-279",
+            "pred": "23",
+            "usage": {
+              "prompt_tokens": 81,
+              "completion_tokens": 115,
+              "total_tokens": 196
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-44",
+            "pred": "68",
+            "usage": {
+              "prompt_tokens": 81,
+              "completion_tokens": 83,
+              "total_tokens": 164
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-216",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 89,
+              "completion_tokens": 155,
+              "total_tokens": 244
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-16",
+            "pred": "5",
+            "usage": {
+              "prompt_tokens": 67,
+              "completion_tokens": 89,
+              "total_tokens": 156
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-15",
+            "pred": "369",
+            "usage": {
+              "prompt_tokens": 73,
+              "completion_tokens": 107,
+              "total_tokens": 180
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-47",
+            "pred": "11",
+            "usage": {
+              "prompt_tokens": 69,
+              "completion_tokens": 84,
+              "total_tokens": 153
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-111",
+            "pred": "4",
+            "usage": {
+              "prompt_tokens": 73,
+              "completion_tokens": 52,
+              "total_tokens": 125
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-119",
+            "pred": "111",
+            "usage": {
+              "prompt_tokens": 62,
+              "completion_tokens": 98,
+              "total_tokens": 160
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-258",
+            "pred": "7",
+            "usage": {
+              "prompt_tokens": 65,
+              "completion_tokens": 58,
+              "total_tokens": 123
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-13",
+            "pred": "13",
+            "usage": {
+              "prompt_tokens": 70,
+              "completion_tokens": 64,
+              "total_tokens": 134
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-287",
+            "pred": "6",
+            "usage": {
+              "prompt_tokens": 60,
+              "completion_tokens": 108,
+              "total_tokens": 168
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-101",
+            "pred": "35",
+            "usage": {
+              "prompt_tokens": 65,
+              "completion_tokens": 86,
+              "total_tokens": 151
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-214",
+            "pred": "54",
+            "usage": {
+              "prompt_tokens": 57,
+              "completion_tokens": 117,
+              "total_tokens": 174
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-112",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 64,
+              "completion_tokens": 114,
+              "total_tokens": 178
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-229",
+            "pred": "7",
+            "usage": {
+              "prompt_tokens": 66,
+              "completion_tokens": 81,
+              "total_tokens": 147
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-142",
+            "pred": "105",
+            "usage": {
+              "prompt_tokens": 69,
+              "completion_tokens": 82,
+              "total_tokens": 151
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-3",
+            "pred": "64",
+            "usage": {
+              "prompt_tokens": 76,
+              "completion_tokens": 56,
+              "total_tokens": 132
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-81",
+            "pred": "51",
+            "usage": {
+              "prompt_tokens": 71,
+              "completion_tokens": 89,
+              "total_tokens": 160
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-174",
+            "pred": "229",
+            "usage": {
+              "prompt_tokens": 75,
+              "completion_tokens": 73,
+              "total_tokens": 148
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-79",
+            "pred": "1891",
+            "usage": {
+              "prompt_tokens": 58,
+              "completion_tokens": 78,
+              "total_tokens": 136
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-110",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 88,
+              "completion_tokens": 185,
+              "total_tokens": 273
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-172",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 70,
+              "completion_tokens": 85,
+              "total_tokens": 155
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-194",
+            "pred": "39",
+            "usage": {
+              "prompt_tokens": 84,
+              "completion_tokens": 119,
+              "total_tokens": 203
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-49",
+            "pred": "66",
+            "usage": {
+              "prompt_tokens": 72,
+              "completion_tokens": 139,
+              "total_tokens": 211
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-183",
+            "pred": "20",
+            "usage": {
+              "prompt_tokens": 92,
+              "completion_tokens": 101,
+              "total_tokens": 193
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-176",
+            "pred": "26",
+            "usage": {
+              "prompt_tokens": 66,
+              "completion_tokens": 116,
+              "total_tokens": 182
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-135",
+            "pred": "8",
+            "usage": {
+              "prompt_tokens": 86,
+              "completion_tokens": 123,
+              "total_tokens": 209
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-22",
+            "pred": "3",
+            "usage": {
+              "prompt_tokens": 71,
+              "completion_tokens": 74,
+              "total_tokens": 145
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-235",
+            "pred": "29",
+            "usage": {
+              "prompt_tokens": 88,
+              "completion_tokens": 303,
+              "total_tokens": 391
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-274",
+            "pred": "6840",
+            "usage": {
+              "prompt_tokens": 72,
+              "completion_tokens": 74,
+              "total_tokens": 146
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-63",
+            "pred": "30",
+            "usage": {
+              "prompt_tokens": 68,
+              "completion_tokens": 69,
+              "total_tokens": 137
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-193",
+            "pred": "348",
+            "usage": {
+              "prompt_tokens": 86,
+              "completion_tokens": 130,
+              "total_tokens": 216
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-40",
+            "pred": "7",
+            "usage": {
+              "prompt_tokens": 76,
+              "completion_tokens": 61,
+              "total_tokens": 137
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-282",
+            "pred": "268,627",
+            "usage": {
+              "prompt_tokens": 65,
+              "completion_tokens": 73,
+              "total_tokens": 138
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-150",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 69,
+              "completion_tokens": 129,
+              "total_tokens": 198
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-185",
+            "pred": "14",
+            "usage": {
+              "prompt_tokens": 84,
+              "completion_tokens": 109,
+              "total_tokens": 193
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-295",
+            "pred": "30",
+            "usage": {
+              "prompt_tokens": 60,
+              "completion_tokens": 60,
+              "total_tokens": 120
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-98",
+            "pred": "98",
+            "usage": {
+              "prompt_tokens": 66,
+              "completion_tokens": 72,
+              "total_tokens": 138
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-35",
+            "pred": "20",
+            "usage": {
+              "prompt_tokens": 59,
+              "completion_tokens": 87,
+              "total_tokens": 146
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-23",
+            "pred": "333",
+            "usage": {
+              "prompt_tokens": 58,
+              "completion_tokens": 60,
+              "total_tokens": 118
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-116",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 77,
+              "completion_tokens": 201,
+              "total_tokens": 278
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-148",
+            "pred": "121",
+            "usage": {
+              "prompt_tokens": 68,
+              "completion_tokens": 77,
+              "total_tokens": 145
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-51",
+            "pred": "72",
+            "usage": {
+              "prompt_tokens": 68,
+              "completion_tokens": 64,
+              "total_tokens": 132
+            },
+            "meta": {},
+            "correct": true
+          }
+        ]
+      },
+      "checklist": {
+        "summary": {
+          "accuracy": 1.0,
+          "avg_total_tokens": 255.14
+        },
+        "rows": [
+          {
+            "id": "svamp-57",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 108,
+              "completion_tokens": 143,
+              "total_tokens": 251
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-12",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 96,
+              "completion_tokens": 125,
+              "total_tokens": 221
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-140",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 93,
+              "completion_tokens": 108,
+              "total_tokens": 201
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-125",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 111,
+              "completion_tokens": 137,
+              "total_tokens": 248
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-114",
+            "pred": "84",
+            "usage": {
+              "prompt_tokens": 119,
+              "completion_tokens": 112,
+              "total_tokens": 231
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-71",
+            "pred": "91",
+            "usage": {
+              "prompt_tokens": 122,
+              "completion_tokens": 260,
+              "total_tokens": 382
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-52",
+            "pred": "17",
+            "usage": {
+              "prompt_tokens": 103,
+              "completion_tokens": 152,
+              "total_tokens": 255
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-279",
+            "pred": "23",
+            "usage": {
+              "prompt_tokens": 118,
+              "completion_tokens": 157,
+              "total_tokens": 275
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-44",
+            "pred": "68",
+            "usage": {
+              "prompt_tokens": 118,
+              "completion_tokens": 115,
+              "total_tokens": 233
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-216",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 126,
+              "completion_tokens": 185,
+              "total_tokens": 311
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-16",
+            "pred": "5",
+            "usage": {
+              "prompt_tokens": 104,
+              "completion_tokens": 123,
+              "total_tokens": 227
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-15",
+            "pred": "369",
+            "usage": {
+              "prompt_tokens": 110,
+              "completion_tokens": 117,
+              "total_tokens": 227
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-47",
+            "pred": "11",
+            "usage": {
+              "prompt_tokens": 106,
+              "completion_tokens": 106,
+              "total_tokens": 212
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-111",
+            "pred": "4",
+            "usage": {
+              "prompt_tokens": 110,
+              "completion_tokens": 161,
+              "total_tokens": 271
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-119",
+            "pred": "111",
+            "usage": {
+              "prompt_tokens": 99,
+              "completion_tokens": 118,
+              "total_tokens": 217
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-258",
+            "pred": "7",
+            "usage": {
+              "prompt_tokens": 102,
+              "completion_tokens": 131,
+              "total_tokens": 233
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-13",
+            "pred": "13",
+            "usage": {
+              "prompt_tokens": 107,
+              "completion_tokens": 131,
+              "total_tokens": 238
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-287",
+            "pred": "6",
+            "usage": {
+              "prompt_tokens": 97,
+              "completion_tokens": 131,
+              "total_tokens": 228
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-101",
+            "pred": "35",
+            "usage": {
+              "prompt_tokens": 102,
+              "completion_tokens": 158,
+              "total_tokens": 260
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-214",
+            "pred": "54",
+            "usage": {
+              "prompt_tokens": 94,
+              "completion_tokens": 114,
+              "total_tokens": 208
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-112",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 101,
+              "completion_tokens": 122,
+              "total_tokens": 223
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-229",
+            "pred": "7",
+            "usage": {
+              "prompt_tokens": 103,
+              "completion_tokens": 128,
+              "total_tokens": 231
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-142",
+            "pred": "105",
+            "usage": {
+              "prompt_tokens": 106,
+              "completion_tokens": 152,
+              "total_tokens": 258
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-3",
+            "pred": "64",
+            "usage": {
+              "prompt_tokens": 113,
+              "completion_tokens": 135,
+              "total_tokens": 248
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-81",
+            "pred": "51",
+            "usage": {
+              "prompt_tokens": 108,
+              "completion_tokens": 153,
+              "total_tokens": 261
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-174",
+            "pred": "229",
+            "usage": {
+              "prompt_tokens": 112,
+              "completion_tokens": 148,
+              "total_tokens": 260
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-79",
+            "pred": "1891",
+            "usage": {
+              "prompt_tokens": 95,
+              "completion_tokens": 126,
+              "total_tokens": 221
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-110",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 125,
+              "completion_tokens": 257,
+              "total_tokens": 382
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-172",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 107,
+              "completion_tokens": 124,
+              "total_tokens": 231
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-194",
+            "pred": "39",
+            "usage": {
+              "prompt_tokens": 121,
+              "completion_tokens": 197,
+              "total_tokens": 318
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-49",
+            "pred": "66",
+            "usage": {
+              "prompt_tokens": 109,
+              "completion_tokens": 224,
+              "total_tokens": 333
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-183",
+            "pred": "20",
+            "usage": {
+              "prompt_tokens": 129,
+              "completion_tokens": 126,
+              "total_tokens": 255
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-176",
+            "pred": "26",
+            "usage": {
+              "prompt_tokens": 103,
+              "completion_tokens": 143,
+              "total_tokens": 246
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-135",
+            "pred": "8",
+            "usage": {
+              "prompt_tokens": 123,
+              "completion_tokens": 226,
+              "total_tokens": 349
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-22",
+            "pred": "3",
+            "usage": {
+              "prompt_tokens": 108,
+              "completion_tokens": 111,
+              "total_tokens": 219
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-235",
+            "pred": "29",
+            "usage": {
+              "prompt_tokens": 125,
+              "completion_tokens": 251,
+              "total_tokens": 376
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-274",
+            "pred": "6840",
+            "usage": {
+              "prompt_tokens": 109,
+              "completion_tokens": 162,
+              "total_tokens": 271
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-63",
+            "pred": "30",
+            "usage": {
+              "prompt_tokens": 105,
+              "completion_tokens": 135,
+              "total_tokens": 240
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-193",
+            "pred": "348",
+            "usage": {
+              "prompt_tokens": 123,
+              "completion_tokens": 129,
+              "total_tokens": 252
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-40",
+            "pred": "7",
+            "usage": {
+              "prompt_tokens": 113,
+              "completion_tokens": 106,
+              "total_tokens": 219
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-282",
+            "pred": "268,627",
+            "usage": {
+              "prompt_tokens": 102,
+              "completion_tokens": 162,
+              "total_tokens": 264
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-150",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 106,
+              "completion_tokens": 166,
+              "total_tokens": 272
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-185",
+            "pred": "14",
+            "usage": {
+              "prompt_tokens": 121,
+              "completion_tokens": 108,
+              "total_tokens": 229
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-295",
+            "pred": "30",
+            "usage": {
+              "prompt_tokens": 97,
+              "completion_tokens": 114,
+              "total_tokens": 211
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-98",
+            "pred": "98",
+            "usage": {
+              "prompt_tokens": 103,
+              "completion_tokens": 151,
+              "total_tokens": 254
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-35",
+            "pred": "20",
+            "usage": {
+              "prompt_tokens": 96,
+              "completion_tokens": 98,
+              "total_tokens": 194
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-23",
+            "pred": "333",
+            "usage": {
+              "prompt_tokens": 95,
+              "completion_tokens": 96,
+              "total_tokens": 191
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-116",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 114,
+              "completion_tokens": 232,
+              "total_tokens": 346
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-148",
+            "pred": "121",
+            "usage": {
+              "prompt_tokens": 105,
+              "completion_tokens": 108,
+              "total_tokens": 213
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-51",
+            "pred": "72",
+            "usage": {
+              "prompt_tokens": 105,
+              "completion_tokens": 156,
+              "total_tokens": 261
+            },
+            "meta": {},
+            "correct": true
+          }
+        ]
+      },
+      "conditional_critique": {
+        "summary": {
+          "accuracy": 1.0,
+          "avg_total_tokens": 181.88
+        },
+        "rows": [
+          {
+            "id": "svamp-57",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 90,
+              "completion_tokens": 87,
+              "total_tokens": 177
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-12",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 78,
+              "completion_tokens": 74,
+              "total_tokens": 152
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-140",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 75,
+              "completion_tokens": 79,
+              "total_tokens": 154
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-125",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 93,
+              "completion_tokens": 79,
+              "total_tokens": 172
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-114",
+            "pred": "84",
+            "usage": {
+              "prompt_tokens": 101,
+              "completion_tokens": 99,
+              "total_tokens": 200
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-71",
+            "pred": "91",
+            "usage": {
+              "prompt_tokens": 104,
+              "completion_tokens": 88,
+              "total_tokens": 192
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-52",
+            "pred": "17",
+            "usage": {
+              "prompt_tokens": 85,
+              "completion_tokens": 80,
+              "total_tokens": 165
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-279",
+            "pred": "23",
+            "usage": {
+              "prompt_tokens": 100,
+              "completion_tokens": 88,
+              "total_tokens": 188
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-44",
+            "pred": "68",
+            "usage": {
+              "prompt_tokens": 100,
+              "completion_tokens": 75,
+              "total_tokens": 175
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-216",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 108,
+              "completion_tokens": 159,
+              "total_tokens": 267
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-16",
+            "pred": "5",
+            "usage": {
+              "prompt_tokens": 86,
+              "completion_tokens": 107,
+              "total_tokens": 193
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-15",
+            "pred": "369",
+            "usage": {
+              "prompt_tokens": 92,
+              "completion_tokens": 85,
+              "total_tokens": 177
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-47",
+            "pred": "11",
+            "usage": {
+              "prompt_tokens": 88,
+              "completion_tokens": 91,
+              "total_tokens": 179
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-111",
+            "pred": "4",
+            "usage": {
+              "prompt_tokens": 92,
+              "completion_tokens": 92,
+              "total_tokens": 184
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-119",
+            "pred": "111",
+            "usage": {
+              "prompt_tokens": 81,
+              "completion_tokens": 102,
+              "total_tokens": 183
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-258",
+            "pred": "7",
+            "usage": {
+              "prompt_tokens": 84,
+              "completion_tokens": 64,
+              "total_tokens": 148
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-13",
+            "pred": "13",
+            "usage": {
+              "prompt_tokens": 89,
+              "completion_tokens": 50,
+              "total_tokens": 139
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-287",
+            "pred": "6",
+            "usage": {
+              "prompt_tokens": 79,
+              "completion_tokens": 69,
+              "total_tokens": 148
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-101",
+            "pred": "35",
+            "usage": {
+              "prompt_tokens": 84,
+              "completion_tokens": 72,
+              "total_tokens": 156
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-214",
+            "pred": "54",
+            "usage": {
+              "prompt_tokens": 76,
+              "completion_tokens": 99,
+              "total_tokens": 175
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-112",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 83,
+              "completion_tokens": 81,
+              "total_tokens": 164
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-229",
+            "pred": "7",
+            "usage": {
+              "prompt_tokens": 85,
+              "completion_tokens": 77,
+              "total_tokens": 162
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-142",
+            "pred": "105",
+            "usage": {
+              "prompt_tokens": 88,
+              "completion_tokens": 88,
+              "total_tokens": 176
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-3",
+            "pred": "64",
+            "usage": {
+              "prompt_tokens": 95,
+              "completion_tokens": 95,
+              "total_tokens": 190
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-81",
+            "pred": "51",
+            "usage": {
+              "prompt_tokens": 90,
+              "completion_tokens": 85,
+              "total_tokens": 175
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-174",
+            "pred": "229",
+            "usage": {
+              "prompt_tokens": 94,
+              "completion_tokens": 80,
+              "total_tokens": 174
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-79",
+            "pred": "1891",
+            "usage": {
+              "prompt_tokens": 77,
+              "completion_tokens": 131,
+              "total_tokens": 208
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-110",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 107,
+              "completion_tokens": 200,
+              "total_tokens": 307
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-172",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 89,
+              "completion_tokens": 63,
+              "total_tokens": 152
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-194",
+            "pred": "39",
+            "usage": {
+              "prompt_tokens": 103,
+              "completion_tokens": 83,
+              "total_tokens": 186
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-49",
+            "pred": "66",
+            "usage": {
+              "prompt_tokens": 91,
+              "completion_tokens": 146,
+              "total_tokens": 237
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-183",
+            "pred": "20",
+            "usage": {
+              "prompt_tokens": 111,
+              "completion_tokens": 101,
+              "total_tokens": 212
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-176",
+            "pred": "26",
+            "usage": {
+              "prompt_tokens": 85,
+              "completion_tokens": 92,
+              "total_tokens": 177
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-135",
+            "pred": "8",
+            "usage": {
+              "prompt_tokens": 105,
+              "completion_tokens": 160,
+              "total_tokens": 265
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-22",
+            "pred": "3",
+            "usage": {
+              "prompt_tokens": 90,
+              "completion_tokens": 78,
+              "total_tokens": 168
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-235",
+            "pred": "29",
+            "usage": {
+              "prompt_tokens": 107,
+              "completion_tokens": 87,
+              "total_tokens": 194
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-274",
+            "pred": "6840",
+            "usage": {
+              "prompt_tokens": 91,
+              "completion_tokens": 72,
+              "total_tokens": 163
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-63",
+            "pred": "30",
+            "usage": {
+              "prompt_tokens": 87,
+              "completion_tokens": 78,
+              "total_tokens": 165
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-193",
+            "pred": "348",
+            "usage": {
+              "prompt_tokens": 105,
+              "completion_tokens": 52,
+              "total_tokens": 157
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-40",
+            "pred": "7",
+            "usage": {
+              "prompt_tokens": 95,
+              "completion_tokens": 61,
+              "total_tokens": 156
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-282",
+            "pred": "268627",
+            "usage": {
+              "prompt_tokens": 84,
+              "completion_tokens": 130,
+              "total_tokens": 214
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-150",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 88,
+              "completion_tokens": 131,
+              "total_tokens": 219
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-185",
+            "pred": "14",
+            "usage": {
+              "prompt_tokens": 103,
+              "completion_tokens": 111,
+              "total_tokens": 214
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-295",
+            "pred": "30",
+            "usage": {
+              "prompt_tokens": 79,
+              "completion_tokens": 67,
+              "total_tokens": 146
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-98",
+            "pred": "98",
+            "usage": {
+              "prompt_tokens": 85,
+              "completion_tokens": 68,
+              "total_tokens": 153
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-35",
+            "pred": "20",
+            "usage": {
+              "prompt_tokens": 78,
+              "completion_tokens": 81,
+              "total_tokens": 159
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-23",
+            "pred": "333",
+            "usage": {
+              "prompt_tokens": 77,
+              "completion_tokens": 66,
+              "total_tokens": 143
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-116",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 96,
+              "completion_tokens": 111,
+              "total_tokens": 207
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-148",
+            "pred": "121",
+            "usage": {
+              "prompt_tokens": 87,
+              "completion_tokens": 73,
+              "total_tokens": 160
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-51",
+            "pred": "72",
+            "usage": {
+              "prompt_tokens": 87,
+              "completion_tokens": 80,
+              "total_tokens": 167
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          }
+        ]
+      },
+      "verifier": {
+        "summary": {
+          "accuracy": 0.98,
+          "avg_total_tokens": 514.26
+        },
+        "rows": [
+          {
+            "id": "svamp-57",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 213,
+              "completion_tokens": 257,
+              "total_tokens": 470
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-12",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 177,
+              "completion_tokens": 274,
+              "total_tokens": 451
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-140",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 168,
+              "completion_tokens": 255,
+              "total_tokens": 423
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-125",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 222,
+              "completion_tokens": 257,
+              "total_tokens": 479
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-114",
+            "pred": "84",
+            "usage": {
+              "prompt_tokens": 246,
+              "completion_tokens": 269,
+              "total_tokens": 515
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-71",
+            "pred": "91",
+            "usage": {
+              "prompt_tokens": 255,
+              "completion_tokens": 358,
+              "total_tokens": 613
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-52",
+            "pred": "17",
+            "usage": {
+              "prompt_tokens": 198,
+              "completion_tokens": 212,
+              "total_tokens": 410
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-279",
+            "pred": "23",
+            "usage": {
+              "prompt_tokens": 243,
+              "completion_tokens": 358,
+              "total_tokens": 601
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-44",
+            "pred": "68",
+            "usage": {
+              "prompt_tokens": 243,
+              "completion_tokens": 259,
+              "total_tokens": 502
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-216",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 267,
+              "completion_tokens": 437,
+              "total_tokens": 704
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-16",
+            "pred": "5",
+            "usage": {
+              "prompt_tokens": 201,
+              "completion_tokens": 284,
+              "total_tokens": 485
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-15",
+            "pred": "369",
+            "usage": {
+              "prompt_tokens": 219,
+              "completion_tokens": 328,
+              "total_tokens": 547
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-47",
+            "pred": "11",
+            "usage": {
+              "prompt_tokens": 207,
+              "completion_tokens": 244,
+              "total_tokens": 451
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-111",
+            "pred": "4",
+            "usage": {
+              "prompt_tokens": 219,
+              "completion_tokens": 202,
+              "total_tokens": 421
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-119",
+            "pred": "111",
+            "usage": {
+              "prompt_tokens": 186,
+              "completion_tokens": 274,
+              "total_tokens": 460
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-258",
+            "pred": "7",
+            "usage": {
+              "prompt_tokens": 195,
+              "completion_tokens": 171,
+              "total_tokens": 366
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-13",
+            "pred": "13",
+            "usage": {
+              "prompt_tokens": 210,
+              "completion_tokens": 204,
+              "total_tokens": 414
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-287",
+            "pred": "6",
+            "usage": {
+              "prompt_tokens": 180,
+              "completion_tokens": 256,
+              "total_tokens": 436
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-101",
+            "pred": "35",
+            "usage": {
+              "prompt_tokens": 195,
+              "completion_tokens": 255,
+              "total_tokens": 450
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-214",
+            "pred": "54",
+            "usage": {
+              "prompt_tokens": 171,
+              "completion_tokens": 369,
+              "total_tokens": 540
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-112",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 192,
+              "completion_tokens": 361,
+              "total_tokens": 553
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-229",
+            "pred": "7",
+            "usage": {
+              "prompt_tokens": 198,
+              "completion_tokens": 234,
+              "total_tokens": 432
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-142",
+            "pred": "105",
+            "usage": {
+              "prompt_tokens": 207,
+              "completion_tokens": 326,
+              "total_tokens": 533
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-3",
+            "pred": "64",
+            "usage": {
+              "prompt_tokens": 228,
+              "completion_tokens": 199,
+              "total_tokens": 427
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-81",
+            "pred": "51",
+            "usage": {
+              "prompt_tokens": 213,
+              "completion_tokens": 254,
+              "total_tokens": 467
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-174",
+            "pred": "229",
+            "usage": {
+              "prompt_tokens": 225,
+              "completion_tokens": 216,
+              "total_tokens": 441
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-79",
+            "pred": "1891",
+            "usage": {
+              "prompt_tokens": 174,
+              "completion_tokens": 323,
+              "total_tokens": 497
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-110",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 264,
+              "completion_tokens": 664,
+              "total_tokens": 928
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-172",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 210,
+              "completion_tokens": 253,
+              "total_tokens": 463
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-194",
+            "pred": "39",
+            "usage": {
+              "prompt_tokens": 252,
+              "completion_tokens": 359,
+              "total_tokens": 611
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-49",
+            "pred": "66",
+            "usage": {
+              "prompt_tokens": 216,
+              "completion_tokens": 419,
+              "total_tokens": 635
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-183",
+            "pred": "20",
+            "usage": {
+              "prompt_tokens": 276,
+              "completion_tokens": 357,
+              "total_tokens": 633
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-176",
+            "pred": "26",
+            "usage": {
+              "prompt_tokens": 198,
+              "completion_tokens": 277,
+              "total_tokens": 475
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-135",
+            "pred": "8",
+            "usage": {
+              "prompt_tokens": 258,
+              "completion_tokens": 485,
+              "total_tokens": 743
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-22",
+            "pred": "3",
+            "usage": {
+              "prompt_tokens": 213,
+              "completion_tokens": 215,
+              "total_tokens": 428
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-235",
+            "pred": "2523",
+            "usage": {
+              "prompt_tokens": 264,
+              "completion_tokens": 777,
+              "total_tokens": 1041
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": false
+          },
+          {
+            "id": "svamp-274",
+            "pred": "6840",
+            "usage": {
+              "prompt_tokens": 216,
+              "completion_tokens": 258,
+              "total_tokens": 474
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-63",
+            "pred": "30",
+            "usage": {
+              "prompt_tokens": 204,
+              "completion_tokens": 205,
+              "total_tokens": 409
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-193",
+            "pred": "348",
+            "usage": {
+              "prompt_tokens": 258,
+              "completion_tokens": 323,
+              "total_tokens": 581
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-40",
+            "pred": "7",
+            "usage": {
+              "prompt_tokens": 228,
+              "completion_tokens": 202,
+              "total_tokens": 430
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-282",
+            "pred": "268,627",
+            "usage": {
+              "prompt_tokens": 195,
+              "completion_tokens": 210,
+              "total_tokens": 405
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-150",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 207,
+              "completion_tokens": 388,
+              "total_tokens": 595
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-185",
+            "pred": "14",
+            "usage": {
+              "prompt_tokens": 252,
+              "completion_tokens": 279,
+              "total_tokens": 531
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-295",
+            "pred": "30",
+            "usage": {
+              "prompt_tokens": 180,
+              "completion_tokens": 241,
+              "total_tokens": 421
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-98",
+            "pred": "98",
+            "usage": {
+              "prompt_tokens": 198,
+              "completion_tokens": 218,
+              "total_tokens": 416
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-35",
+            "pred": "20",
+            "usage": {
+              "prompt_tokens": 177,
+              "completion_tokens": 230,
+              "total_tokens": 407
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-23",
+            "pred": "333",
+            "usage": {
+              "prompt_tokens": 174,
+              "completion_tokens": 241,
+              "total_tokens": 415
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-116",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 231,
+              "completion_tokens": 517,
+              "total_tokens": 748
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-148",
+            "pred": "121",
+            "usage": {
+              "prompt_tokens": 204,
+              "completion_tokens": 214,
+              "total_tokens": 418
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-51",
+            "pred": "72",
+            "usage": {
+              "prompt_tokens": 204,
+              "completion_tokens": 214,
+              "total_tokens": 418
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          }
+        ]
+      }
+    }
+  }
+}

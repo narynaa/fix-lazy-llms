@@ -8,9 +8,12 @@ import random
 import hashlib
 from pathlib import Path
 from typing import Optional
+from dotenv import load_dotenv
 
 import numpy as np
 from openai import OpenAI
+
+load_dotenv()
 
 # Reproducibility
 SEED = 42
@@ -24,7 +27,7 @@ RESULTS_DIR = PROJECT_ROOT / "results"
 RESULTS_DIR.mkdir(exist_ok=True)
 
 # API setup
-client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # Cache for API responses to avoid redundant calls
 CACHE_DIR = PROJECT_ROOT / "results" / ".cache"
@@ -33,52 +36,39 @@ CACHE_DIR.mkdir(exist_ok=True)
 
 def get_cache_key(model: str, messages: list, temperature: float) -> str:
     """Generate a deterministic cache key for an API call."""
-    content = json.dumps({"model": model, "messages": messages, "temperature": temperature}, sort_keys=True)
+    content = json.dumps(
+        {"model": model, "messages": messages, "temperature": temperature},
+        sort_keys=True,
+    )
     return hashlib.sha256(content.encode()).hexdigest()
 
 
 def call_llm(
-    messages: list,
-    model: str = "gpt-4.1-mini",
-    temperature: float = 0.0,
-    max_tokens: int = 2048,
-    use_cache: bool = True,
-) -> dict:
-    """Call the OpenAI API with caching and retry logic.
+    messages,
+    model,
+    temperature=0.0,
+    max_tokens=1024,
+):
+    client = OpenAI(
+        base_url=os.environ.get("GENERATOR_BASE_URL"),
+        api_key=os.environ.get("GENERATOR_API_KEY", "dummy"),
+    )
 
-    Returns dict with 'content', 'usage' (prompt_tokens, completion_tokens, total_tokens).
-    """
-    cache_key = get_cache_key(model, messages, temperature)
-    cache_file = CACHE_DIR / f"{cache_key}.json"
+    response = client.chat.completions.create(
+        model=model,
+        messages=messages,
+        temperature=temperature,
+        max_tokens=max_tokens,
+    )
 
-    if use_cache and cache_file.exists():
-        return json.loads(cache_file.read_text())
-
-    for attempt in range(5):
-        try:
-            response = client.chat.completions.create(
-                model=model,
-                messages=messages,
-                temperature=temperature,
-                max_tokens=max_tokens,
-            )
-            result = {
-                "content": response.choices[0].message.content,
-                "usage": {
-                    "prompt_tokens": response.usage.prompt_tokens,
-                    "completion_tokens": response.usage.completion_tokens,
-                    "total_tokens": response.usage.total_tokens,
-                },
-            }
-            if use_cache:
-                cache_file.write_text(json.dumps(result))
-            return result
-        except Exception as e:
-            wait = 2 ** attempt
-            print(f"  API error (attempt {attempt+1}): {e}. Retrying in {wait}s...")
-            time.sleep(wait)
-
-    raise RuntimeError(f"Failed after 5 attempts for model={model}")
+    return {
+        "content": response.choices[0].message.content,
+        "usage": {
+            "prompt_tokens": response.usage.prompt_tokens,
+            "completion_tokens": response.usage.completion_tokens,
+            "total_tokens": response.usage.total_tokens,
+        },
+    }
 
 
 def load_gsm8k(split: str = "test", n: Optional[int] = None) -> list[dict]:
@@ -92,11 +82,13 @@ def load_gsm8k(split: str = "test", n: Optional[int] = None) -> list[dict]:
             num_answer = item["answer"].split("####")[-1].strip()
             # Remove commas from numbers like 70,000
             num_answer = num_answer.replace(",", "")
-            data.append({
-                "question": item["question"],
-                "full_answer": item["answer"],
-                "numerical_answer": num_answer,
-            })
+            data.append(
+                {
+                    "question": item["question"],
+                    "full_answer": item["answer"],
+                    "numerical_answer": num_answer,
+                }
+            )
     if n is not None:
         random.seed(SEED)
         data = random.sample(data, min(n, len(data)))
@@ -115,7 +107,11 @@ def extract_numerical_answer(response: str) -> Optional[str]:
         return match.group(1).replace(",", "").strip()
 
     # Try "the answer is X" pattern
-    match = re.search(r"(?:the\s+)?(?:final\s+)?answer\s+is[:\s]*\$?([\-\d,\.]+)", response, re.IGNORECASE)
+    match = re.search(
+        r"(?:the\s+)?(?:final\s+)?answer\s+is[:\s]*\$?([\-\d,\.]+)",
+        response,
+        re.IGNORECASE,
+    )
     if match:
         return match.group(1).replace(",", "").strip()
 

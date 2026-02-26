@@ -1,0 +1,2553 @@
+{
+    "config": {
+        "tasks": "humaneval",
+        "methods": "baseline,checklist,conditional_critique,verifier",
+        "n": 50,
+        "model": "gpt-4.1-mini",
+        "out": "first_extension_run_humaneval"
+    },
+    "results": {
+        "humaneval": {
+            "baseline": {
+                "summary": {
+                    "pass@1": 0.96,
+                    "raw_eval": {
+                        "pass@1": 0.96
+                    }
+                },
+                "rows": [
+                    {
+                        "id": "HumanEval/163",
+                        "pred": "```python\ndef generate_integers(a, b):\n    start, end = min(a, b), max(a, b)\n    result = []\n    for num in range(start, end + 1):\n        if all(int(d) % 2 == 0 for d in str(num)):\n            result.append(num)\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 135,
+                            "completion_tokens": 71,
+                            "total_tokens": 206
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/28",
+                        "pred": "```python\nfrom typing import List\n\ndef concatenate(strings: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> concatenate([])\n    ''\n    >>> concatenate(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(strings)\n```",
+                        "usage": {
+                            "prompt_tokens": 83,
+                            "completion_tokens": 61,
+                            "total_tokens": 144
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/6",
+                        "pred": "```python\nfrom typing import List\n\ndef parse_nested_parens(paren_string: str) -> List[int]:\n    groups = paren_string.split()\n    result = []\n    for group in groups:\n        max_depth = 0\n        current_depth = 0\n        for char in group:\n            if char == '(':\n                current_depth += 1\n                if current_depth > max_depth:\n                    max_depth = current_depth\n            elif char == ')':\n                current_depth -= 1\n        result.append(max_depth)\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 136,
+                            "completion_tokens": 112,
+                            "total_tokens": 248
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/70",
+                        "pred": "```python\ndef strange_sort_list(lst):\n    lst = sorted(lst)\n    result = []\n    left, right = 0, len(lst) - 1\n    toggle = True\n    while left <= right:\n        if toggle:\n            result.append(lst[left])\n            left += 1\n        else:\n            result.append(lst[right])\n            right -= 1\n        toggle = not toggle\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 151,
+                            "completion_tokens": 87,
+                            "total_tokens": 238
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/62",
+                        "pred": "```python\ndef derivative(xs: list):\n    return [i * xs[i] for i in range(1, len(xs))]\n```",
+                        "usage": {
+                            "prompt_tokens": 134,
+                            "completion_tokens": 28,
+                            "total_tokens": 162
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/57",
+                        "pred": "```python\ndef monotonic(l: list):\n    \"\"\"Return True is list elements are monotonically increasing or decreasing.\n    >>> monotonic([1, 2, 4, 20])\n    True\n    >>> monotonic([1, 20, 4, 10])\n    False\n    >>> monotonic([4, 1, 0, -10])\n    True\n    \"\"\"\n    return all(x <= y for x, y in zip(l, l[1:])) or all(x >= y for x, y in zip(l, l[1:]))\n```",
+                        "usage": {
+                            "prompt_tokens": 113,
+                            "completion_tokens": 121,
+                            "total_tokens": 234
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/35",
+                        "pred": "```python\ndef max_element(l: list):\n    \"\"\"Return maximum element in the list.\n    >>> max_element([1, 2, 3])\n    3\n    >>> max_element([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    if not l:\n        return None\n    max_val = l[0]\n    for item in l[1:]:\n        if item > max_val:\n            max_val = item\n    return max_val\n```",
+                        "usage": {
+                            "prompt_tokens": 109,
+                            "completion_tokens": 124,
+                            "total_tokens": 233
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/26",
+                        "pred": "```python\nfrom typing import List\nfrom collections import Counter\n\ndef remove_duplicates(numbers: List[int]) -> List[int]:\n    counts = Counter(numbers)\n    return [num for num in numbers if counts[num] == 1]\n```",
+                        "usage": {
+                            "prompt_tokens": 110,
+                            "completion_tokens": 48,
+                            "total_tokens": 158
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/139",
+                        "pred": "```python\ndef special_factorial(n):\n    from math import factorial\n    result = 1\n    for i in range(1, n+1):\n        result *= factorial(i)\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 122,
+                            "completion_tokens": 44,
+                            "total_tokens": 166
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/22",
+                        "pred": "```python\ndef filter_integers(values: List[Any]) -> List[int]:\n    return [v for v in values if isinstance(v, int)]\n```",
+                        "usage": {
+                            "prompt_tokens": 120,
+                            "completion_tokens": 32,
+                            "total_tokens": 152
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/151",
+                        "pred": "```python\ndef double_the_difference(lst):\n    return sum(x**2 for x in lst if isinstance(x, int) and x >= 0 and x % 2 == 1)\n```",
+                        "usage": {
+                            "prompt_tokens": 164,
+                            "completion_tokens": 40,
+                            "total_tokens": 204
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/108",
+                        "pred": "```python\ndef count_nums(arr):\n    def sum_signed_digits(n):\n        s = str(n)\n        total = 0\n        for i, ch in enumerate(s):\n            if ch == '-':\n                continue\n            digit = int(ch)\n            if i == 0 and s[0] == '-':\n                digit = -digit\n            total += digit\n        return total\n\n    count = 0\n    for num in arr:\n        if sum_signed_digits(num) > 0:\n            count += 1\n    return count\n```",
+                        "usage": {
+                            "prompt_tokens": 151,
+                            "completion_tokens": 114,
+                            "total_tokens": 265
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/8",
+                        "pred": "```python\nfrom typing import List, Tuple\n\ndef sum_product(numbers: List[int]) -> Tuple[int, int]:\n    total_sum = 0\n    total_product = 1\n    for num in numbers:\n        total_sum += num\n        total_product *= num\n    return total_sum, total_product\n```",
+                        "usage": {
+                            "prompt_tokens": 136,
+                            "completion_tokens": 65,
+                            "total_tokens": 201
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/7",
+                        "pred": "```python\ndef filter_by_substring(strings: List[str], substring: str) -> List[str]:\n    return [s for s in strings if substring in s]\n```",
+                        "usage": {
+                            "prompt_tokens": 119,
+                            "completion_tokens": 35,
+                            "total_tokens": 154
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/23",
+                        "pred": "```python\ndef strlen(string: str) -> int:\n    \"\"\" Return length of given string\n    >>> strlen('')\n    0\n    >>> strlen('abc')\n    3\n    \"\"\"\n    count = 0\n    for _ in string:\n        count += 1\n    return count\n```",
+                        "usage": {
+                            "prompt_tokens": 70,
+                            "completion_tokens": 63,
+                            "total_tokens": 133
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/55",
+                        "pred": "```python\ndef fib(n: int):\n    \"\"\"Return n-th Fibonacci number.\n    >>> fib(10)\n    55\n    >>> fib(1)\n    1\n    >>> fib(8)\n    21\n    \"\"\"\n    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    a, b = 0, 1\n    for _ in range(2, n + 1):\n        a, b = b, a + b\n    return b\n```",
+                        "usage": {
+                            "prompt_tokens": 79,
+                            "completion_tokens": 113,
+                            "total_tokens": 192
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/59",
+                        "pred": "```python\ndef largest_prime_factor(n: int):\n    \"\"\"Return the largest prime factor of n. Assume n > 1 and is not a prime.\"\"\"\n    factor = 2\n    last_factor = 1\n    while factor * factor <= n:\n        if n % factor == 0:\n            n //= factor\n            last_factor = factor\n        else:\n            factor += 1 if factor == 2 else 2\n    return n if n > last_factor else last_factor\n```",
+                        "usage": {
+                            "prompt_tokens": 90,
+                            "completion_tokens": 104,
+                            "total_tokens": 194
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/129",
+                        "pred": "```python\ndef minPath(grid, k):\n    from collections import deque\n\n    N = len(grid)\n    # Map value to position for quick access\n    pos = {}\n    for r in range(N):\n        for c in range(N):\n            pos[grid[r][c]] = (r, c)\n\n    # Directions for neighbors (up, down, left, right)\n    directions = [(-1, 0), (1, 0), (0, -1), (0, 1)]\n\n    # We want to find the lex smallest path of length k.\n    # Since values are unique and from 1 to N*N, we can try starting from the smallest values first.\n    # We'll do a BFS with priority on lex order.\n\n    # Each state: (path as list of values, current position (r,c))\n    # We'll use a priority queue to always expand lex smallest path first.\n\n    import heapq\n\n    # Initialize heap with all starting positions (value, path, position)\n    heap = []\n    for r in range(N):\n        for c in range(N):\n            heapq.heappush(heap, ([grid[r][c]], r, c))\n\n    while heap:\n        path, r, c = heapq.heappop(heap)\n        if len(path) == k:\n            return path\n        # Expand neighbors\n        for dr, dc in directions:\n            nr, nc = r + dr, c + dc\n            if 0 <= nr < N and 0 <= nc < N:\n                new_path = path + [grid[nr][nc]]\n                heapq.heappush(heap, (new_path, nr, nc))\n```",
+                        "usage": {
+                            "prompt_tokens": 423,
+                            "completion_tokens": 347,
+                            "total_tokens": 770
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/161",
+                        "pred": "```python\ndef solve(s):\n    if any(c.isalpha() for c in s):\n        return ''.join(c.swapcase() if c.isalpha() else c for c in s)\n    else:\n        return s[::-1]\n```",
+                        "usage": {
+                            "prompt_tokens": 134,
+                            "completion_tokens": 49,
+                            "total_tokens": 183
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/143",
+                        "pred": "```python\ndef words_in_sentence(sentence):\n    def is_prime(n):\n        if n < 2:\n            return False\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                return False\n        return True\n\n    words = sentence.split()\n    prime_length_words = [word for word in words if is_prime(len(word))]\n    return \" \".join(prime_length_words)\n```",
+                        "usage": {
+                            "prompt_tokens": 174,
+                            "completion_tokens": 96,
+                            "total_tokens": 270
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/50",
+                        "pred": "```python\ndef decode_shift(s: str):\n    \"\"\"\n    takes as input string encoded with encode_shift function. Returns decoded string.\n    \"\"\"\n    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])\n```",
+                        "usage": {
+                            "prompt_tokens": 117,
+                            "completion_tokens": 62,
+                            "total_tokens": 179
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/155",
+                        "pred": "```python\ndef even_odd_count(num):\n    num = abs(num)\n    even_count = 0\n    odd_count = 0\n    for digit in str(num):\n        if int(digit) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n    return (even_count, odd_count)\n```",
+                        "usage": {
+                            "prompt_tokens": 95,
+                            "completion_tokens": 77,
+                            "total_tokens": 172
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/107",
+                        "pred": "```python\ndef even_odd_palindrome(n):\n    def is_palindrome(x):\n        s = str(x)\n        return s == s[::-1]\n\n    even_count = 0\n    odd_count = 0\n    for i in range(1, n + 1):\n        if is_palindrome(i):\n            if i % 2 == 0:\n                even_count += 1\n            else:\n                odd_count += 1\n    return (even_count, odd_count)\n```",
+                        "usage": {
+                            "prompt_tokens": 237,
+                            "completion_tokens": 103,
+                            "total_tokens": 340
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/56",
+                        "pred": "```python\ndef correct_bracketing(brackets: str):\n    count = 0\n    for char in brackets:\n        if char == '<':\n            count += 1\n        else:\n            count -= 1\n        if count < 0:\n            return False\n    return count == 0\n```",
+                        "usage": {
+                            "prompt_tokens": 120,
+                            "completion_tokens": 65,
+                            "total_tokens": 185
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/114",
+                        "pred": "```python\ndef minSubArraySum(nums):\n    min_sum = current_sum = nums[0]\n    for num in nums[1:]:\n        current_sum = min(num, current_sum + num)\n        min_sum = min(min_sum, current_sum)\n    return min_sum\n```",
+                        "usage": {
+                            "prompt_tokens": 115,
+                            "completion_tokens": 59,
+                            "total_tokens": 174
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/71",
+                        "pred": "```python\ndef triangle_area(a, b, c):\n    if a + b <= c or a + c <= b or b + c <= a:\n        return -1\n    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return round(area, 2)\n```",
+                        "usage": {
+                            "prompt_tokens": 148,
+                            "completion_tokens": 89,
+                            "total_tokens": 237
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/1",
+                        "pred": "```python\nfrom typing import List\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    paren_string = paren_string.replace(\" \", \"\")\n    result = []\n    current = []\n    balance = 0\n    for char in paren_string:\n        current.append(char)\n        if char == '(':\n            balance += 1\n        elif char == ')':\n            balance -= 1\n            if balance == 0:\n                result.append(\"\".join(current))\n                current = []\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 141,
+                            "completion_tokens": 109,
+                            "total_tokens": 250
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/40",
+                        "pred": "```python\ndef triples_sum_to_zero(l: list):\n    n = len(l)\n    for i in range(n):\n        for j in range(i+1, n):\n            for k in range(j+1, n):\n                if l[i] + l[j] + l[k] == 0:\n                    return True\n    return False\n```",
+                        "usage": {
+                            "prompt_tokens": 186,
+                            "completion_tokens": 73,
+                            "total_tokens": 259
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/152",
+                        "pred": "```python\ndef compare(game, guess):\n    return [abs(g - s) for s, g in zip(game, guess)]\n```",
+                        "usage": {
+                            "prompt_tokens": 257,
+                            "completion_tokens": 28,
+                            "total_tokens": 285
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/87",
+                        "pred": "```python\ndef get_row(lst, x):\n    result = []\n    for i, row in enumerate(lst):\n        for j, val in enumerate(row):\n            if val == x:\n                result.append((i, j))\n    result.sort(key=lambda t: (t[0], -t[1]))\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 286,
+                            "completion_tokens": 68,
+                            "total_tokens": 354
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/138",
+                        "pred": "```python\ndef is_equal_to_sum_even(n):\n    return n >= 8 and n % 2 == 0\n```",
+                        "usage": {
+                            "prompt_tokens": 104,
+                            "completion_tokens": 27,
+                            "total_tokens": 131
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/39",
+                        "pred": "```python\ndef prime_fib(n: int):\n    def is_prime(x):\n        if x < 2:\n            return False\n        if x == 2:\n            return True\n        if x % 2 == 0:\n            return False\n        for i in range(3, int(x**0.5) + 1, 2):\n            if x % i == 0:\n                return False\n        return True\n\n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(a):\n            count += 1\n            if count == n:\n                return a\n```",
+                        "usage": {
+                            "prompt_tokens": 123,
+                            "completion_tokens": 147,
+                            "total_tokens": 270
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/148",
+                        "pred": "```python\ndef bf(planet1, planet2):\n    planets = [\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"]\n    if planet1 not in planets or planet2 not in planets:\n        return ()\n    i1, i2 = planets.index(planet1), planets.index(planet2)\n    if i1 < i2:\n        return tuple(planets[i1+1:i2])\n    else:\n        return tuple(planets[i2+1:i1])\n```",
+                        "usage": {
+                            "prompt_tokens": 238,
+                            "completion_tokens": 118,
+                            "total_tokens": 356
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/86",
+                        "pred": "```python\ndef anti_shuffle(s):\n    result = []\n    word = []\n    for char in s:\n        if char == ' ':\n            if word:\n                sorted_word = ''.join(sorted(word))\n                result.append(sorted_word)\n                word = []\n            result.append(' ')\n        else:\n            word.append(char)\n    if word:\n        sorted_word = ''.join(sorted(word))\n        result.append(sorted_word)\n    return ''.join(result)\n```",
+                        "usage": {
+                            "prompt_tokens": 155,
+                            "completion_tokens": 91,
+                            "total_tokens": 246
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/156",
+                        "pred": "```python\ndef int_to_mini_roman(number):\n    val = [\n        1000, 900, 500, 400,\n        100, 90, 50, 40,\n        10, 9, 5, 4,\n        1\n    ]\n    syms = [\n        \"M\", \"CM\", \"D\", \"CD\",\n        \"C\", \"XC\", \"L\", \"XL\",\n        \"X\", \"IX\", \"V\", \"IV\",\n        \"I\"\n    ]\n    roman_num = ''\n    i = 0\n    while number > 0:\n        for _ in range(number // val[i]):\n            roman_num += syms[i]\n            number -= val[i]\n        i += 1\n    return roman_num.lower()\n```",
+                        "usage": {
+                            "prompt_tokens": 132,
+                            "completion_tokens": 167,
+                            "total_tokens": 299
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/149",
+                        "pred": "```python\ndef sorted_list_sum(lst):\n    lst = [s for s in lst if len(s) % 2 == 0]\n    return sorted(lst, key=lambda x: (len(x), x))\n```",
+                        "usage": {
+                            "prompt_tokens": 214,
+                            "completion_tokens": 45,
+                            "total_tokens": 259
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/97",
+                        "pred": "```python\ndef multiply(a, b):\n    return (abs(a) % 10) * (abs(b) % 10)\n```",
+                        "usage": {
+                            "prompt_tokens": 125,
+                            "completion_tokens": 29,
+                            "total_tokens": 154
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/12",
+                        "pred": "```python\nfrom typing import List, Optional\n\ndef longest(strings: List[str]) -> Optional[str]:\n    if not strings:\n        return None\n    longest_str = strings[0]\n    for s in strings[1:]:\n        if len(s) > len(longest_str):\n            longest_str = s\n    return longest_str\n```",
+                        "usage": {
+                            "prompt_tokens": 128,
+                            "completion_tokens": 70,
+                            "total_tokens": 198
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/45",
+                        "pred": "```python\ndef triangle_area(a, h):\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> triangle_area(5, 3)\n    7.5\n    \"\"\"\n    return 0.5 * a * h\n```",
+                        "usage": {
+                            "prompt_tokens": 73,
+                            "completion_tokens": 55,
+                            "total_tokens": 128
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/135",
+                        "pred": "```python\ndef can_arrange(arr):\n    for i in range(len(arr) - 1, 0, -1):\n        if arr[i] < arr[i - 1]:\n            return i\n    return -1\n```",
+                        "usage": {
+                            "prompt_tokens": 130,
+                            "completion_tokens": 49,
+                            "total_tokens": 179
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/44",
+                        "pred": "```python\ndef change_base(x: int, base: int):\n    if x == 0:\n        return \"0\"\n    digits = []\n    while x > 0:\n        digits.append(str(x % base))\n        x //= base\n    return ''.join(digits[::-1])\n```",
+                        "usage": {
+                            "prompt_tokens": 118,
+                            "completion_tokens": 61,
+                            "total_tokens": 179
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/77",
+                        "pred": "```python\ndef iscube(a):\n    if a == 0:\n        return True\n    cube_root = round(abs(a) ** (1/3))\n    return cube_root ** 3 == abs(a) if a > 0 else -cube_root ** 3 == a\n```",
+                        "usage": {
+                            "prompt_tokens": 137,
+                            "completion_tokens": 60,
+                            "total_tokens": 197
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/33",
+                        "pred": "```python\ndef sort_third(l: list):\n    indices = [i for i in range(len(l)) if i % 3 == 0]\n    values = sorted(l[i] for i in indices)\n    result = l[:]\n    for idx, val in zip(indices, values):\n        result[idx] = val\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 180,
+                            "completion_tokens": 73,
+                            "total_tokens": 253
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/103",
+                        "pred": "```python\ndef rounded_avg(n, m):\n    if n > m:\n        return -1\n    avg = round(sum(range(n, m+1)) / (m - n + 1))\n    return bin(avg)\n```",
+                        "usage": {
+                            "prompt_tokens": 167,
+                            "completion_tokens": 48,
+                            "total_tokens": 215
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/5",
+                        "pred": "```python\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    if not numbers:\n        return []\n    result = []\n    for i, num in enumerate(numbers):\n        if i > 0:\n            result.append(delimeter)\n        result.append(num)\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 124,
+                            "completion_tokens": 66,
+                            "total_tokens": 190
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/93",
+                        "pred": "```python\ndef encode(message):\n    vowels = 'aeiou'\n    def shift_vowel(c):\n        if c.lower() in vowels:\n            # find the vowel's position in alphabet (0-based)\n            pos = ord(c.lower()) - ord('a')\n            # shift by 2\n            new_pos = (pos + 2) % 26\n            new_char = chr(ord('a') + new_pos)\n            # preserve original case swapped\n            return new_char.upper() if c.islower() else new_char.lower()\n        else:\n            return c.swapcase()\n    return ''.join(shift_vowel(c) for c in message)\n```",
+                        "usage": {
+                            "prompt_tokens": 136,
+                            "completion_tokens": 136,
+                            "total_tokens": 272
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/58",
+                        "pred": "```python\ndef common(l1: list, l2: list):\n    return sorted(set(l1) & set(l2))\n```",
+                        "usage": {
+                            "prompt_tokens": 141,
+                            "completion_tokens": 28,
+                            "total_tokens": 169
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/68",
+                        "pred": "```python\ndef pluck(arr):\n    min_val = None\n    min_idx = None\n    for i, val in enumerate(arr):\n        if val % 2 == 0:\n            if min_val is None or val < min_val:\n                min_val = val\n                min_idx = i\n    if min_val is None:\n        return []\n    return [min_val, min_idx]\n```",
+                        "usage": {
+                            "prompt_tokens": 339,
+                            "completion_tokens": 83,
+                            "total_tokens": 422
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/15",
+                        "pred": "```python\ndef string_sequence(n: int) -> str:\n    \"\"\" Return a string containing space-delimited numbers starting from 0 upto n inclusive.\n    >>> string_sequence(0)\n    '0'\n    >>> string_sequence(5)\n    '0 1 2 3 4 5'\n    \"\"\"\n    return ' '.join(str(i) for i in range(n+1))\n```",
+                        "usage": {
+                            "prompt_tokens": 95,
+                            "completion_tokens": 82,
+                            "total_tokens": 177
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/48",
+                        "pred": "```python\ndef is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\"\n    return text == text[::-1]\n```",
+                        "usage": {
+                            "prompt_tokens": 98,
+                            "completion_tokens": 77,
+                            "total_tokens": 175
+                        },
+                        "meta": {},
+                        "correct": null
+                    }
+                ]
+            },
+            "checklist": {
+                "summary": {
+                    "pass@1": 0.96,
+                    "raw_eval": {
+                        "pass@1": 0.96
+                    }
+                },
+                "rows": [
+                    {
+                        "id": "HumanEval/163",
+                        "pred": "```python\ndef generate_integers(a, b):\n    start, end = min(a, b), max(a, b)\n    return [x for x in range(start, end + 1) if x % 2 == 0]\n```",
+                        "usage": {
+                            "prompt_tokens": 165,
+                            "completion_tokens": 52,
+                            "total_tokens": 217
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/28",
+                        "pred": "from typing import List\n\n\ndef concatenate(strings: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> concatenate([])\n    ''\n    >>> concatenate(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(strings)",
+                        "usage": {
+                            "prompt_tokens": 113,
+                            "completion_tokens": 57,
+                            "total_tokens": 170
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/6",
+                        "pred": "```python\nfrom typing import List\n\ndef parse_nested_parens(paren_string: str) -> List[int]:\n    groups = paren_string.split()\n    result = []\n    for group in groups:\n        max_depth = 0\n        current_depth = 0\n        for char in group:\n            if char == '(':\n                current_depth += 1\n                if current_depth > max_depth:\n                    max_depth = current_depth\n            elif char == ')':\n                current_depth -= 1\n        result.append(max_depth)\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 166,
+                            "completion_tokens": 112,
+                            "total_tokens": 278
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/70",
+                        "pred": "```python\ndef strange_sort_list(lst):\n    lst = sorted(lst)\n    result = []\n    left, right = 0, len(lst) - 1\n    toggle = True  # True for min, False for max\n    while left <= right:\n        if toggle:\n            result.append(lst[left])\n            left += 1\n        else:\n            result.append(lst[right])\n            right -= 1\n        toggle = not toggle\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 181,
+                            "completion_tokens": 96,
+                            "total_tokens": 277
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/62",
+                        "pred": "```python\ndef derivative(xs: list):\n    return [i * xs[i] for i in range(1, len(xs))]\n```",
+                        "usage": {
+                            "prompt_tokens": 164,
+                            "completion_tokens": 28,
+                            "total_tokens": 192
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/57",
+                        "pred": "```python\ndef monotonic(l: list):\n    \"\"\"Return True if list elements are monotonically increasing or decreasing.\"\"\"\n    if len(l) <= 1:\n        return True\n    increasing = decreasing = True\n    for i in range(1, len(l)):\n        if l[i] < l[i-1]:\n            increasing = False\n        if l[i] > l[i-1]:\n            decreasing = False\n    return increasing or decreasing\n```",
+                        "usage": {
+                            "prompt_tokens": 143,
+                            "completion_tokens": 94,
+                            "total_tokens": 237
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/35",
+                        "pred": "```python\ndef max_element(l: list):\n    \"\"\"Return maximum element in the list.\n    >>> max_element([1, 2, 3])\n    3\n    >>> max_element([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    if not l:\n        raise ValueError(\"max_element() arg is an empty list\")\n    max_val = l[0]\n    for elem in l[1:]:\n        if elem > max_val:\n            max_val = elem\n    return max_val\n```",
+                        "usage": {
+                            "prompt_tokens": 139,
+                            "completion_tokens": 134,
+                            "total_tokens": 273
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/26",
+                        "pred": "from typing import List\nfrom collections import Counter\n\ndef remove_duplicates(numbers: List[int]) -> List[int]:\n    \"\"\" From a list of integers, remove all elements that occur more than once.\n    Keep order of elements left the same as in the input.\n    >>> remove_duplicates([1, 2, 3, 2, 4])\n    [1, 3, 4]\n    \"\"\"\n    counts = Counter(numbers)\n    return [num for num in numbers if counts[num] == 1]",
+                        "usage": {
+                            "prompt_tokens": 140,
+                            "completion_tokens": 105,
+                            "total_tokens": 245
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/139",
+                        "pred": "def special_factorial(n):\n    from math import factorial\n    result = 1\n    for i in range(1, n + 1):\n        result *= factorial(i)\n    return result",
+                        "usage": {
+                            "prompt_tokens": 152,
+                            "completion_tokens": 40,
+                            "total_tokens": 192
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/22",
+                        "pred": "```python\nfrom typing import List, Any\n\ndef filter_integers(values: List[Any]) -> List[int]:\n    \"\"\" Filter given list of any python values only for integers\n    >>> filter_integers(['a', 3.14, 5])\n    [5]\n    >>> filter_integers([1, 2, 3, 'abc', {}, []])\n    [1, 2, 3]\n    \"\"\"\n    return [v for v in values if isinstance(v, int)]\n```",
+                        "usage": {
+                            "prompt_tokens": 150,
+                            "completion_tokens": 106,
+                            "total_tokens": 256
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/151",
+                        "pred": "```python\ndef double_the_difference(lst):\n    return sum(x**2 for x in lst if isinstance(x, int) and x >= 0 and x % 2 == 1)\n```",
+                        "usage": {
+                            "prompt_tokens": 194,
+                            "completion_tokens": 40,
+                            "total_tokens": 234
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/108",
+                        "pred": "def count_nums(arr):\n    def sum_signed_digits(n):\n        s = str(n)\n        total = 0\n        for i, ch in enumerate(s):\n            if ch == '-':\n                continue\n            digit = int(ch)\n            if i == 0 and s[0] == '-':\n                digit = -digit\n            total += digit\n        return total\n\n    count = 0\n    for num in arr:\n        if sum_signed_digits(num) > 0:\n            count += 1\n    return count",
+                        "usage": {
+                            "prompt_tokens": 181,
+                            "completion_tokens": 109,
+                            "total_tokens": 290
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/8",
+                        "pred": "from typing import List, Tuple\n\ndef sum_product(numbers: List[int]) -> Tuple[int, int]:\n    total_sum = 0\n    total_product = 1\n    for num in numbers:\n        total_sum += num\n        total_product *= num\n    return (total_sum, total_product)",
+                        "usage": {
+                            "prompt_tokens": 166,
+                            "completion_tokens": 62,
+                            "total_tokens": 228
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/7",
+                        "pred": "from typing import List\n\n\ndef filter_by_substring(strings: List[str], substring: str) -> List[str]:\n    \"\"\" Filter an input list of strings only for ones that contain given substring\n    >>> filter_by_substring([], 'a')\n    []\n    >>> filter_by_substring(['abc', 'bacd', 'cde', 'array'], 'a')\n    ['abc', 'bacd', 'array']\n    \"\"\"\n    return [s for s in strings if substring in s]",
+                        "usage": {
+                            "prompt_tokens": 149,
+                            "completion_tokens": 100,
+                            "total_tokens": 249
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/23",
+                        "pred": "```python\ndef strlen(string: str) -> int:\n    \"\"\" Return length of given string\n    >>> strlen('')\n    0\n    >>> strlen('abc')\n    3\n    \"\"\"\n    return len(string)\n```",
+                        "usage": {
+                            "prompt_tokens": 100,
+                            "completion_tokens": 46,
+                            "total_tokens": 146
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/55",
+                        "pred": "```python\ndef fib(n: int):\n    \"\"\"Return n-th Fibonacci number.\n    >>> fib(10)\n    55\n    >>> fib(1)\n    1\n    >>> fib(8)\n    21\n    \"\"\"\n    if n <= 0:\n        return 0\n    elif n == 1:\n        return 1\n    a, b = 0, 1\n    for _ in range(2, n + 1):\n        a, b = b, a + b\n    return b\n```",
+                        "usage": {
+                            "prompt_tokens": 109,
+                            "completion_tokens": 113,
+                            "total_tokens": 222
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/59",
+                        "pred": "```python\ndef largest_prime_factor(n: int):\n    \"\"\"Return the largest prime factor of n. Assume n > 1 and is not a prime.\"\"\"\n    factor = 2\n    largest = None\n    while factor * factor <= n:\n        while n % factor == 0:\n            largest = factor\n            n //= factor\n        factor += 1 if factor == 2 else 2\n    if n > 1:\n        largest = n\n    return largest\n```",
+                        "usage": {
+                            "prompt_tokens": 120,
+                            "completion_tokens": 102,
+                            "total_tokens": 222
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/129",
+                        "pred": "```python\nfrom heapq import heappush, heappop\n\ndef minPath(grid, k):\n    N = len(grid)\n    # Directions: up, down, left, right\n    directions = [(-1,0),(1,0),(0,-1),(0,1)]\n    \n    # Priority queue elements: (path_tuple, x, y)\n    # path_tuple is a tuple of values along the path so far\n    pq = []\n    \n    # Initialize pq with all cells as starting points (path length 1)\n    for i in range(N):\n        for j in range(N):\n            heappush(pq, ((grid[i][j],), i, j))\n    \n    while pq:\n        path, x, y = heappop(pq)\n        if len(path) == k:\n            return list(path)\n        for dx, dy in directions:\n            nx, ny = x + dx, y + dy\n            if 0 <= nx < N and 0 <= ny < N:\n                new_path = path + (grid[nx][ny],)\n                heappush(pq, (new_path, nx, ny))\n```",
+                        "usage": {
+                            "prompt_tokens": 453,
+                            "completion_tokens": 242,
+                            "total_tokens": 695
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/161",
+                        "pred": "```python\ndef solve(s):\n    if any(c.isalpha() for c in s):\n        return ''.join(c.swapcase() if c.isalpha() else c for c in s)\n    else:\n        return s[::-1]\n```",
+                        "usage": {
+                            "prompt_tokens": 164,
+                            "completion_tokens": 49,
+                            "total_tokens": 213
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/143",
+                        "pred": "def words_in_sentence(sentence):\n    def is_prime(n):\n        if n < 2:\n            return False\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                return False\n        return True\n\n    words = sentence.split()\n    prime_length_words = [word for word in words if is_prime(len(word))]\n    return \" \".join(prime_length_words)",
+                        "usage": {
+                            "prompt_tokens": 204,
+                            "completion_tokens": 92,
+                            "total_tokens": 296
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/50",
+                        "pred": "```python\ndef decode_shift(s: str):\n    \"\"\"\n    takes as input string encoded with encode_shift function. Returns decoded string.\n    \"\"\"\n    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])\n```",
+                        "usage": {
+                            "prompt_tokens": 147,
+                            "completion_tokens": 62,
+                            "total_tokens": 209
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/155",
+                        "pred": "```python\ndef even_odd_count(num):\n    num_str = str(abs(num))\n    even_count = sum(1 for digit in num_str if int(digit) % 2 == 0)\n    odd_count = len(num_str) - even_count\n    return (even_count, odd_count)\n```",
+                        "usage": {
+                            "prompt_tokens": 125,
+                            "completion_tokens": 64,
+                            "total_tokens": 189
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/107",
+                        "pred": "```python\ndef even_odd_palindrome(n):\n    even_count = 0\n    odd_count = 0\n    for num in range(1, n+1):\n        s = str(num)\n        if s == s[::-1]:\n            if num % 2 == 0:\n                even_count += 1\n            else:\n                odd_count += 1\n    return (even_count, odd_count)\n```",
+                        "usage": {
+                            "prompt_tokens": 267,
+                            "completion_tokens": 88,
+                            "total_tokens": 355
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/56",
+                        "pred": "```python\ndef correct_bracketing(brackets: str):\n    count = 0\n    for char in brackets:\n        if char == '<':\n            count += 1\n        else:  # char == '>'\n            count -= 1\n            if count < 0:\n                return False\n    return count == 0\n```",
+                        "usage": {
+                            "prompt_tokens": 150,
+                            "completion_tokens": 71,
+                            "total_tokens": 221
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/114",
+                        "pred": "```python\ndef minSubArraySum(nums):\n    min_ending_here = min_so_far = nums[0]\n    for num in nums[1:]:\n        min_ending_here = min(num, min_ending_here + num)\n        min_so_far = min(min_so_far, min_ending_here)\n    return min_so_far\n```",
+                        "usage": {
+                            "prompt_tokens": 145,
+                            "completion_tokens": 71,
+                            "total_tokens": 216
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/71",
+                        "pred": "```python\ndef triangle_area(a, b, c):\n    if a + b <= c or a + c <= b or b + c <= a:\n        return -1\n    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return round(area, 2)\n```",
+                        "usage": {
+                            "prompt_tokens": 178,
+                            "completion_tokens": 89,
+                            "total_tokens": 267
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/1",
+                        "pred": "```python\nfrom typing import List\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    paren_string = paren_string.replace(\" \", \"\")\n    result = []\n    current = []\n    balance = 0\n    for ch in paren_string:\n        current.append(ch)\n        if ch == '(':\n            balance += 1\n        elif ch == ')':\n            balance -= 1\n            if balance == 0:\n                result.append(\"\".join(current))\n                current = []\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 171,
+                            "completion_tokens": 109,
+                            "total_tokens": 280
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/40",
+                        "pred": "```python\ndef triples_sum_to_zero(l: list):\n    n = len(l)\n    if n < 3:\n        return False\n    l.sort()\n    for i in range(n - 2):\n        left, right = i + 1, n - 1\n        while left < right:\n            total = l[i] + l[left] + l[right]\n            if total == 0:\n                return True\n            elif total < 0:\n                left += 1\n            else:\n                right -= 1\n    return False\n```",
+                        "usage": {
+                            "prompt_tokens": 216,
+                            "completion_tokens": 116,
+                            "total_tokens": 332
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/152",
+                        "pred": "```python\ndef compare(game, guess):\n    return [abs(g - s) for s, g in zip(game, guess)]\n```",
+                        "usage": {
+                            "prompt_tokens": 287,
+                            "completion_tokens": 28,
+                            "total_tokens": 315
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/87",
+                        "pred": "```python\ndef get_row(lst, x):\n    result = []\n    for i, row in enumerate(lst):\n        coords = [(i, j) for j, val in enumerate(row) if val == x]\n        coords.sort(key=lambda c: c[1], reverse=True)\n        result.extend(coords)\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 316,
+                            "completion_tokens": 68,
+                            "total_tokens": 384
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/138",
+                        "pred": "```python\ndef is_equal_to_sum_even(n):\n    \"\"\"Evaluate whether the given number n can be written as the sum of exactly 4 positive even numbers\"\"\"\n    # The smallest sum of 4 positive even numbers is 2+2+2+2=8\n    # Any even number >= 8 can be represented as sum of 4 positive even numbers\n    return n >= 8 and n % 2 == 0\n```",
+                        "usage": {
+                            "prompt_tokens": 134,
+                            "completion_tokens": 92,
+                            "total_tokens": 226
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/39",
+                        "pred": "```python\ndef prime_fib(n: int):\n    def is_prime(x):\n        if x < 2:\n            return False\n        if x in (2, 3):\n            return True\n        if x % 2 == 0 or x % 3 == 0:\n            return False\n        i = 5\n        while i * i <= x:\n            if x % i == 0 or x % (i + 2) == 0:\n                return False\n            i += 6\n        return True\n\n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(a):\n            count += 1\n            if count == n:\n                return a\n```",
+                        "usage": {
+                            "prompt_tokens": 153,
+                            "completion_tokens": 168,
+                            "total_tokens": 321
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/148",
+                        "pred": "```python\ndef bf(planet1, planet2):\n    planets = [\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"]\n    if planet1 not in planets or planet2 not in planets:\n        return ()\n    i1, i2 = planets.index(planet1), planets.index(planet2)\n    if i1 == i2:\n        return ()\n    start, end = min(i1, i2), max(i1, i2)\n    return tuple(planets[start+1:end])\n```",
+                        "usage": {
+                            "prompt_tokens": 268,
+                            "completion_tokens": 123,
+                            "total_tokens": 391
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/86",
+                        "pred": "```python\ndef anti_shuffle(s):\n    result = []\n    word = []\n    for char in s:\n        if char == ' ':\n            if word:\n                sorted_word = ''.join(sorted(word))\n                result.append(sorted_word)\n                word = []\n            result.append(' ')\n        else:\n            word.append(char)\n    if word:\n        sorted_word = ''.join(sorted(word))\n        result.append(sorted_word)\n    return ''.join(result)\n```",
+                        "usage": {
+                            "prompt_tokens": 185,
+                            "completion_tokens": 91,
+                            "total_tokens": 276
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/156",
+                        "pred": "```python\ndef int_to_mini_roman(number):\n    val = [\n        1000, 900, 500, 400,\n        100, 90, 50, 40,\n        10, 9, 5, 4,\n        1\n    ]\n    syms = [\n        \"M\", \"CM\", \"D\", \"CD\",\n        \"C\", \"XC\", \"L\", \"XL\",\n        \"X\", \"IX\", \"V\", \"IV\",\n        \"I\"\n    ]\n    roman_num = ''\n    i = 0\n    while number > 0:\n        for _ in range(number // val[i]):\n            roman_num += syms[i]\n            number -= val[i]\n        i += 1\n    return roman_num.lower()\n```",
+                        "usage": {
+                            "prompt_tokens": 162,
+                            "completion_tokens": 167,
+                            "total_tokens": 329
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/149",
+                        "pred": "```python\ndef sorted_list_sum(lst):\n    filtered = [s for s in lst if len(s) % 2 == 0]\n    return sorted(filtered, key=lambda x: (len(x), x))\n```",
+                        "usage": {
+                            "prompt_tokens": 244,
+                            "completion_tokens": 45,
+                            "total_tokens": 289
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/97",
+                        "pred": "```python\ndef multiply(a, b):\n    return (abs(a) % 10) * (abs(b) % 10)\n```",
+                        "usage": {
+                            "prompt_tokens": 155,
+                            "completion_tokens": 29,
+                            "total_tokens": 184
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/12",
+                        "pred": "```python\nfrom typing import List, Optional\n\ndef longest(strings: List[str]) -> Optional[str]:\n    if not strings:\n        return None\n    longest_str = strings[0]\n    for s in strings[1:]:\n        if len(s) > len(longest_str):\n            longest_str = s\n    return longest_str\n```",
+                        "usage": {
+                            "prompt_tokens": 158,
+                            "completion_tokens": 70,
+                            "total_tokens": 228
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/45",
+                        "pred": "```python\ndef triangle_area(a, h):\n    \"\"\"Given length of a side and height return area for a triangle.\n    >>> triangle_area(5, 3)\n    7.5\n    \"\"\"\n    return 0.5 * a * h\n```",
+                        "usage": {
+                            "prompt_tokens": 103,
+                            "completion_tokens": 55,
+                            "total_tokens": 158
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/135",
+                        "pred": "```python\ndef can_arrange(arr):\n    for i in range(len(arr) - 1, 0, -1):\n        if arr[i] < arr[i - 1]:\n            return i\n    return -1\n```",
+                        "usage": {
+                            "prompt_tokens": 160,
+                            "completion_tokens": 49,
+                            "total_tokens": 209
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/44",
+                        "pred": "```python\ndef change_base(x: int, base: int):\n    \"\"\"Change numerical base of input number x to base.\n    return string representation after the conversion.\n    base numbers are less than 10.\n    >>> change_base(8, 3)\n    '22'\n    >>> change_base(8, 2)\n    '1000'\n    >>> change_base(7, 2)\n    '111'\n    \"\"\"\n    if x == 0:\n        return '0'\n    digits = []\n    while x > 0:\n        digits.append(str(x % base))\n        x //= base\n    return ''.join(digits[::-1])\n```",
+                        "usage": {
+                            "prompt_tokens": 148,
+                            "completion_tokens": 135,
+                            "total_tokens": 283
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/77",
+                        "pred": "def iscube(a):\n    if a == 0:\n        return True\n    root = round(abs(a) ** (1/3))\n    return root**3 == abs(a) if a >= 0 else -root**3 == a",
+                        "usage": {
+                            "prompt_tokens": 167,
+                            "completion_tokens": 50,
+                            "total_tokens": 217
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/33",
+                        "pred": "```python\ndef sort_third(l: list):\n    indices = [i for i in range(len(l)) if i % 3 == 0]\n    values = sorted(l[i] for i in indices)\n    result = l[:]\n    for idx, val in zip(indices, values):\n        result[idx] = val\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 210,
+                            "completion_tokens": 73,
+                            "total_tokens": 283
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/103",
+                        "pred": "```python\ndef rounded_avg(n, m):\n    if n > m:\n        return -1\n    total = sum(range(n, m + 1))\n    count = m - n + 1\n    avg = round(total / count)\n    return bin(avg)\n```",
+                        "usage": {
+                            "prompt_tokens": 197,
+                            "completion_tokens": 57,
+                            "total_tokens": 254
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/5",
+                        "pred": "from typing import List\n\n\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    if not numbers:\n        return []\n    result = []\n    for i, num in enumerate(numbers):\n        if i > 0:\n            result.append(delimeter)\n        result.append(num)\n    return result",
+                        "usage": {
+                            "prompt_tokens": 154,
+                            "completion_tokens": 66,
+                            "total_tokens": 220
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/93",
+                        "pred": "def encode(message):\n    vowels = 'aeiou'\n    vowels_upper = vowels.upper()\n    def shift_vowel(c):\n        if c in vowels:\n            return chr((ord(c) - ord('a') + 2) % 26 + ord('a'))\n        elif c in vowels_upper:\n            return chr((ord(c) - ord('A') + 2) % 26 + ord('A'))\n        else:\n            return c\n    result = []\n    for c in message:\n        if c.isalpha():\n            swapped = c.swapcase()\n            replaced = shift_vowel(swapped)\n            result.append(replaced)\n        else:\n            result.append(c)\n    return ''.join(result)",
+                        "usage": {
+                            "prompt_tokens": 166,
+                            "completion_tokens": 145,
+                            "total_tokens": 311
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/58",
+                        "pred": "```python\ndef common(l1: list, l2: list):\n    \"\"\"Return sorted unique common elements for two lists.\"\"\"\n    return sorted(set(l1) & set(l2))\n```",
+                        "usage": {
+                            "prompt_tokens": 171,
+                            "completion_tokens": 39,
+                            "total_tokens": 210
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/68",
+                        "pred": "```python\ndef pluck(arr):\n    smallest_even = None\n    smallest_index = None\n    for i, val in enumerate(arr):\n        if val % 2 == 0:\n            if smallest_even is None or val < smallest_even:\n                smallest_even = val\n                smallest_index = i\n    if smallest_even is None:\n        return []\n    return [smallest_even, smallest_index]\n```",
+                        "usage": {
+                            "prompt_tokens": 369,
+                            "completion_tokens": 84,
+                            "total_tokens": 453
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/15",
+                        "pred": "```python\ndef string_sequence(n: int) -> str:\n    \"\"\" Return a string containing space-delimited numbers starting from 0 upto n inclusive.\n    >>> string_sequence(0)\n    '0'\n    >>> string_sequence(5)\n    '0 1 2 3 4 5'\n    \"\"\"\n    return ' '.join(str(i) for i in range(n + 1))\n```",
+                        "usage": {
+                            "prompt_tokens": 125,
+                            "completion_tokens": 83,
+                            "total_tokens": 208
+                        },
+                        "meta": {},
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/48",
+                        "pred": "```python\ndef is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\"\n    return text == text[::-1]\n```",
+                        "usage": {
+                            "prompt_tokens": 128,
+                            "completion_tokens": 77,
+                            "total_tokens": 205
+                        },
+                        "meta": {},
+                        "correct": null
+                    }
+                ]
+            },
+            "conditional_critique": {
+                "summary": {
+                    "pass@1": 0.9,
+                    "raw_eval": {
+                        "pass@1": 0.9
+                    }
+                },
+                "rows": [
+                    {
+                        "id": "HumanEval/163",
+                        "pred": "```python\ndef generate_integers(a, b):\n    start, end = min(a, b), max(a, b)\n    return [x for x in range(start, end + 1) if x % 2 == 0 and x < 10]\n```\nFINAL: def generate_integers(a, b):\n    start, end = min(a, b), max(a, b)\n    return [x for x in range(start, end + 1) if x % 2 == 0 and x < 10]\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 154,
+                            "completion_tokens": 119,
+                            "total_tokens": 273
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/28",
+                        "pred": "def concatenate(strings: List[str]) -> str:\n    return ''.join(strings)\nFINAL: def concatenate(strings: List[str]) -> str:\n    return ''.join(strings)\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 102,
+                            "completion_tokens": 40,
+                            "total_tokens": 142
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/6",
+                        "pred": "```python\nfrom typing import List\n\ndef parse_nested_parens(paren_string: str) -> List[int]:\n    groups = paren_string.split()\n    result = []\n    for group in groups:\n        max_depth = 0\n        current_depth = 0\n        for char in group:\n            if char == '(':\n                current_depth += 1\n                max_depth = max(max_depth, current_depth)\n            elif char == ')':\n                current_depth -= 1\n        result.append(max_depth)\n    return result\n```\nFINAL: \n```python\nfrom typing import List\n\ndef parse_nested_parens(paren_string: str) -> List[int]:\n    groups = paren_string.split()\n    result = []\n    for group in groups:\n        max_depth = 0\n        current_depth = 0\n        for char in group:\n            if char == '(':\n                current_depth += 1\n                max_depth = max(max_depth, current_depth)\n            elif char == ')':\n                current_depth -= 1\n        result.append(max_depth)\n    return result\n```\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 155,
+                            "completion_tokens": 227,
+                            "total_tokens": 382
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/70",
+                        "pred": "```python\ndef strange_sort_list(lst):\n    lst = sorted(lst)\n    result = []\n    left, right = 0, len(lst) - 1\n    toggle = True\n    while left <= right:\n        if toggle:\n            result.append(lst[left])\n            left += 1\n        else:\n            result.append(lst[right])\n            right -= 1\n        toggle = not toggle\n    return result\n```\nFINAL: def strange_sort_list(lst):\n    lst = sorted(lst)\n    result = []\n    left, right = 0, len(lst) - 1\n    toggle = True\n    while left <= right:\n        if toggle:\n            result.append(lst[left])\n            left += 1\n        else:\n            result.append(lst[right])\n            right -= 1\n        toggle = not toggle\n    return result\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 170,
+                            "completion_tokens": 179,
+                            "total_tokens": 349
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/62",
+                        "pred": "```python\ndef derivative(xs: list):\n    return [i * xs[i] for i in range(1, len(xs))]\n```\nFINAL: def derivative(xs: list):\n    return [i * xs[i] for i in range(1, len(xs))]\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 153,
+                            "completion_tokens": 61,
+                            "total_tokens": 214
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/57",
+                        "pred": "```python\ndef monotonic(l: list):\n    return all(x <= y for x, y in zip(l, l[1:])) or all(x >= y for x, y in zip(l, l[1:]))\n```\nFINAL: def monotonic(l: list):\n    return all(x <= y for x, y in zip(l, l[1:])) or all(x >= y for x, y in zip(l, l[1:]))\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 132,
+                            "completion_tokens": 101,
+                            "total_tokens": 233
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/35",
+                        "pred": "def max_element(l: list):\n    \"\"\"Return maximum element in the list.\n    >>> max_element([1, 2, 3])\n    3\n    >>> max_element([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(l)\nFINAL: def max_element(l: list):\n    \"\"\"Return maximum element in the list.\n    >>> max_element([1, 2, 3])\n    3\n    >>> max_element([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    return max(l)\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 128,
+                            "completion_tokens": 170,
+                            "total_tokens": 298
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/26",
+                        "pred": "```python\nfrom typing import List\nfrom collections import Counter\n\ndef remove_duplicates(numbers: List[int]) -> List[int]:\n    counts = Counter(numbers)\n    return [num for num in numbers if counts[num] == 1]\n```\nFINAL: \n```python\nfrom typing import List\nfrom collections import Counter\n\ndef remove_duplicates(numbers: List[int]) -> List[int]:\n    counts = Counter(numbers)\n    return [num for num in numbers if counts[num] == 1]\n```\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 129,
+                            "completion_tokens": 107,
+                            "total_tokens": 236
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/139",
+                        "pred": "def special_factorial(n):\n    from math import factorial\n    result = 1\n    for i in range(1, n+1):\n        result *= factorial(i)\n    return result\nFINAL: def special_factorial(n):\n    from math import factorial\n    result = 1\n    for i in range(1, n+1):\n        result *= factorial(i)\n    return result\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 141,
+                            "completion_tokens": 88,
+                            "total_tokens": 229
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/22",
+                        "pred": "```python\ndef filter_integers(values: List[Any]) -> List[int]:\n    return [v for v in values if isinstance(v, int)]\n```\nFINAL: def filter_integers(values: List[Any]) -> List[int]:\n    return [v for v in values if isinstance(v, int)]\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 139,
+                            "completion_tokens": 69,
+                            "total_tokens": 208
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/151",
+                        "pred": "```python\ndef double_the_difference(lst):\n    return sum(x**2 for x in lst if isinstance(x, int) and x >= 0 and x % 2 == 1)\n```\nFINAL: def double_the_difference(lst):\n    return sum(x**2 for x in lst if isinstance(x, int) and x >= 0 and x % 2 == 1)\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 183,
+                            "completion_tokens": 85,
+                            "total_tokens": 268
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/108",
+                        "pred": "```python\ndef count_nums(arr):\n    def sum_signed_digits(n):\n        s = str(n)\n        total = 0\n        for i, ch in enumerate(s):\n            if ch == '-':\n                continue\n            digit = int(ch)\n            if i == 0 and s[0] == '-':\n                digit = -digit\n            total += digit\n        return total\n\n    return sum(1 for num in arr if sum_signed_digits(num) > 0)\n```\nFINAL: def count_nums(arr):\n    def sum_signed_digits(n):\n        s = str(n)\n        total = 0\n        for i, ch in enumerate(s):\n            if ch == '-':\n                continue\n            digit = int(ch)\n            if i == 0 and s[0] == '-':\n                digit = -digit\n            total += digit\n        return total\n\n    return sum(1 for num in arr if sum_signed_digits(num) > 0)\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 170,
+                            "completion_tokens": 205,
+                            "total_tokens": 375
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/8",
+                        "pred": "def sum_product(numbers: List[int]) -> Tuple[int, int]:\n    total_sum = sum(numbers)\n    total_product = 1\n    for num in numbers:\n        total_product *= num\n    return total_sum, total_product\nFINAL: def sum_product(numbers: List[int]) -> Tuple[int, int]:\n    total_sum = sum(numbers)\n    total_product = 1\n    for num in numbers:\n        total_product *= num\n    return total_sum, total_product\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 155,
+                            "completion_tokens": 104,
+                            "total_tokens": 259
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/7",
+                        "pred": "```python\ndef filter_by_substring(strings: List[str], substring: str) -> List[str]:\n    return [s for s in strings if substring in s]\n```\nFINAL: def filter_by_substring(strings: List[str], substring: str) -> List[str]:\n    return [s for s in strings if substring in s]\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 138,
+                            "completion_tokens": 75,
+                            "total_tokens": 213
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/23",
+                        "pred": "FINAL: def strlen(string: str) -> int:\n    \"\"\" Return length of given string\n    >>> strlen('')\n    0\n    >>> strlen('abc')\n    3\n    \"\"\"\n    return len(string)",
+                        "usage": {
+                            "prompt_tokens": 251,
+                            "completion_tokens": 86,
+                            "total_tokens": 337
+                        },
+                        "meta": {
+                            "confidence": null,
+                            "critiqued": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/55",
+                        "pred": "def fib(n: int):\n    a, b = 0, 1\n    for _ in range(n):\n        a, b = b, a + b\n    return a\nFINAL: def fib(n: int):\n    a, b = 0, 1\n    for _ in range(n):\n        a, b = b, a + b\n    return a\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 98,
+                            "completion_tokens": 86,
+                            "total_tokens": 184
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/59",
+                        "pred": "```python\ndef largest_prime_factor(n: int):\n    \"\"\"Return the largest prime factor of n. Assume n > 1 and is not a prime.\"\"\"\n    factor = 2\n    last_factor = 1\n    while factor * factor <= n:\n        if n % factor == 0:\n            n //= factor\n            last_factor = factor\n        else:\n            factor += 1 if factor == 2 else 2\n    return max(n, last_factor)\n```\nFINAL: def largest_prime_factor(n: int):\n    \"\"\"Return the largest prime factor of n. Assume n > 1 and is not a prime.\"\"\"\n    factor = 2\n    last_factor = 1\n    while factor * factor <= n:\n        if n % factor == 0:\n            n //= factor\n            last_factor = factor\n        else:\n            factor += 1 if factor == 2 else 2\n    return max(n, last_factor)\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 109,
+                            "completion_tokens": 205,
+                            "total_tokens": 314
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/129",
+                        "pred": "```python\ndef minPath(grid, k):\n    from collections import deque\n    n = len(grid)\n    pos = {}\n    for i in range(n):\n        for j in range(n):\n            pos[grid[i][j]] = (i, j)\n    # Directions for neighbors: up, down, left, right\n    directions = [(-1,0),(1,0),(0,-1),(0,1)]\n    # We want to find the lex smallest path of length k\n    # Since values are unique and from 1 to n*n, start from smallest values\n    # Use BFS with priority queue to explore paths lex order\n    import heapq\n    heap = []\n    # Initialize heap with all cells as starting points\n    for i in range(n):\n        for j in range(n):\n            heapq.heappush(heap, ([grid[i][j]], i, j))\n    while heap:\n        path, x, y = heapq.heappop(heap)\n        if len(path) == k:\n            return path\n        for dx, dy in directions:\n            nx, ny = x + dx, y + dy\n            if 0 <= nx < n and 0 <= ny < n:\n                heapq.heappush(heap, (path + [grid[nx][ny]], nx, ny))\n``` \nFINAL: def minPath(grid, k):\n    from collections import deque\n    n = len(grid)\n    pos = {}\n    for i in range(n):\n        for j in range(n):\n            pos[grid[i][j]] = (i, j)\n    # Directions for neighbors: up, down, left, right\n    directions = [(-1,0),(1,0),(0,-1),(0,1)]\n    # We want to find the lex smallest path of length k\n    # Since values are unique and from 1 to n*n, start from smallest values\n    # Use BFS with priority queue to explore paths lex order\n    import heapq\n    heap = []\n    # Initialize heap with all cells as starting points\n    for i in range(n):\n        for j in range(n):\n            heapq.heappush(heap, ([grid[i][j]], i, j))\n    while heap:\n        path, x, y = heapq.heappop(heap)\n        if len(path) == k:\n            return path\n        for dx, dy in directions:\n            nx, ny = x + dx, y + dy\n            if 0 <= nx < n and 0 <= ny < n:\n                heapq.heappush(heap, (path + [grid[nx][ny]], nx, ny))\nCONFIDENCE: 90",
+                        "usage": {
+                            "prompt_tokens": 442,
+                            "completion_tokens": 559,
+                            "total_tokens": 1001
+                        },
+                        "meta": {
+                            "confidence": 90,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/161",
+                        "pred": "```python\ndef solve(s):\n    if any(c.isalpha() for c in s):\n        return ''.join(c.swapcase() if c.isalpha() else c for c in s)\n    else:\n        return s[::-1]\n```\nFINAL: def solve(s):\n    if any(c.isalpha() for c in s):\n        return ''.join(c.swapcase() if c.isalpha() else c for c in s)\n    else:\n        return s[::-1]\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 153,
+                            "completion_tokens": 103,
+                            "total_tokens": 256
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/143",
+                        "pred": "```python\ndef words_in_sentence(sentence):\n    def is_prime(n):\n        if n < 2:\n            return False\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                return False\n        return True\n\n    words = sentence.split()\n    prime_length_words = [word for word in words if is_prime(len(word))]\n    return \" \".join(prime_length_words)\n```\nFINAL: def words_in_sentence(sentence):\n    def is_prime(n):\n        if n < 2:\n            return False\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                return False\n        return True\n\n    words = sentence.split()\n    prime_length_words = [word for word in words if is_prime(len(word))]\n    return \" \".join(prime_length_words)\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 193,
+                            "completion_tokens": 197,
+                            "total_tokens": 390
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/50",
+                        "pred": "```python\ndef decode_shift(s: str):\n    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])\n```\nFINAL: def decode_shift(s: str):\n    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 136,
+                            "completion_tokens": 91,
+                            "total_tokens": 227
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/155",
+                        "pred": "```python\ndef even_odd_count(num):\n    num = abs(num)\n    even_count = 0\n    odd_count = 0\n    for digit in str(num):\n        if int(digit) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n    return (even_count, odd_count)\n```\nFINAL: def even_odd_count(num):\n    num = abs(num)\n    even_count = 0\n    odd_count = 0\n    for digit in str(num):\n        if int(digit) % 2 == 0:\n            even_count += 1\n        else:\n            odd_count += 1\n    return (even_count, odd_count)\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 114,
+                            "completion_tokens": 159,
+                            "total_tokens": 273
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/107",
+                        "pred": "```python\ndef even_odd_palindrome(n):\n    even_count = 0\n    odd_count = 0\n    for num in range(1, n+1):\n        if str(num) == str(num)[::-1]:\n            if num % 2 == 0:\n                even_count += 1\n            else:\n                odd_count += 1\n    return (even_count, odd_count)\n```\nFINAL: def even_odd_palindrome(n):\n    even_count = 0\n    odd_count = 0\n    for num in range(1, n+1):\n        if str(num) == str(num)[::-1]:\n            if num % 2 == 0:\n                even_count += 1\n            else:\n                odd_count += 1\n    return (even_count, odd_count)\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 256,
+                            "completion_tokens": 177,
+                            "total_tokens": 433
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/56",
+                        "pred": "```python\ndef correct_bracketing(brackets: str):\n    count = 0\n    for char in brackets:\n        if char == '<':\n            count += 1\n        else:\n            count -= 1\n        if count < 0:\n            return False\n    return count == 0\n```\nFINAL: def correct_bracketing(brackets: str):\n    count = 0\n    for char in brackets:\n        if char == '<':\n            count += 1\n        else:\n            count -= 1\n        if count < 0:\n            return False\n    return count == 0\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 139,
+                            "completion_tokens": 135,
+                            "total_tokens": 274
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/114",
+                        "pred": "```python\ndef minSubArraySum(nums):\n    min_ending_here = min_so_far = nums[0]\n    for num in nums[1:]:\n        min_ending_here = min(num, min_ending_here + num)\n        min_so_far = min(min_so_far, min_ending_here)\n    return min_so_far\n```\nFINAL: def minSubArraySum(nums):\n    min_ending_here = min_so_far = nums[0]\n    for num in nums[1:]:\n        min_ending_here = min(num, min_ending_here + num)\n        min_so_far = min(min_so_far, min_ending_here)\n    return min_so_far\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 134,
+                            "completion_tokens": 147,
+                            "total_tokens": 281
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/71",
+                        "pred": "```python\ndef triangle_area(a, b, c):\n    if a + b <= c or a + c <= b or b + c <= a:\n        return -1\n    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return round(area, 2)\n```\nFINAL: def triangle_area(a, b, c):\n    if a + b <= c or a + c <= b or b + c <= a:\n        return -1\n    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return round(area, 2)\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 167,
+                            "completion_tokens": 183,
+                            "total_tokens": 350
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/1",
+                        "pred": "FINAL: from typing import List\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    paren_string = paren_string.replace(\" \", \"\")\n    result = []\n    stack = []\n    current = []\n    for char in paren_string:\n        if char == '(':\n            stack.append(char)\n            current.append(char)\n        elif char == ')':\n            current.append(char)\n            stack.pop()\n            if not stack:\n                result.append(\"\".join(current))\n                current = []\n    return result",
+                        "usage": {
+                            "prompt_tokens": 458,
+                            "completion_tokens": 211,
+                            "total_tokens": 669
+                        },
+                        "meta": {
+                            "confidence": null,
+                            "critiqued": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/40",
+                        "pred": "```python\ndef triples_sum_to_zero(l: list):\n    n = len(l)\n    for i in range(n):\n        for j in range(i+1, n):\n            for k in range(j+1, n):\n                if l[i] + l[j] + l[k] == 0:\n                    return True\n    return False\n```\nFINAL: def triples_sum_to_zero(l: list):\n    n = len(l)\n    for i in range(n):\n        for j in range(i+1, n):\n            for k in range(j+1, n):\n                if l[i] + l[j] + l[k] == 0:\n                    return True\n    return False\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 205,
+                            "completion_tokens": 151,
+                            "total_tokens": 356
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/152",
+                        "pred": "def compare(game, guess):\n    return [abs(g - s) for g, s in zip(game, guess)]\nFINAL: def compare(game, guess):\n    return [abs(g - s) for g, s in zip(game, guess)]\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 276,
+                            "completion_tokens": 56,
+                            "total_tokens": 332
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/87",
+                        "pred": "def get_row(lst, x):\n    result = []\n    for i, row in enumerate(lst):\n        for j, val in enumerate(row):\n            if val == x:\n                result.append((i, j))\n    result.sort(key=lambda t: (t[0], -t[1]))\n    return result\nFINAL: def get_row(lst, x):\n    result = []\n    for i, row in enumerate(lst):\n        for j, val in enumerate(row):\n            if val == x:\n                result.append((i, j))\n    result.sort(key=lambda t: (t[0], -t[1]))\n    return result\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 305,
+                            "completion_tokens": 136,
+                            "total_tokens": 441
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/138",
+                        "pred": "```python\ndef is_equal_to_sum_even(n):\n    return n >= 8 and n % 2 == 0\n```\nFINAL: def is_equal_to_sum_even(n):\n    return n >= 8 and n % 2 == 0\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 123,
+                            "completion_tokens": 59,
+                            "total_tokens": 182
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/39",
+                        "pred": "```python\ndef prime_fib(n: int):\n    def is_prime(x):\n        if x < 2:\n            return False\n        if x == 2:\n            return True\n        if x % 2 == 0:\n            return False\n        for i in range(3, int(x**0.5) + 1, 2):\n            if x % i == 0:\n                return False\n        return True\n\n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(a):\n            count += 1\n            if count == n:\n                return a\n```\nFINAL: def prime_fib(n: int):\n    def is_prime(x):\n        if x < 2:\n            return False\n        if x == 2:\n            return True\n        if x % 2 == 0:\n            return False\n        for i in range(3, int(x**0.5) + 1, 2):\n            if x % i == 0:\n                return False\n        return True\n\n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(a):\n            count += 1\n            if count == n:\n                return a\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 142,
+                            "completion_tokens": 299,
+                            "total_tokens": 441
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/148",
+                        "pred": "```python\ndef bf(planet1, planet2):\n    planets = [\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"]\n    if planet1 not in planets or planet2 not in planets:\n        return ()\n    i1, i2 = planets.index(planet1), planets.index(planet2)\n    if i1 < i2:\n        return tuple(planets[i1+1:i2])\n    else:\n        return tuple(planets[i2+1:i1])\n```\nFINAL: def bf(planet1, planet2):\n    planets = [\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"]\n    if planet1 not in planets or planet2 not in planets:\n        return ()\n    i1, i2 = planets.index(planet1), planets.index(planet2)\n    if i1 < i2:\n        return tuple(planets[i1+1:i2])\n    else:\n        return tuple(planets[i2+1:i1])\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 257,
+                            "completion_tokens": 241,
+                            "total_tokens": 498
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/86",
+                        "pred": "```python\ndef anti_shuffle(s):\n    result = []\n    word = []\n    for char in s:\n        if char == ' ':\n            if word:\n                result.append(''.join(sorted(word)))\n                word = []\n            result.append(' ')\n        else:\n            word.append(char)\n    if word:\n        result.append(''.join(sorted(word)))\n    return ''.join(result)\n```\nFINAL: def anti_shuffle(s):\n    result = []\n    word = []\n    for char in s:\n        if char == ' ':\n            if word:\n                result.append(''.join(sorted(word)))\n                word = []\n            result.append(' ')\n        else:\n            word.append(char)\n    if word:\n        result.append(''.join(sorted(word)))\n    return ''.join(result)\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 174,
+                            "completion_tokens": 163,
+                            "total_tokens": 337
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/156",
+                        "pred": "def int_to_mini_roman(number):\n    val = [\n        1000, 900, 500, 400,\n        100, 90, 50, 40,\n        10, 9, 5, 4,\n        1\n    ]\n    syms = [\n        \"M\", \"CM\", \"D\", \"CD\",\n        \"C\", \"XC\", \"L\", \"XL\",\n        \"X\", \"IX\", \"V\", \"IV\",\n        \"I\"\n    ]\n    roman_num = ''\n    i = 0\n    while number > 0:\n        for _ in range(number // val[i]):\n            roman_num += syms[i]\n            number -= val[i]\n        i += 1\n    return roman_num.lower()\nFINAL: def int_to_mini_roman(number):\n    val = [\n        1000, 900, 500, 400,\n        100, 90, 50, 40,\n        10, 9, 5, 4,\n        1\n    ]\n    syms = [\n        \"M\", \"CM\", \"D\", \"CD\",\n        \"C\", \"XC\", \"L\", \"XL\",\n        \"X\", \"IX\", \"V\", \"IV\",\n        \"I\"\n    ]\n    roman_num = ''\n    i = 0\n    while number > 0:\n        for _ in range(number // val[i]):\n            roman_num += syms[i]\n            number -= val[i]\n        i += 1\n    return roman_num.lower()\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 151,
+                            "completion_tokens": 334,
+                            "total_tokens": 485
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/149",
+                        "pred": "def list_sort(lst):\n    lst = [word for word in lst if len(word) % 2 == 0]\n    return sorted(lst, key=lambda x: (len(x), x))  \nFINAL: def list_sort(lst):\n    lst = [word for word in lst if len(word) % 2 == 0]\n    return sorted(lst, key=lambda x: (len(x), x))  \nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 233,
+                            "completion_tokens": 90,
+                            "total_tokens": 323
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/97",
+                        "pred": "def multiply(a, b):\n    return (abs(a) % 10) * (abs(b) % 10)\nFINAL: def multiply(a, b):\n    return (abs(a) % 10) * (abs(b) % 10)\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 144,
+                            "completion_tokens": 58,
+                            "total_tokens": 202
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/12",
+                        "pred": "```python\ndef longest(strings: List[str]) -> Optional[str]:\n    if not strings:\n        return None\n    longest_str = strings[0]\n    for s in strings[1:]:\n        if len(s) > len(longest_str):\n            longest_str = s\n    return longest_str\n```\nFINAL: def longest(strings: List[str]) -> Optional[str]:\n    if not strings:\n        return None\n    longest_str = strings[0]\n    for s in strings[1:]:\n        if len(s) > len(longest_str):\n            longest_str = s\n    return longest_str\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 147,
+                            "completion_tokens": 131,
+                            "total_tokens": 278
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/45",
+                        "pred": "FINAL: def triangle_area(a, h):\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> triangle_area(5, 3)\n    7.5\n    \"\"\"\n    return 0.5 * a * h",
+                        "usage": {
+                            "prompt_tokens": 265,
+                            "completion_tokens": 102,
+                            "total_tokens": 367
+                        },
+                        "meta": {
+                            "confidence": null,
+                            "critiqued": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/135",
+                        "pred": "def can_arrange(arr):\n    for i in range(len(arr) - 1, 0, -1):\n        if arr[i] < arr[i - 1]:\n            return i\n    return -1\nFINAL: def can_arrange(arr):\n    for i in range(len(arr) - 1, 0, -1):\n        if arr[i] < arr[i - 1]:\n            return i\n    return -1\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 149,
+                            "completion_tokens": 98,
+                            "total_tokens": 247
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/44",
+                        "pred": "```python\ndef change_base(x: int, base: int):\n    if x == 0:\n        return '0'\n    digits = []\n    while x > 0:\n        digits.append(str(x % base))\n        x //= base\n    return ''.join(digits[::-1])\n```\nFINAL: def change_base(x: int, base: int):\n    if x == 0:\n        return '0'\n    digits = []\n    while x > 0:\n        digits.append(str(x % base))\n        x //= base\n    return ''.join(digits[::-1])\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 137,
+                            "completion_tokens": 127,
+                            "total_tokens": 264
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/77",
+                        "pred": "def iscube(a):\n    if a < 0:\n        root = round(abs(a) ** (1/3))\n        return root**3 == abs(a)\n    else:\n        root = round(a ** (1/3))\n        return root**3 == a\nFINAL: def iscube(a):\n    if a < 0:\n        root = round(abs(a) ** (1/3))\n        return root**3 == abs(a)\n    else:\n        root = round(a ** (1/3))\n        return root**3 == a\nCONFIDENCE: 90",
+                        "usage": {
+                            "prompt_tokens": 156,
+                            "completion_tokens": 120,
+                            "total_tokens": 276
+                        },
+                        "meta": {
+                            "confidence": 90,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/33",
+                        "pred": "def sort_third(l: list):\n    indices = [i for i in range(len(l)) if i % 3 == 0]\n    sorted_values = sorted(l[i] for i in indices)\n    result = l[:]\n    for idx, val in zip(indices, sorted_values):\n        result[idx] = val\n    return result\nFINAL: def sort_third(l: list):\n    indices = [i for i in range(len(l)) if i % 3 == 0]\n    sorted_values = sorted(l[i] for i in indices)\n    result = l[:]\n    for idx, val in zip(indices, sorted_values):\n        result[idx] = val\n    return result\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 199,
+                            "completion_tokens": 150,
+                            "total_tokens": 349
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/103",
+                        "pred": "```python\ndef rounded_avg(n, m):\n    if n > m:\n        return -1\n    avg = round(sum(range(n, m+1)) / (m - n + 1))\n    return bin(avg)\n```\nFINAL: def rounded_avg(n, m):\n    if n > m:\n        return -1\n    avg = round(sum(range(n, m+1)) / (m - n + 1))\n    return bin(avg)\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 186,
+                            "completion_tokens": 101,
+                            "total_tokens": 287
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/5",
+                        "pred": "```python\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    if not numbers:\n        return []\n    result = []\n    for i in range(len(numbers) - 1):\n        result.append(numbers[i])\n        result.append(delimeter)\n    result.append(numbers[-1])\n    return result\n```\nFINAL: def intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    if not numbers:\n        return []\n    result = []\n    for i in range(len(numbers) - 1):\n        result.append(numbers[i])\n        result.append(delimeter)\n    result.append(numbers[-1])\n    return result\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 143,
+                            "completion_tokens": 145,
+                            "total_tokens": 288
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/93",
+                        "pred": "```python\ndef encode(message):\n    vowels = 'aeiou'\n    vowels_shift = {'a': 'c', 'e': 'g', 'i': 'k', 'o': 'q', 'u': 'w'}\n    result = []\n    for char in message:\n        if char.isalpha():\n            swapped = char.swapcase()\n            lower_char = char.lower()\n            if lower_char in vowels:\n                swapped = vowels_shift[lower_char].upper() if char.islower() else vowels_shift[lower_char].lower()\n            result.append(swapped)\n        else:\n            result.append(char)\n    return ''.join(result)\n```\nFINAL: def encode(message):\n    vowels = 'aeiou'\n    vowels_shift = {'a': 'c', 'e': 'g', 'i': 'k', 'o': 'q', 'u': 'w'}\n    result = []\n    for char in message:\n        if char.isalpha():\n            swapped = char.swapcase()\n            lower_char = char.lower()\n            if lower_char in vowels:\n                swapped = vowels_shift[lower_char].upper() if char.islower() else vowels_shift[lower_char].lower()\n            result.append(swapped)\n        else:\n            result.append(char)\n    return ''.join(result)\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 155,
+                            "completion_tokens": 267,
+                            "total_tokens": 422
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/58",
+                        "pred": "```python\ndef common(l1: list, l2: list):\n    return sorted(set(l1) & set(l2))\n```\nFINAL: def common(l1: list, l2: list):\n    return sorted(set(l1) & set(l2))\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 160,
+                            "completion_tokens": 61,
+                            "total_tokens": 221
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/68",
+                        "pred": "FINAL: def pluck(arr):\n    smallest_even = None\n    smallest_index = None\n    for i, val in enumerate(arr):\n        if val % 2 == 0:\n            if smallest_even is None or val < smallest_even:\n                smallest_even = val\n                smallest_index = i\n    if smallest_even is None:\n        return []\n    return [smallest_even, smallest_index]",
+                        "usage": {
+                            "prompt_tokens": 831,
+                            "completion_tokens": 166,
+                            "total_tokens": 997
+                        },
+                        "meta": {
+                            "confidence": null,
+                            "critiqued": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/15",
+                        "pred": "def string_sequence(n: int) -> str:\n    \"\"\" Return a string containing space-delimited numbers starting from 0 upto n inclusive.\n    >>> string_sequence(0)\n    '0'\n    >>> string_sequence(5)\n    '0 1 2 3 4 5'\n    \"\"\"\n    return ' '.join(str(i) for i in range(n + 1)) \nFINAL: def string_sequence(n: int) -> str:\n    \"\"\" Return a string containing space-delimited numbers starting from 0 upto n inclusive.\n    >>> string_sequence(0)\n    '0'\n    >>> string_sequence(5)\n    '0 1 2 3 4 5'\n    \"\"\"\n    return ' '.join(str(i) for i in range(n + 1)) \nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 114,
+                            "completion_tokens": 168,
+                            "total_tokens": 282
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/48",
+                        "pred": "```python\ndef is_palindrome(text: str):\n    return text == text[::-1]\n```\nFINAL: def is_palindrome(text: str):\n    return text == text[::-1]\nCONFIDENCE: 100",
+                        "usage": {
+                            "prompt_tokens": 117,
+                            "completion_tokens": 45,
+                            "total_tokens": 162
+                        },
+                        "meta": {
+                            "confidence": 100,
+                            "critiqued": false
+                        },
+                        "correct": null
+                    }
+                ]
+            },
+            "verifier": {
+                "summary": {
+                    "pass@1": 0.96,
+                    "raw_eval": {
+                        "pass@1": 0.96
+                    }
+                },
+                "rows": [
+                    {
+                        "id": "HumanEval/163",
+                        "pred": "```python\ndef generate_integers(a, b):\n    start, end = min(a, b), max(a, b)\n    result = []\n    for num in range(start, end + 1):\n        if all(int(digit) % 2 == 0 for digit in str(num)):\n            result.append(num)\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 405,
+                            "completion_tokens": 214,
+                            "total_tokens": 619
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/28",
+                        "pred": "```python\nfrom typing import List\n\ndef concatenate(strings: List[str]) -> str:\n    \"\"\" Concatenate list of strings into a single string\n    >>> concatenate([])\n    ''\n    >>> concatenate(['a', 'b', 'c'])\n    'abc'\n    \"\"\"\n    return ''.join(strings)\n```",
+                        "usage": {
+                            "prompt_tokens": 249,
+                            "completion_tokens": 178,
+                            "total_tokens": 427
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/6",
+                        "pred": "```python\nfrom typing import List\n\ndef parse_nested_parens(paren_string: str) -> List[int]:\n    groups = paren_string.split()\n    result = []\n    for group in groups:\n        max_depth = 0\n        current_depth = 0\n        for char in group:\n            if char == '(':\n                current_depth += 1\n                max_depth = max(max_depth, current_depth)\n            elif char == ')':\n                current_depth -= 1\n        result.append(max_depth)\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 408,
+                            "completion_tokens": 328,
+                            "total_tokens": 736
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/70",
+                        "pred": "```python\ndef strange_sort_list(lst):\n    lst = sorted(lst)\n    result = []\n    left, right = 0, len(lst) - 1\n    toggle = True\n    while left <= right:\n        if toggle:\n            result.append(lst[left])\n            left += 1\n        else:\n            result.append(lst[right])\n            right -= 1\n        toggle = not toggle\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 453,
+                            "completion_tokens": 261,
+                            "total_tokens": 714
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/62",
+                        "pred": "```python\ndef derivative(xs: list):\n    return [i * xs[i] for i in range(1, len(xs))]\n```",
+                        "usage": {
+                            "prompt_tokens": 402,
+                            "completion_tokens": 84,
+                            "total_tokens": 486
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/57",
+                        "pred": "```python\ndef monotonic(l: list):\n    return all(x <= y for x, y in zip(l, l[1:])) or all(x >= y for x, y in zip(l, l[1:]))\n```",
+                        "usage": {
+                            "prompt_tokens": 339,
+                            "completion_tokens": 322,
+                            "total_tokens": 661
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/35",
+                        "pred": "```python\ndef max_element(l: list):\n    \"\"\"Return maximum element in the list.\n    >>> max_element([1, 2, 3])\n    3\n    >>> max_element([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])\n    123\n    \"\"\"\n    if not l:\n        return None\n    max_val = l[0]\n    for item in l[1:]:\n        if item > max_val:\n            max_val = item\n    return max_val\n```",
+                        "usage": {
+                            "prompt_tokens": 327,
+                            "completion_tokens": 369,
+                            "total_tokens": 696
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/26",
+                        "pred": "```python\nfrom typing import List\nfrom collections import Counter\n\ndef remove_duplicates(numbers: List[int]) -> List[int]:\n    counts = Counter(numbers)\n    return [num for num in numbers if counts[num] == 1]\n```",
+                        "usage": {
+                            "prompt_tokens": 330,
+                            "completion_tokens": 144,
+                            "total_tokens": 474
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/139",
+                        "pred": "```python\ndef special_factorial(n):\n    from math import factorial\n    result = 1\n    for i in range(1, n+1):\n        result *= factorial(i)\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 366,
+                            "completion_tokens": 132,
+                            "total_tokens": 498
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/22",
+                        "pred": "```python\ndef filter_integers(values: List[Any]) -> List[int]:\n    return [v for v in values if isinstance(v, int)]\n```",
+                        "usage": {
+                            "prompt_tokens": 360,
+                            "completion_tokens": 96,
+                            "total_tokens": 456
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/151",
+                        "pred": "```python\ndef double_the_difference(lst):\n    return sum(x**2 for x in lst if isinstance(x, int) and x >= 0 and x % 2 == 1)\n```",
+                        "usage": {
+                            "prompt_tokens": 492,
+                            "completion_tokens": 120,
+                            "total_tokens": 612
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/108",
+                        "pred": "```python\ndef count_nums(arr):\n    def sum_signed_digits(n):\n        s = str(n)\n        total = 0\n        if s[0] == '-':\n            total += -int(s[1])\n            for ch in s[2:]:\n                total += int(ch)\n        else:\n            for ch in s:\n                total += int(ch)\n        return total\n\n    count = 0\n    for num in arr:\n        if sum_signed_digits(num) > 0:\n            count += 1\n    return count\n```",
+                        "usage": {
+                            "prompt_tokens": 453,
+                            "completion_tokens": 291,
+                            "total_tokens": 744
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/8",
+                        "pred": "```python\ndef sum_product(numbers: List[int]) -> Tuple[int, int]:\n    total_sum = 0\n    total_product = 1\n    for num in numbers:\n        total_sum += num\n        total_product *= num\n    return total_sum, total_product\n```",
+                        "usage": {
+                            "prompt_tokens": 408,
+                            "completion_tokens": 188,
+                            "total_tokens": 596
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/7",
+                        "pred": "```python\ndef filter_by_substring(strings: List[str], substring: str) -> List[str]:\n    return [s for s in strings if substring in s]\n```",
+                        "usage": {
+                            "prompt_tokens": 357,
+                            "completion_tokens": 243,
+                            "total_tokens": 600
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/23",
+                        "pred": "```python\ndef strlen(string: str) -> int:\n    \"\"\" Return length of given string\n    >>> strlen('')\n    0\n    >>> strlen('abc')\n    3\n    \"\"\"\n    count = 0\n    for _ in string:\n        count += 1\n    return count\n```",
+                        "usage": {
+                            "prompt_tokens": 210,
+                            "completion_tokens": 189,
+                            "total_tokens": 399
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/55",
+                        "pred": "```python\ndef fib(n: int):\n    \"\"\"Return n-th Fibonacci number.\n    >>> fib(10)\n    55\n    >>> fib(1)\n    1\n    >>> fib(8)\n    21\n    \"\"\"\n    a, b = 0, 1\n    for _ in range(n):\n        a, b = b, a + b\n    return a\n```",
+                        "usage": {
+                            "prompt_tokens": 237,
+                            "completion_tokens": 279,
+                            "total_tokens": 516
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/59",
+                        "pred": "```python\ndef largest_prime_factor(n: int):\n    \"\"\"Return the largest prime factor of n. Assume n > 1 and is not a prime.\n    >>> largest_prime_factor(13195)\n    29\n    >>> largest_prime_factor(2048)\n    2\n    \"\"\"\n    factor = 2\n    last_factor = 1\n    while n > 1:\n        if n % factor == 0:\n            last_factor = factor\n            while n % factor == 0:\n                n //= factor\n        factor += 1 if factor == 2 else 2\n        if factor * factor > n and n > 1:\n            last_factor = n\n            break\n    return last_factor\n```",
+                        "usage": {
+                            "prompt_tokens": 270,
+                            "completion_tokens": 402,
+                            "total_tokens": 672
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/129",
+                        "pred": "```python\nfrom collections import deque\n\ndef minPath(grid, k):\n    N = len(grid)\n    pos = [None] * (N * N + 1)\n    for r in range(N):\n        for c in range(N):\n            pos[grid[r][c]] = (r, c)\n\n    # Directions for neighbors (up, down, left, right)\n    dirs = [(-1,0),(1,0),(0,-1),(0,1)]\n\n    # We want to find the lex smallest path of length k\n    # starting from any cell.\n\n    # Idea:\n    # Since all numbers are unique and from 1 to N*N,\n    # we can consider the values as priorities.\n    # At each step, from the current cell,\n    # we explore neighbors and pick the lex smallest next cell value.\n    # Since path can revisit cells, but lex order matters,\n    # we need to pick the minimal next step at each step.\n    #\n    # But we need to consider that the minimal path might start anywhere.\n    # So we try all cells as start and pick the lex smallest path.\n    #\n    # However, k can be large. A brute force search may be costly.\n    #\n    # Optimization:\n    # We can do a BFS with states (r, c, length)\n    # and keep track of the lex smallest path to reach that state.\n    #\n    # But to keep it efficient, use a priority queue and always\n    # expand the lex smallest partial path first.\n    #\n    # Since k can be large, we use a BFS with pruning:\n    # - use a dictionary to store the lex smallest path to (r,c,l)\n    # - expand states with lex smallest path first.\n\n    from heapq import heappush, heappop\n\n    # Each state: (path as tuple), r, c, length\n    heap = []\n    visited = dict()\n\n    # Initialize heap with all starting positions\n    for r in range(N):\n        for c in range(N):\n            val = grid[r][c]\n            path = (val,)\n            heappush(heap, (path, r, c, 1))\n            visited[(r,c,1)] = path\n\n    while heap:\n        path, r, c, length = heappop(heap)\n        if length == k:\n            return list(path)\n        for dr, dc in dirs:\n            nr, nc = r + dr, c + dc\n            if 0 <= nr < N and 0 <= nc < N:\n                nval = grid[nr][nc]\n                npath = path + (nval,)\n                state = (nr, nc, length + 1)\n                if state not in visited or npath < visited[state]:\n                    visited[state] = npath\n                    heappush(heap, (npath, nr, nc, length + 1))\n```",
+                        "usage": {
+                            "prompt_tokens": 1269,
+                            "completion_tokens": 1361,
+                            "total_tokens": 2630
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/161",
+                        "pred": "```python\ndef solve(s):\n    if not any(c.isalpha() for c in s):\n        return s[::-1]\n    return ''.join(c.swapcase() if c.isalpha() else c for c in s)\n```",
+                        "usage": {
+                            "prompt_tokens": 402,
+                            "completion_tokens": 145,
+                            "total_tokens": 547
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/143",
+                        "pred": "```python\ndef words_in_sentence(sentence):\n    def is_prime(n):\n        if n < 2:\n            return False\n        for i in range(2, int(n**0.5) + 1):\n            if n % i == 0:\n                return False\n        return True\n\n    words = sentence.split()\n    prime_length_words = [word for word in words if is_prime(len(word))]\n    return \" \".join(prime_length_words)\n```",
+                        "usage": {
+                            "prompt_tokens": 522,
+                            "completion_tokens": 286,
+                            "total_tokens": 808
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/50",
+                        "pred": "```python\ndef decode_shift(s: str):\n    \"\"\"\n    takes as input string encoded with encode_shift function. Returns decoded string.\n    \"\"\"\n    return \"\".join([chr(((ord(ch) - 5 - ord(\"a\")) % 26) + ord(\"a\")) for ch in s])\n```",
+                        "usage": {
+                            "prompt_tokens": 351,
+                            "completion_tokens": 186,
+                            "total_tokens": 537
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/155",
+                        "pred": "```python\ndef even_odd_count(num):\n    num_str = str(abs(num))\n    even_count = sum(1 for digit in num_str if int(digit) % 2 == 0)\n    odd_count = len(num_str) - even_count\n    return (even_count, odd_count)\n```",
+                        "usage": {
+                            "prompt_tokens": 285,
+                            "completion_tokens": 205,
+                            "total_tokens": 490
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/107",
+                        "pred": "```python\ndef even_odd_palindrome(n):\n    even_count = 0\n    odd_count = 0\n    for num in range(1, n + 1):\n        if str(num) == str(num)[::-1]:\n            if num % 2 == 0:\n                even_count += 1\n            else:\n                odd_count += 1\n    return (even_count, odd_count)\n```",
+                        "usage": {
+                            "prompt_tokens": 711,
+                            "completion_tokens": 291,
+                            "total_tokens": 1002
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/56",
+                        "pred": "```python\ndef correct_bracketing(brackets: str):\n    count = 0\n    for char in brackets:\n        if char == '<':\n            count += 1\n        else:\n            count -= 1\n            if count < 0:\n                return False\n    return count == 0\n```",
+                        "usage": {
+                            "prompt_tokens": 360,
+                            "completion_tokens": 198,
+                            "total_tokens": 558
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/114",
+                        "pred": "```python\ndef minSubArraySum(nums):\n    min_ending_here = min_so_far = nums[0]\n    for num in nums[1:]:\n        min_ending_here = min(num, min_ending_here + num)\n        min_so_far = min(min_so_far, min_ending_here)\n    return min_so_far\n```",
+                        "usage": {
+                            "prompt_tokens": 345,
+                            "completion_tokens": 201,
+                            "total_tokens": 546
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/71",
+                        "pred": "```python\ndef triangle_area(a, b, c):\n    if a + b <= c or a + c <= b or b + c <= a:\n        return -1\n    s = (a + b + c) / 2\n    area = (s * (s - a) * (s - b) * (s - c)) ** 0.5\n    return round(area, 2)\n```",
+                        "usage": {
+                            "prompt_tokens": 444,
+                            "completion_tokens": 267,
+                            "total_tokens": 711
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/1",
+                        "pred": "```python\nfrom typing import List\n\ndef separate_paren_groups(paren_string: str) -> List[str]:\n    paren_string = paren_string.replace(\" \", \"\")\n    groups = []\n    balance = 0\n    start = 0\n    for i, char in enumerate(paren_string):\n        if char == '(':\n            if balance == 0:\n                start = i\n            balance += 1\n        elif char == ')':\n            balance -= 1\n            if balance == 0:\n                groups.append(paren_string[start:i+1])\n    return groups\n```",
+                        "usage": {
+                            "prompt_tokens": 423,
+                            "completion_tokens": 341,
+                            "total_tokens": 764
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/40",
+                        "pred": "```python\ndef triples_sum_to_zero(l: list):\n    n = len(l)\n    for i in range(n):\n        for j in range(i + 1, n):\n            for k in range(j + 1, n):\n                if l[i] + l[j] + l[k] == 0:\n                    return True\n    return False\n```",
+                        "usage": {
+                            "prompt_tokens": 558,
+                            "completion_tokens": 223,
+                            "total_tokens": 781
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/152",
+                        "pred": "```python\ndef compare(game, guess):\n    return [abs(g - gs) for g, gs in zip(game, guess)]\n```",
+                        "usage": {
+                            "prompt_tokens": 771,
+                            "completion_tokens": 84,
+                            "total_tokens": 855
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/87",
+                        "pred": "```python\ndef get_row(lst, x):\n    result = []\n    for i, row in enumerate(lst):\n        for j, val in enumerate(row):\n            if val == x:\n                result.append((i, j))\n    result.sort(key=lambda c: (c[0], -c[1]))\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 858,
+                            "completion_tokens": 204,
+                            "total_tokens": 1062
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/138",
+                        "pred": "```python\ndef is_equal_to_sum_even(n):\n    if n < 8:\n        return False\n    return n % 2 == 0\n```",
+                        "usage": {
+                            "prompt_tokens": 312,
+                            "completion_tokens": 87,
+                            "total_tokens": 399
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/39",
+                        "pred": "```python\ndef prime_fib(n: int):\n    def is_prime(x):\n        if x < 2:\n            return False\n        if x == 2:\n            return True\n        if x % 2 == 0:\n            return False\n        for i in range(3, int(x**0.5) + 1, 2):\n            if x % i == 0:\n                return False\n        return True\n\n    a, b = 0, 1\n    count = 0\n    while True:\n        a, b = b, a + b\n        if is_prime(a):\n            count += 1\n            if count == n:\n                return a\n```",
+                        "usage": {
+                            "prompt_tokens": 369,
+                            "completion_tokens": 483,
+                            "total_tokens": 852
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/148",
+                        "pred": "```python\ndef bf(planet1, planet2):\n    planets = [\"Mercury\", \"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"]\n    if planet1 not in planets or planet2 not in planets:\n        return ()\n    i1, i2 = planets.index(planet1), planets.index(planet2)\n    start, end = sorted([i1, i2])\n    return tuple(planets[start+1:end])\n```",
+                        "usage": {
+                            "prompt_tokens": 714,
+                            "completion_tokens": 336,
+                            "total_tokens": 1050
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/86",
+                        "pred": "```python\ndef anti_shuffle(s):\n    result = []\n    word = []\n    for char in s:\n        if char != ' ':\n            word.append(char)\n        else:\n            if word:\n                sorted_word = ''.join(sorted(word))\n                result.append(sorted_word)\n                word = []\n            result.append(' ')\n    if word:\n        sorted_word = ''.join(sorted(word))\n        result.append(sorted_word)\n    return ''.join(result)\n```",
+                        "usage": {
+                            "prompt_tokens": 465,
+                            "completion_tokens": 261,
+                            "total_tokens": 726
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/156",
+                        "pred": "```python\ndef int_to_mini_roman(number):\n    val = [\n        1000, 900, 500, 400,\n        100, 90, 50, 40,\n        10, 9, 5, 4,\n        1\n    ]\n    syms = [\n        \"M\", \"CM\", \"D\", \"CD\",\n        \"C\", \"XC\", \"L\", \"XL\",\n        \"X\", \"IX\", \"V\", \"IV\",\n        \"I\"\n    ]\n    roman_num = ''\n    i = 0\n    while number > 0:\n        for _ in range(number // val[i]):\n            roman_num += syms[i]\n            number -= val[i]\n        i += 1\n    return roman_num.lower()\n```",
+                        "usage": {
+                            "prompt_tokens": 396,
+                            "completion_tokens": 501,
+                            "total_tokens": 897
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/149",
+                        "pred": "```python\ndef list_sort(lst):\n    filtered = [s for s in lst if len(s) % 2 == 0]\n    return sorted(filtered, key=lambda x: (len(x), x))\n```",
+                        "usage": {
+                            "prompt_tokens": 642,
+                            "completion_tokens": 134,
+                            "total_tokens": 776
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/97",
+                        "pred": "```python\ndef multiply(a, b):\n    return (abs(a) % 10) * (abs(b) % 10)\n```",
+                        "usage": {
+                            "prompt_tokens": 375,
+                            "completion_tokens": 87,
+                            "total_tokens": 462
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/12",
+                        "pred": "```python\ndef longest(strings: List[str]) -> Optional[str]:\n    if not strings:\n        return None\n    return max(strings, key=len)\n```",
+                        "usage": {
+                            "prompt_tokens": 384,
+                            "completion_tokens": 96,
+                            "total_tokens": 480
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/45",
+                        "pred": "```python\ndef triangle_area(a, h):\n    \"\"\"Given length of a side and high return area for a triangle.\n    >>> triangle_area(5, 3)\n    7.5\n    \"\"\"\n    return 0.5 * a * h\n```",
+                        "usage": {
+                            "prompt_tokens": 219,
+                            "completion_tokens": 165,
+                            "total_tokens": 384
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/135",
+                        "pred": "```python\ndef can_arrange(arr):\n    for i in range(len(arr) - 1, 0, -1):\n        if arr[i] < arr[i - 1]:\n            return i\n    return -1\n```",
+                        "usage": {
+                            "prompt_tokens": 390,
+                            "completion_tokens": 147,
+                            "total_tokens": 537
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/44",
+                        "pred": "```python\ndef change_base(x: int, base: int):\n    if x == 0:\n        return \"0\"\n    digits = []\n    while x > 0:\n        digits.append(str(x % base))\n        x //= base\n    return ''.join(digits[::-1])\n```",
+                        "usage": {
+                            "prompt_tokens": 354,
+                            "completion_tokens": 183,
+                            "total_tokens": 537
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/77",
+                        "pred": "```python\ndef iscube(a):\n    if a == 0:\n        return True\n    root = round(abs(a) ** (1/3))\n    return root**3 == abs(a) if a >= 0 else -root**3 == a\n```",
+                        "usage": {
+                            "prompt_tokens": 411,
+                            "completion_tokens": 170,
+                            "total_tokens": 581
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/33",
+                        "pred": "```python\ndef sort_third(l: list):\n    indices = [i for i in range(len(l)) if i % 3 == 0]\n    sorted_vals = sorted(l[i] for i in indices)\n    result = l[:]\n    for idx, val in zip(indices, sorted_vals):\n        result[idx] = val\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 540,
+                            "completion_tokens": 227,
+                            "total_tokens": 767
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/103",
+                        "pred": "```python\ndef rounded_avg(n, m):\n    if n > m:\n        return -1\n    avg = round((n + m) / 2)\n    return bin(avg)\n```",
+                        "usage": {
+                            "prompt_tokens": 501,
+                            "completion_tokens": 120,
+                            "total_tokens": 621
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/5",
+                        "pred": "```python\ndef intersperse(numbers: List[int], delimeter: int) -> List[int]:\n    if not numbers:\n        return []\n    result = [numbers[0]]\n    for num in numbers[1:]:\n        result.append(delimeter)\n        result.append(num)\n    return result\n```",
+                        "usage": {
+                            "prompt_tokens": 372,
+                            "completion_tokens": 197,
+                            "total_tokens": 569
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/93",
+                        "pred": "```python\ndef encode(message):\n    vowels = 'aeiou'\n    result = []\n    for ch in message:\n        if ch.isalpha():\n            swapped = ch.swapcase()\n            lower = swapped.lower()\n            if lower in vowels:\n                # Find the vowel's position and replace with letter 2 places ahead\n                new_char = chr(((ord(lower) - ord('a') + 2) % 26) + ord('a'))\n                # preserve case after swapcase (which swapped original case)\n                if swapped.isupper():\n                    new_char = new_char.upper()\n                result.append(new_char)\n            else:\n                result.append(swapped)\n        else:\n            result.append(ch)\n    return ''.join(result)\n```",
+                        "usage": {
+                            "prompt_tokens": 408,
+                            "completion_tokens": 443,
+                            "total_tokens": 851
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/58",
+                        "pred": "```python\ndef common(l1: list, l2: list):\n    return sorted(set(l1) & set(l2))\n```",
+                        "usage": {
+                            "prompt_tokens": 423,
+                            "completion_tokens": 84,
+                            "total_tokens": 507
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/68",
+                        "pred": "```python\ndef pluck(arr):\n    min_value = None\n    min_index = None\n    for i, val in enumerate(arr):\n        if val % 2 == 0:\n            if min_value is None or val < min_value or (val == min_value and i < min_index):\n                min_value = val\n                min_index = i\n    return [min_value, min_index] if min_value is not None else []\n```",
+                        "usage": {
+                            "prompt_tokens": 1017,
+                            "completion_tokens": 259,
+                            "total_tokens": 1276
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/15",
+                        "pred": "```python\ndef string_sequence(n: int) -> str:\n    \"\"\" Return a string containing space-delimited numbers starting from 0 upto n inclusive.\n    >>> string_sequence(0)\n    '0'\n    >>> string_sequence(5)\n    '0 1 2 3 4 5'\n    \"\"\"\n    return ' '.join(str(i) for i in range(n+1))\n```",
+                        "usage": {
+                            "prompt_tokens": 285,
+                            "completion_tokens": 196,
+                            "total_tokens": 481
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    },
+                    {
+                        "id": "HumanEval/48",
+                        "pred": "```python\ndef is_palindrome(text: str):\n    \"\"\"\n    Checks if given string is a palindrome\n    >>> is_palindrome('')\n    True\n    >>> is_palindrome('aba')\n    True\n    >>> is_palindrome('aaaaa')\n    True\n    >>> is_palindrome('zbcd')\n    False\n    \"\"\"\n    return text == text[::-1]\n```",
+                        "usage": {
+                            "prompt_tokens": 294,
+                            "completion_tokens": 231,
+                            "total_tokens": 525
+                        },
+                        "meta": {
+                            "k": 3,
+                            "passed": true
+                        },
+                        "correct": null
+                    }
+                ]
+            }
+        }
+    }
+}

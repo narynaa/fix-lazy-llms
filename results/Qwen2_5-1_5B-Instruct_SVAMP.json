@@ -1,0 +1,2787 @@
+{
+  "config": {
+    "tasks": "svamp",
+    "methods": "baseline,checklist,verifier_reprompt_rm",
+    "n": 50,
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "out": "extension_run"
+  },
+  "results": {
+    "svamp": {
+      "baseline": {
+        "summary": {
+          "accuracy": 0.86,
+          "avg_total_tokens": 239.18
+        },
+        "rows": [
+          {
+            "id": "svamp-57",
+            "pred": "Paco ate 10 fewer cookies than those he gave to his friend.",
+            "usage": {
+              "prompt_tokens": 76,
+              "completion_tokens": 157,
+              "total_tokens": 233
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "svamp-12",
+            "pred": "Dave added 1 app to his phone.",
+            "usage": {
+              "prompt_tokens": 63,
+              "completion_tokens": 108,
+              "total_tokens": 171
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-140",
+            "pred": "Jackie has 1 more apple than Adam.",
+            "usage": {
+              "prompt_tokens": 59,
+              "completion_tokens": 111,
+              "total_tokens": 170
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-125",
+            "pred": "$1",
+            "usage": {
+              "prompt_tokens": 76,
+              "completion_tokens": 164,
+              "total_tokens": 240
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-114",
+            "pred": "Therefore, the final answer is 132.",
+            "usage": {
+              "prompt_tokens": 86,
+              "completion_tokens": 184,
+              "total_tokens": 270
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "svamp-71",
+            "pred": "Nell has 191 more Ace cards than baseball cards.",
+            "usage": {
+              "prompt_tokens": 96,
+              "completion_tokens": 809,
+              "total_tokens": 905
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "svamp-52",
+            "pred": "Robin's hair is now 17 inches long.",
+            "usage": {
+              "prompt_tokens": 71,
+              "completion_tokens": 97,
+              "total_tokens": 168
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-279",
+            "pred": "The number is 23.",
+            "usage": {
+              "prompt_tokens": 85,
+              "completion_tokens": 228,
+              "total_tokens": 313
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-44",
+            "pred": "The first chapter has 68 more pages than the second chapter. Final answer: 68.",
+            "usage": {
+              "prompt_tokens": 86,
+              "completion_tokens": 100,
+              "total_tokens": 186
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-216",
+            "pred": "1 plank.",
+            "usage": {
+              "prompt_tokens": 92,
+              "completion_tokens": 191,
+              "total_tokens": 283
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-16",
+            "pred": "Each seat can hold 5 people.",
+            "usage": {
+              "prompt_tokens": 70,
+              "completion_tokens": 126,
+              "total_tokens": 196
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-15",
+            "pred": "They will be 369 feet further until they reach the end of the cave.",
+            "usage": {
+              "prompt_tokens": 80,
+              "completion_tokens": 136,
+              "total_tokens": 216
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-47",
+            "pred": "Jack received 11 emails in the morning and evening.",
+            "usage": {
+              "prompt_tokens": 71,
+              "completion_tokens": 118,
+              "total_tokens": 189
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-111",
+            "pred": "Jessie weighs 4 kilograms now.",
+            "usage": {
+              "prompt_tokens": 79,
+              "completion_tokens": 137,
+              "total_tokens": 216
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-119",
+            "pred": "\\boxed{111}",
+            "usage": {
+              "prompt_tokens": 66,
+              "completion_tokens": 198,
+              "total_tokens": 264
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-258",
+            "pred": "Jake has 7 peaches.",
+            "usage": {
+              "prompt_tokens": 74,
+              "completion_tokens": 145,
+              "total_tokens": 219
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-13",
+            "pred": "Dan spent $13 buying the candy bar and chocolate.",
+            "usage": {
+              "prompt_tokens": 72,
+              "completion_tokens": 80,
+              "total_tokens": 152
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-287",
+            "pred": "Therefore, the final answer is 6.",
+            "usage": {
+              "prompt_tokens": 63,
+              "completion_tokens": 213,
+              "total_tokens": 276
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-101",
+            "pred": "35",
+            "usage": {
+              "prompt_tokens": 68,
+              "completion_tokens": 178,
+              "total_tokens": 246
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-214",
+            "pred": "Paco had 54 cookies in the beginning.",
+            "usage": {
+              "prompt_tokens": 61,
+              "completion_tokens": 146,
+              "total_tokens": 207
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-112",
+            "pred": "2.",
+            "usage": {
+              "prompt_tokens": 67,
+              "completion_tokens": 146,
+              "total_tokens": 213
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-229",
+            "pred": "The farmer will have 7 tomatoes left after today.",
+            "usage": {
+              "prompt_tokens": 73,
+              "completion_tokens": 126,
+              "total_tokens": 199
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-142",
+            "pred": "Therefore, Kelly needs to give away 105 games so that she will have 6 games left. Final answer: 105.",
+            "usage": {
+              "prompt_tokens": 73,
+              "completion_tokens": 169,
+              "total_tokens": 242
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-3",
+            "pred": "The soda bottles would last for 64 days.",
+            "usage": {
+              "prompt_tokens": 85,
+              "completion_tokens": 135,
+              "total_tokens": 220
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-81",
+            "pred": "Bobby ate a total of 51 pieces of candy and chocolate.",
+            "usage": {
+              "prompt_tokens": 75,
+              "completion_tokens": 124,
+              "total_tokens": 199
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-174",
+            "pred": "229 crayons had been lost or given away.",
+            "usage": {
+              "prompt_tokens": 85,
+              "completion_tokens": 119,
+              "total_tokens": 204
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-79",
+            "pred": "The book has 1891 pages altogether.",
+            "usage": {
+              "prompt_tokens": 62,
+              "completion_tokens": 119,
+              "total_tokens": 181
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-110",
+            "pred": "Therefore, Mary needs to add 2 more cups of sugar than cups of salt. Final answer: 2.",
+            "usage": {
+              "prompt_tokens": 92,
+              "completion_tokens": 254,
+              "total_tokens": 346
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-172",
+            "pred": "Dave has 2 tickets left.",
+            "usage": {
+              "prompt_tokens": 74,
+              "completion_tokens": 83,
+              "total_tokens": 157
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-194",
+            "pred": "Therefore, the final answer is 39 inches.",
+            "usage": {
+              "prompt_tokens": 90,
+              "completion_tokens": 142,
+              "total_tokens": 232
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-49",
+            "pred": "Therefore, the final answer is 66 inches.",
+            "usage": {
+              "prompt_tokens": 78,
+              "completion_tokens": 217,
+              "total_tokens": 295
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-183",
+            "pred": "John needs **230** nails for the house wall.",
+            "usage": {
+              "prompt_tokens": 97,
+              "completion_tokens": 215,
+              "total_tokens": 312
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "svamp-176",
+            "pred": "The grocery store had 26 more bottles of soda than apples.",
+            "usage": {
+              "prompt_tokens": 71,
+              "completion_tokens": 166,
+              "total_tokens": 237
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-135",
+            "pred": "Therefore, the final answer is 46 inches.",
+            "usage": {
+              "prompt_tokens": 94,
+              "completion_tokens": 196,
+              "total_tokens": 290
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "svamp-22",
+            "pred": "Therefore, the final answer is 3.",
+            "usage": {
+              "prompt_tokens": 77,
+              "completion_tokens": 141,
+              "total_tokens": 218
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-235",
+            "pred": "\\]",
+            "usage": {
+              "prompt_tokens": 92,
+              "completion_tokens": 277,
+              "total_tokens": 369
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "svamp-274",
+            "pred": "Jesse needs 6840 square feet of carpet to cover the floors of all her rooms.",
+            "usage": {
+              "prompt_tokens": 77,
+              "completion_tokens": 135,
+              "total_tokens": 212
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-63",
+            "pred": "Josh now has 30 marbles.",
+            "usage": {
+              "prompt_tokens": 72,
+              "completion_tokens": 113,
+              "total_tokens": 185
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-193",
+            "pred": "Therefore, the final answer is 348.",
+            "usage": {
+              "prompt_tokens": 92,
+              "completion_tokens": 166,
+              "total_tokens": 258
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-40",
+            "pred": "7",
+            "usage": {
+              "prompt_tokens": 80,
+              "completion_tokens": 128,
+              "total_tokens": 208
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-282",
+            "pred": "268,627 kids stay home during the summer break.",
+            "usage": {
+              "prompt_tokens": 75,
+              "completion_tokens": 186,
+              "total_tokens": 261
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-150",
+            "pred": "There is 1 more stork than birds sitting on the fence.",
+            "usage": {
+              "prompt_tokens": 71,
+              "completion_tokens": 130,
+              "total_tokens": 201
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-185",
+            "pred": "So, the final answer is 14 bird families were left near the mountain.",
+            "usage": {
+              "prompt_tokens": 88,
+              "completion_tokens": 91,
+              "total_tokens": 179
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-295",
+            "pred": "There are 30 peaches in the basket.",
+            "usage": {
+              "prompt_tokens": 67,
+              "completion_tokens": 128,
+              "total_tokens": 195
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-98",
+            "pred": "The grocery store had 44 more bottles of regular soda than apples.",
+            "usage": {
+              "prompt_tokens": 71,
+              "completion_tokens": 152,
+              "total_tokens": 223
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "svamp-35",
+            "pred": "The machine made 20 shirts.",
+            "usage": {
+              "prompt_tokens": 61,
+              "completion_tokens": 113,
+              "total_tokens": 174
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-23",
+            "pred": "The final answer is 333. The school has 333 more girls than boys.",
+            "usage": {
+              "prompt_tokens": 64,
+              "completion_tokens": 113,
+              "total_tokens": 177
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-116",
+            "pred": "Therefore, the answer is 2.",
+            "usage": {
+              "prompt_tokens": 85,
+              "completion_tokens": 193,
+              "total_tokens": 278
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-148",
+            "pred": "The final answer is 121.",
+            "usage": {
+              "prompt_tokens": 75,
+              "completion_tokens": 90,
+              "total_tokens": 165
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-51",
+            "pred": "72",
+            "usage": {
+              "prompt_tokens": 71,
+              "completion_tokens": 138,
+              "total_tokens": 209
+            },
+            "meta": {},
+            "correct": true
+          }
+        ]
+      },
+      "checklist": {
+        "summary": {
+          "accuracy": 0.9,
+          "avg_total_tokens": 347.56
+        },
+        "rows": [
+          {
+            "id": "svamp-57",
+            "pred": "Paco ate 1 more cookie than he gave to his friend.",
+            "usage": {
+              "prompt_tokens": 113,
+              "completion_tokens": 206,
+              "total_tokens": 319
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-12",
+            "pred": "Dave added 1 app.",
+            "usage": {
+              "prompt_tokens": 100,
+              "completion_tokens": 185,
+              "total_tokens": 285
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-140",
+            "pred": "Jackie has 1 more apple than Adam.",
+            "usage": {
+              "prompt_tokens": 96,
+              "completion_tokens": 187,
+              "total_tokens": 283
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-125",
+            "pred": "Dan spent $1 more buying the chocolate than he did buying the candy bar.",
+            "usage": {
+              "prompt_tokens": 113,
+              "completion_tokens": 186,
+              "total_tokens": 299
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-114",
+            "pred": "84",
+            "usage": {
+              "prompt_tokens": 123,
+              "completion_tokens": 188,
+              "total_tokens": 311
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-71",
+            "pred": "Therefore, Nell has 123 more Ace cards than baseball cards.",
+            "usage": {
+              "prompt_tokens": 133,
+              "completion_tokens": 414,
+              "total_tokens": 547
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "svamp-52",
+            "pred": "17 inches",
+            "usage": {
+              "prompt_tokens": 108,
+              "completion_tokens": 195,
+              "total_tokens": 303
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-279",
+            "pred": "23",
+            "usage": {
+              "prompt_tokens": 122,
+              "completion_tokens": 244,
+              "total_tokens": 366
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-44",
+            "pred": "The first chapter has 68 more pages than the second chapter.",
+            "usage": {
+              "prompt_tokens": 123,
+              "completion_tokens": 205,
+              "total_tokens": 328
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-216",
+            "pred": "<number> = 1",
+            "usage": {
+              "prompt_tokens": 129,
+              "completion_tokens": 274,
+              "total_tokens": 403
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-16",
+            "pred": "Each seat on the Ferris wheel can hold 5 people.",
+            "usage": {
+              "prompt_tokens": 107,
+              "completion_tokens": 247,
+              "total_tokens": 354
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-15",
+            "pred": "### Final Answer: FINAL: 369",
+            "usage": {
+              "prompt_tokens": 117,
+              "completion_tokens": 277,
+              "total_tokens": 394
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-47",
+            "pred": "Jack received 11 emails in the morning and evening.",
+            "usage": {
+              "prompt_tokens": 108,
+              "completion_tokens": 166,
+              "total_tokens": 274
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-111",
+            "pred": "Jessie weighs 4 kg now.",
+            "usage": {
+              "prompt_tokens": 116,
+              "completion_tokens": 207,
+              "total_tokens": 323
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-119",
+            "pred": "Olivia initially had $111.",
+            "usage": {
+              "prompt_tokens": 103,
+              "completion_tokens": 190,
+              "total_tokens": 293
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-258",
+            "pred": "Jake has 7 peaches.",
+            "usage": {
+              "prompt_tokens": 111,
+              "completion_tokens": 273,
+              "total_tokens": 384
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-13",
+            "pred": "$13",
+            "usage": {
+              "prompt_tokens": 109,
+              "completion_tokens": 213,
+              "total_tokens": 322
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-287",
+            "pred": "6",
+            "usage": {
+              "prompt_tokens": 100,
+              "completion_tokens": 211,
+              "total_tokens": 311
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-101",
+            "pred": "Zachary did 35 push-ups.",
+            "usage": {
+              "prompt_tokens": 105,
+              "completion_tokens": 230,
+              "total_tokens": 335
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-214",
+            "pred": "54",
+            "usage": {
+              "prompt_tokens": 98,
+              "completion_tokens": 176,
+              "total_tokens": 274
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-112",
+            "pred": "The width of Jesse's room is 2 feet.",
+            "usage": {
+              "prompt_tokens": 104,
+              "completion_tokens": 274,
+              "total_tokens": 378
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-229",
+            "pred": "7",
+            "usage": {
+              "prompt_tokens": 110,
+              "completion_tokens": 229,
+              "total_tokens": 339
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-142",
+            "pred": "105",
+            "usage": {
+              "prompt_tokens": 110,
+              "completion_tokens": 211,
+              "total_tokens": 321
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-3",
+            "pred": "The soda bottles would last for 64 days.",
+            "usage": {
+              "prompt_tokens": 122,
+              "completion_tokens": 260,
+              "total_tokens": 382
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-81",
+            "pred": "Bobby ate a total of 51 pieces of candy and chocolate.",
+            "usage": {
+              "prompt_tokens": 112,
+              "completion_tokens": 236,
+              "total_tokens": 348
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-174",
+            "pred": "So, the final answer is FINAL: 229.",
+            "usage": {
+              "prompt_tokens": 122,
+              "completion_tokens": 195,
+              "total_tokens": 317
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-79",
+            "pred": "The book has **1891** pages altogether.",
+            "usage": {
+              "prompt_tokens": 99,
+              "completion_tokens": 208,
+              "total_tokens": 307
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-110",
+            "pred": "<0>",
+            "usage": {
+              "prompt_tokens": 129,
+              "completion_tokens": 318,
+              "total_tokens": 447
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "svamp-172",
+            "pred": "<2>",
+            "usage": {
+              "prompt_tokens": 111,
+              "completion_tokens": 217,
+              "total_tokens": 328
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-194",
+            "pred": "39 inches",
+            "usage": {
+              "prompt_tokens": 127,
+              "completion_tokens": 274,
+              "total_tokens": 401
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-49",
+            "pred": "They jumped together a total of 66 inches.",
+            "usage": {
+              "prompt_tokens": 115,
+              "completion_tokens": 236,
+              "total_tokens": 351
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-183",
+            "pred": "John needs **230** nails for the house wall.",
+            "usage": {
+              "prompt_tokens": 134,
+              "completion_tokens": 409,
+              "total_tokens": 543
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "svamp-176",
+            "pred": "They had 26 more bottles of soda than apples.",
+            "usage": {
+              "prompt_tokens": 108,
+              "completion_tokens": 217,
+              "total_tokens": 325
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-135",
+            "pred": "8",
+            "usage": {
+              "prompt_tokens": 131,
+              "completion_tokens": 278,
+              "total_tokens": 409
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-22",
+            "pred": "<3>",
+            "usage": {
+              "prompt_tokens": 114,
+              "completion_tokens": 267,
+              "total_tokens": 381
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-235",
+            "pred": "**29 buses** are needed to transport all students.",
+            "usage": {
+              "prompt_tokens": 129,
+              "completion_tokens": 307,
+              "total_tokens": 436
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-274",
+            "pred": "Jesse needs 6840 square feet of carpet to cover the floors of all her rooms.",
+            "usage": {
+              "prompt_tokens": 114,
+              "completion_tokens": 246,
+              "total_tokens": 360
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-63",
+            "pred": "**FINAL:** Josh now has 30 marbles.",
+            "usage": {
+              "prompt_tokens": 109,
+              "completion_tokens": 199,
+              "total_tokens": 308
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-193",
+            "pred": "<number> = 348",
+            "usage": {
+              "prompt_tokens": 129,
+              "completion_tokens": 183,
+              "total_tokens": 312
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-40",
+            "pred": "Danny found 7 bottle caps at the park.",
+            "usage": {
+              "prompt_tokens": 117,
+              "completion_tokens": 231,
+              "total_tokens": 348
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-282",
+            "pred": "268,627 kids stay home.",
+            "usage": {
+              "prompt_tokens": 112,
+              "completion_tokens": 218,
+              "total_tokens": 330
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-150",
+            "pred": "There are 1 less bird than stork sitting on the fence.",
+            "usage": {
+              "prompt_tokens": 108,
+              "completion_tokens": 215,
+              "total_tokens": 323
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-185",
+            "pred": "14 bird families were left near the mountain.",
+            "usage": {
+              "prompt_tokens": 125,
+              "completion_tokens": 231,
+              "total_tokens": 356
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-295",
+            "pred": "There are **30 peaches** in the basket.",
+            "usage": {
+              "prompt_tokens": 104,
+              "completion_tokens": 254,
+              "total_tokens": 358
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-98",
+            "pred": "They had 44 more bottles of regular soda than apples.",
+            "usage": {
+              "prompt_tokens": 108,
+              "completion_tokens": 181,
+              "total_tokens": 289
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "svamp-35",
+            "pred": "The machine made 20 shirts.",
+            "usage": {
+              "prompt_tokens": 98,
+              "completion_tokens": 190,
+              "total_tokens": 288
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-23",
+            "pred": "The school has 333 more girls than boys.",
+            "usage": {
+              "prompt_tokens": 101,
+              "completion_tokens": 214,
+              "total_tokens": 315
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-116",
+            "pred": "### Final Answer: FINAL: 4",
+            "usage": {
+              "prompt_tokens": 122,
+              "completion_tokens": 347,
+              "total_tokens": 469
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "svamp-148",
+            "pred": "They have 121 old games in total.",
+            "usage": {
+              "prompt_tokens": 112,
+              "completion_tokens": 184,
+              "total_tokens": 296
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "svamp-51",
+            "pred": "72",
+            "usage": {
+              "prompt_tokens": 108,
+              "completion_tokens": 197,
+              "total_tokens": 305
+            },
+            "meta": {},
+            "correct": true
+          }
+        ]
+      },
+      "verifier_reprompt_rm": {
+        "summary": {
+          "accuracy": 0.94,
+          "avg_total_tokens": 669.66
+        },
+        "rows": [
+          {
+            "id": "svamp-57",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 356,
+              "completion_tokens": 219,
+              "total_tokens": 575
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "Let's break it down step by step:\n\n1. Paco started with 17 cookies.\n\n2. He ate 14 cookies:\n   - This means he now has \\( 17 - 14 = 3 \\) cookies left.\n\n3. He then gave 13 cookies to his friend:\n   - After giving away these, he would have \\( 3 - 13 = -10 \\) cookies left (which is not possible in reality).\n\nHowever, since the question asks how many more cookies he ate than those he gave to his friend, we can still calculate this based on the initial information given:\n\n- The number of cookies he ate was 14.\n- The number of cookies he gave to his friend was 13.\n\nSo, the difference between the number of cookies he ate and the number he gave to his friend is:\n\\[ 14 - 13 = 1 \\]\n\nTherefore, Paco ate **1** more cookie than he gave to his friend.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"1\",\n  \"feedback\": \"The candidate correctly calculated the difference between the number of cookies eaten and given away as 14 - 13 = 1, which answers the question.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 1",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"1\",\n  \"feedback\": \"The difference between cookies eaten (14) and given away (13) is 1, which matches the candidate answer.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 1",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"1\",\n  \"feedback\": \"The difference between cookies eaten (14) and given away (13) is 1, matching the candidate's answer.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-12",
+            "pred": "Cannot determine",
+            "usage": {
+              "prompt_tokens": 379,
+              "completion_tokens": 122,
+              "total_tokens": 501
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To find out how many apps Dave added, we can follow these steps:\n\n1. **Identify the initial number of apps**: Dave initially had 17 apps.\n\n2. **Identify the final number of apps**: After adding more apps, Dave has 18 apps remaining.\n\n3. **Calculate the difference between the final and initial numbers**:\n   \\[\n   18 - 17 = 1\n   \\]\n\nSo, Dave added 1 app to his phone. \n\nThe answer is: FINAL: 1.",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"Cannot determine\",\n  \"feedback\": \"The problem states Dave had 17 apps and after adding some he had 18 left, which is contradictory because adding apps should increase the total, not decrease it. The candidate assumed the final number is 18 apps, but the wording '18 left' suggests apps were removed or something else happened. The problem is ambiguous and cannot be solved as stated.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: Cannot determine",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"Cannot determine\",\n  \"feedback\": \"The problem states Dave had 17 apps and after adding some he had 18 left, which is contradictory or unclear. It is not possible to determine how many apps he added based on the information given.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: Cannot determine",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"Cannot determine\",\n  \"feedback\": \"The problem states Dave had 17 apps and after adding some he had 18 left, which is contradictory or unclear. It is not possible to determine how many apps he added based on the given information.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": false
+          },
+          {
+            "id": "svamp-140",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 290,
+              "completion_tokens": 106,
+              "total_tokens": 396
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "Step 1: Identify the number of apples each person has.\n- Adam has 9 apples.\n- Jackie has 10 apples.\n\nStep 2: Determine how many more apples Jackie has compared to Adam.\n- Subtract the number of apples Adam has from the number of apples Jackie has:\n  \\( 10 - 9 = 1 \\)\n\nFinal Answer: Jackie has 1 more apple than Adam.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"1\",\n  \"feedback\": \"The candidate correctly calculated the difference as 1 and provided the correct final answer.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "Jackie has 1 more apple than Adam. FINAL: 1.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"1\",\n  \"feedback\": \"The difference between Jackie's and Adam's apples is 10 - 9 = 1, which matches the candidate's answer.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 1",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"1\",\n  \"feedback\": \"The candidate answer is correct in value but lacks the step-by-step solution as requested.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-125",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 339,
+              "completion_tokens": 177,
+              "total_tokens": 516
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To solve this problem, let's break it down into steps:\n\n1. **Identify the costs of the items Dan bought:**\n   - Candy bar cost: $2\n   - Chocolate cost: $3\n\n2. **Determine how much more money was spent on the chocolate compared to the candy bar:**\n\n   To find out how much more money was spent on the chocolate:\n   \\[\n   \\text{Difference} = \\text{Cost of chocolate} - \\text{Cost of candy bar}\n   \\]\n   Substituting the given values:\n   \\[\n   \\text{Difference} = \\$3 - \\$2 = \\$1\n   \\]\n\nSo, Dan spent $1 more on buying the chocolate than he did on buying the candy bar.\n\n**Final Answer:** $1",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"1\",\n  \"feedback\": \"The candidate correctly calculated the difference in spending between the chocolate and the candy bar as $1.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "Final answer: 1",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"1\",\n  \"feedback\": \"The candidate's answer is correct in value but does not follow the required format 'FINAL: <number>'.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "Final Answer: 1",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"1\",\n  \"feedback\": \"The candidate's final answer is correct, but the problem asks for a step-by-step solution ending with 'FINAL: <number>'. The candidate only provided 'Final Answer: 1' without any steps or the required format.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-114",
+            "pred": "84",
+            "usage": {
+              "prompt_tokens": 378,
+              "completion_tokens": 204,
+              "total_tokens": 582
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine how many people can ride the Ferris wheel on large seats, we need to follow these steps:\n\n1. **Identify the number of large seats**: There are 7 large seats.\n\n2. **Determine the capacity of each large seat**: Each large seat can hold 12 people.\n\n3. **Calculate the total capacity for all large seats**:\n   \\[\n   \\text{Total capacity} = \\text{Number of large seats} \\times \\text{Capacity per large seat}\n   \\]\n   Substituting the given values:\n   \\[\n   \\text{Total capacity} = 7 \\times 12\n   \\]\n\n4. **Perform the multiplication**:\n   \\[\n   7 \\times 12 = 84\n   \\]\n\nTherefore, the total number of people that can ride the Ferris wheel on large seats is \\( \\boxed{84} \\).",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"84\",\n  \"feedback\": \"The candidate correctly calculated 7 large seats times 12 people per seat to get 84.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 84",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"84\",\n  \"feedback\": \"The number of people on large seats is 7 seats * 12 people = 84, which matches the candidate answer.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 84",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"84\",\n  \"feedback\": \"The number of people on large seats is 7 seats * 12 people = 84, which matches the candidate answer.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-71",
+            "pred": "91",
+            "usage": {
+              "prompt_tokens": 605,
+              "completion_tokens": 740,
+              "total_tokens": 1345
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine how many more Ace cards than baseball cards Nell has, we need to follow these steps:\n\n1. **Calculate the total number of cards Nell initially had:**\n   - Baseball cards: 246\n   - Ace cards: 214\n\n   \\[\n   \\text{Total initial cards} = 246 + 214 = 460\n   \\]\n\n2. **Determine the number of cards Nell gave away:**\n   - After giving away some cards, she has:\n     - Baseball cards: 404\n     - Ace cards: 495\n\n   Let \\( x \\) be the number of baseball cards and \\( y \\) be the number of Ace cards given away.\n\n   The equation for the total number of cards after giving some away is:\n   \\[\n   (246 - x) + (214 - y) = 404 + 495\n   \\]\n\n3. **Simplify the equation:**\n   \\[\n   246 + 214 - x - y = 899\n   \\]\n   \\[\n   460 - x - y = 899\n   \\]\n\n4. **Solve for \\( x + y \\):**\n   \\[\n   x + y = 460 - 899\n   \\]\n   \\[\n   x + y = -439\n   \\]\n\nSince it's not possible to give away more cards than you originally had, there must be an error in our interpretation or calculation. Let's re-evaluate the problem.\n\nGiven that Nell ended up with fewer cards overall, let's correct our approach:\n\n1. **Re-calculate the total number of cards Nell initially had:**\n   \\[\n   \\text{Total initial cards} = 246 + 214 = 460\n   \\]\n\n2. **Correctly set up the equation considering the final counts:**\n   - Final baseball cards: 404\n   - Final Ace cards: 495\n\n   Let \\( x \\) be the number of baseball cards given away and \\( y \\) be the number of Ace cards given away.\n\n   The equation for the total number of cards after giving some away should reflect the decrease in total cards:\n   \\[\n   (246 - x) + (214 - y) = 460 - (x + y)\n   \\]\n\n3. **Simplify the equation:**\n   \\[\n   246 + 214 - x - y = 460 - (x + y)\n   \\]\n   \\[\n   460 - x - y = 460 - (x + y)\n   \\]\n\n4. **Solve for \\( x + y \\):**\n   \\[\n   x + y = 0\n   \\]\n\nThis indicates that Nell did not give away any cards; instead, she received new cards from Jeff.\n\n5. **Final count of cards:**\n   - Baseball cards: 404\n   - Ace cards: 495\n\n6. **Calculate the difference between Ace cards and baseball cards:**\n   \\[\n   495 - 404 = 91\n   \\]\n\nThus, Nell has \\(\\boxed{91}\\) more Ace cards than baseball cards.",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"-11\",\n  \"feedback\": \"The candidate's reasoning is flawed because the final counts of cards are greater than the initial counts, which is impossible if Nell gave cards away. The problem likely contains an error or is misinterpreted. However, based on the given numbers, the difference between Ace and baseball cards Nell currently has is 495 - 404 = 91, but this contradicts the initial counts. The correct difference, assuming the final counts are correct, is 495 - 404 = 91, but since the initial counts are less, the problem is inconsistent. Strictly, the difference is 495 - 404 = 91, but the candidate's approach is confused. The candidate's final number 91 matches the difference in final cards, so the numeric answer is correct, but the reasoning is flawed. Given strict evaluation, the candidate's final numeric answer is correct, so the verdict should be PASS with correct_answer 91.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 91",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"91\",\n  \"feedback\": \"The candidate answer is correct. Nell has 495 Ace cards and 404 baseball cards left, so the difference is 495 - 404 = 91.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 91",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"91\",\n  \"feedback\": \"The candidate's answer is correct. Nell has 495 Ace cards and 404 baseball cards left, so the difference is 495 - 404 = 91.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-52",
+            "pred": "17",
+            "usage": {
+              "prompt_tokens": 319,
+              "completion_tokens": 211,
+              "total_tokens": 530
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "Let's solve this step by step:\n\n1. Robin initially had 16 inches of hair.\n\n2. He cut off 11 inches:\n   - Initial length: 16 inches\n   - Cut off: 11 inches\n   - Length after cutting: 16 - 11 = 5 inches\n\n3. His hair then grew by 12 inches:\n   - Length after growing: 5 + 12 = 17 inches\n\nSo, the final length of Robin's hair is **17 inches**.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"17\",\n  \"feedback\": \"The candidate correctly calculated the final hair length as 17 inches.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "Robin's hair was originally 16 inches long. After cutting off 11 inches, the new length became:\n\n\\[ 16 - 11 = 5 \\text{ inches} \\]\n\nThen, the hair grew by an additional 12 inches. So, the final length of Robin's hair is:\n\n\\[ 5 + 12 = 17 \\text{ inches} \\]\n\nFINAL: 17",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"17\",\n  \"feedback\": \"The candidate correctly calculated the hair length after cutting and regrowth, resulting in 17 inches.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 17",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"17\",\n  \"feedback\": \"Initial length 16 inches, cut 11 inches (16 - 11 = 5), then grew 12 inches (5 + 12 = 17). Candidate answer is correct.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-279",
+            "pred": "23",
+            "usage": {
+              "prompt_tokens": 391,
+              "completion_tokens": 252,
+              "total_tokens": 643
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To solve this problem, let's break it down into steps:\n\n1. **Initial number of children on the bus**: There were initially 41 children on the bus.\n\n2. **Number of children remaining after getting off at the bus stop**: After some children got off the bus, there were 18 children left.\n\n3. **Calculate the number of children who got off**:\n   \\[\n   \\text{Children who got off} = \\text{Initial number of children} - \\text{Remaining number of children}\n   \\]\n   \\[\n   \\text{Children who got off} = 41 - 18 = 23\n   \\]\n\n4. **Determine how many more children were on the bus before the bus stop than there are now**:\n   \\[\n   \\text{Difference} = \\text{Initial number of children} - \\text{Remaining number of children}\n   \\]\n   \\[\n   \\text{Difference} = 41 - 18 = 23\n   \\]\n\nSo, there were 23 more children on the bus before the bus stop than there are now.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"23\",\n  \"feedback\": \"The candidate correctly calculated the difference between the initial and remaining number of children as 23.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 23",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"23\",\n  \"feedback\": \"Initially, there were 41 children on the bus, and after some got off, 18 remained. The difference is 41 - 18 = 23, which matches the candidate's answer.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 23",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"23\",\n  \"feedback\": \"The number of children who got off the bus is 41 - 18 = 23, which matches the candidate's answer.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-44",
+            "pred": "68",
+            "usage": {
+              "prompt_tokens": 388,
+              "completion_tokens": 107,
+              "total_tokens": 495
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To find out how many more pages the first chapter has compared to the second chapter, we need to subtract the number of pages in the second chapter from the number of pages in the first chapter.\n\nFirst chapter: 91 pages\nSecond chapter: 23 pages\n\nDifference = First chapter - Second chapter\nDifference = 91 - 23\nDifference = 68\n\nThe first chapter has 68 more pages than the second chapter.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"68\",\n  \"feedback\": \"The candidate correctly subtracted the number of pages in the second chapter from the first chapter and arrived at the correct difference of 68 pages.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 68.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"68\",\n  \"feedback\": \"The difference between the first and second chapters is 91 - 23 = 68 pages, which matches the candidate's answer.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 68",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"68\",\n  \"feedback\": \"The first chapter has 91 pages and the second chapter has 23 pages. The difference is 91 - 23 = 68, which matches the candidate's answer.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-216",
+            "pred": "Therefore, John needs **FINAL: 1** plank for the house wall.",
+            "usage": {
+              "prompt_tokens": 490,
+              "completion_tokens": 686,
+              "total_tokens": 1176
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine how many planks John needs for the house wall, we can follow these steps:\n\n1. **Identify the total number of nails used**: \n   - Total nails = 11\n\n2. **Determine the number of nails needed per plank**:\n   - Each plank requires 3 nails.\n\n3. **Calculate the remaining nails after securing the planks**:\n   - Additional nails used = 8\n   - Remaining nails = Total nails - Additional nails\n   \\[\n   \\text{Remaining nails} = 11 - 8 = 3\n   \\]\n\n4. **Calculate the number of planks using the remaining nails**:\n   - Nails per plank = 3\n   - Number of planks = Remaining nails / Nails per plank\n   \\[\n   \\text{Number of planks} = \\frac{3}{3} = 1\n   \\]\n\nTherefore, John needs **1 plank** for the house wall.",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"1\",\n  \"feedback\": \"The candidate's reasoning is incorrect because the total nails used (11) includes the nails for the planks plus an additional 8 nails. The number of nails used for planks is 11 - 8 = 3 nails, and since each plank requires 3 nails, the number of planks is 3 / 3 = 1. The candidate's final answer is correct, but the explanation is confusing and mislabels the 'additional nails' as 'remaining nails'. The candidate should clarify that the 8 nails are extra nails beyond those used for planks.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "Let's break it down step by step:\n\n1. **Total Nails Used**: John uses 11 nails in total.\n\n2. **Nails for Planks**: Each plank requires 3 nails, and there are 8 additional nails used.\n\n3. **Nails for Planks Calculation**:\n   \\[\n   \\text{Nails for planks} = \\text{Total nails} - \\text{Additional nails}\n   \\]\n   \\[\n   \\text{Nails for planks} = 11 - 8 = 3\n   \\]\n\n4. **Planks Calculation**:\n   Since each plank requires 3 nails, we divide the total nails used for planks by the number of nails per plank:\n   \\[\n   \\text{Number of planks} = \\frac{\\text{Nails for planks}}{\\text{Nails per plank}}\n   \\]\n   \\[\n   \\text{Number of planks} = \\frac{3}{3} = 1\n   \\]\n\nFinal Answer: John needs **1** plank for the house wall.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"1\",\n  \"feedback\": \"The candidate correctly calculated the number of planks by subtracting the additional nails from the total nails and dividing by nails per plank.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "To solve this problem, let's break it down step by step:\n\n1. **Total Nails Used**: The total number of nails used is given as 11.\n\n2. **Nails Per Plank**: Each plank requires 3 nails to be securely fastened.\n\n3. **Additional Nails**: An extra 8 nails were used.\n\n4. **Calculate Total Nails Needed for Planks**:\n   - First, we need to account for the additional nails that were used (8 nails).\n   - Then, we subtract these additional nails from the total nails used (11).\n\n5. **Number of Planks Calculation**:\n   - Number of planks = Total nails needed for planks + Additional nails\n\nLet's perform the calculations:\n\n\\[ \\text{Total nails needed for planks} = 11 - 8 = 3 \\]\n\nNow, divide the total nails needed for planks by the nails required per plank:\n\n\\[ \\text{Number of planks} = \\frac{\\text{Total nails needed for planks}}{\\text{nails per plank}} = \\frac{3}{3} = 1 \\]\n\nTherefore, John needs **FINAL: 1** plank for the house wall.",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"1\",\n  \"feedback\": \"The candidate's final numeric answer is correct, but the reasoning is flawed. The candidate incorrectly adds additional nails instead of subtracting them to find nails used for planks, yet arrives at the correct final number by coincidence. The step 'Number of planks = Total nails needed for planks + Additional nails' is incorrect and misleading.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-16",
+            "pred": "5.",
+            "usage": {
+              "prompt_tokens": 390,
+              "completion_tokens": 251,
+              "total_tokens": 641
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine how many people each seat on the Ferris wheel can hold, we need to divide the total number of people that can ride the wheel simultaneously by the number of seats.\n\nHere's the step-by-step process:\n\n1. Identify the total number of people that can ride the wheel at the same time.\n   - According to the problem, 20 people can ride the wheel at the same time.\n\n2. Identify the number of seats available on the Ferris wheel.\n   - The problem states there are 4 seats.\n\n3. Divide the total number of people by the number of seats to find out how many people each seat can hold.\n   \\[\n   \\text{Number of people per seat} = \\frac{\\text{Total number of people}}{\\text{Number of seats}}\n   \\]\n   Substituting the given values:\n   \\[\n   \\text{Number of people per seat} = \\frac{20}{4}\n   \\]\n\n4. Perform the division.\n   \\[\n   \\frac{20}{4} = 5\n   \\]\n\nSo, each seat on the Ferris wheel can hold **5** people.",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"5\",\n  \"feedback\": \"The problem states the Ferris wheel has 4 seats, but 20 people can ride simultaneously, which is inconsistent. Typically, each seat holds one person. The candidate's calculation assumes multiple people per seat, which is illogical. The problem is flawed or ambiguous, but given the data, the candidate's numeric answer is correct mathematically but not logically consistent with the concept of seats. Strictly, the problem is invalid.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 5",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"5\",\n  \"feedback\": \"20 people divided by 4 seats equals 5 people per seat, so the candidate answer is correct.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 5.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"5\",\n  \"feedback\": \"20 people divided by 4 seats equals 5 people per seat, which matches the candidate answer.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-15",
+            "pred": "369",
+            "usage": {
+              "prompt_tokens": 392,
+              "completion_tokens": 267,
+              "total_tokens": 659
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine how much farther the group needs to travel until they reach the end of the cave, we can follow these steps:\n\n1. **Determine the remaining depth to be traveled:**\n   - The total depth of the cave is 1218 feet.\n   - They have already traveled 849 feet.\n\n   Subtract the distance already traveled from the total depth:\n   \\[\n   1218 \\text{ feet} - 849 \\text{ feet} = 369 \\text{ feet}\n   \\]\n\n2. **Calculate the time required to travel the remaining distance:**\n   - Their current speed is 17 feet per minute.\n\n   To find out how many minutes it will take to cover the remaining 369 feet:\n   \\[\n   \\frac{369 \\text{ feet}}{17 \\text{ feet/minute}} = 21.70588235 \\text{ minutes}\n   \\]\n\nSince the problem asks for the final answer in whole numbers, we round this to the nearest whole number:\n\\[\n21 \\text{ minutes}\n\\]\n\nTherefore, the final answer is:\n\\boxed{21}",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"369\",\n  \"feedback\": \"The problem asks for how much farther they need to travel, which is the remaining distance (1218 - 849 = 369 feet). The candidate incorrectly provided the time to travel that distance instead of the distance itself.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 369",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"369\",\n  \"feedback\": \"The distance remaining is 1218 - 849 = 369 feet, which matches the candidate's answer.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 369",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"369\",\n  \"feedback\": \"The distance remaining is 1218 - 849 = 369 feet, which matches the candidate's answer.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-47",
+            "pred": "11",
+            "usage": {
+              "prompt_tokens": 334,
+              "completion_tokens": 155,
+              "total_tokens": 489
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To find out how many emails Jack received in the morning and evening combined, we need to add the number of emails he received in those two times.\n\n1. **Morning Emails**: Jack received 3 emails in the morning.\n2. **Evening Emails**: Jack received 8 emails in the evening.\n\nNow, let's add these numbers together:\n\n\\[ \\text{Total emails} = \\text{Morning emails} + \\text{Evening emails} \\]\n\\[ \\text{Total emails} = 3 + 8 \\]\n\nPerform the addition:\n\n\\[ 3 + 8 = 11 \\]\n\nSo, Jack received a total of 11 emails in the morning and evening.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"11\",\n  \"feedback\": \"The candidate correctly added the morning and evening emails (3 + 8) to get 11.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 11",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"11\",\n  \"feedback\": \"The sum of emails received in the morning (3) and evening (8) is 11, which matches the candidate's answer.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 11",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"11\",\n  \"feedback\": \"The sum of emails received in the morning (3) and evening (8) is 11, which matches the candidate's answer.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-111",
+            "pred": "Jessi weighs 4 kilograms now.",
+            "usage": {
+              "prompt_tokens": 362,
+              "completion_tokens": 308,
+              "total_tokens": 670
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "Step 1: Determine Jessie's weight after the first week of jogging.\n- Initial weight: 114 kg\n- Weight loss in the first week: -50 kg\n\n\\[ \\text{Weight after first week} = 114 + (-50) = 114 - 50 = 64 \\, \\text{kg} \\]\n\nStep 2: Determine Jessie's weight after the second week of jogging.\n- Weight after first week: 64 kg\n- Weight loss in the second week: -60 kg\n\n\\[ \\text{Final weight} = 64 + (-60) = 64 - 60 = 4 \\, \\text{kg} \\]\n\nFINAL: Jessie weighs 4 kilograms now.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"4\",\n  \"feedback\": \"The candidate correctly subtracted the weight losses from the initial weight step-by-step, arriving at the correct final weight of 4 kilograms.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "Jessie's current weight is FINAL: 4 kg.",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"4\",\n  \"feedback\": \"The candidate's final number is correct, but the problem requires step-by-step solution. The candidate only provided the final answer without any steps.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "Step 1: Jessie initially weighed 114 kilograms.\n\nStep 2: She lost 50 kilograms in the first week.\n   Final weight after first week = Initial weight - First loss\n   Final weight after first week = 114 kg - 50 kg = 64 kg\n\nStep 3: In the second week, she lost an additional 60 kilograms.\n   Final weight after second week = Final weight after first week - Second loss\n   Final weight after second week = 64 kg - 60 kg = 4 kg\n\nFinal answer: Jessi weighs 4 kilograms now.",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"4\",\n  \"feedback\": \"The candidate's numeric answer is correct (4 kilograms), but the problem context is unrealistic as losing 110 kilograms in two weeks is highly improbable. However, since the evaluation is strictly numeric, the answer is correct. The candidate's final number matches the correct calculation.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-119",
+            "pred": "111",
+            "usage": {
+              "prompt_tokens": 313,
+              "completion_tokens": 98,
+              "total_tokens": 411
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To find out how much money Olivia had initially, we need to add the amount she spent to the amount she has left.\n\nStep 1: Identify the amounts.\n- Amount spent: $78\n- Amount left: $33\n\nStep 2: Add these two amounts together.\n$78 + $33 = $111\n\nFinal answer: Olivia had $111 initially.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"111\",\n  \"feedback\": \"The candidate correctly added the amount spent and the amount left to find the initial amount.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 111",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"111\",\n  \"feedback\": \"Olivia initially had 78 + 33 = 111 dollars, which matches the candidate answer.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 111",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"111\",\n  \"feedback\": \"Olivia initially had 78 + 33 = 111 dollars, which matches the candidate's answer.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-258",
+            "pred": "7",
+            "usage": {
+              "prompt_tokens": 347,
+              "completion_tokens": 368,
+              "total_tokens": 715
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine how many peaches Jake has, we need to follow these steps:\n\n1. **Identify the number of peaches Steven has:**\n   \\[\n   \\text{Steven's peaches} = 19\n   \\]\n\n2. **Determine how many fewer peaches Jake has compared to Steven:**\n   \\[\n   \\text{Difference in peaches} = 12\n   \\]\n   Therefore, Jake has:\n   \\[\n   \\text{Jake's peaches} = \\text{Steven's peaches} - 12 = 19 - 12 = 7\n   \\]\n\n3. **Verify the information about apples:**\n   - Steven has 14 apples.\n   - Jake has 79 more apples than Steven.\n\n4. **Calculate the total number of apples Jake has:**\n   \\[\n   \\text{Jake's apples} = \\text{Steven's apples} + 79 = 14 + 79 = 93\n   \\]\n\n5. **Summarize the final answer for peaches:**\n   \\[\n   \\boxed{7}\n   \\]",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"7\",\n  \"feedback\": \"The candidate correctly calculated Jake's peaches as 19 - 12 = 7 and provided a clear, step-by-step solution.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "Final answer: 7\n\nStep 1: Determine the number of peaches Steven has.\nSteven has 19 peaches.\n\nStep 2: Calculate how many fewer peaches Jake has compared to Steven.\nJake has 12 fewer peaches than Steven.\n\nStep 3: Subtract the difference from Steven's total peaches to find out how many peaches Jake has.\nJake's peaches = Steven's peaches - Difference\nJake's peaches = 19 - 12\nJake's peaches = 7\n\nTherefore, Jake has 7 peaches.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"7\",\n  \"feedback\": \"The candidate correctly calculated that Jake has 7 peaches by subtracting 12 from Steven's 19 peaches.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 7",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"0\",\n  \"feedback\": \"Jake has 12 fewer peaches than Steven, who has 19 peaches, so Jake has 19 - 12 = 7 peaches. The candidate answer is 7, which is correct.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-13",
+            "pred": "13",
+            "usage": {
+              "prompt_tokens": 336,
+              "completion_tokens": 127,
+              "total_tokens": 463
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To solve this problem, we need to determine how much money Dan spent on both the candy bar and the chocolate.\n\n1. Identify the cost of each item:\n   - The candy bar costs $7.\n   - The chocolate costs $6.\n\n2. Add the costs together to find the total amount spent:\n   \\[\n   7 + 6 = 13\n   \\]\n\nSo, Dan spent a total of $13 on the candy bar and the chocolate.\n\nFinal answer: Dan spent $13 buying the candy bar and chocolate.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"13\",\n  \"feedback\": \"The candidate correctly calculated the total amount spent as 7 + 6 = 13 and provided the correct final answer.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "Final Answer: 13",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"13\",\n  \"feedback\": \"The total amount spent is 7 + 6 = 13, which matches the candidate's final answer.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "Final answer: 13",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"13\",\n  \"feedback\": \"The total amount spent is 7 + 6 = 13, which matches the candidate's final answer.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-287",
+            "pred": "Matthew gave crackers to 6 friends.",
+            "usage": {
+              "prompt_tokens": 308,
+              "completion_tokens": 304,
+              "total_tokens": 612
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine how many friends Matthew gave crackers to, we can follow these steps:\n\n1. **Identify the total number of crackers Matthew has:** \n   Matthew has 36 crackers.\n\n2. **Determine how many crackers each friend receives:**\n   Each friend receives 6 crackers.\n\n3. **Set up the division problem to find out how many friends received the crackers:**\n   We need to divide the total number of crackers by the number of crackers each friend receives:\n   \\[\n   \\frac{36}{6}\n   \\]\n\n4. **Perform the division:**\n   \\[\n   36 \\div 6 = 6\n   \\]\n\nSo, Matthew gave crackers to \\boxed{6} friends.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"6\",\n  \"feedback\": \"The candidate correctly divided 36 crackers by 6 crackers per friend to find 6 friends.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 6",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"6\",\n  \"feedback\": \"The candidate answer is correct, but the problem requires step-by-step solution before the final answer. The candidate only provided the final answer without steps.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "Step 1: Determine how many crackers Matthew has in total.\nMatthew had 36 crackers.\n\nStep 2: Determine how many crackers Matthew gives to each friend.\nMatthew gives 6 crackers to each friend.\n\nStep 3: Calculate the number of friends Matthew can give crackers to.\nTo find this, divide the total number of crackers by the number of crackers per friend:\n\n\\[ \\text{Number of friends} = \\frac{\\text{Total crackers}}{\\text{Crackers per friend}} \\]\n\n\\[ \\text{Number of friends} = \\frac{36}{6} \\]\n\n\\[ \\text{Number of friends} = 6 \\]\n\nFinal Answer: Matthew gave crackers to 6 friends.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"6\",\n  \"feedback\": \"The candidate correctly calculated the number of friends by dividing total crackers by crackers per friend and provided the correct final answer.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-101",
+            "pred": "35",
+            "usage": {
+              "prompt_tokens": 318,
+              "completion_tokens": 252,
+              "total_tokens": 570
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To find out how many push-ups Zachary did, we can set up an equation based on the information given.\n\n1. Let's denote the number of push-ups Zachary did as \\( Z \\).\n2. According to the problem, David did 9 more push-ups than Zachary. So, if David did 44 push-ups, we can write this relationship as:\n   \\[\n   D = Z + 9\n   \\]\n3. We know that David did 44 push-ups, so we substitute \\( D \\) with 44:\n   \\[\n   44 = Z + 9\n   \\]\n4. To solve for \\( Z \\), we need to isolate it on one side of the equation. We do this by subtracting 9 from both sides:\n   \\[\n   44 - 9 = Z\n   \\]\n5. Simplifying the left side gives us:\n   \\[\n   35 = Z\n   \\]\n\nSo, Zachary did 35 push-ups. \n\nFINAL ANSWER: Zachary did 35 push-ups.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"35\",\n  \"feedback\": \"The candidate correctly solved the equation and found that Zachary did 35 push-ups.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "Zachary did 35 push-ups.\n\nFINAL: 35",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"35\",\n  \"feedback\": \"Zachary did 44 - 9 = 35 push-ups, which matches the candidate's answer.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 35",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"35\",\n  \"feedback\": \"Zachary did 44 - 9 = 35 push-ups, which matches the candidate answer.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-214",
+            "pred": "54",
+            "usage": {
+              "prompt_tokens": 298,
+              "completion_tokens": 126,
+              "total_tokens": 424
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To find out how many cookies Paco had initially, we need to add the number of cookies he ate to the number of cookies he has left.\n\nStep 1: Identify the number of cookies eaten.\nPaco ate 19 cookies.\n\nStep 2: Identify the number of cookies left.\nPaco has 35 cookies left.\n\nStep 3: Add the two quantities together.\n19 (cookies eaten) + 35 (cookies left) = 54\n\nFinal answer: Paco had 54 cookies in the beginning.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"54\",\n  \"feedback\": \"The candidate correctly added the cookies eaten and cookies left to find the initial amount.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "Final answer: 54",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"54\",\n  \"feedback\": \"The total number of cookies initially is 19 eaten + 35 left = 54, which matches the candidate answer.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 54",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"54\",\n  \"feedback\": \"Paco started with 19 cookies eaten plus 35 cookies left, totaling 54 cookies.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-112",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 320,
+              "completion_tokens": 177,
+              "total_tokens": 497
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To find the width of Jesse's room, we can use the formula for the area of a rectangle:\n\n\\[ \\text{Area} = \\text{Length} \\times \\text{Width} \\]\n\nWe know the area (14 square feet) and the length (7 feet), so we need to solve for the width.\n\nStep 1: Plug in the known values into the formula.\n\\[ 14 = 7 \\times \\text{Width} \\]\n\nStep 2: To isolate the width, divide both sides of the equation by 7:\n\\[ \\text{Width} = \\frac{14}{7} \\]\n\nStep 3: Perform the division:\n\\[ \\text{Width} = 2 \\]\n\nSo, the width of Jesse's room is **2 feet**.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"2\",\n  \"feedback\": \"The candidate correctly calculated the width as 2 feet using the area formula.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 2",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"2\",\n  \"feedback\": \"The width is found by dividing the area (14 sq ft) by the length (7 ft), which gives 2 ft. The candidate's answer is correct.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 2",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"2\",\n  \"feedback\": \"Width = Area / Length = 14 / 7 = 2 feet. Candidate answer is correct.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-229",
+            "pred": "7",
+            "usage": {
+              "prompt_tokens": 365,
+              "completion_tokens": 227,
+              "total_tokens": 592
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine how many tomatoes the farmer will have left after today, we need to follow these steps:\n\n1. Start with the total number of tomatoes the farmer initially had.\n2. Subtract the number of tomatoes he picked yesterday.\n3. Subtract the number of tomatoes he picked today.\n\nLet's go through each step in detail:\n\n1. The initial number of tomatoes is 171.\n2. Yesterday, the farmer picked 134 tomatoes. So, we subtract 134 from 171:\n   \\[\n   171 - 134 = 37\n   \\]\n   After picking tomatoes yesterday, the farmer has 37 tomatoes left.\n3. Today, the farmer picked 30 more tomatoes. We subtract 30 from the remaining 37 tomatoes:\n   \\[\n   37 - 30 = 7\n   \\]\n   After picking tomatoes today, the farmer has 7 tomatoes left.\n\nTherefore, the final answer is:\n\\[\n\\boxed{7}\n\\]",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"7\",\n  \"feedback\": \"The candidate correctly subtracted the tomatoes picked yesterday and today from the initial total, arriving at the correct final number of 7.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "Final answer: 7",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"7\",\n  \"feedback\": \"The farmer had 171 tomatoes, picked 134 yesterday and 30 today, total picked 164. Leftover is 171 - 164 = 7, which matches the candidate answer.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 7",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"7\",\n  \"feedback\": \"The farmer had 171 tomatoes, picked 134 yesterday and 30 today, total picked 164. Leftover is 171 - 164 = 7, which matches the candidate answer.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-142",
+            "pred": "Therefore, FINAL: 105.",
+            "usage": {
+              "prompt_tokens": 335,
+              "completion_tokens": 331,
+              "total_tokens": 666
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "Let's solve this step by step:\n\n1. Kelly starts with 80 Nintendo games.\n\n2. She finds 31 more Nintendo games:\n   \\( 80 + 31 = 111 \\) Nintendo games in total.\n\n3. We want her to end up with 6 Nintendo games after giving some away.\n\n4. To find out how many games she needs to give away, we subtract the number of games she wants to keep from the total number of games she currently has:\n   \\( 111 - 6 = 105 \\)\n\nSo, Kelly needs to give away **105** Nintendo games to have exactly 6 left.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"105\",\n  \"feedback\": \"The candidate correctly calculated the total number of games and the number to give away to have 6 left.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "Kelly initially had 80 Nintendo games. After finding 31 more, she now has:\n\n\\[ 80 + 31 = 111 \\]\n\nShe wants to end up with 6 games left. To find out how many games she needs to give away, we subtract the desired number of games from her current total:\n\n\\[ 111 - 6 = 105 \\]\n\nTherefore, FINAL: 105.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"105\",\n  \"feedback\": \"The candidate correctly calculated the total number of games and the number to give away to have 6 left.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "Kelly initially had 80 Nintendo games. After finding 31 more, she now has:\n\n\\[ 80 + 31 = 111 \\]\n\nShe wants to end up with 6 games left. To find out how many games she needs to give away, we subtract the desired number of games from her current total:\n\n\\[ 111 - 6 = 105 \\]\n\nTherefore, FINAL: 105.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"105\",\n  \"feedback\": \"The candidate correctly calculated the total number of games and the number to give away to have 6 left.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-3",
+            "pred": "64",
+            "usage": {
+              "prompt_tokens": 421,
+              "completion_tokens": 236,
+              "total_tokens": 657
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine how many days the soda bottles would last, we need to follow these steps:\n\n1. **Calculate the total number of soda bottles Debby has:**\n   \\[\n   \\text{Total soda bottles} = 256\n   \\]\n\n2. **Determine how many soda bottles Debby drinks per day:**\n   \\[\n   \\text{Daily consumption of soda bottles} = 4\n   \\]\n\n3. **Divide the total number of soda bottles by the daily consumption to find out how many days the soda bottles will last:**\n   \\[\n   \\text{Number of days} = \\frac{\\text{Total soda bottles}}{\\text{Daily consumption}}\n   \\]\n   Substituting the values:\n   \\[\n   \\text{Number of days} = \\frac{256}{4}\n   \\]\n\n4. **Perform the division:**\n   \\[\n   \\frac{256}{4} = 64\n   \\]\n\nTherefore, the soda bottles would last for \\boxed{64} days.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"64\",\n  \"feedback\": \"The candidate correctly calculated the number of days the soda bottles would last by dividing 256 by 4, resulting in 64 days.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 64",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"64\",\n  \"feedback\": \"The candidate answer is correct. The soda bottles last 256 / 4 = 64 days. However, the problem asks specifically for the soda bottles, and the candidate answer matches the correct calculation. The candidate should have shown the steps, but since the final number is correct, the answer is correct.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 64",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"64\",\n  \"feedback\": \"The candidate answer is correct, but the problem asks how many days the soda bottles would last. Since Debby drinks 4 soda bottles a day and has 256 soda bottles, the soda bottles last 256 / 4 = 64 days. The candidate answer matches this, so it should PASS.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-81",
+            "pred": "51",
+            "usage": {
+              "prompt_tokens": 356,
+              "completion_tokens": 193,
+              "total_tokens": 549
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To find out how many pieces of candy and chocolate Bobby ate altogether, we need to follow these steps:\n\n1. **Identify the number of candies eaten initially**: Bobby ate 33 pieces of candy.\n\n2. **Add the additional candies eaten**: Bobby then ate 4 more pieces of candy.\n\n   \\[\n   33 + 4 = 37\n   \\]\n\n   So, Bobby ate 37 pieces of candy in total.\n\n3. **Include the chocolate pieces**: Bobby also ate 14 pieces of chocolate.\n\n4. **Calculate the total number of items (candies and chocolates)**:\n   \n   \\[\n   37 \\text{ (candies)} + 14 \\text{ (chocolates)} = 51\n   \\]\n\nTherefore, Bobby ate a total of 51 pieces of candy and chocolate.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"51\",\n  \"feedback\": \"The candidate correctly added the pieces of candy and chocolate to find the total of 51.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 51",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"51\",\n  \"feedback\": \"Bobby ate 33 + 4 = 37 pieces of candy, plus 14 pieces of chocolate, totaling 37 + 14 = 51 pieces altogether.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 51",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"51\",\n  \"feedback\": \"The candidate answer is correct. Bobby ate 33 + 4 = 37 pieces of candy, plus 14 pieces of chocolate, totaling 37 + 14 = 51 pieces. The candidate's FINAL answer matches the correct total.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-174",
+            "pred": "229",
+            "usage": {
+              "prompt_tokens": 414,
+              "completion_tokens": 366,
+              "total_tokens": 780
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine how many crayons Paul has lost or given away, we need to follow these steps:\n\n1. **Identify the total number of crayons Paul initially received:**\n   \\[\n   \\text{Total crayons} = 65\n   \\]\n\n2. **Subtract the number of crayons Paul gave to his friends:**\n   \\[\n   \\text{Crayons given to friends} = 213\n   \\]\n   \\[\n   \\text{Remaining crayons after giving away} = 65 - 213\n   \\]\n\n3. **Calculate the result from step 2:**\n   \\[\n   65 - 213 = -148\n   \\]\n   Since it's not possible to have a negative number of crayons, this indicates that Paul did not give away enough crayons and actually ended up with more than he started with.\n\n4. **Add the number of crayons Paul lost:**\n   \\[\n   \\text{Crayons lost} = 16\n   \\]\n   \\[\n   \\text{Final number of crayons} = -148 + 16\n   \\]\n\n5. **Calculate the final result from step 4:**\n   \\[\n   -148 + 16 = -132\n   \\]\n\nSince the calculation results in a negative number, it means Paul ended up with fewer crayons than he started with. Therefore, the correct interpretation is that Paul lost more crayons than he gave away.\n\n**Final answer:** The number of crayons lost or given away is:\n\\[\n\\boxed{-132}\n\\]",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"229\",\n  \"feedback\": \"The candidate incorrectly subtracted 213 from 65, resulting in a negative number, which is not meaningful here. The problem asks for the total crayons lost or given away, which is 213 + 16 = 229.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 229",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"229\",\n  \"feedback\": \"The total crayons lost or given away is 213 + 16 = 229, which matches the candidate's answer.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 229",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"229\",\n  \"feedback\": \"The candidate answer is numerically correct, but the problem states Paul only had 65 crayons initially, so he could not have given away 213 crayons. The problem is inconsistent, but the candidate correctly summed 213 and 16 to get 229.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-79",
+            "pred": "1891.",
+            "usage": {
+              "prompt_tokens": 344,
+              "completion_tokens": 275,
+              "total_tokens": 619
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To find out how many pages the book has altogether, we need to multiply the number of chapters by the number of pages per chapter.\n\nStep 1: Identify the number of chapters in the book.\nThe book has 31 chapters.\n\nStep 2: Identify the number of pages per chapter.\nEach chapter is 61 pages long.\n\nStep 3: Multiply the number of chapters by the number of pages per chapter.\n\\[ \\text{Total pages} = \\text{Number of chapters} \\times \\text{Pages per chapter} \\]\n\\[ \\text{Total pages} = 31 \\times 61 \\]\n\nStep 4: Perform the multiplication.\n\\[ 31 \\times 61 = 31 \\times (60 + 1) \\]\n\\[ 31 \\times 61 = 31 \\times 60 + 31 \\times 1 \\]\n\\[ 31 \\times 60 = 1860 \\]\n\\[ 31 \\times 1 = 31 \\]\n\\[ 1860 + 31 = 1891 \\]\n\nSo, the total number of pages in the book is **1891**.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"1891\",\n  \"feedback\": \"The candidate correctly multiplied 31 chapters by 61 pages per chapter and arrived at the correct total of 1891 pages.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 1891",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"1891\",\n  \"feedback\": \"The correct total number of pages is 31 chapters \u00d7 61 pages = 1891 pages. The candidate's final answer is correct, but the score is 0 because the problem asked for step-by-step solution, which was not provided.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 1891.",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"1891\",\n  \"feedback\": \"The candidate's final answer is correct, but the problem requires step-by-step solution before the final answer. Since only the final answer is given without steps, it fails strict evaluation.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-110",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 397,
+              "completion_tokens": 480,
+              "total_tokens": 877
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To solve this problem, we'll follow these steps:\n\n1. **Determine the total amount of each ingredient needed according to the recipe:**\n   - Sugar: 11 cups\n   - Flour: 6 cups (already added)\n   - Salt: 9 cups\n\n2. **Calculate how much more flour Mary needs to add:**\n   - Total flour needed: 6 cups\n   - Flour already added: 12 cups\n   - Additional flour needed: \\( 6 \\text{ cups} - 12 \\text{ cups} = -6 \\text{ cups} \\)\n\nSince Mary has already added more flour than required, she doesn't need to add any additional flour.\n\n3. **Calculate the difference between the amount of sugar and salt needed:**\n   - Sugar needed: 11 cups\n   - Salt needed: 9 cups\n   - Difference: \\( 11 \\text{ cups} - 9 \\text{ cups} = 2 \\text{ cups} \\)\n\nTherefore, Mary needs to add 2 more cups of sugar than cups of salt.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"2\",\n  \"feedback\": \"The candidate correctly calculated the difference between the required sugar and salt amounts, accounting for the flour already added. The final answer of 2 cups is correct.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "To solve this problem, let's break it down step by step:\n\n1. **Identify the required ingredients**: \n   - Sugar: 11 cups\n   - Flour: 6 cups (already added)\n   - Salt: 9 cups\n\n2. **Calculate the remaining amount needed**:\n   - Remaining sugar needed = Required sugar - Already used sugar\n     \\[\n     \\text{Remaining sugar} = 11 - 0 = 11 \\text{ cups}\n     \\]\n   - Remaining salt needed = Required salt - Already used salt\n     \\[\n     \\text{Remaining salt} = 9 - 0 = 9 \\text{ cups}\n     \\]\n\n3. **Determine how much more sugar than salt needs to be added**:\n   - Difference between remaining sugar and remaining salt\n     \\[\n     \\text{Difference} = \\text{Remaining sugar} - \\text{Remaining salt}\n     \\]\n     \\[\n     \\text{Difference} = 11 - 9 = 2 \\text{ cups}\n     \\]\n\nTherefore, Mary needs to add 2 more cups of sugar than cups of salt.\n\nFINAL: 2",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"2\",\n  \"feedback\": \"The candidate correctly identified the amounts of sugar and salt needed and calculated the difference as 2 cups.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 2",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"2\",\n  \"feedback\": \"The candidate's final answer is correct, but the problem requires step-by-step solution. Since the candidate only provided the final number without steps, it fails the requirement.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-172",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 362,
+              "completion_tokens": 160,
+              "total_tokens": 522
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "Let's solve this problem step by step:\n\n1. **Initial Tickets**: Dave started with 18 tickets.\n\n2. **Tickets Used for Toys**:\n   - He bought 5 toys.\n   - Subtract these from his initial amount:\n     \\[\n     18 - 5 = 13\n     \\]\n   So, after buying the toys, Dave has 13 tickets left.\n\n3. **Tickets Used for Clothes**:\n   - He then spent an additional 11 tickets on clothes.\n   - Subtract these from the remaining tickets:\n     \\[\n     13 - 11 = 2\n     \\]\n\nTherefore, the final number of tickets Dave has left is **2**.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"2\",\n  \"feedback\": \"The candidate correctly subtracted the tickets used for toys and clothes from the initial amount, arriving at the correct final number of tickets left.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "Final answer: 2",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"2\",\n  \"feedback\": \"Dave started with 18 tickets, used 5 for toys and 11 for clothes, so 18 - 5 - 11 = 2 tickets left. The candidate answer is correct.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 2",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"2\",\n  \"feedback\": \"Dave started with 18 tickets, used 5 for toys and 11 for clothes, so 18 - 5 - 11 = 2 tickets left.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-194",
+            "pred": "39.",
+            "usage": {
+              "prompt_tokens": 485,
+              "completion_tokens": 362,
+              "total_tokens": 847
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To solve this problem, we need to determine how far each animal jumped based on the given information.\n\n1. **Grasshopper's Jump**:\n   - The grasshopper jumped 9 inches.\n\n2. **Mouse's Jump**:\n   - We know that the mouse jumped 3 inches less than the frog.\n   - The frog jumped 33 inches farther than the grasshopper.\n\nFirst, let's find out how far the frog jumped:\n\n\\[\n\\text{Frog's jump} = \\text{Grasshopper's jump} + 33 \\text{ inches}\n\\]\n\nSubstitute the grasshopper's jump into the equation:\n\n\\[\n\\text{Frog's jump} = 9 \\text{ inches} + 33 \\text{ inches} = 42 \\text{ inches}\n\\]\n\nNow, since the mouse jumped 3 inches less than the frog:\n\n\\[\n\\text{Mouse's jump} = \\text{Frog's jump} - 3 \\text{ inches}\n\\]\n\nSubstitute the frog's jump into the equation:\n\n\\[\n\\text{Mouse's jump} = 42 \\text{ inches} - 3 \\text{ inches} = 39 \\text{ inches}\n\\]\n\nTherefore, the final answer is:\n\n\\[\n\\boxed{39}\n\\]",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"39\",\n  \"feedback\": \"The candidate correctly calculated the frog's jump as 42 inches and then the mouse's jump as 39 inches, which matches the problem's conditions.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "The mouse jumped 39 inches.\n\nFINAL: 39.",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"30\",\n  \"feedback\": \"The frog jumped 33 inches farther than the grasshopper (9 + 33 = 42 inches). The mouse jumped 3 inches less than the frog (42 - 3 = 39 inches). The candidate's final answer of 39 is correct, but the problem asks how far the mouse jumped, which is 39 inches, so the candidate's answer is correct. However, the candidate's explanation is missing, so the answer is accepted. On re-evaluation, the candidate's answer is correct.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "The frog jumped 33 inches farther than the grasshopper, so the frog jumped 9 + 33 = 42 inches.\n\nThe mouse jumped 3 inches less than the frog, so the mouse jumped 42 - 3 = 39 inches.\n\nFINAL: 39.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"39\",\n  \"feedback\": \"The candidate correctly calculated the frog's jump as 42 inches and then the mouse's jump as 39 inches.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-49",
+            "pred": "66.",
+            "usage": {
+              "prompt_tokens": 362,
+              "completion_tokens": 365,
+              "total_tokens": 727
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To solve this problem, we need to determine how far each animal jumped and then add those distances together.\n\n1. **Determine the distance the frog jumped:**\n   - Let \\( F \\) represent the distance the frog jumped in inches.\n   - According to the problem, the grasshopper jumped 4 inches farther than the frog.\n   - Therefore, the grasshopper's jump is \\( F + 4 \\) inches.\n   - We know that the grasshopper jumped 35 inches, so:\n     \\[\n     F + 4 = 35\n     \\]\n   - Solving for \\( F \\):\n     \\[\n     F = 35 - 4 = 31\n     \\]\n\n2. **Calculate the total distance jumped by both animals:**\n   - The frog jumped 31 inches.\n   - The grasshopper jumped 35 inches.\n   - Adding these distances together gives:\n     \\[\n     31 + 35 = 66\n     \\]\n\n**Final Answer:** They jumped a total of 66 inches.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"66\",\n  \"feedback\": \"The candidate correctly found the frog's jump as 31 inches and summed it with the grasshopper's 35 inches to get 66 inches total.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "The grasshopper jumped 35 inches, which is 4 inches farther than the frog. Therefore, the frog jumped \\(35 - 4 = 31\\) inches.\n\nAltogether, they jumped \\(35 + 31 = \\boxed{66}\\) inches.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"66\",\n  \"feedback\": \"The candidate correctly calculated the frog's jump as 31 inches and the total as 66 inches.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "The grasshopper jumped 35 inches, which is 4 inches farther than the frog. Therefore, the frog jumped:\n\n\\[ 35 - 4 = 31 \\text{ inches} \\]\n\nTogether, they jumped:\n\n\\[ 35 + 31 = 66 \\text{ inches} \\]\n\nFINAL: 66.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"66\",\n  \"feedback\": \"The candidate correctly calculated the frog's jump as 31 inches and the total as 66 inches.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-183",
+            "pred": "Therefore, the total number of nails John needs for the house wall is FINAL: 230.",
+            "usage": {
+              "prompt_tokens": 476,
+              "completion_tokens": 792,
+              "total_tokens": 1268
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine the total number of nails John needs for the house walls, we will break down the problem into smaller steps.\n\n### Step 1: Calculate the total number of nails needed for the large planks.\n- Number of large planks used: 12\n- Nails required per large plank: 15\n\n\\[\n\\text{Total nails for large planks} = \\text{Number of large planks} \\times \\text{Nails per large plank}\n\\]\n\n\\[\n\\text{Total nails for large planks} = 12 \\times 15 = 180\n\\]\n\n### Step 2: Calculate the total number of nails needed for the small planks.\n- Number of small planks used: 10\n- Nails required per small plank: 5\n\n\\[\n\\text{Total nails for small planks} = \\text{Number of small planks} \\times \\text{Nails per small plank}\n\\]\n\n\\[\n\\text{Total nails for small planks} = 10 \\times 5 = 50\n\\]\n\n### Step 3: Add the total nails from both types of planks to get the final answer.\n\\[\n\\text{Total nails needed} = \\text{Total nails for large planks} + \\text{Total nails for small planks}\n\\]\n\n\\[\n\\text{Total nails needed} = 180 + 50 = 230\n\\]\n\nThus, John needs **230** nails for the house walls.",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"20\",\n  \"feedback\": \"The problem states that 12 large planks together need 15 nails total, and 10 small planks together need 5 nails total. The candidate incorrectly multiplied nails per plank instead of using the total nails for all large and small planks. The correct total nails needed is 15 + 5 = 20.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 20\n\nExplanation:\nTo solve this problem, we need to calculate the total number of nails required for both large and small planks.\n\n1. For large planks:\n   - Number of large planks: 12\n   - Nails needed per large plank: 15\n   - Total nails for large planks: \\( 12 \\times 15 = 180 \\)\n\n2. For small planks:\n   - Number of small planks: 10\n   - Nails needed per small plank: 5\n   - Total nails for small planks: \\( 10 \\times 5 = 50 \\)\n\n3. Adding the total nails from both types of planks:\n   - Total nails: \\( 180 + 50 = 230 \\)\n\nHowever, it seems there was an error in the feedback provided. Let's re-evaluate:\n\n- Large planks: 12 planks * 15 nails/plank = 180 nails\n- Small planks: 10 planks * 5 nails/plank = 50 nails\n- Total nails: 180 + 50 = 230 nails\n\nTherefore, the correct answer should be 230 nails, not 20 as initially stated.",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"230\",\n  \"feedback\": \"The candidate's final answer is 20, which is incorrect. The correct total nails needed is 230 (180 for large planks and 50 for small planks).\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "Let's break it down step by step:\n\n1. **Large Planks**:\n   - Number of large planks used: 12\n   - Nails required per large plank: 15\n\n   Total nails for large planks = \\( 12 \\times 15 = 180 \\)\n\n2. **Small Planks**:\n   - Number of small planks used: 10\n   - Nails required per small plank: 5\n\n   Total nails for small planks = \\( 10 \\times 5 = 50 \\)\n\n3. **Total Nails Needed**:\n   - Sum of nails for large and small planks = \\( 180 + 50 = 230 \\)\n\nTherefore, the total number of nails John needs for the house wall is FINAL: 230.",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"20\",\n  \"feedback\": \"The problem states that 12 large planks together need 15 nails total, and 10 small planks together need 5 nails total. The candidate incorrectly multiplied nails per plank instead of using the total nails given. The correct total nails needed is 15 + 5 = 20.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": false
+          },
+          {
+            "id": "svamp-176",
+            "pred": "26",
+            "usage": {
+              "prompt_tokens": 377,
+              "completion_tokens": 160,
+              "total_tokens": 537
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To solve this problem, we need to compare the number of bottles of soda (both regular and diet) to the number of apples.\n\n1. **Calculate the total number of bottles of soda:**\n   - Regular soda: 72 bottles\n   - Diet soda: 32 bottles\n\n   Total bottles of soda = 72 + 32 = 104 bottles\n\n2. **Compare the total number of bottles of soda to the number of apples:**\n   - Number of apples: 78\n\n   Difference = Total bottles of soda - Number of apples\n              = 104 - 78\n              = 26\n\nTherefore, the final answer is 26.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"26\",\n  \"feedback\": \"The candidate correctly calculated the total number of bottles (72 + 32 = 104) and subtracted the number of apples (78) to find the difference (26). The final answer matches the correct solution.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 26",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"26\",\n  \"feedback\": \"The candidate answer is correct. The total bottles are 72 + 32 = 104. The difference between bottles and apples is 104 - 78 = 26.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 26",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"26\",\n  \"feedback\": \"The candidate's final answer is correct, but the problem asks for how many more bottles than apples they had. Total bottles = 72 + 32 = 104. Apples = 78. Difference = 104 - 78 = 26. The candidate's answer matches the correct calculation.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-135",
+            "pred": "8",
+            "usage": {
+              "prompt_tokens": 408,
+              "completion_tokens": 343,
+              "total_tokens": 751
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "Let's break down the problem step by step:\n\n1. **Grasshopper's Jump**:\n   - The grasshopper jumped 39 inches.\n\n2. **Frog vs. Grasshopper**:\n   - The grasshopper jumped 19 inches farther than the frog.\n   - Let \\( F \\) represent the distance the frog jumped.\n   - Therefore, \\( 39 = F + 19 \\).\n\n3. **Solving for Frog's Jump**:\n   - Subtract 19 from both sides of the equation to find \\( F \\):\n     \\[\n     F = 39 - 19\n     \\]\n   - Calculate:\n     \\[\n     F = 20\n     \\]\n\n4. **Mouse's Jump**:\n   - The mouse jumped 12 inches less than the frog.\n   - Since the frog jumped 20 inches, we subtract 12 from this value to find the mouse's jump:\n     \\[\n     M = 20 - 12\n     \\]\n   - Calculate:\n     \\[\n     M = 8\n     \\]\n\n5. **Final Answer**:\n   - The mouse jumped 8 inches.\n\nTherefore, the final answer is 8.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"8\",\n  \"feedback\": \"The candidate correctly solved for the frog's jump and then the mouse's jump, arriving at the correct final answer of 8.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "The grasshopper jumped 39 inches.\n\nThe grasshopper jumped 19 inches farther than the frog, so the frog jumped \\(39 - 19 = 20\\) inches.\n\nThe mouse jumped 12 inches less than the frog, so the mouse jumped \\(20 - 12 = 8\\) inches.\n\nFINAL: 8.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"8\",\n  \"feedback\": \"The candidate correctly calculated the frog's jump as 20 inches and then the mouse's jump as 8 inches, which matches the problem conditions.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 8",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"8\",\n  \"feedback\": \"The candidate answer is correct. The frog jumped 20 inches (39 - 19), and the mouse jumped 12 inches less than the frog, which is 8 inches. The candidate's final answer matches the correct answer.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-22",
+            "pred": "3",
+            "usage": {
+              "prompt_tokens": 358,
+              "completion_tokens": 173,
+              "total_tokens": 531
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "Let's solve this step by step:\n\n1. Initially, Dave had:\n   - 24 files\n   - 13 apps\n\n2. After deleting some apps and files, he had:\n   - 17 apps\n   - 21 files\n\nWe need to find out how many files he deleted.\n\nStep 1: Calculate the total number of files before deletion.\nTotal initial files = 24\n\nStep 2: Calculate the total number of apps after deletion.\nTotal remaining apps = 17\n\nStep 3: Determine the number of files deleted.\nNumber of files deleted = Total initial files - Remaining files\nNumber of files deleted = 24 - 21\nNumber of files deleted = 3\n\nFinal answer: Dave deleted 3 files.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"3\",\n  \"feedback\": \"The candidate correctly calculated the number of files deleted as 24 - 21 = 3.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 3",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"3\",\n  \"feedback\": \"The candidate answer is correct. Dave deleted 3 files (24 - 21 = 3). However, the candidate answer lacks the step-by-step solution as requested.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "Final Answer: 3",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"3\",\n  \"feedback\": \"The candidate answer is 3, which is the correct number of files deleted (24 - 21 = 3). However, the candidate did not provide a step-by-step solution or the required format 'FINAL: <number>'. The answer should be formatted as 'FINAL: 3'.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-235",
+            "pred": "Therefore, the final answer is FINAL: 1.",
+            "usage": {
+              "prompt_tokens": 553,
+              "completion_tokens": 936,
+              "total_tokens": 1489
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine how many buses are needed for the field trip, we need to follow these steps:\n\n1. **Calculate the total number of students in the school:**\n   - Each classroom has the same number of students.\n   - There are 87 classrooms.\n   - Each classroom has 58 students.\n\n   \\[\n   \\text{Total number of students} = 87 \\times 58\n   \\]\n\n   Let's perform the multiplication:\n\n   \\[\n   87 \\times 58 = 87 \\times (60 - 2) = 87 \\times 60 - 87 \\times 2\n   \\]\n   \n   Calculate \\(87 \\times 60\\):\n\n   \\[\n   87 \\times 60 = 5220\n   \\]\n\n   Now calculate \\(87 \\times 2\\):\n\n   \\[\n   87 \\times 2 = 174\n   \\]\n\n   Subtract the two results:\n\n   \\[\n   5220 - 174 = 5046\n   \\]\n\n   So, the total number of students is 5046.\n\n2. **Determine the number of buses needed:**\n   - Each bus can hold 2 seats.\n\n   To find out how many buses are needed, divide the total number of students by the capacity of one bus:\n\n   \\[\n   \\text{Number of buses} = \\frac{\\text{Total number of students}}{\\text{Seats per bus}}\n   \\]\n\n   \\[\n   \\text{Number of buses} = \\frac{5046}{2}\n   \\]\n\n   Perform the division:\n\n   \\[\n   5046 \\div 2 = 2523\n   \\]\n\nTherefore, the final answer is:\n\n\\[\n\\boxed{2523}\n\\]",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"29\",\n  \"feedback\": \"The problem states there are 58 students total, not 58 students per classroom. The candidate incorrectly multiplied 87 classrooms by 58 students, resulting in 5046 students. The correct total number of students is 58. With 2 seats per bus, the number of buses needed is ceil(58/2) = 29.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "The school has 87 classrooms and 58 students in total. Each classroom has the same number of students.\n\nFirst, let's find out how many students are in each classroom:\n\n\\[ \\text{Students per classroom} = \\frac{\\text{Total students}}{\\text{Number of classrooms}} = \\frac{58}{87} \\]\n\nSince we can't have a fraction of a student, we'll round up to the nearest whole number because even if one classroom has fewer than 58 students, it still needs a full bus for its students.\n\nLet's calculate this using Python code to ensure accuracy.\n```python\nimport math\n\n# Total number of students\ntotal_students = 58\n\n# Number of classrooms\nnum_classrooms = 87\n\n# Calculate students per classroom (rounding up)\nstudents_per_classroom = math.ceil(total_students / num_classrooms)\n\n# Number of seats per bus\nseats_per_bus = 2\n\n# Calculate the number of buses needed\nbuses_needed = math.ceil(students_per_classroom / seats_per_bus)\n\nFINAL: 29\n```\nIn conclusion, the final answer is 29 buses.",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"29\",\n  \"feedback\": \"The problem states there are 58 students total and 87 classrooms, which means fewer than one student per classroom on average, so the premise that each classroom has the same number of students is inconsistent. The candidate incorrectly calculated students per classroom as 58/87 and rounded up to 1 student per classroom, then calculated buses needed as ceil(1/2) = 1 bus per classroom times 87 classrooms would be 87 buses, but the candidate's final answer is 29, which does not follow logically. The candidate's calculation and reasoning are flawed and the final answer is incorrect.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "Let's solve this step by step:\n\n1. **Determine the number of students per classroom**:\n   - Total number of students: 58\n   - Number of classrooms: 87\n\n   To find out how many students are in each classroom, we divide the total number of students by the number of classrooms:\n   \\[\n   \\text{Students per classroom} = \\frac{58}{87}\n   \\]\n\n2. **Calculate the result**:\n   - Performing the division:\n     \\[\n     \\frac{58}{87} \\approx 0.6643\n     \\]\n   - Since the number of students must be an integer (you can't have a fraction of a student), we need to round this value up to the next whole number.\n\n3. **Round up to the nearest whole number**:\n   - Rounding 0.6643 up gives us 1.\n\n4. **Calculate the number of buses needed**:\n   - Each bus has 2 seats.\n   - We need to determine how many buses are required for 1 student.\n\n   Since each bus can hold only 1 student, we need:\n   \\[\n   \\text{Number of buses} = \\lceil \\frac{1}{2} \\rceil = 1\n   \\]\n\nTherefore, the final answer is FINAL: 1.",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"2521\",\n  \"feedback\": \"The problem states there are 87 classrooms and 58 students in total, which is inconsistent. Assuming 58 students per classroom, total students = 87 * 58 = 5046. Each bus has 2 seats, so buses needed = ceil(5046 / 2) = 2523. The candidate incorrectly divided 58 by 87 and concluded 1 student total, leading to an incorrect bus count.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": false
+          },
+          {
+            "id": "svamp-274",
+            "pred": "6840",
+            "usage": {
+              "prompt_tokens": 398,
+              "completion_tokens": 257,
+              "total_tokens": 655
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine how much carpet Jesse needs, we first calculate the area of one room.\n\nThe formula for the area of a rectangle is:\n\\[ \\text{Area} = \\text{length} \\times \\text{width} \\]\n\nGiven that each room is 19 feet long and 18 feet wide, we can substitute these values into the formula:\n\n\\[ \\text{Area of one room} = 19 \\, \\text{feet} \\times 18 \\, \\text{feet} \\]\n\\[ \\text{Area of one room} = 342 \\, \\text{square feet} \\]\n\nSince Jesse has 20 rooms, we multiply the area of one room by the total number of rooms:\n\n\\[ \\text{Total area needed} = 342 \\, \\text{square feet/room} \\times 20 \\, \\text{rooms} \\]\n\\[ \\text{Total area needed} = 6840 \\, \\text{square feet} \\]\n\nTherefore, Jesse needs **6840 square feet** of carpet to cover the floors of all her rooms.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"6840\",\n  \"feedback\": \"The candidate correctly calculated the area of one room (19 x 18 = 342) and then multiplied by 20 rooms to get the total carpet needed (342 x 20 = 6840). The final answer matches the correct value.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 6840",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"6840\",\n  \"feedback\": \"The total carpet needed is 19 * 18 * 20 = 6840 square feet, which matches the candidate's answer.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 6840",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"6840\",\n  \"feedback\": \"The area of one room is 19 * 18 = 342 square feet. For 20 rooms, total carpet needed is 342 * 20 = 6840 square feet, which matches the candidate's answer.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-63",
+            "pred": "Therefore, FINAL: 30.",
+            "usage": {
+              "prompt_tokens": 324,
+              "completion_tokens": 254,
+              "total_tokens": 578
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "Let's solve this step by step:\n\n1. Josh starts with 22 marbles.\n\n2. He finds 13 more marbles:\n   \\[\n   22 + 13 = 35\n   \\]\n   Now, Josh has 35 marbles.\n\n3. He loses 5 marbles:\n   \\[\n   35 - 5 = 30\n   \\]\n   After losing the marbles, Josh has 30 marbles left.\n\nSo, the final number of marbles Josh has is **30**.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"30\",\n  \"feedback\": \"The candidate correctly calculated the final number of marbles as 30.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "Josh originally had 22 marbles. He found 13 more, so he had:\n\n\\[ 22 + 13 = 35 \\]\n\nThen, he lost 5 marbles, so he had:\n\n\\[ 35 - 5 = 30 \\]\n\nTherefore, FINAL: 30.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"30\",\n  \"feedback\": \"The candidate correctly added and subtracted the marbles step-by-step and arrived at the correct final number.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "Josh originally had 22 marbles. He found 13 more, so:\n\n\\[ 22 + 13 = 35 \\]\n\nThen, he lost 5 marbles, so:\n\n\\[ 35 - 5 = 30 \\]\n\nTherefore, FINAL: 30.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"30\",\n  \"feedback\": \"The candidate correctly added the found marbles and subtracted the lost marbles, arriving at the correct final count of 30.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-193",
+            "pred": "348",
+            "usage": {
+              "prompt_tokens": 499,
+              "completion_tokens": 533,
+              "total_tokens": 1032
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "Let's break this down step by step:\n\n1. Let \\( x \\) be the number of students who suggested adding mashed potatoes.\n2. According to the problem, 166 more students suggested adding bacon than those who suggested mashed potatoes.\n\nSo we can write:\n\\[ x + 166 = \\text{Number of students who suggested bacon} \\]\n\n3. We know from the problem statement that there were 182 students in total who suggested either mashed potatoes or bacon.\n\n4. Therefore, the sum of students suggesting mashed potatoes and bacon should equal the total number of suggestions:\n\\[ x + (x + 166) = 182 \\]\n\n5. Simplify the equation:\n\\[ 2x + 166 = 182 \\]\n\n6. Subtract 166 from both sides to isolate the term with \\( x \\):\n\\[ 2x = 182 - 166 \\]\n\\[ 2x = 16 \\]\n\n7. Divide both sides by 2 to solve for \\( x \\):\n\\[ x = \\frac{16}{2} \\]\n\\[ x = 8 \\]\n\n8. Now that we have \\( x \\), which is the number of students who suggested mashed potatoes, we can find out how many suggested bacon:\n\\[ \\text{Number of students who suggested bacon} = x + 166 \\]\n\\[ \\text{Number of students who suggested bacon} = 8 + 166 \\]\n\\[ \\text{Number of students who suggested bacon} = 174 \\]\n\nTherefore, the final answer is 174.",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"174\",\n  \"feedback\": \"The candidate incorrectly identified the number of students suggesting mashed potatoes as 182 instead of 8. The problem states 182 students suggested mashed potatoes, so the total number of students is at least 182 plus those suggesting bacon. The candidate's initial assumption that x represents mashed potatoes is incorrect, leading to an invalid equation and solution. The correct approach is to let x be the number suggesting mashed potatoes (182), then the number suggesting bacon is 182 + 166 = 348.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "Let's solve this step by step:\n\n1. Let \\( x \\) represent the number of students who suggested mashed potatoes.\n2. According to the problem, 182 students suggested mashed potatoes (\\( x = 182 \\)).\n3. The number of students who suggested bacon is given as 166 more than those who suggested mashed potatoes.\n\nTo find the number of students who suggested bacon, we add 166 to the number of students who suggested mashed potatoes:\n\\[ \\text{Number of students who suggested bacon} = x + 166 \\]\n\nSubstitute \\( x = 182 \\):\n\\[ \\text{Number of students who suggested bacon} = 182 + 166 \\]\n\\[ \\text{Number of students who suggested bacon} = 348 \\]\n\nTherefore, FINAL: 348.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"348\",\n  \"feedback\": \"The candidate correctly identified the number of students who suggested mashed potatoes as 182 and added 166 to find the number who suggested bacon, resulting in 348.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 348",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"348\",\n  \"feedback\": \"182 students suggested mashed potatoes. 166 more suggested bacon, so bacon = 182 + 166 = 348. Candidate answer is correct.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-40",
+            "pred": "7",
+            "usage": {
+              "prompt_tokens": 360,
+              "completion_tokens": 213,
+              "total_tokens": 573
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To solve this problem, we need to determine how many bottle caps Danny found at the park.\n\n1. **Identify the initial number of bottle caps:**\n   - Danny initially had 25 bottle caps.\n\n2. **Identify the final number of bottle caps:**\n   - After finding more bottle caps at the park, Danny now has 32 bottle caps.\n\n3. **Calculate the difference between the final and initial numbers:**\n   \\[\n   \\text{Number of bottle caps found} = \\text{Final number of bottle caps} - \\text{Initial number of bottle caps}\n   \\]\n   Substituting the given values:\n   \\[\n   \\text{Number of bottle caps found} = 32 - 25\n   \\]\n\n4. **Perform the subtraction:**\n   \\[\n   32 - 25 = 7\n   \\]\n\nTherefore, Danny found \\(\\boxed{7}\\) bottle caps at the park.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"7\",\n  \"feedback\": \"The candidate correctly calculated the number of bottle caps found by subtracting the initial amount from the final amount, resulting in 7.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 7",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"7\",\n  \"feedback\": \"The candidate's final answer is 7, which is correct since 32 - 25 = 7.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 7",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"7\",\n  \"feedback\": \"The candidate's final answer is 7, which is correct since 32 - 25 = 7.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-282",
+            "pred": "268,627",
+            "usage": {
+              "prompt_tokens": 390,
+              "completion_tokens": 262,
+              "total_tokens": 652
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To find out how many kids stay home during the summer break, we need to subtract the number of kids who go to camp from the total number of kids in Lawrence County.\n\nHere's the step-by-step process:\n\n1. **Total number of kids**: 898,051\n2. **Number of kids who go to camp**: 629,424\n\nNow, let's perform the subtraction:\n\n\\[ \\text{Number of kids staying home} = \\text{Total number of kids} - \\text{Number of kids going to camp} \\]\n\n\\[ \\text{Number of kids staying home} = 898,051 - 629,424 \\]\n\nLet's do the subtraction:\n\n\\[\n\\begin{array}{r}\n  898,051 \\\\\n- 629,424 \\\\\n\\hline\n   268,627 \\\\\n\\end{array}\n\\]\n\nSo, the number of kids who stay home is \\( 268,627 \\).\n\nFINAL ANSWER: 268,627",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"268,627\",\n  \"feedback\": \"The candidate correctly subtracted 629,424 from 898,051 to find the number of kids staying home, resulting in 268,627.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 268,627",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"268,627\",\n  \"feedback\": \"The number of kids who stay home is 898,051 - 629,424 = 268,627, which matches the candidate answer.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 268,627",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"268,627\",\n  \"feedback\": \"The number of kids who stay home is 898,051 - 629,424 = 268,627, which matches the candidate answer.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-150",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 413,
+              "completion_tokens": 157,
+              "total_tokens": 570
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "Let's solve this step by step:\n\n1. Initially, there are:\n   - 6 storks\n   - 2 birds\n\n2. Then, 3 more birds come to join them.\n\n3. Calculate the new number of birds:\n   - Initial birds + New birds = Total birds\n   - 2 + 3 = 5 birds\n\n4. Now we have:\n   - 6 storks\n   - 5 birds\n\n5. To find how many more storks than birds:\n   - Subtract the number of birds from the number of storks\n   - 6 - 5 = 1\n\nFinal answer: There is 1 more stork than birds sitting on the fence.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"1\",\n  \"feedback\": \"The candidate correctly calculated the difference between the number of storks and birds after the additional birds arrived.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 1",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"-5\",\n  \"feedback\": \"There are 6 storks and initially 2 birds, then 3 more birds arrive, making 5 birds total. The difference (storks - birds) is 6 - 5 = 1, but the question asks how many more storks than birds are sitting on the fence. Since 6 storks and 5 birds, the difference is 1, so the candidate's answer is correct. However, the candidate's answer is 1, which matches the calculation. Therefore, the verdict should be PASS, not FAIL.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 1",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"5\",\n  \"feedback\": \"Initially, there are 6 storks and 2 birds. After 3 more birds arrive, total birds become 5. The difference is 6 - 5 = 1, but the candidate answer is 1 which is correct. However, the problem asks 'How many more storks than birds are sitting on the fence?' which is 6 - 5 = 1. The candidate answer is correct, so the verdict should be PASS.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-185",
+            "pred": "14",
+            "usage": {
+              "prompt_tokens": 388,
+              "completion_tokens": 143,
+              "total_tokens": 531
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine how many bird families were left near the mountain after some flew away, we can follow these steps:\n\n1. Identify the initial number of bird families living near the mountain.\n   - There were initially 41 bird families.\n\n2. Determine the number of bird families that flew away for the winter.\n   - 27 bird families flew away.\n\n3. Subtract the number of bird families that flew away from the initial number of bird families.\n   - \\( 41 - 27 = 14 \\)\n\nSo, the number of bird families left near the mountain is 14.\n\nFinal answer: 14",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"14\",\n  \"feedback\": \"The candidate correctly subtracted 27 from 41 to find the remaining bird families, resulting in 14.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "Final answer: 14",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"14\",\n  \"feedback\": \"41 bird families initially minus 27 that flew away equals 14 left near the mountain. The candidate answer is correct.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 14",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"14\",\n  \"feedback\": \"41 bird families initially minus 27 that flew away equals 14 families left.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-295",
+            "pred": "30.",
+            "usage": {
+              "prompt_tokens": 373,
+              "completion_tokens": 207,
+              "total_tokens": 580
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To find out how many peaches are in the basket, we need to add up all the different types of peaches.\n\nHere's the step-by-step process:\n\n1. **Count the red peaches**: There are 7 red peaches.\n2. **Count the yellow peaches**: There are 15 yellow peaches.\n3. **Count the green peaches**: There are 8 green peaches.\n\nNow, let's add them together:\n\n\\[\n7 \\text{ (red)} + 15 \\text{ (yellow)} + 8 \\text{ (green)}\n\\]\n\nFirst, add the number of red and yellow peaches:\n\n\\[\n7 + 15 = 22\n\\]\n\nNext, add the number of green peaches to this sum:\n\n\\[\n22 + 8 = 30\n\\]\n\nSo, there are **30** peaches in total in the basket.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"30\",\n  \"feedback\": \"The candidate correctly added 7, 15, and 8 to get 30 peaches in total.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 30.",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"30\",\n  \"feedback\": \"The correct total number of peaches is 7 + 15 + 8 = 30, but the candidate answer is correct. However, the candidate did not show any steps, only the final answer. Since the instructions require step-by-step solution, the answer should include the steps. The candidate answer only has FINAL: 30, so it is incomplete.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 30.",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"30\",\n  \"feedback\": \"The correct total number of peaches is 7 + 15 + 8 = 30, but the candidate answer did not show any steps or explanation.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-98",
+            "pred": "98",
+            "usage": {
+              "prompt_tokens": 396,
+              "completion_tokens": 184,
+              "total_tokens": 580
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine how many more bottles of soda the grocery store had compared to apples, we need to follow these steps:\n\n1. **Identify the number of apples**: The problem states that there are 36 apples.\n\n2. **Identify the number of bottles of regular soda**: The problem states that there are 80 bottles of regular soda.\n\n3. **Calculate the difference between the number of bottles of soda and the number of apples**:\n   \\[\n   \\text{Number of bottles of soda} - \\text{Number of apples} = 80 - 36\n   \\]\n\n4. Perform the subtraction:\n   \\[\n   80 - 36 = 44\n   \\]\n\nSo, the grocery store had 44 more bottles of soda than apples.\n\nFinal answer: 44",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"98\",\n  \"feedback\": \"The candidate only subtracted the number of regular soda bottles from apples, ignoring the diet soda bottles. The total number of bottles is 80 + 54 = 134, and 134 - 36 = 98.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 98",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"98\",\n  \"feedback\": \"The candidate answer is correct. The total number of bottles is 80 + 54 = 134. The number of apples is 36. The difference is 134 - 36 = 98. The candidate's FINAL answer matches this.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 98",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"98\",\n  \"feedback\": \"The problem asks how many more bottles than apples the store had. Total bottles = 80 + 54 = 134. Apples = 36. Difference = 134 - 36 = 98. The candidate's final answer is correct, but since the problem asks for step-by-step solution and the candidate only provided the final answer, it does not meet the requirement.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-35",
+            "pred": "20",
+            "usage": {
+              "prompt_tokens": 326,
+              "completion_tokens": 193,
+              "total_tokens": 519
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine how many shirts the machine made, we need to follow these steps:\n\n1. Identify the rate at which the machine works.\n2. Determine the total time the machine worked.\n3. Multiply the rate by the total time.\n\nStep 1: The machine's rate is given as making 4 shirts per minute.\n\nStep 2: The machine worked for 5 minutes.\n\nStep 3: To find out how many shirts were made, multiply the rate by the time:\n\\[ \\text{Number of shirts} = \\text{Rate} \\times \\text{Time} \\]\n\\[ \\text{Number of shirts} = 4 \\text{ shirts/minute} \\times 5 \\text{ minutes} \\]\n\\[ \\text{Number of shirts} = 20 \\]\n\nTherefore, the final answer is:\n\\[\n\\boxed{20}\n\\]",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"20\",\n  \"feedback\": \"The candidate correctly calculated the total number of shirts by multiplying the rate (4 shirts/minute) by the time (5 minutes) and arrived at the correct final answer of 20.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 20",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"20\",\n  \"feedback\": \"The machine makes 4 shirts per minute and works for 5 minutes, so 4 * 5 = 20 shirts. The candidate answer is correct.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 20",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"20\",\n  \"feedback\": \"The machine works for 5 minutes and makes 4 shirts per minute, so total shirts = 5 * 4 = 20. The candidate answer is correct.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-23",
+            "pred": "333",
+            "usage": {
+              "prompt_tokens": 324,
+              "completion_tokens": 174,
+              "total_tokens": 498
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To find out how many more girls than boys the school has, we need to subtract the number of boys from the number of girls.\n\nStep 1: Identify the number of girls and boys in the school.\n- Number of girls = 569\n- Number of boys = 236\n\nStep 2: Subtract the number of boys from the number of girls.\n\\[ \\text{Difference} = \\text{Number of girls} - \\text{Number of boys} \\]\n\\[ \\text{Difference} = 569 - 236 \\]\n\nStep 3: Perform the subtraction.\n\\[ 569 - 236 = 333 \\]\n\nFinal answer:\nThe school has 333 more girls than boys.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"333\",\n  \"feedback\": \"The candidate correctly subtracted the number of boys from the number of girls and arrived at the correct difference of 333.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 333",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"333\",\n  \"feedback\": \"The difference between the number of girls and boys is 569 - 236 = 333, which matches the candidate's answer.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 333",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"333\",\n  \"feedback\": \"The difference between the number of girls and boys is 569 - 236 = 333, which matches the candidate answer.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-116",
+            "pred": "2",
+            "usage": {
+              "prompt_tokens": 395,
+              "completion_tokens": 580,
+              "total_tokens": 975
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To solve this problem, let's break it down into steps:\n\n### Step 1: Define Variables\nLet \\( x \\) be the number of green peaches in each basket.\n\n### Step 2: Set Up Equations\nWe know:\n- There are 2 baskets.\n- Each basket has 4 red peaches.\n- The total number of peaches is 12.\n\nFirst, calculate the total number of red peaches:\n\\[ 4 \\text{ (red peaches per basket)} \\times 2 \\text{ (baskets)} = 8 \\text{ red peaches} \\]\n\nNext, set up an equation for the total number of peaches:\n\\[ \\text{Total peaches} = \\text{Red peaches} + \\text{Green peaches} \\]\n\\[ 12 = 8 + x \\]\n\n### Step 3: Solve for \\( x \\)\nSubtract 8 from both sides to isolate \\( x \\):\n\\[ 12 - 8 = x \\]\n\\[ x = 4 \\]\n\nSo, there are **4** green peaches in each basket.\n\n### Final Answer\nThe final answer is: **4**.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"4\",\n  \"feedback\": \"The candidate correctly calculated the number of green peaches per basket as 4.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 4\n\nExplanation:\nLet's break down the problem step by step:\n\n1. We know that there are two baskets, and each basket contains 4 red peaches.\n   Total red peaches = 4 (from first basket) + 4 (from second basket) = 8 red peaches.\n\n2. The total number of peaches is given as 12.\n\n3. To find out how many green peaches are in each basket, we subtract the total number of red peaches from the total number of peaches.\n   Green peaches = Total peaches - Red peaches\n                  = 12 - 8\n                  = 4 green peaches.\n\nTherefore, there are 4 green peaches in each basket.",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"2\",\n  \"feedback\": \"The candidate correctly calculated total red peaches as 8 and total peaches as 12, but failed to divide the remaining green peaches equally between the two baskets. The total green peaches are 4, so each basket has 2 green peaches.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 2\n\nExplanation:\nLet's break it down step by step:\n\n1. We know that there are 2 baskets.\n2. Each basket has 4 red peaches.\n3. Therefore, the total number of red peaches is \\( 2 \\times 4 = 8 \\).\n4. There are a total of 12 peaches in all baskets combined.\n\nTo find out how many green peaches are in each basket, we subtract the total number of red peaches from the total number of peaches:\n\n\\[ 12 - 8 = 4 \\]\n\nSo, there are 4 green peaches in total.\n\nSince there are 2 baskets, we divide the total number of green peaches by 2:\n\n\\[ 4 \\div 2 = 2 \\]\n\nTherefore, each basket has 2 green peaches.",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"2\",\n  \"feedback\": \"The candidate correctly calculated the number of green peaches per basket as 2.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-148",
+            "pred": "121",
+            "usage": {
+              "prompt_tokens": 440,
+              "completion_tokens": 356,
+              "total_tokens": 796
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To find out how many old games Katie and her friends have in total, we need to add the number of old games each person has.\n\nFirst, let's calculate the total number of old games Katie has:\n- Katie has 80 old games.\n\nNext, let's calculate the total number of old games her friends have:\n- Each friend has 41 old games.\n- There are 73 friends (since the problem states \"her friends\" but doesn't specify if it means just one or multiple people).\n\nNow, let's add these together:\n\nTotal old games = Katie's old games + Friends' old games\n\n\\[\n\\text{Total old games} = 80 + 73 \\times 41\n\\]\n\nLet's break down the multiplication first:\n\n\\[\n73 \\times 41 = 73 \\times (40 + 1) = 73 \\times 40 + 73 \\times 1\n\\]\n\nCalculate \\(73 \\times 40\\):\n\n\\[\n73 \\times 40 = 2920\n\\]\n\nThen add \\(73 \\times 1\\):\n\n\\[\n73 \\times 1 = 73\n\\]\n\nSo,\n\n\\[\n73 \\times 41 = 2920 + 73 = 2993\n\\]\n\nNow, add this result to Katie's old games:\n\n\\[\n\\text{Total old games} = 80 + 2993 = 3073\n\\]\n\nTherefore, the final answer is:\n\n\\boxed{3073}",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"121\",\n  \"feedback\": \"The problem asks for the total number of old games Katie and her friends have. Katie has 80 old games, and her friends have 41 old games. The candidate incorrectly multiplied 73 (Katie's friends' new games) by 41, assuming 73 friends, which is not stated. The correct calculation is 80 + 41 = 121 old games.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 121",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"121\",\n  \"feedback\": \"The problem asks for the total number of old games Katie and her friends have. Katie has 80 old games, and her friends have 41 old games. 80 + 41 = 121, which matches the candidate's answer.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 121",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"121\",\n  \"feedback\": \"The total number of old games is 80 (Katie) + 41 (friends) = 121, which matches the candidate answer.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "svamp-51",
+            "pred": "72",
+            "usage": {
+              "prompt_tokens": 362,
+              "completion_tokens": 260,
+              "total_tokens": 622
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine the total number of items Adam's shelves can hold, we need to follow these steps:\n\n1. **Calculate the total number of action figures that can be placed on one shelf:**\n   - Adam can fit 8 action figures per shelf.\n\n2. **Calculate the total number of cabinets that can be placed on one shelf:**\n   - Adam can fit 10 cabinets per shelf.\n\n3. **Find the total capacity for one shelf by adding the number of action figures and cabinets:**\n   \\[\n   8 \\text{ (action figures)} + 10 \\text{ (cabinets)} = 18 \\text{ (items)}\n   \\]\n\n4. **Determine the total number of shelves Adam has:**\n   - Adam has 4 shelves.\n\n5. **Calculate the total number of items all the shelves can hold by multiplying the capacity of one shelf by the number of shelves:**\n   \\[\n   18 \\text{ (items per shelf)} \\times 4 \\text{ (shelves)} = 72 \\text{ (total items)}\n   \\]\n\nTherefore, the final answer is:\n\\[\n\\boxed{72}\n\\]",
+                  "feedback": "{\n  \"score\": 1,\n  \"verdict\": \"PASS\",\n  \"correct_answer\": \"72\",\n  \"feedback\": \"The candidate correctly calculated the total items per shelf (8 + 10 = 18) and multiplied by the number of shelves (4) to get 72.\"\n}"
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: 72",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"72\",\n  \"feedback\": \"The candidate answer is correct. Each shelf holds 8 + 10 = 18 items, and with 4 shelves, total items = 18 * 4 = 72.\"\n}"
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 72",
+                  "feedback": "{\n  \"score\": 0,\n  \"verdict\": \"FAIL\",\n  \"correct_answer\": \"72\",\n  \"feedback\": \"The candidate answer is correct. Each shelf holds 8 + 10 = 18 items, and with 4 shelves, total items = 18 * 4 = 72.\"\n}"
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          }
+        ]
+      }
+    }
+  }
+}

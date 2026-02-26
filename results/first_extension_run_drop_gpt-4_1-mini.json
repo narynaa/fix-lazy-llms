@@ -1,0 +1,2545 @@
+{
+  "config": {
+    "tasks": "drop",
+    "methods": "baseline,checklist,conditional_critique,verifier",
+    "n": 50,
+    "model": "gpt-4.1-mini",
+    "out": "first_extension_run_drop"
+  },
+  "results": {
+    "drop": {
+      "baseline": {
+        "summary": {
+          "accuracy": 0.88,
+          "avg_total_tokens": 354.4
+        },
+        "rows": [
+          {
+            "id": "drop-1824",
+            "pred": "New France having a poor harvest happened second.",
+            "usage": {
+              "prompt_tokens": 415,
+              "completion_tokens": 59,
+              "total_tokens": 474
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-409",
+            "pred": "Bengals",
+            "usage": {
+              "prompt_tokens": 285,
+              "completion_tokens": 31,
+              "total_tokens": 316
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-4506",
+            "pred": "1426-1440",
+            "usage": {
+              "prompt_tokens": 426,
+              "completion_tokens": 75,
+              "total_tokens": 501
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-4012",
+            "pred": "Instability in the economy has made the development of a formal services sector difficult in Paraguay. FINAL: Instability in the economy.",
+            "usage": {
+              "prompt_tokens": 183,
+              "completion_tokens": 26,
+              "total_tokens": 209
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3657",
+            "pred": "The subjects under the Treaty of Karlowitz were the Greek Orthodox inhabitants of the Morea, which was organized as the \"Kingdom of the Morea\" under Venetian possession. These subjects were used to relative autonomy under the Turks and resented the Venetian bureaucracy. FINAL: The Greek Orthodox inhabitants of the Morea under Venetian rule.",
+            "usage": {
+              "prompt_tokens": 301,
+              "completion_tokens": 66,
+              "total_tokens": 367
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-2286",
+            "pred": "11 months",
+            "usage": {
+              "prompt_tokens": 273,
+              "completion_tokens": 66,
+              "total_tokens": 339
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1679",
+            "pred": "Ryan Longwell's longest field goal was 27 yards. FINAL: 27 yards.",
+            "usage": {
+              "prompt_tokens": 246,
+              "completion_tokens": 18,
+              "total_tokens": 264
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-8935",
+            "pred": "83.3%",
+            "usage": {
+              "prompt_tokens": 166,
+              "completion_tokens": 52,
+              "total_tokens": 218
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-1424",
+            "pred": "According to the census of 2000, there were 445,342 people and 169,162 households residing in the county. FINAL: 445,342 people and 169,162 households.",
+            "usage": {
+              "prompt_tokens": 303,
+              "completion_tokens": 41,
+              "total_tokens": 344
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6912",
+            "pred": "7 aircraft",
+            "usage": {
+              "prompt_tokens": 346,
+              "completion_tokens": 84,
+              "total_tokens": 430
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-520",
+            "pred": "31.7% from 25 to 44",
+            "usage": {
+              "prompt_tokens": 161,
+              "completion_tokens": 39,
+              "total_tokens": 200
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-488",
+            "pred": "7 points",
+            "usage": {
+              "prompt_tokens": 205,
+              "completion_tokens": 30,
+              "total_tokens": 235
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1535",
+            "pred": "The Bucs kicked a longer field goal in the third quarter.",
+            "usage": {
+              "prompt_tokens": 316,
+              "completion_tokens": 59,
+              "total_tokens": 375
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3582",
+            "pred": "3",
+            "usage": {
+              "prompt_tokens": 330,
+              "completion_tokens": 30,
+              "total_tokens": 360
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3811",
+            "pred": "The Detroit Lions won the game. FINAL: Detroit Lions",
+            "usage": {
+              "prompt_tokens": 484,
+              "completion_tokens": 11,
+              "total_tokens": 495
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-8279",
+            "pred": "The groups in percent that are larger than 20% are: 28.3% under the age of 18, and 32.7% from 25 to 44. FINAL: 28.3% under the age of 18 and 32.7% from 25 to 44.",
+            "usage": {
+              "prompt_tokens": 159,
+              "completion_tokens": 64,
+              "total_tokens": 223
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-434",
+            "pred": "4 months",
+            "usage": {
+              "prompt_tokens": 408,
+              "completion_tokens": 51,
+              "total_tokens": 459
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-9195",
+            "pred": "0.1%",
+            "usage": {
+              "prompt_tokens": 237,
+              "completion_tokens": 55,
+              "total_tokens": 292
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3257",
+            "pred": "2,205",
+            "usage": {
+              "prompt_tokens": 242,
+              "completion_tokens": 42,
+              "total_tokens": 284
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-8928",
+            "pred": "45 to 64 years",
+            "usage": {
+              "prompt_tokens": 163,
+              "completion_tokens": 156,
+              "total_tokens": 319
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6873",
+            "pred": "37 yards",
+            "usage": {
+              "prompt_tokens": 600,
+              "completion_tokens": 90,
+              "total_tokens": 690
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3611",
+            "pred": "Four days",
+            "usage": {
+              "prompt_tokens": 335,
+              "completion_tokens": 29,
+              "total_tokens": 364
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-7359",
+            "pred": "14,000",
+            "usage": {
+              "prompt_tokens": 165,
+              "completion_tokens": 47,
+              "total_tokens": 212
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-4557",
+            "pred": "The passage does not provide information about the years Old Trafford hosted the Kangaroo Tours of Great Britain and France.",
+            "usage": {
+              "prompt_tokens": 268,
+              "completion_tokens": 58,
+              "total_tokens": 326
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-106",
+            "pred": "The replacement notes of the 1, 5 and 10 Pesos were issued in 1943. FINAL: 1943",
+            "usage": {
+              "prompt_tokens": 289,
+              "completion_tokens": 27,
+              "total_tokens": 316
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-2615",
+            "pred": "51 yards",
+            "usage": {
+              "prompt_tokens": 263,
+              "completion_tokens": 22,
+              "total_tokens": 285
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6924",
+            "pred": "50 yards",
+            "usage": {
+              "prompt_tokens": 321,
+              "completion_tokens": 28,
+              "total_tokens": 349
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-5574",
+            "pred": "108 yards",
+            "usage": {
+              "prompt_tokens": 273,
+              "completion_tokens": 50,
+              "total_tokens": 323
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-4552",
+            "pred": "31 yards",
+            "usage": {
+              "prompt_tokens": 262,
+              "completion_tokens": 29,
+              "total_tokens": 291
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-2547",
+            "pred": "3 years",
+            "usage": {
+              "prompt_tokens": 348,
+              "completion_tokens": 20,
+              "total_tokens": 368
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3527",
+            "pred": "The Battle of White Mountain happened second.",
+            "usage": {
+              "prompt_tokens": 492,
+              "completion_tokens": 105,
+              "total_tokens": 597
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-5514",
+            "pred": "Aleksander Korwin Gosiewski was a District-Governor of five places: Wieli\u017c, Pu\u0144sk, Kupise, Biel, and Markowa. FINAL: 5",
+            "usage": {
+              "prompt_tokens": 155,
+              "completion_tokens": 39,
+              "total_tokens": 194
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1674",
+            "pred": "67 yards",
+            "usage": {
+              "prompt_tokens": 247,
+              "completion_tokens": 47,
+              "total_tokens": 294
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1519",
+            "pred": "Commonwealth resumed the offensive.",
+            "usage": {
+              "prompt_tokens": 347,
+              "completion_tokens": 42,
+              "total_tokens": 389
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6224",
+            "pred": "Alex Henery",
+            "usage": {
+              "prompt_tokens": 496,
+              "completion_tokens": 70,
+              "total_tokens": 566
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1584",
+            "pred": "The Cardinals allowed the most points in the first half.",
+            "usage": {
+              "prompt_tokens": 276,
+              "completion_tokens": 158,
+              "total_tokens": 434
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-5881",
+            "pred": "75.65%",
+            "usage": {
+              "prompt_tokens": 184,
+              "completion_tokens": 65,
+              "total_tokens": 249
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-5635",
+            "pred": "The French force was several times larger than the Dutch army under Slangenburg at Ekeren on 30 June. FINAL: The French army was bigger.",
+            "usage": {
+              "prompt_tokens": 286,
+              "completion_tokens": 31,
+              "total_tokens": 317
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-4333",
+            "pred": "Ungheni is larger than Cahul.",
+            "usage": {
+              "prompt_tokens": 205,
+              "completion_tokens": 48,
+              "total_tokens": 253
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-711",
+            "pred": "99.44%",
+            "usage": {
+              "prompt_tokens": 300,
+              "completion_tokens": 52,
+              "total_tokens": 352
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-7527",
+            "pred": "African American",
+            "usage": {
+              "prompt_tokens": 238,
+              "completion_tokens": 46,
+              "total_tokens": 284
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-8785",
+            "pred": "19 months",
+            "usage": {
+              "prompt_tokens": 311,
+              "completion_tokens": 55,
+              "total_tokens": 366
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-2045",
+            "pred": "The Atlanta Braves lost the National League Division Series against the Astros, 3-1. FINAL: Atlanta Braves",
+            "usage": {
+              "prompt_tokens": 538,
+              "completion_tokens": 22,
+              "total_tokens": 560
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6201",
+            "pred": "Indonesia exports 14.3 percent more than Malaysia.",
+            "usage": {
+              "prompt_tokens": 310,
+              "completion_tokens": 62,
+              "total_tokens": 372
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1291",
+            "pred": "Three months",
+            "usage": {
+              "prompt_tokens": 380,
+              "completion_tokens": 47,
+              "total_tokens": 427
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-9044",
+            "pred": "Jake Elliott and Kamu Grugier-Hill.",
+            "usage": {
+              "prompt_tokens": 304,
+              "completion_tokens": 77,
+              "total_tokens": 381
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-4803",
+            "pred": "female householder with no husband present",
+            "usage": {
+              "prompt_tokens": 173,
+              "completion_tokens": 30,
+              "total_tokens": 203
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-5925",
+            "pred": "69.89%",
+            "usage": {
+              "prompt_tokens": 176,
+              "completion_tokens": 54,
+              "total_tokens": 230
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-9459",
+            "pred": "Janice Pennington and Kathleen Bradley had the same length of employment, only two years apart.",
+            "usage": {
+              "prompt_tokens": 650,
+              "completion_tokens": 87,
+              "total_tokens": 737
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-3150",
+            "pred": "Both teams scored the same number of field goals in the first quarter. The Texans scored a 26-yard field goal by Kris Brown, and the Raiders tied the game with a 46-yard field goal by Sebastian Janikowski. FINAL: first quarter",
+            "usage": {
+              "prompt_tokens": 237,
+              "completion_tokens": 50,
+              "total_tokens": 287
+            },
+            "meta": {},
+            "correct": true
+          }
+        ]
+      },
+      "checklist": {
+        "summary": {
+          "accuracy": 0.92,
+          "avg_total_tokens": 484.04
+        },
+        "rows": [
+          {
+            "id": "drop-1824",
+            "pred": "Vaudreuil and Montcalm being minimally resupplied happened second.",
+            "usage": {
+              "prompt_tokens": 466,
+              "completion_tokens": 149,
+              "total_tokens": 615
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-409",
+            "pred": "The Bengals allowed the most points at halftime.",
+            "usage": {
+              "prompt_tokens": 336,
+              "completion_tokens": 171,
+              "total_tokens": 507
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-4506",
+            "pred": "The longest time of rebellion against Ava was from 1426 to 1440.",
+            "usage": {
+              "prompt_tokens": 477,
+              "completion_tokens": 149,
+              "total_tokens": 626
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-4012",
+            "pred": "Instability in the economy.",
+            "usage": {
+              "prompt_tokens": 234,
+              "completion_tokens": 97,
+              "total_tokens": 331
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3657",
+            "pred": "The Greek Orthodox subjects were the subjects under the Treaty of Karlowitz.",
+            "usage": {
+              "prompt_tokens": 352,
+              "completion_tokens": 108,
+              "total_tokens": 460
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-2286",
+            "pred": "11 months",
+            "usage": {
+              "prompt_tokens": 324,
+              "completion_tokens": 119,
+              "total_tokens": 443
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1679",
+            "pred": "27 yards",
+            "usage": {
+              "prompt_tokens": 297,
+              "completion_tokens": 100,
+              "total_tokens": 397
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-8935",
+            "pred": "83.3%",
+            "usage": {
+              "prompt_tokens": 217,
+              "completion_tokens": 170,
+              "total_tokens": 387
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-1424",
+            "pred": "445,342 people and 169,162 households",
+            "usage": {
+              "prompt_tokens": 354,
+              "completion_tokens": 94,
+              "total_tokens": 448
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6912",
+            "pred": "Moscow Defence Brief estimated 7 aircraft losses.",
+            "usage": {
+              "prompt_tokens": 397,
+              "completion_tokens": 153,
+              "total_tokens": 550
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-520",
+            "pred": "The groups \"under the age of 18\" (21.8%) and \"from 25 to 44\" (31.7%) are larger than 21%.",
+            "usage": {
+              "prompt_tokens": 212,
+              "completion_tokens": 297,
+              "total_tokens": 509
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-488",
+            "pred": "The Giants were 7 points behind the Dolphins at the start of the 4th quarter.",
+            "usage": {
+              "prompt_tokens": 256,
+              "completion_tokens": 98,
+              "total_tokens": 354
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1535",
+            "pred": "The Bucs kicked a longer field goal in the third quarter.",
+            "usage": {
+              "prompt_tokens": 367,
+              "completion_tokens": 132,
+              "total_tokens": 499
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3582",
+            "pred": "Bessarabia was attached to Romania's territory 3 months into the year.",
+            "usage": {
+              "prompt_tokens": 381,
+              "completion_tokens": 83,
+              "total_tokens": 464
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3811",
+            "pred": "The Detroit Lions won the game.",
+            "usage": {
+              "prompt_tokens": 535,
+              "completion_tokens": 198,
+              "total_tokens": 733
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-8279",
+            "pred": "The groups under the age of 18 (28.3%) and from 25 to 44 (32.7%) are larger than 20%.",
+            "usage": {
+              "prompt_tokens": 210,
+              "completion_tokens": 197,
+              "total_tokens": 407
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-434",
+            "pred": "4 months",
+            "usage": {
+              "prompt_tokens": 459,
+              "completion_tokens": 178,
+              "total_tokens": 637
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-9195",
+            "pred": "0.1%",
+            "usage": {
+              "prompt_tokens": 288,
+              "completion_tokens": 101,
+              "total_tokens": 389
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3257",
+            "pred": "There are 2,205 more households than families.",
+            "usage": {
+              "prompt_tokens": 293,
+              "completion_tokens": 94,
+              "total_tokens": 387
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-8928",
+            "pred": "The age group 45 to 64 had the third most people.",
+            "usage": {
+              "prompt_tokens": 214,
+              "completion_tokens": 238,
+              "total_tokens": 452
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6873",
+            "pred": "37 yards",
+            "usage": {
+              "prompt_tokens": 651,
+              "completion_tokens": 149,
+              "total_tokens": 800
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3611",
+            "pred": "3 days",
+            "usage": {
+              "prompt_tokens": 386,
+              "completion_tokens": 132,
+              "total_tokens": 518
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-7359",
+            "pred": "14,000",
+            "usage": {
+              "prompt_tokens": 216,
+              "completion_tokens": 77,
+              "total_tokens": 293
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-4557",
+            "pred": "The passage does not provide information about the years Old Trafford hosted the Kangaroo Tours of Great Britain and France.",
+            "usage": {
+              "prompt_tokens": 319,
+              "completion_tokens": 58,
+              "total_tokens": 377
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-106",
+            "pred": "1943",
+            "usage": {
+              "prompt_tokens": 340,
+              "completion_tokens": 81,
+              "total_tokens": 421
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-2615",
+            "pred": "51 yards",
+            "usage": {
+              "prompt_tokens": 314,
+              "completion_tokens": 64,
+              "total_tokens": 378
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6924",
+            "pred": "50 yards",
+            "usage": {
+              "prompt_tokens": 372,
+              "completion_tokens": 104,
+              "total_tokens": 476
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-5574",
+            "pred": "108 yards",
+            "usage": {
+              "prompt_tokens": 324,
+              "completion_tokens": 126,
+              "total_tokens": 450
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-4552",
+            "pred": "31 yards",
+            "usage": {
+              "prompt_tokens": 313,
+              "completion_tokens": 61,
+              "total_tokens": 374
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-2547",
+            "pred": "The Spanish Civil War lasted 3 years.",
+            "usage": {
+              "prompt_tokens": 399,
+              "completion_tokens": 84,
+              "total_tokens": 483
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3527",
+            "pred": "The Battle of White Mountain happened second.",
+            "usage": {
+              "prompt_tokens": 543,
+              "completion_tokens": 210,
+              "total_tokens": 753
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-5514",
+            "pred": "5",
+            "usage": {
+              "prompt_tokens": 206,
+              "completion_tokens": 73,
+              "total_tokens": 279
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1674",
+            "pred": "67 yards",
+            "usage": {
+              "prompt_tokens": 298,
+              "completion_tokens": 106,
+              "total_tokens": 404
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1519",
+            "pred": "The Commonwealth resumed the offensive before the Treaty of \u017burawno.",
+            "usage": {
+              "prompt_tokens": 398,
+              "completion_tokens": 138,
+              "total_tokens": 536
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6224",
+            "pred": "Alex Henery kicked the most number of field goals.",
+            "usage": {
+              "prompt_tokens": 547,
+              "completion_tokens": 156,
+              "total_tokens": 703
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1584",
+            "pred": "The Cardinals allowed the most points in the first half.",
+            "usage": {
+              "prompt_tokens": 327,
+              "completion_tokens": 325,
+              "total_tokens": 652
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-5881",
+            "pred": "75.65% of households didn't have children under the age of 18 living with them.",
+            "usage": {
+              "prompt_tokens": 235,
+              "completion_tokens": 117,
+              "total_tokens": 352
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-5635",
+            "pred": "The French army was bigger than the Dutch army.",
+            "usage": {
+              "prompt_tokens": 337,
+              "completion_tokens": 84,
+              "total_tokens": 421
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-4333",
+            "pred": "Ungheni is larger than Cahul.",
+            "usage": {
+              "prompt_tokens": 256,
+              "completion_tokens": 82,
+              "total_tokens": 338
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-711",
+            "pred": "99.44%",
+            "usage": {
+              "prompt_tokens": 351,
+              "completion_tokens": 132,
+              "total_tokens": 483
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-7527",
+            "pred": "African American made up a higher percentage of the population than Native American.",
+            "usage": {
+              "prompt_tokens": 289,
+              "completion_tokens": 143,
+              "total_tokens": 432
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-8785",
+            "pred": "19 months",
+            "usage": {
+              "prompt_tokens": 362,
+              "completion_tokens": 134,
+              "total_tokens": 496
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-2045",
+            "pred": "The Atlanta Braves lost the National League Division Series.",
+            "usage": {
+              "prompt_tokens": 589,
+              "completion_tokens": 77,
+              "total_tokens": 666
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6201",
+            "pred": "14.3 percent",
+            "usage": {
+              "prompt_tokens": 361,
+              "completion_tokens": 102,
+              "total_tokens": 463
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1291",
+            "pred": "Three months.",
+            "usage": {
+              "prompt_tokens": 431,
+              "completion_tokens": 107,
+              "total_tokens": 538
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-9044",
+            "pred": "The Eagles' kicker was Jake Elliott, but due to his concussion, backup linebacker Kamu Grugier-Hill performed the kickoffs.",
+            "usage": {
+              "prompt_tokens": 355,
+              "completion_tokens": 133,
+              "total_tokens": 488
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-4803",
+            "pred": "The household with a female householder with no husband present was the least common.",
+            "usage": {
+              "prompt_tokens": 224,
+              "completion_tokens": 164,
+              "total_tokens": 388
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-5925",
+            "pred": "69.89%",
+            "usage": {
+              "prompt_tokens": 227,
+              "completion_tokens": 82,
+              "total_tokens": 309
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-9459",
+            "pred": "Holly Hallstrom and Dian Parkinson had the same length of employment (18 years), only two years apart in their start dates.",
+            "usage": {
+              "prompt_tokens": 701,
+              "completion_tokens": 241,
+              "total_tokens": 942
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3150",
+            "pred": "The first quarter",
+            "usage": {
+              "prompt_tokens": 288,
+              "completion_tokens": 106,
+              "total_tokens": 394
+            },
+            "meta": {},
+            "correct": true
+          }
+        ]
+      },
+      "conditional_critique": {
+        "summary": {
+          "accuracy": 0.82,
+          "avg_total_tokens": 345.96
+        },
+        "rows": [
+          {
+            "id": "drop-1824",
+            "pred": "New France having a poor harvest happened second.",
+            "usage": {
+              "prompt_tokens": 434,
+              "completion_tokens": 18,
+              "total_tokens": 452
+            },
+            "meta": {
+              "confidence": 90,
+              "critiqued": false
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-409",
+            "pred": "The Bengals allowed the most points at halftime, with the Jaguars leading 13-7.",
+            "usage": {
+              "prompt_tokens": 304,
+              "completion_tokens": 26,
+              "total_tokens": 330
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-4506",
+            "pred": "The longest period of rebellion against Ava was 1426-1440.",
+            "usage": {
+              "prompt_tokens": 445,
+              "completion_tokens": 23,
+              "total_tokens": 468
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-4012",
+            "pred": "Instability in the economy has made the development of a formal services sector difficult in Paraguay.",
+            "usage": {
+              "prompt_tokens": 202,
+              "completion_tokens": 26,
+              "total_tokens": 228
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-3657",
+            "pred": "The Greek Orthodox subjects of the Venetians in the Morea were the subjects under the Treaty of Karlowitz.",
+            "usage": {
+              "prompt_tokens": 320,
+              "completion_tokens": 31,
+              "total_tokens": 351
+            },
+            "meta": {
+              "confidence": 95,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-2286",
+            "pred": "11 months",
+            "usage": {
+              "prompt_tokens": 292,
+              "completion_tokens": 53,
+              "total_tokens": 345
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-1679",
+            "pred": "27 yards",
+            "usage": {
+              "prompt_tokens": 265,
+              "completion_tokens": 12,
+              "total_tokens": 277
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-8935",
+            "pred": "83.3%",
+            "usage": {
+              "prompt_tokens": 185,
+              "completion_tokens": 13,
+              "total_tokens": 198
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-1424",
+            "pred": "There were 445,342 people and 169,162 households reported according to the census of 2000.",
+            "usage": {
+              "prompt_tokens": 322,
+              "completion_tokens": 31,
+              "total_tokens": 353
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-6912",
+            "pred": "Moscow Defence Brief estimated Russian Air Force losses during the war as one Tu-22M3 long-range bomber, one Su-24M Fencer fighter-bomber, one Su-24MR Fencer E reconnaissance plane, and four Su-25 attack planes, totaling seven aircraft lost.",
+            "usage": {
+              "prompt_tokens": 365,
+              "completion_tokens": 65,
+              "total_tokens": 430
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-520",
+            "pred": "The groups larger than 21% are those under the age of 18 (21.8%) and those from 25 to 44 (31.7%).",
+            "usage": {
+              "prompt_tokens": 180,
+              "completion_tokens": 42,
+              "total_tokens": 222
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-488",
+            "pred": "The Giants were behind the Dolphins by 7 points at the start of the 4th quarter (17-10).",
+            "usage": {
+              "prompt_tokens": 224,
+              "completion_tokens": 32,
+              "total_tokens": 256
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-1535",
+            "pred": "The Bucs kicked a longer field goal in the third quarter (45 yards) compared to the second quarter (28 yards).",
+            "usage": {
+              "prompt_tokens": 335,
+              "completion_tokens": 33,
+              "total_tokens": 368
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-3582",
+            "pred": "Bessarabia was attached to Romania's territory in March, which is three months into the year.",
+            "usage": {
+              "prompt_tokens": 349,
+              "completion_tokens": 29,
+              "total_tokens": 378
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-3811",
+            "pred": "The Detroit Lions won the game.",
+            "usage": {
+              "prompt_tokens": 503,
+              "completion_tokens": 16,
+              "total_tokens": 519
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-8279",
+            "pred": "The groups larger than 20% are under the age of 18 (28.3%) and from 25 to 44 (32.7%).",
+            "usage": {
+              "prompt_tokens": 178,
+              "completion_tokens": 40,
+              "total_tokens": 218
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-434",
+            "pred": "MorphInk 99 was introduced 4 months after Macromedia disclosed the Flash Version 3 Specification on its website.",
+            "usage": {
+              "prompt_tokens": 427,
+              "completion_tokens": 32,
+              "total_tokens": 459
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-9195",
+            "pred": "0.1%",
+            "usage": {
+              "prompt_tokens": 256,
+              "completion_tokens": 13,
+              "total_tokens": 269
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-3257",
+            "pred": "There are 2,205 more households than families.",
+            "usage": {
+              "prompt_tokens": 261,
+              "completion_tokens": 19,
+              "total_tokens": 280
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-8928",
+            "pred": "The age group 45 to 64 had the third most people.",
+            "usage": {
+              "prompt_tokens": 182,
+              "completion_tokens": 22,
+              "total_tokens": 204
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-6873",
+            "pred": "Jay Cutler's longest touchdown pass was 39 yards and his shortest was 2 yards, so it was 37 yards longer.",
+            "usage": {
+              "prompt_tokens": 619,
+              "completion_tokens": 35,
+              "total_tokens": 654
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-3611",
+            "pred": "Enniscorthy was taken over for four days, from Thursday 27 April until Sunday.",
+            "usage": {
+              "prompt_tokens": 354,
+              "completion_tokens": 27,
+              "total_tokens": 381
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-7359",
+            "pred": "14000",
+            "usage": {
+              "prompt_tokens": 184,
+              "completion_tokens": 12,
+              "total_tokens": 196
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-4557",
+            "pred": "The passage does not provide information about the years Old Trafford hosted the Kangaroo Tours of Great Britain and France.",
+            "usage": {
+              "prompt_tokens": 287,
+              "completion_tokens": 30,
+              "total_tokens": 317
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-106",
+            "pred": "1943",
+            "usage": {
+              "prompt_tokens": 308,
+              "completion_tokens": 12,
+              "total_tokens": 320
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-2615",
+            "pred": "51 yards",
+            "usage": {
+              "prompt_tokens": 282,
+              "completion_tokens": 12,
+              "total_tokens": 294
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-6924",
+            "pred": "50 yards",
+            "usage": {
+              "prompt_tokens": 340,
+              "completion_tokens": 12,
+              "total_tokens": 352
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-5574",
+            "pred": "Shaun Suisham kicked field goals of 49 yards, 31 yards, and 28 yards, totaling 108 yards.",
+            "usage": {
+              "prompt_tokens": 292,
+              "completion_tokens": 34,
+              "total_tokens": 326
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-4552",
+            "pred": "31 yards",
+            "usage": {
+              "prompt_tokens": 281,
+              "completion_tokens": 12,
+              "total_tokens": 293
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-2547",
+            "pred": "The Spanish Civil War lasted from 1936 to 1939, which is 3 years.",
+            "usage": {
+              "prompt_tokens": 367,
+              "completion_tokens": 28,
+              "total_tokens": 395
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-3527",
+            "pred": "Joachim III Frederick inheriting the Silesian Duchy of J\u00e4gerndorf happened second.",
+            "usage": {
+              "prompt_tokens": 511,
+              "completion_tokens": 28,
+              "total_tokens": 539
+            },
+            "meta": {
+              "confidence": 95,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-5514",
+            "pred": "Five places",
+            "usage": {
+              "prompt_tokens": 174,
+              "completion_tokens": 11,
+              "total_tokens": 185
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-1674",
+            "pred": "67 yards",
+            "usage": {
+              "prompt_tokens": 266,
+              "completion_tokens": 12,
+              "total_tokens": 278
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-1519",
+            "pred": "The Commonwealth resumed the offensive first.",
+            "usage": {
+              "prompt_tokens": 366,
+              "completion_tokens": 16,
+              "total_tokens": 382
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-6224",
+            "pred": "Alex Henery kicked the most number of field goals.",
+            "usage": {
+              "prompt_tokens": 515,
+              "completion_tokens": 19,
+              "total_tokens": 534
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-1584",
+            "pred": "The Cardinals allowed the most points in the first half.",
+            "usage": {
+              "prompt_tokens": 295,
+              "completion_tokens": 19,
+              "total_tokens": 314
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-5881",
+            "pred": "75.65%",
+            "usage": {
+              "prompt_tokens": 203,
+              "completion_tokens": 13,
+              "total_tokens": 216
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-5635",
+            "pred": "The French force was several times larger than the Dutch army under Slangenburg at Ekeren.",
+            "usage": {
+              "prompt_tokens": 305,
+              "completion_tokens": 27,
+              "total_tokens": 332
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-4333",
+            "pred": "Ungheni is larger than Cahul.",
+            "usage": {
+              "prompt_tokens": 224,
+              "completion_tokens": 16,
+              "total_tokens": 240
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-711",
+            "pred": "99.44%",
+            "usage": {
+              "prompt_tokens": 319,
+              "completion_tokens": 13,
+              "total_tokens": 332
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-7527",
+            "pred": "African American made up a higher percentage of the population (0.95%) compared to Native American (0.11%).",
+            "usage": {
+              "prompt_tokens": 257,
+              "completion_tokens": 33,
+              "total_tokens": 290
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-8785",
+            "pred": "The unit was split into two regiments in December 1939 and was amalgamated into the SS Cavalry Brigade on 31 July 1941. This means the unit was split for 19 months prior to being amalgamated.",
+            "usage": {
+              "prompt_tokens": 330,
+              "completion_tokens": 57,
+              "total_tokens": 387
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-2045",
+            "pred": "The Atlanta Braves lost the National League Division Series.",
+            "usage": {
+              "prompt_tokens": 557,
+              "completion_tokens": 19,
+              "total_tokens": 576
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-6201",
+            "pred": "Indonesia exports 14.3 percent more than Malaysia.",
+            "usage": {
+              "prompt_tokens": 329,
+              "completion_tokens": 19,
+              "total_tokens": 348
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-1291",
+            "pred": "The truce was called in July 1921, and negotiations began on 11 October 1921, which is approximately 3 months later.",
+            "usage": {
+              "prompt_tokens": 399,
+              "completion_tokens": 38,
+              "total_tokens": 437
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-9044",
+            "pred": "Jake Elliott was the primary kicker, and backup linebacker Kamu Grugier-Hill handled kickoffs after Jake Elliott was ruled out.",
+            "usage": {
+              "prompt_tokens": 323,
+              "completion_tokens": 34,
+              "total_tokens": 357
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-4803",
+            "pred": "The least common household type was a female householder with no husband present, at 9.1%.",
+            "usage": {
+              "prompt_tokens": 192,
+              "completion_tokens": 30,
+              "total_tokens": 222
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-5925",
+            "pred": "69.89%",
+            "usage": {
+              "prompt_tokens": 195,
+              "completion_tokens": 13,
+              "total_tokens": 208
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-9459",
+            "pred": "Janice Pennington (1972\u20132000) and Kathleen Bradley (1990\u20132000) had the same length of employment, only two years apart.",
+            "usage": {
+              "prompt_tokens": 669,
+              "completion_tokens": 41,
+              "total_tokens": 710
+            },
+            "meta": {
+              "confidence": 95,
+              "critiqued": false
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-3150",
+            "pred": "In the first quarter, both teams scored one field goal each.",
+            "usage": {
+              "prompt_tokens": 256,
+              "completion_tokens": 22,
+              "total_tokens": 278
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          }
+        ]
+      },
+      "verifier": {
+        "summary": {
+          "accuracy": 0.9,
+          "avg_total_tokens": 1065.48
+        },
+        "rows": [
+          {
+            "id": "drop-1824",
+            "pred": "Vaudreuil and Montcalm being minimally resupplied happened second.",
+            "usage": {
+              "prompt_tokens": 1245,
+              "completion_tokens": 225,
+              "total_tokens": 1470
+            },
+            "meta": {
+              "k": 3,
+              "passed": "1758"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-409",
+            "pred": "Cincinnati Bengals",
+            "usage": {
+              "prompt_tokens": 855,
+              "completion_tokens": 110,
+              "total_tokens": 965
+            },
+            "meta": {
+              "k": 3,
+              "passed": "7"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-4506",
+            "pred": "The period 1426-1440 lasted 14 years, 1451-1459 lasted 8 years, and 1468-1470 lasted 2 years. Therefore, the longest time of rebellion against Ava was 1426-1440. FINAL: 1426-1440",
+            "usage": {
+              "prompt_tokens": 1278,
+              "completion_tokens": 218,
+              "total_tokens": 1496
+            },
+            "meta": {
+              "k": 3,
+              "passed": "-1440"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-4012",
+            "pred": "Instability in the economy has made the development of a formal services sector difficult. FINAL: Instability in the economy.",
+            "usage": {
+              "prompt_tokens": 549,
+              "completion_tokens": 82,
+              "total_tokens": 631
+            },
+            "meta": {
+              "k": 3,
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-3657",
+            "pred": "The Greek Orthodox inhabitants of the Morea under Venetian possession were the subjects under the Treaty of Karlowitz.",
+            "usage": {
+              "prompt_tokens": 903,
+              "completion_tokens": 180,
+              "total_tokens": 1083
+            },
+            "meta": {
+              "k": 3,
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-2286",
+            "pred": "11 months",
+            "usage": {
+              "prompt_tokens": 819,
+              "completion_tokens": 253,
+              "total_tokens": 1072
+            },
+            "meta": {
+              "k": 3,
+              "passed": "11"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-1679",
+            "pred": "Ryan Longwell's longest field goal mentioned in the passage was 27 yards. FINAL: 27 yards",
+            "usage": {
+              "prompt_tokens": 738,
+              "completion_tokens": 55,
+              "total_tokens": 793
+            },
+            "meta": {
+              "k": 3,
+              "passed": "27"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-8935",
+            "pred": "83.3%",
+            "usage": {
+              "prompt_tokens": 498,
+              "completion_tokens": 185,
+              "total_tokens": 683
+            },
+            "meta": {
+              "k": 3,
+              "passed": "83.3"
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-1424",
+            "pred": "According to the census of 2000, there were 445,342 people and 169,162 households residing in the county. FINAL: 445,342 people and 169,162 households.",
+            "usage": {
+              "prompt_tokens": 909,
+              "completion_tokens": 123,
+              "total_tokens": 1032
+            },
+            "meta": {
+              "k": 3,
+              "passed": "162"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-6912",
+            "pred": "7 aircraft losses",
+            "usage": {
+              "prompt_tokens": 1038,
+              "completion_tokens": 217,
+              "total_tokens": 1255
+            },
+            "meta": {
+              "k": 3,
+              "passed": "7"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-520",
+            "pred": "under the age of 18 (21.8%) and from 25 to 44 (31.7%)",
+            "usage": {
+              "prompt_tokens": 483,
+              "completion_tokens": 184,
+              "total_tokens": 667
+            },
+            "meta": {
+              "k": 3,
+              "passed": "31.7"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-488",
+            "pred": "7 points",
+            "usage": {
+              "prompt_tokens": 615,
+              "completion_tokens": 90,
+              "total_tokens": 705
+            },
+            "meta": {
+              "k": 3,
+              "passed": "7"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-1535",
+            "pred": "third quarter",
+            "usage": {
+              "prompt_tokens": 948,
+              "completion_tokens": 147,
+              "total_tokens": 1095
+            },
+            "meta": {
+              "k": 3,
+              "passed": "45"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-3582",
+            "pred": "3 months",
+            "usage": {
+              "prompt_tokens": 990,
+              "completion_tokens": 98,
+              "total_tokens": 1088
+            },
+            "meta": {
+              "k": 3,
+              "passed": "3"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-3811",
+            "pred": "The Detroit Lions won the game. FINAL: Detroit Lions",
+            "usage": {
+              "prompt_tokens": 1452,
+              "completion_tokens": 38,
+              "total_tokens": 1490
+            },
+            "meta": {
+              "k": 3,
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-8279",
+            "pred": "under the age of 18 (28.3%) and from 25 to 44 (32.7%)",
+            "usage": {
+              "prompt_tokens": 477,
+              "completion_tokens": 177,
+              "total_tokens": 654
+            },
+            "meta": {
+              "k": 3,
+              "passed": "32.7"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-434",
+            "pred": "4 months",
+            "usage": {
+              "prompt_tokens": 1224,
+              "completion_tokens": 206,
+              "total_tokens": 1430
+            },
+            "meta": {
+              "k": 3,
+              "passed": "4"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-9195",
+            "pred": "0.1%",
+            "usage": {
+              "prompt_tokens": 711,
+              "completion_tokens": 167,
+              "total_tokens": 878
+            },
+            "meta": {
+              "k": 3,
+              "passed": "0.1"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-3257",
+            "pred": "2,205",
+            "usage": {
+              "prompt_tokens": 726,
+              "completion_tokens": 157,
+              "total_tokens": 883
+            },
+            "meta": {
+              "k": 3,
+              "passed": "205"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-8928",
+            "pred": "45 to 64 age group",
+            "usage": {
+              "prompt_tokens": 489,
+              "completion_tokens": 289,
+              "total_tokens": 778
+            },
+            "meta": {
+              "k": 3,
+              "passed": "64"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-6873",
+            "pred": "37 yards",
+            "usage": {
+              "prompt_tokens": 1800,
+              "completion_tokens": 248,
+              "total_tokens": 2048
+            },
+            "meta": {
+              "k": 3,
+              "passed": "37"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-3611",
+            "pred": "Four days",
+            "usage": {
+              "prompt_tokens": 1005,
+              "completion_tokens": 90,
+              "total_tokens": 1095
+            },
+            "meta": {
+              "k": 3,
+              "passed": "27"
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-7359",
+            "pred": "14,000",
+            "usage": {
+              "prompt_tokens": 495,
+              "completion_tokens": 147,
+              "total_tokens": 642
+            },
+            "meta": {
+              "k": 3,
+              "passed": "000"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-4557",
+            "pred": "The passage does not provide the years Old Trafford hosted the Kangaroo Tours of Great Britain and France.",
+            "usage": {
+              "prompt_tokens": 804,
+              "completion_tokens": 145,
+              "total_tokens": 949
+            },
+            "meta": {
+              "k": 3,
+              "passed": false
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-106",
+            "pred": "The replacement notes of the 1, 5 and 10 Pesos were issued in 1943. FINAL: 1943",
+            "usage": {
+              "prompt_tokens": 867,
+              "completion_tokens": 81,
+              "total_tokens": 948
+            },
+            "meta": {
+              "k": 3,
+              "passed": "1943"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-2615",
+            "pred": "51 yards",
+            "usage": {
+              "prompt_tokens": 789,
+              "completion_tokens": 58,
+              "total_tokens": 847
+            },
+            "meta": {
+              "k": 3,
+              "passed": "51"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-6924",
+            "pred": "50 yards",
+            "usage": {
+              "prompt_tokens": 963,
+              "completion_tokens": 74,
+              "total_tokens": 1037
+            },
+            "meta": {
+              "k": 3,
+              "passed": "50"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-5574",
+            "pred": "108 yards",
+            "usage": {
+              "prompt_tokens": 819,
+              "completion_tokens": 149,
+              "total_tokens": 968
+            },
+            "meta": {
+              "k": 3,
+              "passed": "108"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-4552",
+            "pred": "The longest touchdown run mentioned in the passage was by running back Chad Simpson for 31 yards. FINAL: 31 yards",
+            "usage": {
+              "prompt_tokens": 786,
+              "completion_tokens": 76,
+              "total_tokens": 862
+            },
+            "meta": {
+              "k": 3,
+              "passed": "31"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-2547",
+            "pred": "3 years",
+            "usage": {
+              "prompt_tokens": 1044,
+              "completion_tokens": 74,
+              "total_tokens": 1118
+            },
+            "meta": {
+              "k": 3,
+              "passed": "3"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-3527",
+            "pred": "The Battle of White Mountain happened second.",
+            "usage": {
+              "prompt_tokens": 1476,
+              "completion_tokens": 300,
+              "total_tokens": 1776
+            },
+            "meta": {
+              "k": 3,
+              "passed": "1621"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-5514",
+            "pred": "5",
+            "usage": {
+              "prompt_tokens": 465,
+              "completion_tokens": 117,
+              "total_tokens": 582
+            },
+            "meta": {
+              "k": 3,
+              "passed": "5"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-1674",
+            "pred": "67 yards",
+            "usage": {
+              "prompt_tokens": 741,
+              "completion_tokens": 142,
+              "total_tokens": 883
+            },
+            "meta": {
+              "k": 3,
+              "passed": "67"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-1519",
+            "pred": "Commonwealth resumed the offensive happened first.",
+            "usage": {
+              "prompt_tokens": 1041,
+              "completion_tokens": 142,
+              "total_tokens": 1183
+            },
+            "meta": {
+              "k": 3,
+              "passed": "1676"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-6224",
+            "pred": "According to the passage, Alex Henery kicked two field goals (a 35-yard and a 25-yard), while Matt Prater kicked one field goal (a 53-yard). Therefore, Alex Henery kicked the most number of field goals. FINAL: Alex Henery",
+            "usage": {
+              "prompt_tokens": 1488,
+              "completion_tokens": 169,
+              "total_tokens": 1657
+            },
+            "meta": {
+              "k": 3,
+              "passed": "53"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-1584",
+            "pred": "Arizona Cardinals",
+            "usage": {
+              "prompt_tokens": 828,
+              "completion_tokens": 404,
+              "total_tokens": 1232
+            },
+            "meta": {
+              "k": 3,
+              "passed": "38"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-5881",
+            "pred": "75.65%",
+            "usage": {
+              "prompt_tokens": 552,
+              "completion_tokens": 195,
+              "total_tokens": 747
+            },
+            "meta": {
+              "k": 3,
+              "passed": "75.65"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-5635",
+            "pred": "The French army was bigger than the Dutch army.",
+            "usage": {
+              "prompt_tokens": 858,
+              "completion_tokens": 140,
+              "total_tokens": 998
+            },
+            "meta": {
+              "k": 3,
+              "passed": "30"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-4333",
+            "pred": "Ungheni is larger than Cahul.",
+            "usage": {
+              "prompt_tokens": 615,
+              "completion_tokens": 144,
+              "total_tokens": 759
+            },
+            "meta": {
+              "k": 3,
+              "passed": "763"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-711",
+            "pred": "99.44%",
+            "usage": {
+              "prompt_tokens": 900,
+              "completion_tokens": 156,
+              "total_tokens": 1056
+            },
+            "meta": {
+              "k": 3,
+              "passed": "99.44"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-7527",
+            "pred": "African American made up a higher percentage of the population than Native American.",
+            "usage": {
+              "prompt_tokens": 714,
+              "completion_tokens": 149,
+              "total_tokens": 863
+            },
+            "meta": {
+              "k": 3,
+              "passed": "0.95"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-8785",
+            "pred": "19 months",
+            "usage": {
+              "prompt_tokens": 933,
+              "completion_tokens": 207,
+              "total_tokens": 1140
+            },
+            "meta": {
+              "k": 3,
+              "passed": "19"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-2045",
+            "pred": "The Atlanta Braves lost the National League Division Series against the Astros, 3-1. FINAL: Atlanta Braves",
+            "usage": {
+              "prompt_tokens": 1614,
+              "completion_tokens": 64,
+              "total_tokens": 1678
+            },
+            "meta": {
+              "k": 3,
+              "passed": "-1"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-6201",
+            "pred": "14.3%",
+            "usage": {
+              "prompt_tokens": 930,
+              "completion_tokens": 182,
+              "total_tokens": 1112
+            },
+            "meta": {
+              "k": 3,
+              "passed": "14.3"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-1291",
+            "pred": "Three months",
+            "usage": {
+              "prompt_tokens": 1140,
+              "completion_tokens": 145,
+              "total_tokens": 1285
+            },
+            "meta": {
+              "k": 3,
+              "passed": "1921"
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-9044",
+            "pred": "Jake Elliott was the Eagles' kicker, and Kamu Grugier-Hill served as kicker for kickoffs during Elliott's absence.",
+            "usage": {
+              "prompt_tokens": 912,
+              "completion_tokens": 224,
+              "total_tokens": 1136
+            },
+            "meta": {
+              "k": 3,
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-4803",
+            "pred": "A female householder with no husband present was the least common household type.",
+            "usage": {
+              "prompt_tokens": 519,
+              "completion_tokens": 118,
+              "total_tokens": 637
+            },
+            "meta": {
+              "k": 3,
+              "passed": "9.1"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-5925",
+            "pred": "69.89%",
+            "usage": {
+              "prompt_tokens": 528,
+              "completion_tokens": 161,
+              "total_tokens": 689
+            },
+            "meta": {
+              "k": 3,
+              "passed": "69.89"
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-9459",
+            "pred": "Janice Pennington and Kathleen Bradley had the same length of employment, only two years apart.",
+            "usage": {
+              "prompt_tokens": 1950,
+              "completion_tokens": 413,
+              "total_tokens": 2363
+            },
+            "meta": {
+              "k": 3,
+              "passed": "2000"
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-3150",
+            "pred": "first quarter",
+            "usage": {
+              "prompt_tokens": 711,
+              "completion_tokens": 125,
+              "total_tokens": 836
+            },
+            "meta": {
+              "k": 3,
+              "passed": "46"
+            },
+            "correct": true
+          }
+        ]
+      }
+    }
+  }
+}

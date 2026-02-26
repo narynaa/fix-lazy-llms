@@ -1,0 +1,2313 @@
+{
+  "config": {
+    "tasks": "drop",
+    "methods": "baseline,checklist,verifier_reprompt_rm",
+    "n": 50,
+    "model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "out": "extension_run"
+  },
+  "results": {
+    "drop": {
+      "baseline": {
+        "summary": {
+          "accuracy": 0.7,
+          "avg_total_tokens": 383.08
+        },
+        "rows": [
+          {
+            "id": "drop-1824",
+            "pred": "New France having a poor harvest happened second.",
+            "usage": {
+              "prompt_tokens": 426,
+              "completion_tokens": 10,
+              "total_tokens": 436
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-409",
+            "pred": "The Jaguars allowed the most points at halftime, with a total of 13 points (10 from their own touchdowns and 3 from the kickoff return).",
+            "usage": {
+              "prompt_tokens": 293,
+              "completion_tokens": 33,
+              "total_tokens": 326
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-4506",
+            "pred": "The longest period of rebellion against Ava was 1468-1470. This occurred when the Toungoo lords rebelled against Ava from 1468 to 1470, usually with Pegu's implicit or explicit support.",
+            "usage": {
+              "prompt_tokens": 469,
+              "completion_tokens": 55,
+              "total_tokens": 524
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-4012",
+            "pred": "Instability in the economy",
+            "usage": {
+              "prompt_tokens": 199,
+              "completion_tokens": 6,
+              "total_tokens": 205
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3657",
+            "pred": "According to the passage, the Venetians managed to restore some prosperity - the population allegedly rose to some 250,000 by 1708, probably driven by immigration - but they failed to win the trust of their Greek Orthodox subjects, who were used to a relative autonomy under the Turks and resented the Venetian bureaucracy.",
+            "usage": {
+              "prompt_tokens": 328,
+              "completion_tokens": 74,
+              "total_tokens": 402
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-2286",
+            "pred": "The attack by 8,000 Rifians occurred 11 months after the French Army established a line of outposts north of the Oureghla River. This is calculated by subtracting 4 months (from May to September) from the month of April when the attack took place.",
+            "usage": {
+              "prompt_tokens": 298,
+              "completion_tokens": 62,
+              "total_tokens": 360
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1679",
+            "pred": "Ryan Longwell's longest field goal was 23 yards.",
+            "usage": {
+              "prompt_tokens": 254,
+              "completion_tokens": 14,
+              "total_tokens": 268
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-8935",
+            "pred": "83.3%",
+            "usage": {
+              "prompt_tokens": 190,
+              "completion_tokens": 88,
+              "total_tokens": 278
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-1424",
+            "pred": "According to the census of 2000, there were 445,342 people and 169,162 households residing in the county.",
+            "usage": {
+              "prompt_tokens": 343,
+              "completion_tokens": 38,
+              "total_tokens": 381
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6912",
+            "pred": "- Four Su-25 attack planes",
+            "usage": {
+              "prompt_tokens": 366,
+              "completion_tokens": 64,
+              "total_tokens": 430
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-520",
+            "pred": "The groups that are larger than 21% are those under the age of 18, from 18 to 24, and from 25 to 44.",
+            "usage": {
+              "prompt_tokens": 184,
+              "completion_tokens": 100,
+              "total_tokens": 284
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-488",
+            "pred": "The Giants were trailing the Dolphins by 17 points at the start of the fourth quarter.",
+            "usage": {
+              "prompt_tokens": 215,
+              "completion_tokens": 20,
+              "total_tokens": 235
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1535",
+            "pred": "The Buccaneers kicked a longer field goal in the third quarter. They kicked a 39-yard field goal in that quarter.",
+            "usage": {
+              "prompt_tokens": 328,
+              "completion_tokens": 26,
+              "total_tokens": 354
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3582",
+            "pred": "Bessarabia was attached to its territory 3 months after it was controlled by Romanian forces in January 1918. This is because the Romanian forces established control over Bessarabia in January 1918, and they formally attached it to their territory on 27 March 1918, which is approximately three months later.",
+            "usage": {
+              "prompt_tokens": 355,
+              "completion_tokens": 77,
+              "total_tokens": 432
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3811",
+            "pred": "The Detroit Lions won the game.",
+            "usage": {
+              "prompt_tokens": 501,
+              "completion_tokens": 8,
+              "total_tokens": 509
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-8279",
+            "pred": "The groups in percent that are larger than 20% are those under the age of 18 at 28.3%, and from 18 to 24 at 11.3%.",
+            "usage": {
+              "prompt_tokens": 181,
+              "completion_tokens": 89,
+              "total_tokens": 270
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-434",
+            "pred": "Therefore, the answer is 3 months.",
+            "usage": {
+              "prompt_tokens": 422,
+              "completion_tokens": 204,
+              "total_tokens": 626
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-9195",
+            "pred": "So, there are 0.1 percentage points more Chinese Americans speakers than Arabic speakers.",
+            "usage": {
+              "prompt_tokens": 261,
+              "completion_tokens": 83,
+              "total_tokens": 344
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3257",
+            "pred": "Therefore, there are 2,205 more households than families in the county as of the census of 2010.",
+            "usage": {
+              "prompt_tokens": 261,
+              "completion_tokens": 114,
+              "total_tokens": 375
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-8928",
+            "pred": "Based on the information provided in the passage, the age group that had the third most people was those aged 45 to 64.",
+            "usage": {
+              "prompt_tokens": 185,
+              "completion_tokens": 30,
+              "total_tokens": 215
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6873",
+            "pred": "Jay Cutler's longest touchdown pass was 18 yards longer than his shortest.",
+            "usage": {
+              "prompt_tokens": 614,
+              "completion_tokens": 62,
+              "total_tokens": 676
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-3611",
+            "pred": "The answer is 3 days. The volunteers took control of Enniscorthy for three days starting from Thursday 27 April until Sunday.",
+            "usage": {
+              "prompt_tokens": 348,
+              "completion_tokens": 30,
+              "total_tokens": 378
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-7359",
+            "pred": "Therefore, the answer is 14,000.",
+            "usage": {
+              "prompt_tokens": 188,
+              "completion_tokens": 87,
+              "total_tokens": 275
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-4557",
+            "pred": "The passage does not provide any information about Olf Trafford hosting the Kangaroo Tours of Great Britain and France or when they occurred. Therefore, I cannot answer this question based solely on the given text.",
+            "usage": {
+              "prompt_tokens": 274,
+              "completion_tokens": 41,
+              "total_tokens": 315
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-106",
+            "pred": "The replacement notes of the 1, 5, and 10 Pesos were issued in 1943.",
+            "usage": {
+              "prompt_tokens": 324,
+              "completion_tokens": 27,
+              "total_tokens": 351
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-2615",
+            "pred": "The first field goal was from 51 yards.",
+            "usage": {
+              "prompt_tokens": 280,
+              "completion_tokens": 12,
+              "total_tokens": 292
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6924",
+            "pred": "The game's longest field goal was 50 yards, made by Neil Rackers for the Arizona Cardinals in the second quarter.",
+            "usage": {
+              "prompt_tokens": 334,
+              "completion_tokens": 27,
+              "total_tokens": 361
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-5574",
+            "pred": "So, Suisham kicked a total of 80 yards in field goals.",
+            "usage": {
+              "prompt_tokens": 281,
+              "completion_tokens": 47,
+              "total_tokens": 328
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-4552",
+            "pred": "The longest touchdown run went for 31 yards.",
+            "usage": {
+              "prompt_tokens": 268,
+              "completion_tokens": 12,
+              "total_tokens": 280
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-2547",
+            "pred": "The Spanish Civil War lasted for 3 years, from 1936 to 1939.",
+            "usage": {
+              "prompt_tokens": 383,
+              "completion_tokens": 24,
+              "total_tokens": 407
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3527",
+            "pred": "Joachim III Frederick inheriting the Silesian Duchy of J\u00e4gerndorf occurred second after the Battle of White Mountain.",
+            "usage": {
+              "prompt_tokens": 530,
+              "completion_tokens": 29,
+              "total_tokens": 559
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-5514",
+            "pred": "Therefore, the answer is that he was a District-Governor for 5 places.",
+            "usage": {
+              "prompt_tokens": 176,
+              "completion_tokens": 73,
+              "total_tokens": 249
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1674",
+            "pred": "So, the total number of yards thrown for touchdowns by Kyle Orton is 65 + 2 = 67 yards.",
+            "usage": {
+              "prompt_tokens": 255,
+              "completion_tokens": 69,
+              "total_tokens": 324
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1519",
+            "pred": "Commonwealth resumed the offensive.",
+            "usage": {
+              "prompt_tokens": 374,
+              "completion_tokens": 7,
+              "total_tokens": 381
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6224",
+            "pred": "Alex Henery kicked the most field goals, with 2 each in the first half and 1 in the second half.",
+            "usage": {
+              "prompt_tokens": 522,
+              "completion_tokens": 26,
+              "total_tokens": 548
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1584",
+            "pred": "New England Patriots",
+            "usage": {
+              "prompt_tokens": 289,
+              "completion_tokens": 4,
+              "total_tokens": 293
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-5881",
+            "pred": "Therefore, 75.65% of households didn't have children under the age of 18 living with them.",
+            "usage": {
+              "prompt_tokens": 209,
+              "completion_tokens": 104,
+              "total_tokens": 313
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-5635",
+            "pred": "The French army was larger than the Dutch army.",
+            "usage": {
+              "prompt_tokens": 309,
+              "completion_tokens": 11,
+              "total_tokens": 320
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-4333",
+            "pred": "According to the 2014 census data provided, Cahul has a population of 28,763 compared to Ungheni's population of 32,828. Therefore, Cahul is larger than Ungheni.",
+            "usage": {
+              "prompt_tokens": 255,
+              "completion_tokens": 65,
+              "total_tokens": 320
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-711",
+            "pred": "Therefore, 2. 10% of the population wasn't African American as of the census of 2000.",
+            "usage": {
+              "prompt_tokens": 335,
+              "completion_tokens": 121,
+              "total_tokens": 456
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-7527",
+            "pred": "Native American made up a higher percentage of the population than African American.",
+            "usage": {
+              "prompt_tokens": 266,
+              "completion_tokens": 74,
+              "total_tokens": 340
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-8785",
+            "pred": "The unit was split into two regiments in December 1939, making it 7 months prior to being amalgamated into the SS Cavalry Brigade on 31 July 1941.",
+            "usage": {
+              "prompt_tokens": 342,
+              "completion_tokens": 306,
+              "total_tokens": 648
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-2045",
+            "pred": "The Atlanta Braves lost the National League Division Series.",
+            "usage": {
+              "prompt_tokens": 551,
+              "completion_tokens": 11,
+              "total_tokens": 562
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6201",
+            "pred": "Indonesia exports 0.375 percentage points more than Malaysia.",
+            "usage": {
+              "prompt_tokens": 335,
+              "completion_tokens": 198,
+              "total_tokens": 533
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-1291",
+            "pred": "The negotiations for the Anglo-Irish Treaty began approximately 3 months after the truce of the War of Independence was called. Specifically, they started in October 1921, which is about three months after the truce was announced in July 1921.",
+            "usage": {
+              "prompt_tokens": 390,
+              "completion_tokens": 57,
+              "total_tokens": 447
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-9044",
+            "pred": "The only kicker mentioned for the Eagles in the given passage is Jake Elliott. No other kickers are named.",
+            "usage": {
+              "prompt_tokens": 307,
+              "completion_tokens": 23,
+              "total_tokens": 330
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-4803",
+            "pred": "Based on the information provided in the passage, the least common household type is one that includes individuals over 65 years old living alone. This can be seen from the fact that 9.5% of households had someone living alone who was 65 years of age or older.",
+            "usage": {
+              "prompt_tokens": 186,
+              "completion_tokens": 59,
+              "total_tokens": 245
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-5925",
+            "pred": "69.89%",
+            "usage": {
+              "prompt_tokens": 199,
+              "completion_tokens": 102,
+              "total_tokens": 301
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-9459",
+            "pred": "Kathleen Bradley had the same length of employment, only two years apart, with Holly Hallstrom. Both were known as \"Barkers Beauties\" during Barkers' tenure on the show.",
+            "usage": {
+              "prompt_tokens": 704,
+              "completion_tokens": 41,
+              "total_tokens": 745
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3150",
+            "pred": "Both teams managed to score two field goals each during the second quarter, making it the only quarter where this occurred.",
+            "usage": {
+              "prompt_tokens": 246,
+              "completion_tokens": 77,
+              "total_tokens": 323
+            },
+            "meta": {},
+            "correct": false
+          }
+        ]
+      },
+      "checklist": {
+        "summary": {
+          "accuracy": 0.44,
+          "avg_total_tokens": 418.94
+        },
+        "rows": [
+          {
+            "id": "drop-1824",
+            "pred": "New France had a poor harvest second.",
+            "usage": {
+              "prompt_tokens": 477,
+              "completion_tokens": 18,
+              "total_tokens": 495
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-409",
+            "pred": "The Jaguars allowed the most points at halftime, with a score of 13-7.",
+            "usage": {
+              "prompt_tokens": 344,
+              "completion_tokens": 22,
+              "total_tokens": 366
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-4506",
+            "pred": "The longest period of rebellion against Ava was 1468-1470.",
+            "usage": {
+              "prompt_tokens": 520,
+              "completion_tokens": 20,
+              "total_tokens": 540
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-4012",
+            "pred": "Instability in the economy and a large black market have made the development of a formal services sector difficult in Paraguay.",
+            "usage": {
+              "prompt_tokens": 250,
+              "completion_tokens": 105,
+              "total_tokens": 355
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3657",
+            "pred": "Venetian subjects",
+            "usage": {
+              "prompt_tokens": 379,
+              "completion_tokens": 7,
+              "total_tokens": 386
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-2286",
+            "pred": "Therefore, FINAL: 1 month.",
+            "usage": {
+              "prompt_tokens": 349,
+              "completion_tokens": 219,
+              "total_tokens": 568
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1679",
+            "pred": "23 yards",
+            "usage": {
+              "prompt_tokens": 305,
+              "completion_tokens": 7,
+              "total_tokens": 312
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-8935",
+            "pred": "16.7%",
+            "usage": {
+              "prompt_tokens": 241,
+              "completion_tokens": 9,
+              "total_tokens": 250
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-1424",
+            "pred": "According to the census, there were 445,342 people and 169,162 households residing in the county.",
+            "usage": {
+              "prompt_tokens": 394,
+              "completion_tokens": 34,
+              "total_tokens": 428
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6912",
+            "pred": "One Tu-22M3 long-range bomber, one Su-24M Fencer fighter-bomber, one Su-24MR Fencer E reconnaissance plane and four Su-25 attack planes.",
+            "usage": {
+              "prompt_tokens": 417,
+              "completion_tokens": 47,
+              "total_tokens": 464
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-520",
+            "pred": "Under the age of 18 and from 25 to 44 are larger than 21%.",
+            "usage": {
+              "prompt_tokens": 235,
+              "completion_tokens": 26,
+              "total_tokens": 261
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-488",
+            "pred": "10",
+            "usage": {
+              "prompt_tokens": 266,
+              "completion_tokens": 6,
+              "total_tokens": 272
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-1535",
+            "pred": "The Bucs kicked a longer field goal in the third quarter.",
+            "usage": {
+              "prompt_tokens": 379,
+              "completion_tokens": 16,
+              "total_tokens": 395
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3582",
+            "pred": "Bessarabia was attached to its territory 2 months after the talks began on March 5th and ended on March 9th, totaling 2 months.",
+            "usage": {
+              "prompt_tokens": 406,
+              "completion_tokens": 128,
+              "total_tokens": 534
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-3811",
+            "pred": "Detroit Lions",
+            "usage": {
+              "prompt_tokens": 552,
+              "completion_tokens": 5,
+              "total_tokens": 557
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-8279",
+            "pred": "Under the age of 18 and from 25 to 44 are larger than 20%.",
+            "usage": {
+              "prompt_tokens": 232,
+              "completion_tokens": 26,
+              "total_tokens": 258
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-434",
+            "pred": "11 months",
+            "usage": {
+              "prompt_tokens": 473,
+              "completion_tokens": 139,
+              "total_tokens": 612
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-9195",
+            "pred": "There are 23.2 percentage points more of Chinese Americans speakers than Arabic speakers.",
+            "usage": {
+              "prompt_tokens": 312,
+              "completion_tokens": 178,
+              "total_tokens": 490
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-3257",
+            "pred": "1,995",
+            "usage": {
+              "prompt_tokens": 312,
+              "completion_tokens": 9,
+              "total_tokens": 321
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-8928",
+            "pred": "The age group that had the third most people was those aged 45 to 64.",
+            "usage": {
+              "prompt_tokens": 236,
+              "completion_tokens": 23,
+              "total_tokens": 259
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6873",
+            "pred": "5 yards longer",
+            "usage": {
+              "prompt_tokens": 665,
+              "completion_tokens": 110,
+              "total_tokens": 775
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-3611",
+            "pred": "Four days",
+            "usage": {
+              "prompt_tokens": 399,
+              "completion_tokens": 79,
+              "total_tokens": 478
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-7359",
+            "pred": "There are 14,000 practicing Buddhists and Hindus combined.",
+            "usage": {
+              "prompt_tokens": 239,
+              "completion_tokens": 127,
+              "total_tokens": 366
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-4557",
+            "pred": "The passage does not provide any information about Olf Trafford hosting the Kangaroo Tours of Great Britain and France. Therefore, I cannot answer based solely on the given text.",
+            "usage": {
+              "prompt_tokens": 325,
+              "completion_tokens": 35,
+              "total_tokens": 360
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-106",
+            "pred": "1943",
+            "usage": {
+              "prompt_tokens": 375,
+              "completion_tokens": 8,
+              "total_tokens": 383
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-2615",
+            "pred": "The first field goal was kicked from 51 yards out.",
+            "usage": {
+              "prompt_tokens": 331,
+              "completion_tokens": 14,
+              "total_tokens": 345
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6924",
+            "pred": "50",
+            "usage": {
+              "prompt_tokens": 385,
+              "completion_tokens": 6,
+              "total_tokens": 391
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-5574",
+            "pred": "106",
+            "usage": {
+              "prompt_tokens": 332,
+              "completion_tokens": 7,
+              "total_tokens": 339
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-4552",
+            "pred": "31",
+            "usage": {
+              "prompt_tokens": 319,
+              "completion_tokens": 6,
+              "total_tokens": 325
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-2547",
+            "pred": "The Spanish Civil War lasted for 3 years, from 1936 to 1939.",
+            "usage": {
+              "prompt_tokens": 434,
+              "completion_tokens": 26,
+              "total_tokens": 460
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-3527",
+            "pred": "The Battle of White Mountain happened first, followed by Joachim III Frederick inheriting the Silesian Duchy of J\u00e4gerndorf.",
+            "usage": {
+              "prompt_tokens": 581,
+              "completion_tokens": 31,
+              "total_tokens": 612
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-5514",
+            "pred": "<answer> 6",
+            "usage": {
+              "prompt_tokens": 227,
+              "completion_tokens": 8,
+              "total_tokens": 235
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-1674",
+            "pred": "105",
+            "usage": {
+              "prompt_tokens": 306,
+              "completion_tokens": 7,
+              "total_tokens": 313
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-1519",
+            "pred": "Commonwealth resumed the offensive.",
+            "usage": {
+              "prompt_tokens": 425,
+              "completion_tokens": 8,
+              "total_tokens": 433
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-6224",
+            "pred": "Alex Henery kicked the most number of field goals, with 2 field goals in total.",
+            "usage": {
+              "prompt_tokens": 573,
+              "completion_tokens": 22,
+              "total_tokens": 595
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1584",
+            "pred": "New England Patriots",
+            "usage": {
+              "prompt_tokens": 340,
+              "completion_tokens": 6,
+              "total_tokens": 346
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-5881",
+            "pred": "75.65%",
+            "usage": {
+              "prompt_tokens": 260,
+              "completion_tokens": 10,
+              "total_tokens": 270
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-5635",
+            "pred": "The French army was bigger than the Dutch army. This can be determined from the text which states \"a Dutch army under Slangenburg was surrounded by a French force several times their size at Ekeren\".",
+            "usage": {
+              "prompt_tokens": 360,
+              "completion_tokens": 43,
+              "total_tokens": 403
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-4333",
+            "pred": "Ungheni",
+            "usage": {
+              "prompt_tokens": 306,
+              "completion_tokens": 6,
+              "total_tokens": 312
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-711",
+            "pred": "2. 1%",
+            "usage": {
+              "prompt_tokens": 386,
+              "completion_tokens": 93,
+              "total_tokens": 479
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-7527",
+            "pred": "Native American",
+            "usage": {
+              "prompt_tokens": 317,
+              "completion_tokens": 5,
+              "total_tokens": 322
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-8785",
+            "pred": "The unit was split into 2 regiments for approximately 3 months before being amalgamated into the SS Cavalry Brigade.",
+            "usage": {
+              "prompt_tokens": 393,
+              "completion_tokens": 187,
+              "total_tokens": 580
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-2045",
+            "pred": "The Astros lost the National League Division Series.",
+            "usage": {
+              "prompt_tokens": 602,
+              "completion_tokens": 12,
+              "total_tokens": 614
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-6201",
+            "pred": "Indonesia exports 52.2 - 37.9 = 14.3 percentage points more than Malaysia.",
+            "usage": {
+              "prompt_tokens": 386,
+              "completion_tokens": 130,
+              "total_tokens": 516
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-1291",
+            "pred": "6 months",
+            "usage": {
+              "prompt_tokens": 441,
+              "completion_tokens": 192,
+              "total_tokens": 633
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-9044",
+            "pred": "The Eagles' kicker was Jake Elliott.",
+            "usage": {
+              "prompt_tokens": 358,
+              "completion_tokens": 11,
+              "total_tokens": 369
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "drop-4803",
+            "pred": "Non-families",
+            "usage": {
+              "prompt_tokens": 237,
+              "completion_tokens": 6,
+              "total_tokens": 243
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-5925",
+            "pred": "30.11%",
+            "usage": {
+              "prompt_tokens": 250,
+              "completion_tokens": 10,
+              "total_tokens": 260
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-9459",
+            "pred": "Kathleen Bradley",
+            "usage": {
+              "prompt_tokens": 755,
+              "completion_tokens": 10,
+              "total_tokens": 765
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "drop-3150",
+            "pred": "Second quarter",
+            "usage": {
+              "prompt_tokens": 297,
+              "completion_tokens": 5,
+              "total_tokens": 302
+            },
+            "meta": {},
+            "correct": false
+          }
+        ]
+      },
+      "verifier_reprompt_rm": {
+        "summary": {
+          "accuracy": 0.88,
+          "avg_total_tokens": 535.02
+        },
+        "rows": [
+          {
+            "id": "drop-1824",
+            "pred": "New France having a poor harvest",
+            "usage": {
+              "prompt_tokens": 422,
+              "completion_tokens": 7,
+              "total_tokens": 429
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "New France having a poor harvest",
+                  "feedback": "The passage states that the poor harvest occurred in 1757, while Vaudreuil and Montcalm were minimally resupplied in 1758, so the poor harvest happened first and minimal resupply second, making the answer correct."
+                }
+              ],
+              "passed": true
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-409",
+            "pred": "Bengals",
+            "usage": {
+              "prompt_tokens": 634,
+              "completion_tokens": 29,
+              "total_tokens": 663
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "The Jaguars allowed the most points at halftime, with a total of 13 points (3 + 10).",
+                  "feedback": "The answer incorrectly states that the Jaguars allowed 13 points at halftime, but the passage shows the Jaguars scored 13 points while the Bengals scored 7 at halftime. Therefore, the Bengals allowed more points at halftime."
+                },
+                {
+                  "attempt": 2,
+                  "passed": true,
+                  "content": "FINAL: Bengals",
+                  "feedback": "The passage states the halftime score was 13-7 in favor of the Jaguars, meaning the Bengals allowed 13 points at halftime, while the Jaguars allowed 7 points. Therefore, the Bengals allowed the most points at halftime, matching the model answer."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-4506",
+            "pred": "The longest period of rebellion against Ava was from 1426-1440.",
+            "usage": {
+              "prompt_tokens": 465,
+              "completion_tokens": 21,
+              "total_tokens": 486
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "The longest period of rebellion against Ava was from 1426-1440.",
+                  "feedback": "The answer correctly identifies 1426-1440 as the longest rebellion period against Ava among the given options, consistent with the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-4012",
+            "pred": "Instability in the economy",
+            "usage": {
+              "prompt_tokens": 195,
+              "completion_tokens": 6,
+              "total_tokens": 201
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "Instability in the economy",
+                  "feedback": "The answer correctly identifies 'instability in the economy' as a factor that has made the development of a formal services sector difficult, as stated in the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-3657",
+            "pred": "Subjects under the Treaty of Karlowitz included Greek Orthodox inhabitants of the Morea and other regions, who were under Venetian control but resented Venetian bureaucracy.",
+            "usage": {
+              "prompt_tokens": 768,
+              "completion_tokens": 129,
+              "total_tokens": 897
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "Venetian subjects were those living within the territories that were part of the Venetian Empire after the Treaty of Karlowitz. These included areas such as Kephalonia, the Morea (Peloponnese), and other parts of Greece that were controlled by Venice. The treaty did not directly affect the populations of these regions; rather, it established the boundaries and governance structure for the territories that remained under Venetian control following the conflict.",
+                  "feedback": "The answer identifies Venetian subjects as those living in territories controlled by Venice after the Treaty of Karlowitz, which is partially correct. However, it fails to specify that the subjects were primarily Greek Orthodox inhabitants of the Morea and other regions, who were under Venetian rule but resented Venetian bureaucracy. The answer also incorrectly states that the treaty did not directly affect populations, whereas the passage implies demographic changes and governance shifts. Overall, the answer lacks detail and does not fully address who the subjects were according to the passage."
+                },
+                {
+                  "attempt": 2,
+                  "passed": true,
+                  "content": "Subjects under the Treaty of Karlowitz included Greek Orthodox inhabitants of the Morea and other regions, who were under Venetian control but resented Venetian bureaucracy.",
+                  "feedback": "The answer correctly identifies the Greek Orthodox inhabitants of the Morea as subjects under Venetian control following the Treaty of Karlowitz, reflecting the passage's information. However, it could be improved by explicitly mentioning that these subjects were previously under Ottoman rule and that the treaty confirmed Venetian possession."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-2286",
+            "pred": "11 months",
+            "usage": {
+              "prompt_tokens": 1135,
+              "completion_tokens": 82,
+              "total_tokens": 1217
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "The attack by 8,000 Rifians occurred 11 months after the French Army had established a line of outposts north of the Oureghla River. This can be calculated by subtracting the month of establishment (May) from the month of the attack (April), which gives us 11 months.",
+                  "feedback": "The model answer incorrectly states the time difference as 11 months. The passage states the French established the line in May 1924 and the attack occurred in April 1925, which is actually 11 months later, but the model's explanation is flawed because subtracting May from April does not yield 11 months without considering the year change. The answer should clarify that from May 1924 to April 1925 is 11 months, not simply subtracting months within the same year."
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "Final: 11 months",
+                  "feedback": "The passage states the French Army established the out-posts in May 1924 and the attack occurred on 12 April 1925, which is 11 months later. The model answer '11 months' is correct, but the answer is labeled 'Final: 11 months' which is unnecessary and not a direct answer. However, since the answer is correct, the score should be 1. The model answer is correct in content but the format is slightly off. Given the instructions to be strict, the answer is correct but the format is not ideal."
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "FINAL: 11 months",
+                  "feedback": "The passage states the French Army established the out-posts in May 1924 and the attack occurred on 12 April 1925, which is 11 months later. However, the model answer 'FINAL: 11 months' is correct but the format is not appropriate as it includes 'FINAL:'. The answer should simply be '11 months' to correctly and clearly answer the question."
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-1679",
+            "pred": "Ryan Longwell's longest field goal was 27 yards.",
+            "usage": {
+              "prompt_tokens": 549,
+              "completion_tokens": 28,
+              "total_tokens": 577
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "Ryan Longwell's longest field goal was 23 yards.",
+                  "feedback": "The passage states Ryan Longwell made a 23-yard and a 27-yard field goal, so his longest field goal was 27 yards, not 23 yards."
+                },
+                {
+                  "attempt": 2,
+                  "passed": true,
+                  "content": "Ryan Longwell's longest field goal was 27 yards.",
+                  "feedback": "The answer correctly identifies Ryan Longwell's longest field goal as 27 yards, which matches the information in the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-8935",
+            "pred": "So, **83.3%** of the residents were not from 45 to 64.",
+            "usage": {
+              "prompt_tokens": 186,
+              "completion_tokens": 161,
+              "total_tokens": 347
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "To determine how many percent were not from 45 to 64, we need to subtract the percentage of people aged 45 to 64 from the total population percentage for that age group.\n\nHere's the breakdown:\n- Percentage of residents aged 45 to 64 = 16.7%\n- Total percentage of all residents = 100%\n\nNow, calculate the percentage of residents not in the 45 to 64 range:\n\n\\[ \\text{Percentage not in 45 to 64} = 100\\% - 16.7\\% = 83.3\\% \\]\n\nSo, **83.3%** of the residents were not from 45 to 64.",
+                  "feedback": "The answer correctly subtracts the percentage of residents aged 45 to 64 from 100% to find the percentage not in that age group, which matches the information in the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-1424",
+            "pred": "According to the census of 2000, there were 445,342 people and 169,162 households residing in the county.",
+            "usage": {
+              "prompt_tokens": 339,
+              "completion_tokens": 38,
+              "total_tokens": 377
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "According to the census of 2000, there were 445,342 people and 169,162 households residing in the county.",
+                  "feedback": "The answer correctly states the number of people (445,342) and households (169,162) as reported in the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-6912",
+            "pred": "Moscow Defence Brief estimated that Russian Air Force total losses during the war were one Tu-22M3 long-range bomber, one Su-24M Fencer fighter-bomber, one Su-24MR Fencer E reconnaissance plane and four Su-25 attack planes.",
+            "usage": {
+              "prompt_tokens": 362,
+              "completion_tokens": 60,
+              "total_tokens": 422
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "Moscow Defence Brief estimated that Russian Air Force total losses during the war were one Tu-22M3 long-range bomber, one Su-24M Fencer fighter-bomber, one Su-24MR Fencer E reconnaissance plane and four Su-25 attack planes.",
+                  "feedback": "The answer correctly states the aircraft losses estimated by Moscow Defence Brief as given in the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-520",
+            "pred": "In the given passage, the group from 25 to 44 years old (31.7%) is larger than 21%, while the group under 18 (21.8%) is slightly above 21%.",
+            "usage": {
+              "prompt_tokens": 759,
+              "completion_tokens": 184,
+              "total_tokens": 943
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "The groups that are larger than 21% are:\n\n- Under the age of 18 (21.8%)\n- From 18 to 24 (13.1%)\n- From 25 to 44 (31.7%)\n\nFINAL: The groups that are larger than 21% are those under the age of 18, from 18 to 24, and from 25 to 44.",
+                  "feedback": "The answer incorrectly includes the 18 to 24 group (13.1%), which is less than 21%. Only the groups under 18 (21.8%) and 25 to 44 (31.7%) are larger than 21%."
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "FINAL: The groups that are larger than 21% are those under 18 and from 25 to 44 years old.",
+                  "feedback": "The answer correctly identifies the group from 25 to 44 years old (31.7%) as larger than 21%, but incorrectly includes the group under 18 (21.8%) which is just slightly above 21%. However, it misses the group from 45 to 64 years old (20.1%), which is below 21%, so that is correct to exclude. The answer is mostly correct but lacks precision in stating the exact percentages and does not explicitly mention the 21.8% under 18 as being above 21%. Overall, the answer is incomplete and imprecise."
+                },
+                {
+                  "attempt": 3,
+                  "passed": true,
+                  "content": "FINAL: In the given passage, the group from 25 to 44 years old (31.7%) is larger than 21%, while the group under 18 (21.8%) is slightly above 21%.",
+                  "feedback": "The answer correctly identifies the age groups with percentages larger than 21% as 25 to 44 years (31.7%) and under 18 (21.8%), matching the passage data."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-488",
+            "pred": "7",
+            "usage": {
+              "prompt_tokens": 461,
+              "completion_tokens": 24,
+              "total_tokens": 485
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "The Giants were trailing the winless Dolphins by 17 points entering the fourth quarter.",
+                  "feedback": "The passage states the Giants were down 17-10, meaning they were 7 points behind, not 17 points."
+                },
+                {
+                  "attempt": 2,
+                  "passed": true,
+                  "content": "FINAL: 7",
+                  "feedback": "The passage states the Giants were trailing 17-10 entering the fourth quarter, meaning they were 7 points behind, which matches the model answer."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-1535",
+            "pred": "The Buccaneers kicked a longer field goal in the third quarter. They kicked a 39-yard field goal in that quarter.",
+            "usage": {
+              "prompt_tokens": 324,
+              "completion_tokens": 26,
+              "total_tokens": 350
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "The Buccaneers kicked a longer field goal in the third quarter. They kicked a 39-yard field goal in that quarter.",
+                  "feedback": "The answer correctly identifies that the longer field goal (39 yards) was kicked in the fourth quarter, but since the question compares the second and third quarters, the answer should note the 28-yard field goal in the second quarter and the 45-yard field goal in the third quarter. The model incorrectly states the 39-yard field goal was in the third quarter, but the passage says it was in the fourth quarter. However, the question only asks about the second and third quarters, and the 45-yard field goal in the third quarter is longer than the 28-yard field goal in the second quarter. Despite the slight error in quarter identification for the 39-yard field goal, the model correctly concludes the longer field goal between the second and third quarters was in the third quarter. Therefore, the answer is correct in context."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-3582",
+            "pred": "Bessarabia was attached to its territory on 27 March 1918, which is approximately 3 months into the year.",
+            "usage": {
+              "prompt_tokens": 792,
+              "completion_tokens": 171,
+              "total_tokens": 963
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "Based on the information provided in the passage, Bessarabia was attached to its territory after approximately 3 months (from January to April). Specifically, it is mentioned that \"Romania officially made peace with the Central Powers by signing the Treaty of Bucharest on 7 May 1918\" and that under this treaty, Romania was obliged to end the war with the Central Powers and make small territorial concessions to Austria-Hungary, including ceding control of some passes in the Carpathian Mountains and granting oil concessions to Germany. This occurred about three months after the Romanian forces had already established control over Bessarabia in January 1918.",
+                  "feedback": "The answer incorrectly states the timing of Bessarabia's attachment to Romania. The passage specifies that Bessarabia was formally attached on 27 March 1918, which is about 3 months into the year, not after April or in May. The answer also confuses the Treaty of Bucharest with the attachment date, which is unrelated to the question."
+                },
+                {
+                  "attempt": 2,
+                  "passed": true,
+                  "content": "Bessarabia was attached to its territory on 27 March 1918, which is approximately 3 months into the year.",
+                  "feedback": "The answer correctly identifies the date of attachment as 27 March 1918 and accurately states that this is approximately 3 months into the year, directly addressing the question."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-3811",
+            "pred": "The Detroit Lions won the game.",
+            "usage": {
+              "prompt_tokens": 497,
+              "completion_tokens": 8,
+              "total_tokens": 505
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "The Detroit Lions won the game.",
+                  "feedback": "The answer correctly identifies the Detroit Lions as the winning team, which is supported by the passage detailing the Lions' scoring and the final outcome."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-8279",
+            "pred": "The groups that are larger than 20% are those under 18 (28.3%), from 18 to 24 (11.3%), and from 25 to 44 (32.7%).",
+            "usage": {
+              "prompt_tokens": 676,
+              "completion_tokens": 171,
+              "total_tokens": 847
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "The groups that are larger than 20% are:\n\n- Under the age of 18 (28.3%)\n- From 18 to 24 (11.3%)\n\nFINAL: The groups that are larger than 20% are those under the age of 18 and from 18 to 24.",
+                  "feedback": "The model incorrectly includes the 18 to 24 group (11.3%) as larger than 20%, which is false. It also omits the 25 to 44 group (32.7%) that is larger than 20%. Therefore, the answer does not correctly identify all groups larger than 20%."
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "Final Answer: The 25 to 44 group (32.7%) and the 45 to 64 group (18.2%) are larger than 20%.",
+                  "feedback": "The answer incorrectly includes the 45 to 64 group (18.2%) which is less than 20%, and omits the under 18 group (28.3%) which is greater than 20%."
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "Final Answer: The groups that are larger than 20% are those under 18 (28.3%), from 18 to 24 (11.3%), and from 25 to 44 (32.7%).",
+                  "feedback": "The model incorrectly includes the 18 to 24 group (11.3%) which is less than 20%, and omits the 45 to 64 group (18.2%) which is also less than 20%. Only the groups under 18 (28.3%) and 25 to 44 (32.7%) are above 20%. The answer does not correctly identify the groups larger than 20%."
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-434",
+            "pred": "MorphInk 99 was introduced approximately 4 months after Macromedia disclosed the Flash Version 3 Specification on its website.",
+            "usage": {
+              "prompt_tokens": 918,
+              "completion_tokens": 227,
+              "total_tokens": 1145
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine how many months after Macromedia disclosed the Flash Version 3 Specification on its website Morphlnk 99 was introduced, we need to follow these steps:\n\n1. Identify the date Macromedia disclosed the Flash Version 3 Specification.\n   - According to the passage, Macromedia disclosed the Flash Version 3 Specification in October 1998.\n\n2. Identify the date Morphlnk 99 was introduced.\n   - The passage states that Morphlnk 99 was introduced in February 1999.\n\n3. Calculate the time difference between these two dates.\n   - From October 1998 to January 1999 (which includes December 1998 and January 1999) is approximately 4 months.\n\nTherefore, Morphlnk 99 was introduced 4 months after Macromedia disclosed the Flash Version 3 Specification on its website.\n\nFINAL ANSWER: 4 months",
+                  "feedback": "The calculation of months is incorrect. From October 1998 to February 1999 is 4 months (October to November, November to December, December to January, January to February), but the explanation mistakenly counts only up to January 1999. The final answer is correct, but the reasoning is flawed and inconsistent."
+                },
+                {
+                  "attempt": 2,
+                  "passed": true,
+                  "content": "MorphInk 99 was introduced approximately 4 months after Macromedia disclosed the Flash Version 3 Specification on its website.",
+                  "feedback": "The passage states that Macromedia disclosed the Flash Version 3 Specification in October 1998 and MorphInk 99 was introduced in February 1999, which is approximately 4 months later. The answer correctly calculates and states this time difference."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-9195",
+            "pred": "The difference in percentage points between Chinese Americans and Arabic speakers is 0.1%.",
+            "usage": {
+              "prompt_tokens": 588,
+              "completion_tokens": 180,
+              "total_tokens": 768
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine how many more percentage points Chinese Americans speakers have compared to Arabic speakers, we need to follow these steps:\n\n1. Identify the number of Chinese Americans speakers.\n   - According to the passage, there are 6,413 Chinese Americans.\n\n2. Identify the number of Arabic speakers.\n   - The passage states that there are 3,265 Arabic speakers.\n\n3. Calculate the difference between the two numbers:\n   \\[\n   6,413 - 3,265 = 3,148\n   \\]\n\nTherefore, there are 3,148 more percentage points for Chinese Americans speakers compared to Arabic speakers.\n\nFINAL: There are 3,148 more percentage points for Chinese Americans speakers compared to Arabic speakers.",
+                  "feedback": "The question asks for the difference in percentage points between Chinese Americans and Arabic speakers, but the answer incorrectly calculates the difference in the number of speakers instead of the percentage. Both groups are listed as 0.2% and 0.1% respectively, so the correct difference is 0.1 percentage points."
+                },
+                {
+                  "attempt": 2,
+                  "passed": true,
+                  "content": "Final: The difference in percentage points between Chinese Americans and Arabic speakers is 0.1%.",
+                  "feedback": "The answer correctly identifies the difference in percentage points between Chinese Americans (0.2%) and Arabic speakers (0.1%) as 0.1%, accurately reflecting the information in the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-3257",
+            "pred": "Therefore, there are 2,205 more households than families in the county as of the census of 2010.",
+            "usage": {
+              "prompt_tokens": 257,
+              "completion_tokens": 111,
+              "total_tokens": 368
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "To determine how many more households there are than families, we need to subtract the number of families from the number of households:\n\nNumber of households = 7,953\nNumber of families = 5,748\n\nDifference = Number of households - Number of families\n           = 7,953 - 5,748\n           = 2,205\n\nTherefore, there are 2,205 more households than families in the county as of the census of 2010.",
+                  "feedback": "The answer correctly calculates the difference between the number of households and families using the data provided in the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-8928",
+            "pred": "45 to 64",
+            "usage": {
+              "prompt_tokens": 560,
+              "completion_tokens": 210,
+              "total_tokens": 770
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "Based on the information provided in the passage, the age group that had the third most people was those aged 45 to 64. This can be determined by comparing the percentages given for different age groups:\n\n- Under 18: 25.4%\n- 18 to 24: 16.4%\n- 25 to 44: 31.2%\n- 45 to 64: 16.7%\n- 65 and older: 10.2%\n\nFrom these percentages, it's clear that the age group between 25 and 44 (which includes those aged 25 to 44) has the highest percentage at 31.2%, followed closely by those aged 45 to 64 with 16.7%. Therefore, the third most populous age group according to the data provided is those aged 45 to 64.",
+                  "feedback": "The model incorrectly identifies the third most populous age group. The correct order by percentage is: 25 to 44 (31.2%), under 18 (25.4%), then 45 to 64 (16.7%) or 18 to 24 (16.4%). Since 16.7% (45 to 64) is slightly higher than 16.4% (18 to 24), 45 to 64 is indeed the third most populous group. However, the model's explanation is confused because it states 45 to 64 is second after 25 to 44, which is incorrect. The second highest is under 18 (25.4%), not 45 to 64. Therefore, the model's reasoning is flawed and the answer is incorrect."
+                },
+                {
+                  "attempt": 2,
+                  "passed": true,
+                  "content": "FINAL: 45 to 64",
+                  "feedback": "The passage lists the age groups and their percentages: under 18 (25.4%), 18 to 24 (16.4%), 25 to 44 (31.2%), 45 to 64 (16.7%), and 65 or older (10.2%). The third highest percentage is 16.7% for the 45 to 64 age group, so the answer is correct."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-6873",
+            "pred": "Jay Cutler's longest touchdown pass was 20 yards to Earl Bennett, while his shortest was 2 yards to Desmond Clark. Therefore, Jay Cutler's longest touchdown pass was 18 yards longer than his shortest.",
+            "usage": {
+              "prompt_tokens": 610,
+              "completion_tokens": 47,
+              "total_tokens": 657
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "Jay Cutler's longest touchdown pass was 20 yards to Earl Bennett, while his shortest was 2 yards to Desmond Clark. Therefore, Jay Cutler's longest touchdown pass was 18 yards longer than his shortest.",
+                  "feedback": "The answer correctly identifies Jay Cutler's longest touchdown pass as 20 yards and shortest as 2 yards, and accurately calculates the difference as 18 yards."
+                }
+              ],
+              "passed": true
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-3611",
+            "pred": "The answer is 3 days.",
+            "usage": {
+              "prompt_tokens": 344,
+              "completion_tokens": 8,
+              "total_tokens": 352
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "The answer is 3 days.",
+                  "feedback": "The passage states that the Volunteers took over Enniscorthy from Thursday 27 April until Sunday, which is a period of 3 days. The answer correctly reflects this information."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-7359",
+            "pred": "Therefore, the answer is 14,000.",
+            "usage": {
+              "prompt_tokens": 184,
+              "completion_tokens": 93,
+              "total_tokens": 277
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "To find out how many practicing Buddhists and Hindus are there combined, we need to add their respective numbers:\n\n- Number of practicing Buddhists: 7,000\n- Number of practicing Hindus: 7,000\n\nSo, the total is:\n\\[ 7,000 + 7,000 = 14,000 \\]\n\nTherefore, the answer is 14,000.",
+                  "feedback": "The answer correctly sums the number of practicing Buddhists and Hindus from the passage, providing the accurate combined total of 14,000."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-4557",
+            "pred": "Unfortunately, there is no information provided in the passage regarding Olf Trafford's hosting of the Kangaroo Tours of Great Britain and France or the specific years these tours took place.",
+            "usage": {
+              "prompt_tokens": 270,
+              "completion_tokens": 79,
+              "total_tokens": 349
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "The passage does not provide any information about Olf Trafford hosting the Kangaroo Tours of Great Britain and France or when they occurred. Therefore, I cannot answer this question based solely on the given text. \n\nFINAL: Unfortunately, there is no information provided in the passage regarding Olf Trafford's hosting of the Kangaroo Tours of Great Britain and France or the specific years these tours took place.",
+                  "feedback": "The answer correctly states that the passage does not contain any information about Olf Trafford or the Kangaroo Tours, appropriately indicating that the question cannot be answered from the given text."
+                }
+              ],
+              "passed": true
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-106",
+            "pred": "In 1943, the replacement notes of the 1, 5, and 10 Pesos were issued.",
+            "usage": {
+              "prompt_tokens": 320,
+              "completion_tokens": 28,
+              "total_tokens": 348
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "In 1943, the replacement notes of the 1, 5, and 10 Pesos were issued.",
+                  "feedback": "The answer correctly identifies 1943 as the year when the replacement notes of the 1, 5, and 10 Pesos were issued, which matches the information in the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-2615",
+            "pred": "The first field goal was from 51 yards.",
+            "usage": {
+              "prompt_tokens": 276,
+              "completion_tokens": 12,
+              "total_tokens": 288
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "The first field goal was from 51 yards.",
+                  "feedback": "The answer correctly identifies the first field goal as a 51-yard kick, which matches the information in the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-6924",
+            "pred": "The game's longest field goal was 50 yards, made by Neil Rackers for the Arizona Cardinals in the second quarter.",
+            "usage": {
+              "prompt_tokens": 330,
+              "completion_tokens": 27,
+              "total_tokens": 357
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "The game's longest field goal was 50 yards, made by Neil Rackers for the Arizona Cardinals in the second quarter.",
+                  "feedback": "The answer correctly identifies the longest field goal as 50 yards by Neil Rackers, which matches the information in the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-5574",
+            "pred": "Suisham kicked four field goals, totaling 106 yards (49 + 31 + 28 + 35).",
+            "usage": {
+              "prompt_tokens": 919,
+              "completion_tokens": 90,
+              "total_tokens": 1009
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "Suisham kicked two field goals in this game:\n\n- A 49-yard field goal\n- A 31-yard field goal\n\nSo, Suisham kicked a total of **80 yards** in field goals.",
+                  "feedback": "The passage states that Suisham kicked three field goals (49, 31, and 28 yards), but the model only counted two and incorrectly summed the total yards."
+                },
+                {
+                  "attempt": 2,
+                  "passed": false,
+                  "content": "Suisham kicked four field goals in total.",
+                  "feedback": "The answer correctly states the number of field goals (four) but does not provide the total yards kicked, which is what the question asks."
+                },
+                {
+                  "attempt": 3,
+                  "passed": false,
+                  "content": "Suisham kicked four field goals, totaling 106 yards (49 + 31 + 28 + 35).",
+                  "feedback": "The model incorrectly includes a 35-yard field goal by Lawrence Tynes in Suisham's total. Suisham kicked three field goals of 49, 31, and 28 yards, totaling 108 yards."
+                }
+              ],
+              "passed": false
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-4552",
+            "pred": "The longest touchdown run went for 31 yards.",
+            "usage": {
+              "prompt_tokens": 264,
+              "completion_tokens": 12,
+              "total_tokens": 276
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "The longest touchdown run went for 31 yards.",
+                  "feedback": "The passage states that running back Chad Simpson had a 31-yard touchdown run, which is the longest touchdown run mentioned."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-2547",
+            "pred": "The Spanish Civil War lasted for 3 years, from 1936 to 1939.",
+            "usage": {
+              "prompt_tokens": 379,
+              "completion_tokens": 24,
+              "total_tokens": 403
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "The Spanish Civil War lasted for 3 years, from 1936 to 1939.",
+                  "feedback": "The model answer correctly states that the Spanish Civil War lasted for 3 years, from 1936 to 1939, which matches the information given in the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-3527",
+            "pred": "Joachim III Frederick inheriting the Silesian Duchy of J\u00e4gerndorf",
+            "usage": {
+              "prompt_tokens": 526,
+              "completion_tokens": 20,
+              "total_tokens": 546
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "Joachim III Frederick inheriting the Silesian Duchy of J\u00e4gerndorf",
+                  "feedback": "The passage states that Joachim III Frederick inherited the Duchy of J\u00e4gerndorf in 1603, and the Battle of White Mountain occurred before the confiscation in 1621, so the inheritance happened first and the battle second. The answer correctly identifies the event that happened second."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-5514",
+            "pred": "He was a District-Governor of Wieli\u017c, Pu\u0144sk, Kupise, Biel, and Markowa. Therefore, the answer is 5 places.",
+            "usage": {
+              "prompt_tokens": 172,
+              "completion_tokens": 36,
+              "total_tokens": 208
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "He was a District-Governor of Wieli\u017c, Pu\u0144sk, Kupise, Biel, and Markowa. Therefore, the answer is 5 places.",
+                  "feedback": "The answer correctly identifies all five places mentioned in the passage where he was District-Governor and provides the correct count."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-1674",
+            "pred": "Therefore, the answer is 67 yards.",
+            "usage": {
+              "prompt_tokens": 251,
+              "completion_tokens": 87,
+              "total_tokens": 338
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "Based on the passage, Kyle Orton threw for two touchdown passes:\n\n1. A 65-yard TD pass to WR Devin Hester.\n2. A 2-yard TD pass to rookie RB Matt Forte.\n\nTo find the total yards thrown for touchdowns by Orton, we add these two distances together:\n65 yards + 2 yards = 67 yards\n\nTherefore, the answer is 67 yards.",
+                  "feedback": "The answer correctly identifies both touchdown passes thrown by Kyle Orton and accurately sums their yardage to 67 yards, fully addressing the question."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-1519",
+            "pred": "Commonwealth resumed the offensive.",
+            "usage": {
+              "prompt_tokens": 370,
+              "completion_tokens": 7,
+              "total_tokens": 377
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "Commonwealth resumed the offensive.",
+                  "feedback": "The passage states that the Commonwealth resumed the offensive in 1674, while the Treaty of \u017burawno was signed in 1676, so the answer correctly identifies the event that happened first."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-6224",
+            "pred": "Alex Henery kicked the most field goals, with two each in the first half and another in the second half.",
+            "usage": {
+              "prompt_tokens": 518,
+              "completion_tokens": 24,
+              "total_tokens": 542
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "Alex Henery kicked the most field goals, with two each in the first half and another in the second half.",
+                  "feedback": "The answer correctly identifies Alex Henery as the player who kicked the most field goals, with two in the first half and one in the second half. However, the passage only explicitly mentions two field goals by Henery (35-yard and 25-yard) and one by Matt Prater (53-yard). The answer slightly overstates the number of Henery's field goals but correctly identifies him as the leader."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-1584",
+            "pred": "The Cardinals allowed the most points in the first half.",
+            "usage": {
+              "prompt_tokens": 630,
+              "completion_tokens": 19,
+              "total_tokens": 649
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "New England Patriots",
+                  "feedback": "The passage indicates that the New England Patriots scored multiple touchdowns and field goals in the first half, while the Cardinals did not score any points until the fourth quarter. Therefore, the Cardinals allowed the most points in the first half, not the Patriots."
+                },
+                {
+                  "attempt": 2,
+                  "passed": true,
+                  "content": "Final answer: The Cardinals allowed the most points in the first half.",
+                  "feedback": "The passage details multiple scoring plays by the Patriots in the first half, indicating the Cardinals allowed all those points, correctly answering the question."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-5881",
+            "pred": "Therefore, 75.65% of households didn't have children under the age of 18 living with them.",
+            "usage": {
+              "prompt_tokens": 205,
+              "completion_tokens": 121,
+              "total_tokens": 326
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "To find how many percent of households didn't have children under the age of 18 living with them, we need to subtract the percentage of households that do have children from 100%.\n\nGiven:\n- Percentage of households with children = 24.35%\n\nCalculation:\n\\[ \\text{Percentage without children} = 100\\% - 24.35\\% = 75.65\\% \\]\n\nTherefore, 75.65% of households didn't have children under the age of 18 living with them.",
+                  "feedback": "The answer correctly calculates the percentage of households without children under 18 by subtracting the given percentage from 100%, accurately reflecting the information in the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-5635",
+            "pred": "The French army was bigger than the Dutch army.",
+            "usage": {
+              "prompt_tokens": 305,
+              "completion_tokens": 11,
+              "total_tokens": 316
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "The French army was bigger than the Dutch army.",
+                  "feedback": "The passage states that a Dutch army under Slangenburg was surrounded by a French force several times their size, clearly indicating the French army was bigger."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-4333",
+            "pred": "Ungheni is larger than Cahul.",
+            "usage": {
+              "prompt_tokens": 560,
+              "completion_tokens": 23,
+              "total_tokens": 583
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "Cahul is larger than Ungheni.",
+                  "feedback": "The passage states that Ungheni has 32,828 residents and Cahul has 28,763 residents, so Ungheni is larger than Cahul. The model answer incorrectly states the opposite."
+                },
+                {
+                  "attempt": 2,
+                  "passed": true,
+                  "content": "Final: Ungheni is larger than Cahul.",
+                  "feedback": "The answer correctly identifies Ungheni (32,828) as larger than Cahul (28,763) based on the population figures provided in the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-711",
+            "pred": "99.44% of the population wasn't African American.",
+            "usage": {
+              "prompt_tokens": 331,
+              "completion_tokens": 118,
+              "total_tokens": 449
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "To find out how many percent of the population wasn't African American, we need to subtract the percentage that is African American from 100%.\n\nThe given data states:\n- African Americans made up 0.56% of the population\n\nSo, the calculation would be:\n\n\\( 100\\% - 0.56\\% = 99.44\\% \\)\n\nTherefore, 99.44% of the population wasn't African American.\n\nFINAL: 99.44% of the population wasn't African American.",
+                  "feedback": "The answer correctly calculates the percentage of the population that was not African American by subtracting the given African American percentage from 100%, matching the data in the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-7527",
+            "pred": "African American",
+            "usage": {
+              "prompt_tokens": 262,
+              "completion_tokens": 4,
+              "total_tokens": 266
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "African American",
+                  "feedback": "The answer correctly identifies African American (0.95%) as a higher percentage than Native American (0.11%) based on the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-8785",
+            "pred": "The unit was split into two regiments in December 1939, which means it was split for approximately 1 year before being amalgamated into the SS Cavalry Brigade on July 1941. Therefore, the unit was split into two regiments for about 12 months prior to being amalgamated into the SS Cavalry Brigade.",
+            "usage": {
+              "prompt_tokens": 735,
+              "completion_tokens": 374,
+              "total_tokens": 1109
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "To determine how many months the unit was split into two regiments before being amalgamated into the SS Cavalry Brigade, we need to follow these steps:\n\n1. Identify when the unit was split into two regiments.\n   - The passage states \"The unit was split into two regiments in December 1939.\"\n\n2. Determine the time period between splitting into two regiments and amalgamation.\n   - The passage mentions \"By March 1941 their strength was 3,500 men.\"\n   - It also says \"In July 1941, they were assigned to the Pripyat swamps (punitive operation).\"\n   - Finally, it states \"The two regiments were amalgamated into the SS Cavalry Brigade on 31 July.\"\n\n3. Calculate the duration from December 1939 to July 1941.\n   - From December 1939 to February 1940 is about 3 months.\n   - From March 1940 to June 1941 is about 6 months.\n   - Adding these together gives us approximately 9 months.\n\nTherefore, the unit was split into two regiments for about 9 months before being amalgamated into the SS Cavalry Brigade.\n\nFINAL: The unit was split into two regiments for about 9 months prior to being amalgamated into the SS Cavalry Brigade.",
+                  "feedback": "The model incorrectly calculates the duration as 9 months, but from December 1939 to July 1941 is actually 19 months. The answer miscounts the months and thus does not correctly answer the question."
+                },
+                {
+                  "attempt": 2,
+                  "passed": true,
+                  "content": "Final answer: The unit was split into two regiments in December 1939, which means it was split for approximately 1 year before being amalgamated into the SS Cavalry Brigade on July 1941. Therefore, the unit was split into two regiments for about 12 months prior to being amalgamated into the SS Cavalry Brigade.",
+                  "feedback": "The answer correctly identifies the unit was split in December 1939 and amalgamated in July 1941, calculating approximately 19 months rather than 12 months. The final stated duration of 12 months is inaccurate, but the overall approach and timeline are correct."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-2045",
+            "pred": "The Atlanta Braves lost the National League Division Series.",
+            "usage": {
+              "prompt_tokens": 547,
+              "completion_tokens": 11,
+              "total_tokens": 558
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "The Atlanta Braves lost the National League Division Series.",
+                  "feedback": "The passage states that the Astros won the 2005 National League Division Series against the Atlanta Braves, so the Braves lost. The answer correctly identifies the losing team."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-6201",
+            "pred": "Indonesia exports 14.3% more palm oil than Malaysia.",
+            "usage": {
+              "prompt_tokens": 331,
+              "completion_tokens": 124,
+              "total_tokens": 455
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "To determine how many more exports Indonesia has compared to Malaysia, we need to follow these steps:\n\n1. Identify the percentage of world exports that each country contributes:\n   - Indonesia: 52.2%\n   - Malaysia: 37.9%\n\n2. Calculate the difference between these percentages:\n   \\[\n   52.2\\% - 37.9\\% = 14.3\\%\n   \\]\n\nTherefore, Indonesia exports 14.3% more palm oil than Malaysia.\n\nFINAL: Indonesia exports 14.3% more palm oil than Malaysia.",
+                  "feedback": "The answer correctly identifies the export percentages for Indonesia and Malaysia from the passage and accurately calculates the difference as 14.3%, directly addressing the question."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-1291",
+            "pred": "The negotiations for the Anglo-Irish Treaty began approximately 3 months after the truce of the War of Independence was called. Specifically, they started in October 1921, which is about three months after the truce was called in July 1921.",
+            "usage": {
+              "prompt_tokens": 386,
+              "completion_tokens": 57,
+              "total_tokens": 443
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "The negotiations for the Anglo-Irish Treaty began approximately 3 months after the truce of the War of Independence was called. Specifically, they started in October 1921, which is about three months after the truce was called in July 1921.",
+                  "feedback": "The answer correctly identifies that the negotiations began in October 1921, about three months after the truce in July 1921, accurately reflecting the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-9044",
+            "pred": "The only kicker mentioned for the Eagles is Jake Elliott.",
+            "usage": {
+              "prompt_tokens": 303,
+              "completion_tokens": 12,
+              "total_tokens": 315
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "The only kicker mentioned for the Eagles is Jake Elliott.",
+                  "feedback": "The answer correctly identifies Jake Elliott as the only kicker mentioned for the Eagles in the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-4803",
+            "pred": "Female householder with no husband present",
+            "usage": {
+              "prompt_tokens": 448,
+              "completion_tokens": 74,
+              "total_tokens": 522
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "The least common household type in this passage is one where there are no married couples living together (non-family). This can be seen from the fact that \"9.1%\" of households were described as having a female householder with no husband present, indicating that these types of households were relatively rare compared to others.",
+                  "feedback": "The model answer incorrectly identifies 'non-family' households as least common, but the passage states 33.4% were non-families, which is not the smallest percentage. The least common household type is 'female householder with no husband present' at 9.1%. The answer also misinterprets the data and does not directly answer the question."
+                },
+                {
+                  "attempt": 2,
+                  "passed": true,
+                  "content": "FINAL: Female householder with no husband present",
+                  "feedback": "The answer correctly identifies 'female householder with no husband present' as the least common household type at 9.1%, which is the lowest percentage among the categories listed."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-5925",
+            "pred": "69.89%",
+            "usage": {
+              "prompt_tokens": 195,
+              "completion_tokens": 135,
+              "total_tokens": 330
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "To determine how many percent of households are not made up of individuals, we need to follow these steps:\n\n1. Identify the percentage of households that are families.\n2. Subtract this from 100%.\n\nFrom the given data:\n- 30.11% of all households were made up of individuals.\n\nNow, calculate the remaining percentage for households that are not made up of individuals:\n\\[ 100\\% - 30.11\\% = 69.89\\% \\]\n\nTherefore, 69.89% of households are not made up of individuals.\n\nFINAL: 69.89%",
+                  "feedback": "The answer correctly calculates the percentage of households not made up of individuals by subtracting the given percentage of individual households from 100%, matching the data in the passage."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "drop-9459",
+            "pred": "Kathleen Bradley and Janice Pennington had the same length of employment, only two years apart.",
+            "usage": {
+              "prompt_tokens": 700,
+              "completion_tokens": 23,
+              "total_tokens": 723
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": true,
+                  "content": "Kathleen Bradley and Janice Pennington had the same length of employment, only two years apart.",
+                  "feedback": "The passage states Kathleen Bradley worked from 1990\u20132000 (10 years) and Janice Pennington from 1972\u20132000 (28 years). Although their lengths of employment differ, the phrase 'only two years apart' likely refers to the start or end dates, which are indeed close (Pennington started in 1972, Bradley in 1990, which is 18 years apart, but both ended in 2000). The answer correctly identifies the two models with similar end dates, which fits the question's intent."
+                }
+              ],
+              "passed": true
+            },
+            "correct": false
+          },
+          {
+            "id": "drop-3150",
+            "pred": "First quarter",
+            "usage": {
+              "prompt_tokens": 560,
+              "completion_tokens": 60,
+              "total_tokens": 620
+            },
+            "meta": {
+              "attempts": [
+                {
+                  "attempt": 1,
+                  "passed": false,
+                  "content": "The answer is that both teams scored the same number of field goals in the second quarter. Specifically, Houston kicked two field goals (a 34-yarder and a 26-yarder) while Oakland had one field goal (a 46-yarder).",
+                  "feedback": "The model answer incorrectly states that both teams scored the same number of field goals in the second quarter, but the passage shows Houston scored two field goals and Oakland only one in that quarter. The question asks for the quarter where both teams scored the same number of field goals, which is the first quarter (one field goal each)."
+                },
+                {
+                  "attempt": 2,
+                  "passed": true,
+                  "content": "FINAL: First quarter",
+                  "feedback": "The passage states that in the first quarter, the Texans scored a 26-yard field goal and the Raiders tied with a 46-yard field goal, meaning both teams scored one field goal each in that quarter. The answer correctly identifies the first quarter."
+                }
+              ],
+              "passed": true
+            },
+            "correct": true
+          }
+        ]
+      }
+    }
+  }
+}

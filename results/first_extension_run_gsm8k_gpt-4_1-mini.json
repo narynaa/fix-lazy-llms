@@ -1,0 +1,2545 @@
+{
+  "config": {
+    "tasks": "gsm8k",
+    "methods": "baseline,checklist,conditional_critique,verifier",
+    "n": 50,
+    "model": "gpt-4.1-mini",
+    "out": "first_extension_run_gsm8k"
+  },
+  "results": {
+    "gsm8k": {
+      "baseline": {
+        "summary": {
+          "accuracy": 0.92,
+          "avg_total_tokens": 251.06
+        },
+        "rows": [
+          {
+            "id": "gsm8k-1309",
+            "pred": "FINAL: 2180",
+            "usage": {
+              "prompt_tokens": 87,
+              "completion_tokens": 173,
+              "total_tokens": 260
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "gsm8k-228",
+            "pred": "FINAL: 1",
+            "usage": {
+              "prompt_tokens": 87,
+              "completion_tokens": 178,
+              "total_tokens": 265
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-51",
+            "pred": "FINAL: 5",
+            "usage": {
+              "prompt_tokens": 82,
+              "completion_tokens": 122,
+              "total_tokens": 204
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-563",
+            "pred": "FINAL: 12",
+            "usage": {
+              "prompt_tokens": 82,
+              "completion_tokens": 170,
+              "total_tokens": 252
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-501",
+            "pred": "FINAL: 273",
+            "usage": {
+              "prompt_tokens": 94,
+              "completion_tokens": 162,
+              "total_tokens": 256
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-457",
+            "pred": "FINAL: 45",
+            "usage": {
+              "prompt_tokens": 109,
+              "completion_tokens": 159,
+              "total_tokens": 268
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-285",
+            "pred": "FINAL: 21",
+            "usage": {
+              "prompt_tokens": 60,
+              "completion_tokens": 68,
+              "total_tokens": 128
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-209",
+            "pred": "**FINAL: 145**",
+            "usage": {
+              "prompt_tokens": 67,
+              "completion_tokens": 245,
+              "total_tokens": 312
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1116",
+            "pred": "FINAL: 60",
+            "usage": {
+              "prompt_tokens": 74,
+              "completion_tokens": 118,
+              "total_tokens": 192
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-178",
+            "pred": "FINAL: 122",
+            "usage": {
+              "prompt_tokens": 75,
+              "completion_tokens": 170,
+              "total_tokens": 245
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1209",
+            "pred": "FINAL: 29",
+            "usage": {
+              "prompt_tokens": 193,
+              "completion_tokens": 176,
+              "total_tokens": 369
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-864",
+            "pred": "FINAL: 80",
+            "usage": {
+              "prompt_tokens": 94,
+              "completion_tokens": 178,
+              "total_tokens": 272
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-65",
+            "pred": "FINAL: 36",
+            "usage": {
+              "prompt_tokens": 81,
+              "completion_tokens": 128,
+              "total_tokens": 209
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-61",
+            "pred": "FINAL: 1430",
+            "usage": {
+              "prompt_tokens": 91,
+              "completion_tokens": 128,
+              "total_tokens": 219
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-191",
+            "pred": "FINAL: 5",
+            "usage": {
+              "prompt_tokens": 71,
+              "completion_tokens": 96,
+              "total_tokens": 167
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-447",
+            "pred": "FINAL: 5",
+            "usage": {
+              "prompt_tokens": 77,
+              "completion_tokens": 134,
+              "total_tokens": 211
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-476",
+            "pred": "FINAL: 5",
+            "usage": {
+              "prompt_tokens": 78,
+              "completion_tokens": 101,
+              "total_tokens": 179
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1034",
+            "pred": "FINAL: 66",
+            "usage": {
+              "prompt_tokens": 68,
+              "completion_tokens": 90,
+              "total_tokens": 158
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1232",
+            "pred": "FINAL: 15",
+            "usage": {
+              "prompt_tokens": 77,
+              "completion_tokens": 95,
+              "total_tokens": 172
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-54",
+            "pred": "FINAL: 40",
+            "usage": {
+              "prompt_tokens": 115,
+              "completion_tokens": 112,
+              "total_tokens": 227
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1149",
+            "pred": "FINAL: 93",
+            "usage": {
+              "prompt_tokens": 66,
+              "completion_tokens": 122,
+              "total_tokens": 188
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-407",
+            "pred": "FINAL: 2,000",
+            "usage": {
+              "prompt_tokens": 121,
+              "completion_tokens": 261,
+              "total_tokens": 382
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "gsm8k-859",
+            "pred": "FINAL: 1520",
+            "usage": {
+              "prompt_tokens": 86,
+              "completion_tokens": 163,
+              "total_tokens": 249
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-451",
+            "pred": "FINAL: 11050",
+            "usage": {
+              "prompt_tokens": 90,
+              "completion_tokens": 112,
+              "total_tokens": 202
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-919",
+            "pred": "FINAL: 90",
+            "usage": {
+              "prompt_tokens": 114,
+              "completion_tokens": 168,
+              "total_tokens": 282
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1206",
+            "pred": "FINAL: 40000",
+            "usage": {
+              "prompt_tokens": 95,
+              "completion_tokens": 129,
+              "total_tokens": 224
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "gsm8k-569",
+            "pred": "FINAL: 21",
+            "usage": {
+              "prompt_tokens": 97,
+              "completion_tokens": 82,
+              "total_tokens": 179
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-13",
+            "pred": "FINAL: 18",
+            "usage": {
+              "prompt_tokens": 92,
+              "completion_tokens": 363,
+              "total_tokens": 455
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-326",
+            "pred": "FINAL: 14",
+            "usage": {
+              "prompt_tokens": 102,
+              "completion_tokens": 188,
+              "total_tokens": 290
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-865",
+            "pred": "FINAL: 23",
+            "usage": {
+              "prompt_tokens": 98,
+              "completion_tokens": 164,
+              "total_tokens": 262
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-696",
+            "pred": "FINAL: 145",
+            "usage": {
+              "prompt_tokens": 138,
+              "completion_tokens": 215,
+              "total_tokens": 353
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-318",
+            "pred": "FINAL: 123",
+            "usage": {
+              "prompt_tokens": 82,
+              "completion_tokens": 144,
+              "total_tokens": 226
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-440",
+            "pred": "FINAL: 98",
+            "usage": {
+              "prompt_tokens": 68,
+              "completion_tokens": 158,
+              "total_tokens": 226
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-689",
+            "pred": "FINAL: 7.00",
+            "usage": {
+              "prompt_tokens": 78,
+              "completion_tokens": 256,
+              "total_tokens": 334
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-189",
+            "pred": "FINAL: 34",
+            "usage": {
+              "prompt_tokens": 98,
+              "completion_tokens": 194,
+              "total_tokens": 292
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-778",
+            "pred": "FINAL: 38",
+            "usage": {
+              "prompt_tokens": 111,
+              "completion_tokens": 185,
+              "total_tokens": 296
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-198",
+            "pred": "FINAL: 320",
+            "usage": {
+              "prompt_tokens": 108,
+              "completion_tokens": 192,
+              "total_tokens": 300
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-735",
+            "pred": "FINAL: 50",
+            "usage": {
+              "prompt_tokens": 89,
+              "completion_tokens": 172,
+              "total_tokens": 261
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-704",
+            "pred": "FINAL: 50",
+            "usage": {
+              "prompt_tokens": 66,
+              "completion_tokens": 124,
+              "total_tokens": 190
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1236",
+            "pred": "FINAL: 84",
+            "usage": {
+              "prompt_tokens": 99,
+              "completion_tokens": 143,
+              "total_tokens": 242
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-541",
+            "pred": "FINAL: 50",
+            "usage": {
+              "prompt_tokens": 93,
+              "completion_tokens": 235,
+              "total_tokens": 328
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-88",
+            "pred": "FINAL: 8000",
+            "usage": {
+              "prompt_tokens": 67,
+              "completion_tokens": 123,
+              "total_tokens": 190
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-940",
+            "pred": "FINAL: 280",
+            "usage": {
+              "prompt_tokens": 86,
+              "completion_tokens": 106,
+              "total_tokens": 192
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1098",
+            "pred": "FINAL: 30",
+            "usage": {
+              "prompt_tokens": 78,
+              "completion_tokens": 106,
+              "total_tokens": 184
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-255",
+            "pred": "FINAL: 176",
+            "usage": {
+              "prompt_tokens": 81,
+              "completion_tokens": 209,
+              "total_tokens": 290
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "gsm8k-775",
+            "pred": "FINAL: 276",
+            "usage": {
+              "prompt_tokens": 93,
+              "completion_tokens": 174,
+              "total_tokens": 267
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-161",
+            "pred": "FINAL: 32",
+            "usage": {
+              "prompt_tokens": 105,
+              "completion_tokens": 221,
+              "total_tokens": 326
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1130",
+            "pred": "FINAL: 25",
+            "usage": {
+              "prompt_tokens": 108,
+              "completion_tokens": 220,
+              "total_tokens": 328
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-600",
+            "pred": "FINAL: 10",
+            "usage": {
+              "prompt_tokens": 95,
+              "completion_tokens": 109,
+              "total_tokens": 204
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1287",
+            "pred": "FINAL: 84",
+            "usage": {
+              "prompt_tokens": 90,
+              "completion_tokens": 156,
+              "total_tokens": 246
+            },
+            "meta": {},
+            "correct": true
+          }
+        ]
+      },
+      "checklist": {
+        "summary": {
+          "accuracy": 0.92,
+          "avg_total_tokens": 346.68
+        },
+        "rows": [
+          {
+            "id": "gsm8k-1309",
+            "pred": "FINAL: 2180",
+            "usage": {
+              "prompt_tokens": 124,
+              "completion_tokens": 173,
+              "total_tokens": 297
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "gsm8k-228",
+            "pred": "FINAL: 1",
+            "usage": {
+              "prompt_tokens": 124,
+              "completion_tokens": 190,
+              "total_tokens": 314
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-51",
+            "pred": "FINAL: 5",
+            "usage": {
+              "prompt_tokens": 119,
+              "completion_tokens": 186,
+              "total_tokens": 305
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-563",
+            "pred": "FINAL: 12",
+            "usage": {
+              "prompt_tokens": 119,
+              "completion_tokens": 222,
+              "total_tokens": 341
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-501",
+            "pred": "FINAL: 273",
+            "usage": {
+              "prompt_tokens": 131,
+              "completion_tokens": 209,
+              "total_tokens": 340
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-457",
+            "pred": "FINAL: 45",
+            "usage": {
+              "prompt_tokens": 146,
+              "completion_tokens": 206,
+              "total_tokens": 352
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-285",
+            "pred": "FINAL: 21",
+            "usage": {
+              "prompt_tokens": 97,
+              "completion_tokens": 117,
+              "total_tokens": 214
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-209",
+            "pred": "FINAL: 145",
+            "usage": {
+              "prompt_tokens": 104,
+              "completion_tokens": 269,
+              "total_tokens": 373
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1116",
+            "pred": "FINAL: 60",
+            "usage": {
+              "prompt_tokens": 111,
+              "completion_tokens": 134,
+              "total_tokens": 245
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-178",
+            "pred": "FINAL: 122",
+            "usage": {
+              "prompt_tokens": 112,
+              "completion_tokens": 194,
+              "total_tokens": 306
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1209",
+            "pred": "FINAL: 29",
+            "usage": {
+              "prompt_tokens": 230,
+              "completion_tokens": 253,
+              "total_tokens": 483
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-864",
+            "pred": "FINAL: 80",
+            "usage": {
+              "prompt_tokens": 131,
+              "completion_tokens": 183,
+              "total_tokens": 314
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-65",
+            "pred": "FINAL: 36",
+            "usage": {
+              "prompt_tokens": 118,
+              "completion_tokens": 217,
+              "total_tokens": 335
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-61",
+            "pred": "FINAL: 1430",
+            "usage": {
+              "prompt_tokens": 128,
+              "completion_tokens": 187,
+              "total_tokens": 315
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-191",
+            "pred": "FINAL: 5",
+            "usage": {
+              "prompt_tokens": 108,
+              "completion_tokens": 200,
+              "total_tokens": 308
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-447",
+            "pred": "FINAL: 5",
+            "usage": {
+              "prompt_tokens": 114,
+              "completion_tokens": 193,
+              "total_tokens": 307
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-476",
+            "pred": "FINAL: 5",
+            "usage": {
+              "prompt_tokens": 115,
+              "completion_tokens": 175,
+              "total_tokens": 290
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1034",
+            "pred": "FINAL: 66",
+            "usage": {
+              "prompt_tokens": 105,
+              "completion_tokens": 195,
+              "total_tokens": 300
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1232",
+            "pred": "FINAL: 15",
+            "usage": {
+              "prompt_tokens": 114,
+              "completion_tokens": 141,
+              "total_tokens": 255
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-54",
+            "pred": "FINAL: 40",
+            "usage": {
+              "prompt_tokens": 152,
+              "completion_tokens": 116,
+              "total_tokens": 268
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1149",
+            "pred": "FINAL: 93",
+            "usage": {
+              "prompt_tokens": 103,
+              "completion_tokens": 138,
+              "total_tokens": 241
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-407",
+            "pred": "FINAL: 2000",
+            "usage": {
+              "prompt_tokens": 158,
+              "completion_tokens": 251,
+              "total_tokens": 409
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-859",
+            "pred": "FINAL: 1520",
+            "usage": {
+              "prompt_tokens": 123,
+              "completion_tokens": 246,
+              "total_tokens": 369
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-451",
+            "pred": "FINAL: 11050",
+            "usage": {
+              "prompt_tokens": 127,
+              "completion_tokens": 224,
+              "total_tokens": 351
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-919",
+            "pred": "FINAL: 90",
+            "usage": {
+              "prompt_tokens": 151,
+              "completion_tokens": 255,
+              "total_tokens": 406
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1206",
+            "pred": "FINAL: 40000",
+            "usage": {
+              "prompt_tokens": 132,
+              "completion_tokens": 266,
+              "total_tokens": 398
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "gsm8k-569",
+            "pred": "FINAL: 21",
+            "usage": {
+              "prompt_tokens": 134,
+              "completion_tokens": 163,
+              "total_tokens": 297
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-13",
+            "pred": "FINAL: 18",
+            "usage": {
+              "prompt_tokens": 129,
+              "completion_tokens": 485,
+              "total_tokens": 614
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-326",
+            "pred": "FINAL: 14",
+            "usage": {
+              "prompt_tokens": 139,
+              "completion_tokens": 326,
+              "total_tokens": 465
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-865",
+            "pred": "FINAL: 23",
+            "usage": {
+              "prompt_tokens": 135,
+              "completion_tokens": 189,
+              "total_tokens": 324
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-696",
+            "pred": "FINAL: 145",
+            "usage": {
+              "prompt_tokens": 175,
+              "completion_tokens": 293,
+              "total_tokens": 468
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-318",
+            "pred": "FINAL: 123",
+            "usage": {
+              "prompt_tokens": 119,
+              "completion_tokens": 178,
+              "total_tokens": 297
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-440",
+            "pred": "FINAL: 98",
+            "usage": {
+              "prompt_tokens": 105,
+              "completion_tokens": 221,
+              "total_tokens": 326
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-689",
+            "pred": "FINAL: 7.00",
+            "usage": {
+              "prompt_tokens": 115,
+              "completion_tokens": 317,
+              "total_tokens": 432
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-189",
+            "pred": "FINAL: 34",
+            "usage": {
+              "prompt_tokens": 135,
+              "completion_tokens": 256,
+              "total_tokens": 391
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-778",
+            "pred": "FINAL: 38.00",
+            "usage": {
+              "prompt_tokens": 148,
+              "completion_tokens": 249,
+              "total_tokens": 397
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-198",
+            "pred": "FINAL: 320",
+            "usage": {
+              "prompt_tokens": 145,
+              "completion_tokens": 256,
+              "total_tokens": 401
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-735",
+            "pred": "FINAL: 50",
+            "usage": {
+              "prompt_tokens": 126,
+              "completion_tokens": 241,
+              "total_tokens": 367
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-704",
+            "pred": "FINAL: 50",
+            "usage": {
+              "prompt_tokens": 103,
+              "completion_tokens": 174,
+              "total_tokens": 277
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1236",
+            "pred": "FINAL: 84",
+            "usage": {
+              "prompt_tokens": 136,
+              "completion_tokens": 222,
+              "total_tokens": 358
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-541",
+            "pred": "FINAL: 50",
+            "usage": {
+              "prompt_tokens": 130,
+              "completion_tokens": 255,
+              "total_tokens": 385
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-88",
+            "pred": "FINAL: 8,000",
+            "usage": {
+              "prompt_tokens": 104,
+              "completion_tokens": 166,
+              "total_tokens": 270
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "gsm8k-940",
+            "pred": "FINAL: 280",
+            "usage": {
+              "prompt_tokens": 123,
+              "completion_tokens": 164,
+              "total_tokens": 287
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1098",
+            "pred": "FINAL: 30",
+            "usage": {
+              "prompt_tokens": 115,
+              "completion_tokens": 150,
+              "total_tokens": 265
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-255",
+            "pred": "FINAL: 176",
+            "usage": {
+              "prompt_tokens": 118,
+              "completion_tokens": 339,
+              "total_tokens": 457
+            },
+            "meta": {},
+            "correct": false
+          },
+          {
+            "id": "gsm8k-775",
+            "pred": "FINAL: 276",
+            "usage": {
+              "prompt_tokens": 130,
+              "completion_tokens": 237,
+              "total_tokens": 367
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-161",
+            "pred": "FINAL: 32",
+            "usage": {
+              "prompt_tokens": 142,
+              "completion_tokens": 247,
+              "total_tokens": 389
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1130",
+            "pred": "FINAL: 25",
+            "usage": {
+              "prompt_tokens": 145,
+              "completion_tokens": 276,
+              "total_tokens": 421
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-600",
+            "pred": "FINAL: 10",
+            "usage": {
+              "prompt_tokens": 132,
+              "completion_tokens": 180,
+              "total_tokens": 312
+            },
+            "meta": {},
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1287",
+            "pred": "FINAL: 84",
+            "usage": {
+              "prompt_tokens": 127,
+              "completion_tokens": 204,
+              "total_tokens": 331
+            },
+            "meta": {},
+            "correct": true
+          }
+        ]
+      },
+      "conditional_critique": {
+        "summary": {
+          "accuracy": 0.94,
+          "avg_total_tokens": 257.02
+        },
+        "rows": [
+          {
+            "id": "gsm8k-1309",
+            "pred": "2180",
+            "usage": {
+              "prompt_tokens": 106,
+              "completion_tokens": 152,
+              "total_tokens": 258
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": false
+          },
+          {
+            "id": "gsm8k-228",
+            "pred": "1",
+            "usage": {
+              "prompt_tokens": 106,
+              "completion_tokens": 181,
+              "total_tokens": 287
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-51",
+            "pred": "5",
+            "usage": {
+              "prompt_tokens": 101,
+              "completion_tokens": 129,
+              "total_tokens": 230
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-563",
+            "pred": "12",
+            "usage": {
+              "prompt_tokens": 101,
+              "completion_tokens": 150,
+              "total_tokens": 251
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-501",
+            "pred": "273",
+            "usage": {
+              "prompt_tokens": 113,
+              "completion_tokens": 146,
+              "total_tokens": 259
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-457",
+            "pred": "45",
+            "usage": {
+              "prompt_tokens": 128,
+              "completion_tokens": 134,
+              "total_tokens": 262
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-285",
+            "pred": "21",
+            "usage": {
+              "prompt_tokens": 79,
+              "completion_tokens": 72,
+              "total_tokens": 151
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-209",
+            "pred": "145",
+            "usage": {
+              "prompt_tokens": 86,
+              "completion_tokens": 169,
+              "total_tokens": 255
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1116",
+            "pred": "60",
+            "usage": {
+              "prompt_tokens": 93,
+              "completion_tokens": 81,
+              "total_tokens": 174
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-178",
+            "pred": "122",
+            "usage": {
+              "prompt_tokens": 94,
+              "completion_tokens": 121,
+              "total_tokens": 215
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1209",
+            "pred": "29",
+            "usage": {
+              "prompt_tokens": 212,
+              "completion_tokens": 155,
+              "total_tokens": 367
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-864",
+            "pred": "80",
+            "usage": {
+              "prompt_tokens": 113,
+              "completion_tokens": 179,
+              "total_tokens": 292
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-65",
+            "pred": "36",
+            "usage": {
+              "prompt_tokens": 100,
+              "completion_tokens": 135,
+              "total_tokens": 235
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-61",
+            "pred": "1430",
+            "usage": {
+              "prompt_tokens": 110,
+              "completion_tokens": 122,
+              "total_tokens": 232
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-191",
+            "pred": "5",
+            "usage": {
+              "prompt_tokens": 90,
+              "completion_tokens": 103,
+              "total_tokens": 193
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-447",
+            "pred": "5",
+            "usage": {
+              "prompt_tokens": 96,
+              "completion_tokens": 143,
+              "total_tokens": 239
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-476",
+            "pred": "5",
+            "usage": {
+              "prompt_tokens": 97,
+              "completion_tokens": 104,
+              "total_tokens": 201
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1034",
+            "pred": "66",
+            "usage": {
+              "prompt_tokens": 87,
+              "completion_tokens": 89,
+              "total_tokens": 176
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1232",
+            "pred": "15",
+            "usage": {
+              "prompt_tokens": 96,
+              "completion_tokens": 98,
+              "total_tokens": 194
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-54",
+            "pred": "40",
+            "usage": {
+              "prompt_tokens": 134,
+              "completion_tokens": 117,
+              "total_tokens": 251
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1149",
+            "pred": "93",
+            "usage": {
+              "prompt_tokens": 85,
+              "completion_tokens": 83,
+              "total_tokens": 168
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-407",
+            "pred": "2000",
+            "usage": {
+              "prompt_tokens": 140,
+              "completion_tokens": 194,
+              "total_tokens": 334
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-859",
+            "pred": "1520",
+            "usage": {
+              "prompt_tokens": 105,
+              "completion_tokens": 142,
+              "total_tokens": 247
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-451",
+            "pred": "11050",
+            "usage": {
+              "prompt_tokens": 109,
+              "completion_tokens": 118,
+              "total_tokens": 227
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-919",
+            "pred": "90",
+            "usage": {
+              "prompt_tokens": 133,
+              "completion_tokens": 168,
+              "total_tokens": 301
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1206",
+            "pred": "40000",
+            "usage": {
+              "prompt_tokens": 114,
+              "completion_tokens": 129,
+              "total_tokens": 243
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": false
+          },
+          {
+            "id": "gsm8k-569",
+            "pred": "21",
+            "usage": {
+              "prompt_tokens": 116,
+              "completion_tokens": 87,
+              "total_tokens": 203
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-13",
+            "pred": "18",
+            "usage": {
+              "prompt_tokens": 111,
+              "completion_tokens": 335,
+              "total_tokens": 446
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-326",
+            "pred": "14",
+            "usage": {
+              "prompt_tokens": 121,
+              "completion_tokens": 209,
+              "total_tokens": 330
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-865",
+            "pred": "23",
+            "usage": {
+              "prompt_tokens": 117,
+              "completion_tokens": 127,
+              "total_tokens": 244
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-696",
+            "pred": "145",
+            "usage": {
+              "prompt_tokens": 157,
+              "completion_tokens": 192,
+              "total_tokens": 349
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-318",
+            "pred": "123",
+            "usage": {
+              "prompt_tokens": 101,
+              "completion_tokens": 106,
+              "total_tokens": 207
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-440",
+            "pred": "98",
+            "usage": {
+              "prompt_tokens": 87,
+              "completion_tokens": 133,
+              "total_tokens": 220
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-689",
+            "pred": "7.00",
+            "usage": {
+              "prompt_tokens": 97,
+              "completion_tokens": 258,
+              "total_tokens": 355
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-189",
+            "pred": "34",
+            "usage": {
+              "prompt_tokens": 117,
+              "completion_tokens": 189,
+              "total_tokens": 306
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-778",
+            "pred": "38",
+            "usage": {
+              "prompt_tokens": 130,
+              "completion_tokens": 114,
+              "total_tokens": 244
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-198",
+            "pred": "320",
+            "usage": {
+              "prompt_tokens": 127,
+              "completion_tokens": 166,
+              "total_tokens": 293
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-735",
+            "pred": "50",
+            "usage": {
+              "prompt_tokens": 108,
+              "completion_tokens": 148,
+              "total_tokens": 256
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-704",
+            "pred": "50",
+            "usage": {
+              "prompt_tokens": 85,
+              "completion_tokens": 114,
+              "total_tokens": 199
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1236",
+            "pred": "84",
+            "usage": {
+              "prompt_tokens": 118,
+              "completion_tokens": 139,
+              "total_tokens": 257
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-541",
+            "pred": "50",
+            "usage": {
+              "prompt_tokens": 112,
+              "completion_tokens": 223,
+              "total_tokens": 335
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-88",
+            "pred": "8000",
+            "usage": {
+              "prompt_tokens": 86,
+              "completion_tokens": 105,
+              "total_tokens": 191
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-940",
+            "pred": "280",
+            "usage": {
+              "prompt_tokens": 105,
+              "completion_tokens": 109,
+              "total_tokens": 214
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1098",
+            "pred": "30",
+            "usage": {
+              "prompt_tokens": 97,
+              "completion_tokens": 113,
+              "total_tokens": 210
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-255",
+            "pred": "176",
+            "usage": {
+              "prompt_tokens": 100,
+              "completion_tokens": 174,
+              "total_tokens": 274
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": false
+          },
+          {
+            "id": "gsm8k-775",
+            "pred": "276",
+            "usage": {
+              "prompt_tokens": 112,
+              "completion_tokens": 184,
+              "total_tokens": 296
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-161",
+            "pred": "32",
+            "usage": {
+              "prompt_tokens": 124,
+              "completion_tokens": 238,
+              "total_tokens": 362
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1130",
+            "pred": "25",
+            "usage": {
+              "prompt_tokens": 127,
+              "completion_tokens": 191,
+              "total_tokens": 318
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-600",
+            "pred": "10",
+            "usage": {
+              "prompt_tokens": 114,
+              "completion_tokens": 116,
+              "total_tokens": 230
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1287",
+            "pred": "84",
+            "usage": {
+              "prompt_tokens": 109,
+              "completion_tokens": 161,
+              "total_tokens": 270
+            },
+            "meta": {
+              "confidence": 100,
+              "critiqued": false
+            },
+            "correct": true
+          }
+        ]
+      },
+      "verifier": {
+        "summary": {
+          "accuracy": 0.94,
+          "avg_total_tokens": 753.28
+        },
+        "rows": [
+          {
+            "id": "gsm8k-1309",
+            "pred": "FINAL: 2180",
+            "usage": {
+              "prompt_tokens": 261,
+              "completion_tokens": 470,
+              "total_tokens": 731
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": false
+          },
+          {
+            "id": "gsm8k-228",
+            "pred": "FINAL: 1",
+            "usage": {
+              "prompt_tokens": 261,
+              "completion_tokens": 524,
+              "total_tokens": 785
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-51",
+            "pred": "FINAL: 5",
+            "usage": {
+              "prompt_tokens": 246,
+              "completion_tokens": 461,
+              "total_tokens": 707
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-563",
+            "pred": "FINAL: 12",
+            "usage": {
+              "prompt_tokens": 246,
+              "completion_tokens": 499,
+              "total_tokens": 745
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-501",
+            "pred": "FINAL: 273",
+            "usage": {
+              "prompt_tokens": 282,
+              "completion_tokens": 531,
+              "total_tokens": 813
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-457",
+            "pred": "FINAL: 45",
+            "usage": {
+              "prompt_tokens": 327,
+              "completion_tokens": 465,
+              "total_tokens": 792
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-285",
+            "pred": "FINAL: 21",
+            "usage": {
+              "prompt_tokens": 180,
+              "completion_tokens": 221,
+              "total_tokens": 401
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-209",
+            "pred": "FINAL: 145",
+            "usage": {
+              "prompt_tokens": 201,
+              "completion_tokens": 612,
+              "total_tokens": 813
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1116",
+            "pred": "FINAL: 60",
+            "usage": {
+              "prompt_tokens": 222,
+              "completion_tokens": 232,
+              "total_tokens": 454
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-178",
+            "pred": "FINAL: 122",
+            "usage": {
+              "prompt_tokens": 225,
+              "completion_tokens": 450,
+              "total_tokens": 675
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1209",
+            "pred": "FINAL: 29",
+            "usage": {
+              "prompt_tokens": 579,
+              "completion_tokens": 481,
+              "total_tokens": 1060
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-864",
+            "pred": "FINAL: 80",
+            "usage": {
+              "prompt_tokens": 282,
+              "completion_tokens": 505,
+              "total_tokens": 787
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-65",
+            "pred": "FINAL: 36",
+            "usage": {
+              "prompt_tokens": 243,
+              "completion_tokens": 427,
+              "total_tokens": 670
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-61",
+            "pred": "FINAL: 1430",
+            "usage": {
+              "prompt_tokens": 273,
+              "completion_tokens": 392,
+              "total_tokens": 665
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-191",
+            "pred": "FINAL: 5",
+            "usage": {
+              "prompt_tokens": 213,
+              "completion_tokens": 303,
+              "total_tokens": 516
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-447",
+            "pred": "FINAL: 5",
+            "usage": {
+              "prompt_tokens": 231,
+              "completion_tokens": 404,
+              "total_tokens": 635
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-476",
+            "pred": "FINAL: 5",
+            "usage": {
+              "prompt_tokens": 234,
+              "completion_tokens": 311,
+              "total_tokens": 545
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1034",
+            "pred": "FINAL: 66",
+            "usage": {
+              "prompt_tokens": 204,
+              "completion_tokens": 333,
+              "total_tokens": 537
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1232",
+            "pred": "FINAL: 15",
+            "usage": {
+              "prompt_tokens": 231,
+              "completion_tokens": 327,
+              "total_tokens": 558
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-54",
+            "pred": "FINAL: 40",
+            "usage": {
+              "prompt_tokens": 345,
+              "completion_tokens": 350,
+              "total_tokens": 695
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1149",
+            "pred": "FINAL: 93",
+            "usage": {
+              "prompt_tokens": 198,
+              "completion_tokens": 312,
+              "total_tokens": 510
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-407",
+            "pred": "FINAL: 2000",
+            "usage": {
+              "prompt_tokens": 363,
+              "completion_tokens": 700,
+              "total_tokens": 1063
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-859",
+            "pred": "FINAL: 1520",
+            "usage": {
+              "prompt_tokens": 258,
+              "completion_tokens": 497,
+              "total_tokens": 755
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-451",
+            "pred": "FINAL: 11050",
+            "usage": {
+              "prompt_tokens": 270,
+              "completion_tokens": 412,
+              "total_tokens": 682
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-919",
+            "pred": "FINAL: 90",
+            "usage": {
+              "prompt_tokens": 342,
+              "completion_tokens": 529,
+              "total_tokens": 871
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1206",
+            "pred": "FINAL: 40000",
+            "usage": {
+              "prompt_tokens": 285,
+              "completion_tokens": 445,
+              "total_tokens": 730
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": false
+          },
+          {
+            "id": "gsm8k-569",
+            "pred": "FINAL: 21",
+            "usage": {
+              "prompt_tokens": 291,
+              "completion_tokens": 272,
+              "total_tokens": 563
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-13",
+            "pred": "FINAL: 18",
+            "usage": {
+              "prompt_tokens": 276,
+              "completion_tokens": 1013,
+              "total_tokens": 1289
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-326",
+            "pred": "FINAL: 14",
+            "usage": {
+              "prompt_tokens": 306,
+              "completion_tokens": 587,
+              "total_tokens": 893
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-865",
+            "pred": "FINAL: 23",
+            "usage": {
+              "prompt_tokens": 294,
+              "completion_tokens": 505,
+              "total_tokens": 799
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-696",
+            "pred": "FINAL: 145",
+            "usage": {
+              "prompt_tokens": 414,
+              "completion_tokens": 674,
+              "total_tokens": 1088
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-318",
+            "pred": "FINAL: 123",
+            "usage": {
+              "prompt_tokens": 246,
+              "completion_tokens": 429,
+              "total_tokens": 675
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-440",
+            "pred": "FINAL: 98",
+            "usage": {
+              "prompt_tokens": 204,
+              "completion_tokens": 446,
+              "total_tokens": 650
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-689",
+            "pred": "FINAL: 7.00",
+            "usage": {
+              "prompt_tokens": 234,
+              "completion_tokens": 792,
+              "total_tokens": 1026
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-189",
+            "pred": "FINAL: 34",
+            "usage": {
+              "prompt_tokens": 294,
+              "completion_tokens": 590,
+              "total_tokens": 884
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-778",
+            "pred": "FINAL: 38",
+            "usage": {
+              "prompt_tokens": 333,
+              "completion_tokens": 584,
+              "total_tokens": 917
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-198",
+            "pred": "FINAL: 320",
+            "usage": {
+              "prompt_tokens": 324,
+              "completion_tokens": 634,
+              "total_tokens": 958
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-735",
+            "pred": "FINAL: 50",
+            "usage": {
+              "prompt_tokens": 267,
+              "completion_tokens": 459,
+              "total_tokens": 726
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-704",
+            "pred": "FINAL: 50",
+            "usage": {
+              "prompt_tokens": 198,
+              "completion_tokens": 354,
+              "total_tokens": 552
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1236",
+            "pred": "FINAL: 84",
+            "usage": {
+              "prompt_tokens": 297,
+              "completion_tokens": 517,
+              "total_tokens": 814
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-541",
+            "pred": "FINAL: 50",
+            "usage": {
+              "prompt_tokens": 279,
+              "completion_tokens": 726,
+              "total_tokens": 1005
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-88",
+            "pred": "FINAL: 8000",
+            "usage": {
+              "prompt_tokens": 201,
+              "completion_tokens": 347,
+              "total_tokens": 548
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-940",
+            "pred": "FINAL: 280",
+            "usage": {
+              "prompt_tokens": 258,
+              "completion_tokens": 329,
+              "total_tokens": 587
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1098",
+            "pred": "FINAL: 30",
+            "usage": {
+              "prompt_tokens": 234,
+              "completion_tokens": 351,
+              "total_tokens": 585
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-255",
+            "pred": "FINAL: 176",
+            "usage": {
+              "prompt_tokens": 243,
+              "completion_tokens": 639,
+              "total_tokens": 882
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": false
+          },
+          {
+            "id": "gsm8k-775",
+            "pred": "FINAL: 276",
+            "usage": {
+              "prompt_tokens": 279,
+              "completion_tokens": 545,
+              "total_tokens": 824
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-161",
+            "pred": "FINAL: 32",
+            "usage": {
+              "prompt_tokens": 315,
+              "completion_tokens": 608,
+              "total_tokens": 923
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1130",
+            "pred": "FINAL: 25",
+            "usage": {
+              "prompt_tokens": 324,
+              "completion_tokens": 653,
+              "total_tokens": 977
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-600",
+            "pred": "FINAL: 10",
+            "usage": {
+              "prompt_tokens": 285,
+              "completion_tokens": 320,
+              "total_tokens": 605
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          },
+          {
+            "id": "gsm8k-1287",
+            "pred": "FINAL: 84",
+            "usage": {
+              "prompt_tokens": 270,
+              "completion_tokens": 429,
+              "total_tokens": 699
+            },
+            "meta": {
+              "k": 3,
+              "passed": true
+            },
+            "correct": true
+          }
+        ]
+      }
+    }
+  }
+}
