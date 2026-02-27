@@ -11,7 +11,7 @@ from extension_methods import (
     baseline,
     checklist,
     conditional_critique,
-    verifier_selection,
+    s1_simple,
 )
 
 # HumanEval runner
@@ -135,6 +135,11 @@ def main():
                 elif method == "conditional_critique":
                     out = conditional_critique(
                         base_prompt, cfg, CRITIQUE_GENERIC, threshold=70
+                    )
+                elif method == "s1_budget_forcing":
+                    out = s1_simple(
+                        base_prompt,
+                        cfg,
                     )
                 elif method == "verifier_reprompt_rm":
                     if task_name == "drop":

@@ -1,5 +1,6 @@
 from typing import Dict, Any, List, Optional, Tuple
 from dataclasses import dataclass
+import re
 
 from utils import call_llm
 from extension_tasks import extract_final_answer
@@ -144,43 +145,71 @@ def conditional_critique(
     }
 
 
-def verifier_selection(
-    prompt: str,
-    cfg: RunConfig,
-    rule_verify_fn,
-    k: int = 3,
-    temperature: float = 0.7,
-) -> Dict[str, Any]:
+def _split_think_final(text: str) -> Tuple[str, str]:
     """
-    Generate k candidates (diversity) and select first that passes rule_verify_fn(candidate).
-    This verifier does NOT use gold labels.
+    Parse:
+      THINK:
+      ...
+      END_THINK
+      FINAL: ...
+    Return (think, final_text)
     """
-    total = {"prompt_tokens": 0, "completion_tokens": 0, "total_tokens": 0}
-    candidates: List[str] = []
+    t = (text or "").strip()
+    think = ""
+    final = ""
 
-    for _ in range(k):
-        out = call_llm(
-            [
-                {"role": "system", "content": SYSTEM_BASE},
-                {"role": "user", "content": prompt},
-            ],
-            model=cfg.model,
-            temperature=temperature,
-            max_tokens=cfg.max_tokens,
-            use_cache=False,  # need diversity
-        )
-        candidates.append(out["content"])
-        for key in total:
-            total[key] += out["usage"][key]
+    m = re.search(r"(?is)think\s*:\s*(.*?)\s*end_think", t)
+    if m:
+        think = m.group(1).strip()
 
-    chosen = candidates[0]
-    for c in candidates:
-        if rule_verify_fn(c):
-            chosen = c
-            break
+    mf = re.search(r"(?im)^\s*final\s*:\s*(.+?)\s*$", t)
+    if mf:
+        final = mf.group(1).strip()
+    else:
+        # fallback: last non-empty line
+        lines = [ln.strip() for ln in t.splitlines() if ln.strip()]
+        final = lines[-1] if lines else ""
 
-    return {
-        "content": chosen,
-        "usage": total,
-        "meta": {"k": k, "passed": rule_verify_fn(chosen)},
+    return think, final
+
+
+def s1_simple(prompt: str, cfg: RunConfig, rounds: int = 2):
+    msgs = [
+        {"role": "system", "content": "You are a careful assistant."},
+        {
+            "role": "user",
+            "content": prompt
+            + "\nThink step by step and give FINAL: <answer>.",
+        },
+    ]
+
+    total_usage = {
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "total_tokens": 0,
     }
+
+    for i in range(rounds):
+        out = call_llm(
+            msgs,
+            model=cfg.model,
+            temperature=0.0,
+            max_tokens=cfg.max_tokens,
+        )
+
+        content = out["content"]
+
+        for k in total_usage:
+            total_usage[k] += out["usage"][k]
+
+        msgs.append({"role": "assistant", "content": content})
+
+        if i < rounds - 1:
+            msgs.append(
+                {
+                    "role": "user",
+                    "content": "Double-check your reasoning before finalizing.",
+                }
+            )
+
+    return {"content": content, "usage": total_usage}
