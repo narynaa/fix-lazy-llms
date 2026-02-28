@@ -258,6 +258,43 @@ class DROPTask(Task):
         return False
 
 
+# ---------- MATH 500 ----------
+
+
+def _normalize_math_answer(s) -> str:
+    """Light normalization so that '1/2' matches '\\frac{1}{2}' etc."""
+    s = str(s).strip()
+    # Remove LaTeX wrappers
+    s = s.replace("\\frac", "").replace("\\sqrt", "sqrt")
+    s = s.replace("\\left", "").replace("\\right", "")
+    s = s.replace("\\cdot", "*").replace("\\times", "*")
+    # Strip spaces and cosmetic LaTeX
+    for tok in (" ", "\\,", "\\!", "\\;", "$"):
+        s = s.replace(tok, "")
+    return s.lower()
+
+
+class MATH500Task(Task):
+    name = "math500"
+
+    def load(self, n: int):
+        ds = load_dataset("HuggingFaceH4/MATH-500", split="test")
+        idxs = random.sample(range(len(ds)), min(n, len(ds)))
+        return [
+            Example(
+                id=f"math500-{i}",
+                prompt=ds[i]["problem"],
+                gold=ds[i]["answer"],  # pre-extracted final answer
+                meta={"level": ds[i]["level"], "subject": ds[i]["subject"]},
+            )
+            for i in idxs
+        ]
+
+    def score(self, pred: str, ex: Example) -> bool:
+        # pred comes from extract_final_answer() — same as GSM8K/SVAMP
+        return _normalize_math_answer(pred) == _normalize_math_answer(ex.gold)
+
+
 # ---------- HumanEval ----------
 
 
@@ -298,4 +335,6 @@ def get_task(name: str) -> Task:
         return DROPTask()
     if name == "humaneval":
         return HumanEvalTask()
+    if name == "math500":
+        return MATH500Task()
     raise ValueError(name)

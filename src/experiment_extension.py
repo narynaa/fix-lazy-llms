@@ -72,7 +72,7 @@ def extract_code_only(text: str) -> str:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument(
-        "--tasks", type=str, default="gsm8k,truthfulqa,svamp,drop,humaneval"
+        "--tasks", type=str, default="gsm8k,truthfulqa,svamp,drop,humaneval,math500"
     )
     ap.add_argument(
         "--methods",
@@ -120,6 +120,9 @@ def main():
                 elif task_name == "truthfulqa":
                     base_prompt = f"Answer the question. End with FINAL: <answer>.\n\n{ex.prompt}"
                     checklist_kind = "truthfulqa"
+                elif task_name == "math500":
+                    base_prompt = f"Solve step by step. End with FINAL: <answer>.\n\n{ex.prompt}"
+                    checklist_kind = "math"
                 elif task_name == "humaneval":
                     base_prompt = f"{ex.prompt}\n# Write the solution in Python. Return ONLY code.\n"
                     checklist_kind = "humaneval"
