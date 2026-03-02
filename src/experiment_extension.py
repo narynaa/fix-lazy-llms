@@ -72,7 +72,9 @@ def extract_code_only(text: str) -> str:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument(
-        "--tasks", type=str, default="gsm8k,truthfulqa,svamp,drop,humaneval,math500"
+        "--tasks",
+        type=str,
+        default="gsm8k,truthfulqa,svamp,drop,humaneval,math500",
     )
     ap.add_argument(
         "--methods",
@@ -182,7 +184,7 @@ def main():
                 content = out["content"]
                 pred_final = (
                     content
-                    if task_name == "humaneval"
+                    if task_name in ("humaneval", "math500")
                     else extract_final_answer(content)
                 )
 

@@ -261,17 +261,127 @@ class DROPTask(Task):
 # ---------- MATH 500 ----------
 
 
-def _normalize_math_answer(s) -> str:
-    """Light normalization so that '1/2' matches '\\frac{1}{2}' etc."""
+import re
+
+
+def _normalize_math_answer(s: str) -> str:
     s = str(s).strip()
-    # Remove LaTeX wrappers
-    s = s.replace("\\frac", "").replace("\\sqrt", "sqrt")
+
+    # Common wrappers
+    s = re.sub(r"\\boxed\s*\{(.*?)\}", r"\1", s)
     s = s.replace("\\left", "").replace("\\right", "")
+
+    # Convert \frac{a}{b} -> (a)/(b)
+    # (do repeatedly in case of nesting)
+    while True:
+        new = re.sub(r"\\frac\s*\{([^{}]+)\}\s*\{([^{}]+)\}", r"(\1)/(\2)", s)
+        if new == s:
+            break
+        s = new
+
+    # Convert \sqrt{a} -> sqrt(a)
+    s = re.sub(r"\\sqrt\s*\{([^{}]+)\}", r"sqrt(\1)", s)
+
+    # Replace \cdot, \times
     s = s.replace("\\cdot", "*").replace("\\times", "*")
-    # Strip spaces and cosmetic LaTeX
+
+    # Remove latex spacing tokens and dollar signs
     for tok in (" ", "\\,", "\\!", "\\;", "$"):
         s = s.replace(tok, "")
+
+    # Remove leftover braces
+    s = s.replace("{", "").replace("}", "")
+
     return s.lower()
+
+
+def _try_float(expr: str):
+    try:
+        # handle simple fractions like (1)/(2)
+        if "/" in expr and "sqrt" not in expr:
+            num, den = expr.split("/", 1)
+            return float(num.strip("()")) / float(den.strip("()"))
+        return float(expr)
+    except:
+        return None
+
+
+def _extract_math500_candidate(text: str) -> str:
+    """
+    Try to pull out the actual final math expression/number from a verbose model output.
+    Preference order:
+      1) last \\boxed{...}
+      2) last \\(...\\) or \\[...\\] or $...$
+      3) line containing "FINAL:" / "final answer:" / "answer is"
+      4) last non-empty line
+    Then lightly strip common prose wrappers and trailing punctuation.
+    """
+    t = (text or "").strip()
+    if not t:
+        return ""
+
+    # 1) last \boxed{...}
+    boxed = re.findall(r"\\boxed\s*\{([\s\S]*?)\}", t)
+    if boxed:
+        cand = boxed[-1].strip()
+        return cand
+
+    # 2) last inline/display math
+    # \( ... \)
+    paren_math = re.findall(r"\\\(([\s\S]*?)\\\)", t)
+    if paren_math:
+        return paren_math[-1].strip()
+
+    # \[ ... \]
+    bracket_math = re.findall(r"\\\[([\s\S]*?)\\\]", t)
+    if bracket_math:
+        return bracket_math[-1].strip()
+
+    # $ ... $
+    dollar_math = re.findall(r"\$([\s\S]*?)\$", t)
+    if dollar_math:
+        return dollar_math[-1].strip()
+
+    # 3) explicit "final"/"answer" line capture
+    m = re.search(
+        r"(?im)^\s*(?:final\s*:\s*|final\s+answer\s*:\s*|answer\s*:\s*|the\s+answer\s+is\s*|final\s+answer\s+is\s*)(.+?)\s*$",
+        t,
+    )
+    if m:
+        cand = m.group(1).strip()
+    else:
+        # 4) last non-empty line
+        lines = [ln.strip() for ln in t.splitlines() if ln.strip()]
+        cand = lines[-1] if lines else t
+
+    # Strip common leading prose on the candidate itself
+    cand = re.sub(
+        r"(?i)^\s*(?:the\s*)?(?:final\s*)?(?:answer\s*)?(?:is|:)\s*",
+        "",
+        cand,
+    ).strip()
+
+    # Strip trailing sentence punctuation
+    cand = re.sub(r"[ \t]*[\.!\,;:]+[ \t]*$", "", cand).strip()
+    return cand
+
+
+def _clean_math_pred(s: str) -> str:
+    s = (s or "").strip()
+
+    # remove markdown emphasis
+    s = re.sub(r"(\*\*|__|\*|_)", "", s)
+
+    # remove common trailing words that appear in answers
+    # (keep this list small + obvious; expand only if you see repeats)
+    s = re.sub(r"(?i)\bgrade\b", "", s)
+
+    # ordinal -> number: 12th -> 12, 3rd -> 3, etc.
+    s = re.sub(r"\b(\d+)\s*(st|nd|rd|th)\b", r"\1", s, flags=re.I)
+
+    # strip trailing punctuation/periods
+    s = re.sub(r"[ \t]*[\.!\,;:]+[ \t]*$", "", s).strip()
+    return s
 
 
 class MATH500Task(Task):
@@ -291,8 +401,43 @@ class MATH500Task(Task):
         ]
 
     def score(self, pred: str, ex: Example) -> bool:
-        # pred comes from extract_final_answer() — same as GSM8K/SVAMP
-        return _normalize_math_answer(pred) == _normalize_math_answer(ex.gold)
+        # Normalize gold once
+        g_norm = _normalize_math_answer(ex.gold)
+        g_float = _try_float(g_norm)
+
+        # 1) Try strict normalization on pred as-is
+        pred_c = _clean_math_pred(pred)
+        p_norm = _normalize_math_answer(pred_c)
+        if p_norm == g_norm:
+            return True
+
+        p_float = _try_float(p_norm)
+        if p_float is not None and g_float is not None:
+            return abs(p_float - g_float) < 1e-6
+
+        # 2) Extract a better candidate span from pred and try again
+        cand = _extract_math500_candidate(pred)
+        cand_c = _clean_math_pred(cand)
+        if cand_c:
+            c_norm = _normalize_math_answer(cand_c)
+            if c_norm == g_norm:
+                return True
+
+            c_float = _try_float(c_norm)
+            if c_float is not None and g_float is not None:
+                return abs(c_float - g_float) < 1e-6
+
+        # 3) Numeric-only fallback (re-use your extract_number) WHEN gold is numeric
+        # This fixes cases like "The final answer is 51." even if candidate extraction missed it.
+        if g_float is not None:
+            num = extract_number(pred)  # your existing helper
+            if num is not None:
+                try:
+                    return abs(float(num) - g_float) < 1e-6
+                except:
+                    pass
+
+        return False
 
 
 # ---------- HumanEval ----------
