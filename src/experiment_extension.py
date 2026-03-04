@@ -17,7 +17,7 @@ from extension_methods import (
 # HumanEval runner
 from human_eval.evaluation import evaluate_functional_correctness
 from verifier_loop import verifier_reprompt
-from rm_verifier import rm_verify_drop, rm_verify_svamp
+from rm_verifier import rm_verify_drop, rm_verify_svamp, rm_verify_math500
 
 CRITIQUE_GENERIC = (
     "Carefully review the answer above. If there are mistakes, correct them. "
@@ -167,6 +167,21 @@ def main():
 
                         def verifier_fn(ans):
                             return rm_verify_svamp(
+                                prompt=base_prompt,
+                                answer=ans,
+                            )
+
+                        out = verifier_reprompt(
+                            base_prompt,
+                            cfg,
+                            verifier_fn,
+                            max_attempts=3,
+                            include_prev=False,
+                        )
+                    elif task_name == "math500":
+
+                        def verifier_fn(ans):
+                            return rm_verify_math500(
                                 prompt=base_prompt,
                                 answer=ans,
                             )

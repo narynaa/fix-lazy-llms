@@ -173,3 +173,84 @@ Return JSON:
         feedback = f"Numeric match: candidate={cand_num}, correct={corr_num}"
 
     return passed, feedback
+
+
+def rm_verify_math500(
+    prompt: str,
+    answer: str,
+    threshold: float = 0.6,
+):
+    """
+    Uses GPT-4.1-mini as a judge for MATH-500 style problems.
+    Judge solves and checks whether the candidate FINAL answer matches (allowing algebraic equivalence).
+    Returns (pass: bool, feedback: str)
+    """
+
+    judge_prompt = f"""
+You are a strict evaluator for contest math problems.
+
+PROBLEM:
+{prompt}
+
+CANDIDATE ANSWER:
+{answer}
+
+Task:
+- Solve the problem yourself (internally).
+- Extract the candidate's FINAL answer (if present).
+- Decide if the candidate final answer is mathematically correct.
+- Allow algebraic equivalence (e.g. 1/2 = 0.5, simplified radicals, equivalent expressions).
+- If the candidate answer does not contain a clear final answer, it should usually FAIL.
+
+Return JSON only:
+{{
+  "score": <0 to 1>,
+  "verdict": "PASS" or "FAIL",
+  "correct_answer": "<the correct final answer (best effort)>",
+  "candidate_final": "<what you extracted from the candidate>",
+  "feedback": "short explanation"
+}}
+"""
+
+    out = rm_client.chat.completions.create(
+        model="gpt-4.1-mini",
+        messages=[
+            {"role": "system", "content": "You are a strict evaluator."},
+            {"role": "user", "content": judge_prompt},
+        ],
+        temperature=0.0,
+        max_tokens=300,
+    )
+
+    text = out.choices[0].message.content
+
+    try:
+        obj = parse_first_json_object(text)
+        score = float(obj.get("score", 0))
+        verdict = str(obj.get("verdict", "FAIL"))
+        feedback = str(obj.get("feedback", ""))
+        correct_answer = str(obj.get("correct_answer", ""))
+        candidate_final = str(obj.get("candidate_final", ""))
+    except Exception:
+        score = 0.0
+        verdict = "FAIL"
+        feedback = text
+        correct_answer = ""
+        candidate_final = ""
+
+    # A tiny extra heuristic: if both sides look numeric-ish, require exact string match after normalization.
+    cand_num = _extract_numberish(candidate_final or answer)
+    corr_num = _extract_numberish(correct_answer)
+    numeric_agree = (
+        (cand_num is not None)
+        and (corr_num is not None)
+        and (cand_num == corr_num)
+    )
+
+    passed = (
+        numeric_agree or (score >= threshold) or (verdict.upper() == "PASS")
+    )
+    if numeric_agree and not feedback:
+        feedback = f"Numeric match: candidate={cand_num}, correct={corr_num}"
+
+    return passed, feedback
