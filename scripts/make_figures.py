@@ -1,84 +1,69 @@
-import json
-import glob
 from pathlib import Path
 
 import matplotlib.pyplot as plt
 
 # ---------- config ----------
-RESULT_GLOBS = [
-    "results/*svamp*_gpt-4_1-mini.json",
-    "results/*drop*_gpt-4_1-mini.json",
-    "results/*gsm8k*_gpt-4_1-mini.json",
-    "results/*truthfulqa*_gpt-4_1-mini.json",
-    "results/*humaneval*_gpt-4_1-mini.json",
-]
 OUTDIR = Path("results/plots")
 OUTDIR.mkdir(parents=True, exist_ok=True)
 
-METHOD_ORDER = ["baseline", "checklist", "conditional_critique", "verifier"]
-DATASET_ORDER = ["gsm8k", "truthfulqa", "svamp", "drop", "humaneval"]
+# Treat s1_budget_forcing as a normal method
+METHOD_ORDER = [
+    "baseline",
+    "checklist",
+    "verifier_reprompt_rm",
+    "s1_budget_forcing",
+]
+
+DATASET_ORDER = [
+    "svamp",
+    "drop",
+    "humaneval",
+    "math500",
+]
+
+# Accept hardcoded results now
+HARDCODED_RESULTS = {
+    "svamp": {
+        "baseline": {"accuracy": 0.86, "avg_tokens": 239.18},
+        "checklist": {"accuracy": 0.90, "avg_tokens": 347.56},
+        "verifier_reprompt_rm": {"accuracy": 0.94, "avg_tokens": 669.66},
+        "s1_budget_forcing": {"accuracy": 0.88, "avg_tokens": 686.74},
+    },
+    "drop": {
+        "baseline": {"accuracy": 0.72, "avg_tokens": 391.54},
+        "checklist": {"accuracy": 0.44, "avg_tokens": 418.94},
+        "verifier_reprompt_rm": {"accuracy": 0.88, "avg_tokens": 535.02},
+        "s1_budget_forcing": {"accuracy": 0.56, "avg_tokens": 993.94},
+    },
+    "humaneval": {
+        "baseline": {"accuracy": 0.64, "avg_tokens": 232.06},
+        "checklist": {"accuracy": 0.66, "avg_tokens": 274.82},
+        "verifier_reprompt_rm": {"accuracy": None, "avg_tokens": None},
+        "s1_budget_forcing": {"accuracy": 0.40, "avg_tokens": 1161.20},
+    },
+    "math500": {
+        "baseline": {"accuracy": 0.40, "avg_tokens": 695.66},
+        "checklist": {"accuracy": 0.36, "avg_tokens": 836.74},
+        "verifier_reprompt_rm": {"accuracy": 0.52, "avg_tokens": 1510.58},
+        "s1_budget_forcing": {"accuracy": 0.44, "avg_tokens": 2019.46},
+    },
+}
 
 
-# ---------- helpers ----------
-def safe_get(d, *keys, default=None):
-    cur = d
-    for k in keys:
-        if not isinstance(cur, dict) or k not in cur:
-            return default
-        cur = cur[k]
-    return cur
-
-
+# ---------- loaders ----------
 def load_rows():
-    files = []
-    for pat in RESULT_GLOBS:
-        files.extend(glob.glob(pat))
-
-    # de-dupe
-    files = sorted(set(files))
-    if not files:
-        raise SystemExit(
-            "No result files found. Update RESULT_GLOBS patterns in scripts/make_figures.py "
-            "or place your JSONs under results/."
-        )
-
     rows = []
-    for fp in files:
-        data = json.loads(Path(fp).read_text())
-        # some of your files might be "single-task" jsons (task_name is inferable from content)
-        results = data.get("results", {})
-        for task_name, methods in results.items():
-            for method_name, payload in methods.items():
-                summary = payload.get("summary", {})
-                # unify metric name:
-                if task_name == "humaneval":
-                    acc = summary.get("pass@1", None)
-                else:
-                    acc = summary.get("accuracy", None)
-
-                avg_tokens = summary.get("avg_total_tokens", None)
-
-                # If avg_total_tokens missing (e.g. humaneval summary only), compute from rows:
-                if avg_tokens is None:
-                    rr = payload.get("rows", [])
-                    toks = [safe_get(r, "usage", "total_tokens") for r in rr]
-                    toks = [t for t in toks if isinstance(t, (int, float))]
-                    if toks:
-                        avg_tokens = sum(toks) / len(toks)
-
-                rows.append(
-                    {
-                        "dataset": task_name,
-                        "method": method_name,
-                        "accuracy": float(acc) if acc is not None else None,
-                        "avg_tokens": (
-                            float(avg_tokens)
-                            if avg_tokens is not None
-                            else None
-                        ),
-                        "source_file": fp,
-                    }
-                )
+    for dataset, methods in HARDCODED_RESULTS.items():
+        for method, vals in methods.items():
+            rows.append(
+                {
+                    "dataset": dataset,
+                    "method": method,
+                    "accuracy": vals.get("accuracy"),
+                    "avg_tokens": vals.get("avg_tokens"),
+                    "source_file": "hardcoded",
+                }
+            )
     return rows
 
 
@@ -99,7 +84,6 @@ def fig_accuracy(piv):
     datasets = [d for d in DATASET_ORDER if d in piv and piv[d]]
     methods = METHOD_ORDER
 
-    # build y matrix
     y = []
     for m in methods:
         y.append([piv[d].get(m, (None, None))[0] for d in datasets])
@@ -119,6 +103,7 @@ def fig_accuracy(piv):
     plt.title("Figure 1 — Performance by dataset and method (n=50)")
     plt.legend(ncol=2, fontsize=9, frameon=False)
     plt.tight_layout()
+
     out = OUTDIR / "fig1_accuracy_by_dataset.png"
     plt.savefig(out, dpi=200)
     print(f"Saved {out}")
@@ -126,29 +111,22 @@ def fig_accuracy(piv):
 
 # ---------- figure 2: accuracy vs tokens scatter ----------
 def fig_tradeoff(piv):
-    import math
-
     plt.figure(figsize=(9, 5.5))
 
-    # Deterministic encodings
     method_colors = {
-        "baseline": "#1f77b4",  # blue
-        "checklist": "#ff7f0e",  # orange
-        "conditional_critique": "#2ca02c",  # green
-        "verifier": "#d62728",  # red
+        "baseline": "#1f77b4",
+        "checklist": "#ff7f0e",
+        "verifier_reprompt_rm": "#d62728",
+        "s1_budget_forcing": "#9467bd",
     }
+
     dataset_markers = {
-        "gsm8k": "o",
-        "truthfulqa": "s",
         "svamp": "^",
         "drop": "D",
         "humaneval": "P",
+        "math500": "o",
     }
 
-    # Collect plotted points for optional labeling
-    points = []  # (toks, acc, ds, method)
-
-    # Plot
     for ds in DATASET_ORDER:
         for m in METHOD_ORDER:
             acc, toks = piv.get(ds, {}).get(m, (None, None))
@@ -165,14 +143,13 @@ def fig_tradeoff(piv):
                 linewidths=0.5,
                 alpha=0.9,
             )
-            points.append((toks, acc, ds, m))
 
     plt.ylim(0, 1.05)
     plt.xlabel("Avg total tokens")
     plt.ylabel("Accuracy / pass@1")
     plt.title("Figure 2 — Accuracy vs token cost (effort tradeoff)")
 
-    # Method legend (colors)
+    # Method legend
     method_handles = []
     method_labels = []
     for m in METHOD_ORDER:
@@ -188,6 +165,7 @@ def fig_tradeoff(piv):
         )
         method_handles.append(h)
         method_labels.append(m)
+
     leg1 = plt.legend(
         method_handles,
         method_labels,
@@ -199,7 +177,7 @@ def fig_tradeoff(piv):
     )
     plt.gca().add_artist(leg1)
 
-    # Dataset legend (markers)
+    # Dataset legend
     dataset_handles = []
     dataset_labels = []
     for ds in DATASET_ORDER:
@@ -215,13 +193,14 @@ def fig_tradeoff(piv):
         )
         dataset_handles.append(h)
         dataset_labels.append(ds)
+
     plt.legend(
         dataset_handles,
         dataset_labels,
         title="Dataset (marker)",
         loc="lower center",
         bbox_to_anchor=(0.5, -0.22),
-        ncol=5,
+        ncol=len(DATASET_ORDER),
         frameon=False,
         fontsize=9,
         title_fontsize=10,
